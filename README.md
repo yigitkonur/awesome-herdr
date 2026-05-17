@@ -33,8 +33,8 @@ Start here if you just want to see what exists. Resources and reference docs com
 
 | Project | Type | Use it for | Language |
 |---|---|---|---|
-| [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | Featured config pack | Make Ghostty + Herdr navigation feel native to macOS and Chrome-style tab workflows | TypeScript |
 | [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | Core app | Run the terminal-native agent multiplexer itself | Rust |
+| [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | Shortcut/config pack | Make Ghostty + Herdr navigation feel native to macOS and Chrome-style tab workflows | TypeScript |
 | [54rt1n/herdr-python-client](https://github.com/54rt1n/herdr-python-client) | Socket client | Build Python tools against Herdr's Unix socket API | Python |
 | [hcaiano/skills](https://github.com/hcaiano/skills) | Agent skills | Pair Claude, Codex, and other agents inside Herdr workflows | Python |
 | [justcyl/pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) | Pi extension | Sync Pi session names into Herdr tab labels | TypeScript |
@@ -58,15 +58,15 @@ Start here if you just want to see what exists. Resources and reference docs com
 
 ## Project Categories
 
-### Featured
-
-The first featured project is intentionally the one that turns Herdr into a macOS-native feeling daily driver.
-
-- [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) - Make Ghostty + Herdr navigation feel native to macOS and Chrome-style tab workflows. Patches Ghostty safely, configures Herdr keybindings, supports install/uninstall flags, includes a purple glass preset, and targets Herdr `0.5.10+` indexed keybinds. `TypeScript`.
-
 ### Core
 
 - [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) - Agent multiplexer that lives in your terminal. Provides persistent sessions, workspaces, tabs, panes, mouse-native TUI behavior, local or remote attach, direct terminal attach, agent status detection, integrations, and a Unix socket API. `Rust`.
+
+### Terminal UX & Keymaps
+
+This category is for terminal-side polish: Ghostty routes, native-feeling tab behavior, glass themes, reliable modifier handling, and Herdr profiles that do not require every user to hand-edit `config.toml`.
+
+- [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) - Safe Ghostty + Herdr config patcher for macOS-native shortcut behavior, including `cmd+t`, `cmd+n`, `cmd+w`, `cmd+1..9`, `ctrl+tab`, and `ctrl+option+tab`. `TypeScript`.
 
 ### Socket Clients
 
@@ -75,12 +75,6 @@ The first featured project is intentionally the one that turns Herdr into a macO
 ### Agent Skills
 
 - [hcaiano/skills](https://github.com/hcaiano/skills) - Personal agent skills for Claude, Codex, and other runtimes. Includes `herdr-pair`, a collaboration skill for pairing Claude and Codex as peer agents inside Herdr. `Python`.
-
-### Terminal UX & Keymaps
-
-This category is for terminal-side polish: Ghostty routes, native-feeling tab behavior, glass themes, reliable modifier handling, and Herdr profiles that do not require every user to hand-edit `config.toml`.
-
-- [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) - Safe Ghostty + Herdr config patcher for macOS-native shortcut behavior, including `cmd+t`, `cmd+n`, `cmd+w`, `cmd+1..9`, `ctrl+tab`, and `ctrl+option+tab`. `TypeScript`.
 
 ### Pi Ecosystem
 

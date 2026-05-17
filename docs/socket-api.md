@@ -72,7 +72,7 @@ The socket API includes these public method families:
 | Panes | `pane.list`, `pane.get`, `pane.rename`, `pane.read`, `pane.split`, `pane.send_text`, `pane.send_keys`, `pane.send_input`, `pane.report_agent`, `pane.clear_agent_authority`, `pane.release_agent`, `pane.close`, `pane.wait_for_output` |
 | Events | `events.subscribe` |
 
-Recent releases added terminal-backed agent commands and socket API methods for listing, reading, sending to, renaming, focusing, waiting on, attaching to, and starting agent terminals.
+Recent releases expanded terminal-backed agent control. The raw method table above covers the documented socket methods; direct attachment is exposed through CLI wrappers such as `herdr agent attach <target>` and `herdr terminal attach <terminal_id>`.
 
 ## Reads and Waits
 

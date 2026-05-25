@@ -49,7 +49,7 @@ Every actively maintained project in one scannable table. Categories below give 
 | [eugeneb50/herdr-mcp](https://github.com/eugeneb50/herdr-mcp) | MCP server | Drive Herdr from any MCP-compatible AI client | `Rust` |
 | [hcaiano/skills](https://github.com/hcaiano/skills) | Agent skills | Personal skills for Claude, Codex, and peers in Herdr | `Python` |
 | [msadig/herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) | Agent skill | Spawn and orchestrate peer agents in adjacent panes | `Shell` |
-| [yigitkonur/herdr-claude-to-codex](https://github.com/yigitkonur/herdr-claude-to-codex) | Claude Code plugin | Drive a Codex sub-agent through Herdr with a JSON verdict | `Python` |
+| [yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) | Claude Code plugin | Drive a Codex sub-agent from Claude Code through a Herdr pane with a JSON verdict | `Python` |
 | [noamsiegel/git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) | Worktree hook | Map git worktree lifecycle to Herdr tabs and workspaces | `Shell` |
 | [SecretAardvark/pi-overseer](https://github.com/SecretAardvark/pi-overseer) | Pi orchestrator | Run role-based Pi agents across Herdr workspaces and `jj` worktrees | `TypeScript` |
 | [nickmaglowsch/herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) | Session manager | Snapshot and restore layout + Claude Code session IDs | `Python` |
@@ -71,7 +71,7 @@ Work-in-progress entries below the bar are listed in [Work in Progress](#work-in
 | Control Herdr from Claude Desktop / Cursor via MCP | [MCP Servers](#mcp-servers) |
 | Teach an agent to use Herdr | [Agent Skills & Plugins](#agent-skills--plugins) |
 | Delegate work between peer agents in panes | [Agent Skills & Plugins](#agent-skills--plugins) |
-| Drive a Codex sub-agent from Claude Code | [Agent Skills & Plugins](#agent-skills--plugins) |
+| Drive a Codex sub-agent from Claude Code via Herdr | [Agent Skills & Plugins](#agent-skills--plugins) |
 | Pair git worktrees with Herdr tabs | [Worktree & Workflow Orchestration](#worktree--workflow-orchestration) |
 | Orchestrate role-based Pi workers | [Worktree & Workflow Orchestration](#worktree--workflow-orchestration) |
 | Restore Claude conversations across reboots | [Session Persistence](#session-persistence) |
@@ -111,7 +111,7 @@ Skill files, Claude Code plugins, and helpers that teach agents how to use Herdr
 
 - [hcaiano/skills](https://github.com/hcaiano/skills) - Personal agent skills for Claude, Codex, and other runtimes. Includes `herdr-pair`, a collaboration skill for pairing Claude and Codex as peer agents inside Herdr. `Python`.
 - [msadig/herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) - `SKILL.md` plus a shell wrapper that teaches Claude, Pi, and Codex how to spawn, prompt, and read peer agents via `herdr agent start/send/wait/read` and `herdr pane split/run/send-keys`. Includes a manual-split fallback when agent detection races. `Shell`.
-- [yigitkonur/herdr-claude-to-codex](https://github.com/yigitkonur/herdr-claude-to-codex) - Claude Code plugin that drives a Codex sub-agent end-to-end through Herdr panes, tabs, or fresh workspaces, returns a structured JSON verdict per turn, and supports optional `--worktree` isolation. Vendors `herdr-python-client` and keys sessions by stable `terminal_id`. `Python`.
+- [yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) - Claude Code plugin (installed as `herdr-claude-plugin`) that drives a Codex sub-agent end-to-end through a Herdr pane, tab, or fresh workspace and returns one JSON verdict per turn — no screen-scraping, no status polling. Handles completion vs. question disambiguation, long-plan capture, spawn-mode selection, and optional `--worktree` isolation; vendors `herdr-python-client` and keys sessions by stable `terminal_id`. `Python`.
 
 ### Worktree & Workflow Orchestration
 

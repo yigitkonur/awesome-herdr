@@ -31,6 +31,7 @@ This list tracks Herdr itself plus projects that build on its primitives: worksp
 - [Herdr Primitives](#herdr-primitives)
 - [Release Notes](#release-notes)
 - [Build Your Own](#build-your-own)
+- [Forks & Derivatives](#forks--derivatives)
 - [Contributing](#contributing)
 - [Related](#related)
 
@@ -79,6 +80,7 @@ Work-in-progress entries below the bar are listed in [Work in Progress](#work-in
 | Make Ghostty + Herdr feel macOS-native | [Terminal UX & Keymaps](#terminal-ux--keymaps) |
 | Read the upstream protocol docs | [Resources](#resources) |
 | Understand configuration and socket concepts | [Herdr Primitives](#herdr-primitives) |
+| Compare how hako and herdr-mcp relate to upstream | [Forks & Derivatives](#forks--derivatives) |
 | Add a project | [Contributing](#contributing) |
 
 ---
@@ -285,6 +287,47 @@ Entry format:
 ```
 
 Keep entries factual. Avoid hype words, affiliate links, generated filler, and unmaintained private repos. Scaffold-only repos belong in [Work in Progress](#work-in-progress), not the main index.
+
+---
+
+## Forks & Derivatives
+
+Two projects in this list are the most substantial things built *from* Herdr rather than *on top of* it. They relate to upstream in very different ways, so it's worth being precise about what "fork" means in each case.
+
+- [masakirocorp/hako](https://github.com/masakirocorp/hako) is a true source fork — a rebranded, namespace-isolated Herdr that tracks upstream feature-for-feature.
+- [eugeneb50/herdr-mcp](https://github.com/eugeneb50/herdr-mcp) is *not* a code fork. It's a separate binary that wraps the `herdr` CLI and exposes it over MCP.
+
+### hako — product fork of Herdr
+
+Hako copies Herdr's source and re-skins every namespace so the two can run side by side without collisions. Its README states the intent plainly: *"its own binary, config, sockets, integrations, release channel, and docs."* A `scripts/sync_upstream.py` helper merges new upstream commits, so the feature set stays close to Herdr by design — the differences are in **identity and distribution, not capability**.
+
+| Dimension | Herdr (upstream) | hako (fork) |
+|---|---|---|
+| Binary | `herdr` | `hako` |
+| Config | `~/.config/herdr/config.toml` | `~/.config/hako/config.toml` |
+| Pane env var | `HERDR_ENV=1` | `HAKO_ENV=1` |
+| Log env var | `HERDR_LOG` | `HAKO_LOG` |
+| Integrations | `herdr integration install …` | `hako integration install …` |
+| Docs / site | [herdr.dev](https://herdr.dev) | [hako.masakiro.com](https://hako.masakiro.com) |
+| Releases | [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr/releases) | [masakirocorp/hako](https://github.com/masakirocorp/hako/releases) |
+| Install / update | `install.sh`, Homebrew, Nix, `herdr update --handoff` | `cargo install`, Nix flake, `hako update` |
+| Upstream tracking | — (origin) | `scripts/sync_upstream.py` merges from Herdr |
+
+Practical effect: skills, hooks, and socket clients written for Herdr work against hako once you swap the binary name, config path, and `HERDR_ENV` → `HAKO_ENV`. Both are `Rust`; both are AGPL-3.0.
+
+### herdr-mcp — MCP wrapper around the Herdr CLI
+
+Not a fork. herdr-mcp is a standalone Rust server (`rmcp` + `axum` + `tokio`) that shells out to the `herdr` binary via `tokio::process::Command`. It deliberately drives the documented CLI instead of the (undocumented) wire socket, so it stays decoupled from Herdr internals and easy to keep current.
+
+| Dimension | Herdr (upstream) | herdr-mcp (wrapper) |
+|---|---|---|
+| Relationship | The multiplexer itself | Shells out to the `herdr` CLI; no shared code |
+| Surface | TUI + CLI + Unix socket | 21 MCP tools (discovery / lifecycle / read / write / synchronize) |
+| Transport | Unix socket, CLI | MCP stdio + optional Axum HTTP bridge |
+| Extras | — | Recipe engine with `{{ stepId.result.path }}` interpolation; React + Tailwind single-file web playground |
+| Language | `Rust` | `Rust` server + `TypeScript`/React playground |
+
+Rule of thumb: use [hako](https://github.com/masakirocorp/hako) if you want an alternate-namespace Herdr you can run alongside the original; use [herdr-mcp](https://github.com/eugeneb50/herdr-mcp) if you want to drive Herdr from an MCP client (Claude Desktop, Cursor, Claude Code) or a browser playground.
 
 ## Related
 

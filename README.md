@@ -18,8 +18,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Group | Project | What it gives you |
 |---|---|---|
 | Orchestrate | ![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) [herdr/SKILL.md](#run--orchestrate-agents) | Official skill for agents inside Herdr |
-| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](#run--orchestrate-agents) | Claude Code driving Codex in another pane |
-| Orchestrate | ![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-pm](#run--orchestrate-agents) | A technical PM/CTO for every agent tab |
+| Orchestrate | ![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) [herdr-pm](#run--orchestrate-agents) | A technical PM/CTO for every agent tab |
 | Orchestrate | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](#run--orchestrate-agents) | Agents that spawn and talk to peers |
 | Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](#run--orchestrate-agents) | Pairing Claude and Codex as peers |
 | Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-overseer](#run--orchestrate-agents) | Role-based Pi agent fleets |
@@ -55,11 +54,7 @@ The headline use: more than one agent working at once, in panes you can watch.
 
 The official, upstream skill file: drop-in instructions that teach an agent already running inside a Herdr pane to use the multiplexer — list workspaces, tabs, and panes, spawn helpers, send input, and wait on output and agent status. The canonical starting point before reaching for any of the third-party skills below.
 
-![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin)**
-
-Lets a Claude Code session hand a job to a Codex agent in an adjacent pane and get back a clean done / question / blocked verdict each turn — no screen-scraping, no status polling. It streams one verdict per state change, can spawn the helper in a pane, tab, fresh workspace, or isolated git worktree, and keys the session to a stable handle so it survives pane reshuffling. The easy way to get one agent driving another in the same workspace.
-
-![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[yigitkonur/herdr-pm](https://github.com/yigitkonur/herdr-pm)**
+![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) **[yigitkonur/herdr-pm](https://github.com/yigitkonur/herdr-pm)**
 
 Walks your live agent tabs and drops a conductor on each — a per-tab technical-PM that reads the session, cross-checks git, surfaces scored impact×effort decisions, then drives the agent already sitting there to carry them out. It conducts rather than codes: one manager per tab (or split beside the agent), each in isolated context, so you stay on the decisions instead of babysitting ten parallel projects. Backend-agnostic across Claude, Codex, Pi, and Hermes, with an optional persistent `.herdr-pm/` notebook for the repos you want a standing PM on.
 

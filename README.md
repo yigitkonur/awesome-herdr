@@ -32,30 +32,30 @@ Everything below builds on those primitives — running fleets of agents side by
 
 ## At a glance
 
-| Project | What it gives you |
-|---|---|
-| ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) | Claude Code driving Codex in another pane |
-| ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) | Agents that spawn and talk to peers |
-| ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](https://github.com/hcaiano/skills) | Pairing Claude and Codex as peers |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-overseer](https://github.com/SecretAardvark/pi-overseer) | Role-based Pi agent fleets |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-workflow-kit](https://github.com/Jackliu-miaozi/pi-herdr-workflow-kit) | Gated planner → coder → reviewer pipeline |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [mcdonc-pi-herdr](https://github.com/mcdonc/mcdonc-pi-herdr) | Background Pi tasks into panes & tabs |
-| ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-python-client](https://github.com/54rt1n/herdr-python-client) | A Python client for the socket API |
-| ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-mcp](https://github.com/eugeneb50/herdr-mcp) | Drive Herdr from any MCP client |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-mesh](https://github.com/runchr-works/herdr-mesh) | MCP tools for agent-to-agent orchestration |
-| ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [herdr.nvim](https://github.com/devxplay/herdr.nvim) | Neovim ↔ Herdr pane navigation |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-cursor](https://github.com/rbb/herdr-cursor) | Cursor agent state shown in Herdr |
-| ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](https://github.com/ridho9/switchr) | TUI session picker with pane tree |
-| ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](https://github.com/j0urneyk/herdrctx) | TUI to attach, stop, manage sessions |
-| ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) | Layout + Claude sessions across reboots |
-| ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) | Git worktrees mapped to tabs |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [superherd](https://github.com/SirTenzin/superherd) | Bridge Superset workspaces into Herdr |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) | Pi session names on your tabs |
-| ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | macOS-native keys in Ghostty + Herdr |
-| ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-dotfiles](https://github.com/Taeyoung96/herdr-dotfiles) | Drop-in config: prefix-free navigation |
-| ![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) [herdr-menu-bar](https://github.com/hmu332233/herdr-menu-bar) | macOS menu-bar agent-status widget |
-| ![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square) [deepin-herdr](https://github.com/re2zero/deepin-herdr) | Native Deepin Linux window for Herdr |
-| ![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square) [herdr-nix](https://github.com/AodhanHayter/herdr-nix) | Nix flake, auto-updated, with binary cache |
+| Group | Project | What it gives you |
+|---|---|---|
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) | Claude Code driving Codex in another pane |
+| Orchestrate | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) | Agents that spawn and talk to peers |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](https://github.com/hcaiano/skills) | Pairing Claude and Codex as peers |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-overseer](https://github.com/SecretAardvark/pi-overseer) | Role-based Pi agent fleets |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-workflow-kit](https://github.com/Jackliu-miaozi/pi-herdr-workflow-kit) | Gated planner → coder → reviewer pipeline |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [mcdonc-pi-herdr](https://github.com/mcdonc/mcdonc-pi-herdr) | Background Pi tasks into panes & tabs |
+| Connect | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-python-client](https://github.com/54rt1n/herdr-python-client) | A Python client for the socket API |
+| Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-mcp](https://github.com/eugeneb50/herdr-mcp) | Drive Herdr from any MCP client |
+| Connect | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-mesh](https://github.com/runchr-works/herdr-mesh) | MCP tools for agent-to-agent orchestration |
+| Editor | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [herdr.nvim](https://github.com/devxplay/herdr.nvim) | Neovim ↔ Herdr pane navigation |
+| Editor | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-cursor](https://github.com/rbb/herdr-cursor) | Cursor agent state shown in Herdr |
+| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](https://github.com/ridho9/switchr) | TUI session picker with pane tree |
+| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](https://github.com/j0urneyk/herdrctx) | TUI to attach, stop, manage sessions |
+| Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) | Layout + Claude sessions across reboots |
+| Worktrees | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) | Git worktrees mapped to tabs |
+| Worktrees | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [superherd](https://github.com/SirTenzin/superherd) | Bridge Superset workspaces into Herdr |
+| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) | Pi session names on your tabs |
+| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | macOS-native keys in Ghostty + Herdr |
+| Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-dotfiles](https://github.com/Taeyoung96/herdr-dotfiles) | Drop-in config: prefix-free navigation |
+| Desktop | ![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) [herdr-menu-bar](https://github.com/hmu332233/herdr-menu-bar) | macOS menu-bar agent-status widget |
+| Desktop | ![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square) [deepin-herdr](https://github.com/re2zero/deepin-herdr) | Native Deepin Linux window for Herdr |
+| Packaging | ![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square) [herdr-nix](https://github.com/AodhanHayter/herdr-nix) | Nix flake, auto-updated, with binary cache |
 
 ---
 

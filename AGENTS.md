@@ -9,8 +9,10 @@ Add it in **two** places:
 **1. The `## At a glance` table** — one scannable row:
 
 ```md
-| ![Lang](badge) [repo](https://github.com/owner/repo) | ≤8-word hook |
+| Group | ![Lang](badge) [repo](https://github.com/owner/repo) | ≤8-word hook |
 ```
+
+The first cell is a 1–2 word **group** tag — reuse an existing one (Orchestrate · Connect · Editor · Sessions · Worktrees · Terminal UX · Desktop · Packaging) so the column keeps clustering by category.
 
 **2. A blurb under the right showcase section:**
 

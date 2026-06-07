@@ -1,170 +1,160 @@
 # Awesome Herdr [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Last updated](https://img.shields.io/github/last-commit/yigitkonur/awesome-herdr?label=last%20updated)
 
-> A curated index of the **[Herdr](https://github.com/ogulcancelik/herdr)** ecosystem: forks, clients, MCP servers, skills, hooks, and workflow tools built around the terminal-native agent multiplexer.
+> A curated index of the **[Herdr](https://github.com/ogulcancelik/herdr)** ecosystem — the tools people build on top of the terminal-native agent multiplexer.
 
-[Herdr](https://herdr.dev/) lives in your terminal and gives agents and humans persistent workspaces, tabs, panes, status awareness, detach/reattach, remote attach, and a local Unix socket API for automation.
+[Herdr](https://herdr.dev/) is tmux for AI agents. It gives agents and humans persistent workspaces, tabs, and panes; tracks what every agent is doing; survives detach/reattach and remote attach; and exposes a local Unix socket so anything can drive it.
 
 ```sh
 curl -fsSL https://herdr.dev/install.sh | sh
 herdr
 ```
 
-This list tracks Herdr itself plus projects that build on its primitives: workspaces, tabs, panes, persistent sessions, agent state, CLI wrappers, hooks, and the local socket API.
+Everything below builds on those primitives — running fleets of agents side by side, wiring editors and MCP clients into panes, persisting sessions, and shaping the terminal around them.
 
 ---
 
 ## Contents
 
-- [Project Index](#project-index)
-- [Find by Goal](#find-by-goal)
-- [Categories](#categories)
-  - [Core](#core)
-  - [Socket Clients & Libraries](#socket-clients--libraries)
-  - [MCP Servers](#mcp-servers)
-  - [Agent Skills & Plugins](#agent-skills--plugins)
-  - [Worktree & Workflow Orchestration](#worktree--workflow-orchestration)
-  - [Session Persistence](#session-persistence)
-  - [Pi Integrations](#pi-integrations)
-  - [Terminal UX & Keymaps](#terminal-ux--keymaps)
-  - [Work in Progress](#work-in-progress)
+- [At a glance](#at-a-glance)
+- [Core & forks](#core--forks)
+- [Run & orchestrate agents](#run--orchestrate-agents)
+- [Connect over socket & MCP](#connect-over-socket--mcp)
+- [Persist & restore sessions](#persist--restore-sessions)
+- [Worktrees & terminal UX](#worktrees--terminal-ux)
+- [Work in progress](#work-in-progress)
 - [Resources](#resources)
-- [Herdr Primitives](#herdr-primitives)
-- [Release Notes](#release-notes)
-- [Build Your Own](#build-your-own)
+- [Reference](#reference)
 - [Contributing](#contributing)
 - [Related](#related)
 
 ---
 
-## Project Index
+## At a glance
 
-Every actively maintained project in one scannable table. Categories below give the longer descriptions.
-
-| Project | Category | Use it for | Lang |
-|---|---|---|---|
-| [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | Core | Run the terminal-native agent multiplexer | `Rust` |
-| [masakirocorp/hako](https://github.com/masakirocorp/hako) | Core fork | Herdr fork with separate binary, config, and `HAKO_ENV` namespace | `Rust` |
-| [54rt1n/herdr-python-client](https://github.com/54rt1n/herdr-python-client) | Socket client | Build Python tools against the Unix socket API | `Python` |
-| [rbb/herdr-cursor](https://github.com/rbb/herdr-cursor) | Socket bridge | Report Cursor SDK agent state to Herdr | `TypeScript` |
-| [eugeneb50/herdr-mcp](https://github.com/eugeneb50/herdr-mcp) | MCP server | Drive Herdr from any MCP-compatible AI client | `Rust` |
-| [hcaiano/skills](https://github.com/hcaiano/skills) | Agent skills | Personal skills for Claude, Codex, and peers in Herdr | `Python` |
-| [msadig/herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) | Agent skill | Spawn and orchestrate peer agents in adjacent panes | `Shell` |
-| [yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) | Claude Code plugin | Drive a Codex sub-agent from Claude Code through a Herdr pane with a JSON verdict | `Python` |
-| [noamsiegel/git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) | Worktree hook | Map git worktree lifecycle to Herdr tabs and workspaces | `Shell` |
-| [SecretAardvark/pi-overseer](https://github.com/SecretAardvark/pi-overseer) | Pi orchestrator | Run role-based Pi agents across Herdr workspaces and `jj` worktrees | `TypeScript` |
-| [nickmaglowsch/herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) | Session manager | Snapshot and restore layout + Claude Code session IDs | `Python` |
-| [justcyl/pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) | Pi extension | Sync Pi session names into Herdr tab labels | `TypeScript` |
-| [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | Keymaps | Native macOS shortcuts in Ghostty + Herdr | `TypeScript` |
-
-Work-in-progress entries below the bar are listed in [Work in Progress](#work-in-progress).
-
----
-
-## Find by Goal
-
-| If you want to... | Go to |
+| Project | What it gives you |
 |---|---|
-| Install the multiplexer | [Core](#core) |
-| Try the Masakiro Corp product fork | [Core](#core) |
-| Build socket-driven tools in Python | [Socket Clients & Libraries](#socket-clients--libraries) |
-| Surface a Cursor agent's state in Herdr | [Socket Clients & Libraries](#socket-clients--libraries) |
-| Control Herdr from Claude Desktop / Cursor via MCP | [MCP Servers](#mcp-servers) |
-| Teach an agent to use Herdr | [Agent Skills & Plugins](#agent-skills--plugins) |
-| Delegate work between peer agents in panes | [Agent Skills & Plugins](#agent-skills--plugins) |
-| Drive a Codex sub-agent from Claude Code via Herdr | [Agent Skills & Plugins](#agent-skills--plugins) |
-| Pair git worktrees with Herdr tabs | [Worktree & Workflow Orchestration](#worktree--workflow-orchestration) |
-| Orchestrate role-based Pi workers | [Worktree & Workflow Orchestration](#worktree--workflow-orchestration) |
-| Restore Claude conversations across reboots | [Session Persistence](#session-persistence) |
-| Sync Pi session names to tab labels | [Pi Integrations](#pi-integrations) |
-| Make Ghostty + Herdr feel macOS-native | [Terminal UX & Keymaps](#terminal-ux--keymaps) |
-| Read the upstream protocol docs | [Resources](#resources) |
-| Understand configuration and socket concepts | [Herdr Primitives](#herdr-primitives) |
-| Add a project | [Contributing](#contributing) |
+| [herdr](https://github.com/ogulcancelik/herdr) ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square) | The multiplexer itself |
+| [hako](https://github.com/masakirocorp/hako) ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square) | A standalone fork with its own namespace |
+| [claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) | Claude Code driving Codex in another pane |
+| [herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white&style=flat-square) | Agents that spawn and talk to peers |
+| [skills](https://github.com/hcaiano/skills) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) | Pairing Claude and Codex as peers |
+| [pi-overseer](https://github.com/SecretAardvark/pi-overseer) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square) | Role-based Pi agent fleets |
+| [herdr-python-client](https://github.com/54rt1n/herdr-python-client) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) | A Python client for the socket API |
+| [herdr-cursor](https://github.com/rbb/herdr-cursor) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square) | Cursor agent state shown in Herdr |
+| [herdr-mcp](https://github.com/eugeneb50/herdr-mcp) ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square) | Drive Herdr from any MCP client |
+| [herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) | Layout + Claude sessions across reboots |
+| [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white&style=flat-square) | Git worktrees mapped to tabs |
+| [pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square) | Pi session names on your tabs |
+| [native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square) | macOS-native keys in Ghostty + Herdr |
 
 ---
 
-## Categories
+## Core & forks
 
-### Core
+**[ogulcancelik/herdr](https://github.com/ogulcancelik/herdr)** ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square)
 
-The multiplexer and downstream forks.
+The multiplexer everything here builds on. It keeps your agents in persistent, mouse-native workspaces with tabs and panes, shows you at a glance which ones are working, idle, or blocked, and lets you walk away and reattach — locally or over SSH. The Unix socket API is what makes the rest of this list possible.
 
-- [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) - Agent multiplexer that lives in your terminal. Provides persistent sessions, workspaces, tabs, panes, mouse-native TUI behavior, local or remote attach, direct terminal attach, agent status detection, integrations, and a Unix socket API. `Rust`.
-- [masakirocorp/hako](https://github.com/masakirocorp/hako) - Product fork of Herdr by Masakiro Corp. Same primitives (workspaces, tabs, panes, sockets, named sessions, agent state sidebar) under the `hako` binary, `~/.config/hako/config.toml`, and `HAKO_ENV=1`. Supports Claude Code, Codex, Pi, Droid, Amp, OpenCode, Grok CLI, and Hermes. `Rust`.
+**[masakirocorp/hako](https://github.com/masakirocorp/hako)** ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square)
 
-### Socket Clients & Libraries
+A standalone fork of Herdr by Masakiro Corp, shipping as its own `hako` binary with a separate config and `HAKO_ENV` namespace so it can run alongside upstream. Useful if you want a product-branded build or to track a different release line.
 
-Direct consumers of Herdr's local Unix socket and CLI surface.
+---
 
-- [54rt1n/herdr-python-client](https://github.com/54rt1n/herdr-python-client) - Lightweight Python client for Herdr's Unix socket API. Handles socket discovery, request envelopes, response parsing, typed errors, subscriptions, pane reads, waits, input, and raw `request()` access. `Python`.
-- [rbb/herdr-cursor](https://github.com/rbb/herdr-cursor) - CLI shim that wraps the `@cursor/sdk` local runtime and reports Cursor agent lifecycle (`idle`/`working`/`blocked`) to Herdr via `pane.report_agent` and `pane.release_agent` socket calls. Reads `HERDR_ENV`, `HERDR_SOCKET_PATH`, and `HERDR_PANE_ID`; design-stage as of 2026-05. `TypeScript`.
+## Run & orchestrate agents
 
-### MCP Servers
+The headline use: more than one agent working at once, in panes you can watch.
 
-Expose Herdr to AI clients that speak the Model Context Protocol.
+**[yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin)** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
 
-- [eugeneb50/herdr-mcp](https://github.com/eugeneb50/herdr-mcp) - MCP server that wraps the `herdr` CLI and exposes 21 tools across discovery, lifecycle, read, write, and synchronize. Adds a recipe engine with `{{ stepId.result.path }}` interpolation, an optional HTTP bridge, and a React-based browser playground. `Rust`.
+Lets a Claude Code session hand a job to a Codex agent in an adjacent pane and get back a clean done / question / blocked answer each turn — no screen-scraping, no status polling. It can spawn the helper in a pane, a tab, a fresh workspace, or an isolated worktree, which makes it the easy way to get two agents collaborating in one place.
 
-### Agent Skills & Plugins
+**[msadig/herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill)** ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white&style=flat-square)
 
-Skill files, Claude Code plugins, and helpers that teach agents how to use Herdr from inside a pane.
+A skill that teaches Claude, Pi, or Codex to spawn a peer agent, prompt it, and read its output — so an agent can delegate the way you would. Includes a manual-split fallback for when agent detection races, so the workflow doesn't stall.
 
-- [hcaiano/skills](https://github.com/hcaiano/skills) - Personal agent skills for Claude, Codex, and other runtimes. Includes `herdr-pair`, a collaboration skill for pairing Claude and Codex as peer agents inside Herdr. `Python`.
-- [msadig/herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) - `SKILL.md` plus a shell wrapper that teaches Claude, Pi, and Codex how to spawn, prompt, and read peer agents via `herdr agent start/send/wait/read` and `herdr pane split/run/send-keys`. Includes a manual-split fallback when agent detection races. `Shell`.
-- [yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) - Claude Code plugin (install: `/plugin marketplace add yigitkonur/claude-code-herdr-plugin` then `/plugin install claude-code-herdr-plugin`) that drives a Codex sub-agent end-to-end through a Herdr pane, tab, or fresh workspace and returns one JSON verdict per turn — no screen-scraping, no status polling. Handles completion vs. question disambiguation, long-plan capture, spawn-mode selection, and optional `--worktree` isolation; vendors `herdr-python-client` and keys sessions by stable `terminal_id`. `Python`.
+**[hcaiano/skills](https://github.com/hcaiano/skills)** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
 
-### Worktree & Workflow Orchestration
+A personal collection of agent skills, including `herdr-pair` for running Claude and Codex as collaborating peers inside Herdr. A good starting point if you want to see how a real pairing workflow is wired up before writing your own.
 
-Bridges between external workflow tools (`git-wt`, `jj`, Pi roles) and Herdr's workspace/tab/pane layout.
+**[SecretAardvark/pi-overseer](https://github.com/SecretAardvark/pi-overseer)** ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
 
-- [noamsiegel/git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) - `git-wt.plugin.v0` adapter that maps worktree lifecycle events (`worktree-created`, `worktree-removed`, `focus`, `list`) to `herdr workspace create`, `herdr tab create/close/focus`, and pane lookup by `cwd`. Pure Bash with `yq`; no Node, Python, or compiled deps. `Shell`.
-- [SecretAardvark/pi-overseer](https://github.com/SecretAardvark/pi-overseer) - Pi extension that orchestrates role-differentiated worker agents (overseer, implementer, tester, reviewer, researcher) across Herdr workspaces and Jujutsu worktrees. Spawns workers with `herdr agent start --workspace ... --split right`, enforces per-role command allowlists, and persists task/agent state under `.pi/overseer/`. `TypeScript`.
+Turns a workspace into a small team: an overseer hands work to implementer, tester, reviewer, and researcher agents, each in its own pane and Jujutsu worktree. Per-role command allowlists keep workers in their lane, and task state is persisted so a run survives a restart. For anyone who wants structured, multi-agent execution rather than one chat at a time.
 
-### Session Persistence
+---
 
-Tools that survive Herdr restarts and reboots.
+## Connect over socket & MCP
 
-- [nickmaglowsch/herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) - Zsh wrapper plus Python script pair that snapshots workspace, tab, and pane layout (along with per-pane Claude Code `--session-id` values) on clean shutdown, then replays them via `claude --resume <session-id>` on next launch. Stores state under `~/.config/herdr/restore/`. `Python`.
+Wiring outside tools — Python code, editors, MCP clients — into Herdr.
 
-### Pi Integrations
+**[54rt1n/herdr-python-client](https://github.com/54rt1n/herdr-python-client)** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
 
-Pi-specific extensions and adapters.
+A lightweight Python client for Herdr's Unix socket, so you can script the multiplexer instead of pressing keys. It handles the tedious parts — socket discovery, request envelopes, typed errors, subscriptions, pane reads and waits — and still gives you raw `request()` access when you need it. The fastest way to build your own automation.
 
-- [justcyl/pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) - Pi extension that syncs the Pi session name to the active Herdr tab label on resume or agent start. Only activates inside Herdr-managed panes via `HERDR_ENV=1`. `TypeScript`.
-- See also: [SecretAardvark/pi-overseer](#worktree--workflow-orchestration) for multi-role Pi orchestration.
+**[rbb/herdr-cursor](https://github.com/rbb/herdr-cursor)** ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
 
-### Terminal UX & Keymaps
+A small shim around the Cursor SDK runtime that reports a Cursor agent's idle / working / blocked state back to Herdr, so a Cursor session shows up in your status sidebar like any native agent. Design-stage as of 2026-05.
 
-Terminal-side polish: Ghostty routing, native-feeling tab behavior, themes, modifier handling, and config patchers.
+**[eugeneb50/herdr-mcp](https://github.com/eugeneb50/herdr-mcp)** ![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square)
 
-- [yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) - Safe Ghostty + Herdr config patcher for macOS-native shortcut behavior, including `cmd+t`, `cmd+n`, `cmd+w`, `cmd+1..9`, `ctrl+tab`, and `ctrl+option+tab`. `TypeScript`.
+An MCP server that exposes Herdr to any MCP-speaking client — Claude Desktop, Cursor, and friends — as a set of tools for discovering, launching, reading, and writing panes. A recipe engine chains those calls into reusable flows, with an optional HTTP bridge and a browser playground for trying them out.
 
-### Work in Progress
+---
 
-Repositories that have been announced or scaffolded but not yet usable. Listed here so submitters know they exist, without endorsing them as ready.
+## Persist & restore sessions
 
-- [shippy/raycast-herdr](https://github.com/shippy/raycast-herdr) - Raycast private-store scaffold intended to add Herdr control commands to Raycast. As of 2026-05 the `extensions/` directory is empty; only the build-and-publish workflow is wired up. `YAML`.
+**[nickmaglowsch/herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore)** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
+
+Snapshots your whole layout — workspaces, tabs, panes — along with each pane's Claude Code session ID on clean shutdown, then replays it on next launch so your conversations resume exactly where they were. The answer to losing your agent setup to a reboot.
+
+---
+
+## Worktrees & terminal UX
+
+Bridging external tools to Herdr's layout, and making the terminal itself feel right.
+
+**[noamsiegel/git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr)** ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white&style=flat-square)
+
+Maps your git worktree lifecycle onto Herdr — creating a worktree spins up a matching workspace and tab, removing it tears them down, and focus follows you. Pure Bash with `yq`, no Node or Python, so it drops cleanly into an existing `git-wt` setup.
+
+**[justcyl/pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync)** ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
+
+Keeps your Herdr tab labels in sync with Pi session names, so you can tell what each tab is doing at a glance instead of decoding generic titles. Only activates inside Herdr-managed panes.
+
+**[yigitkonur/native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd)** ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
+
+A safe config patcher that makes Ghostty + Herdr respond to macOS-native shortcuts — `cmd+t`, `cmd+n`, `cmd+w`, `cmd+1..9`, and tab cycling — so the multiplexer feels like a native tabbed app instead of a prefix-key TUI.
+
+---
+
+## Work in progress
+
+Announced or scaffolded, but not yet usable — listed so submitters know they exist, without endorsing them as ready.
+
+**[shippy/raycast-herdr](https://github.com/shippy/raycast-herdr)** ![YAML](https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white&style=flat-square)
+
+A Raycast extension meant to add Herdr control commands to Raycast. As of 2026-05 only the build-and-publish workflow is wired up; the `extensions/` directory is still empty.
 
 ---
 
 ## Resources
 
-Official Herdr resources:
+Official Herdr docs:
 
 | Resource | Covers |
 |---|---|
-| [herdr.dev](https://herdr.dev/) | Install command, overview, comparison against tmux/gui managers, remote attach, supported agents, and socket examples |
-| [CONFIGURATION.md](https://github.com/ogulcancelik/herdr/blob/master/CONFIGURATION.md) | `~/.config/herdr/config.toml`, live reload, keybindings, indexed shortcuts, commands, themes, UI, notifications, sounds, scrollback, logs |
-| [SOCKET_API.md](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md) | Newline-delimited JSON socket protocol, request envelopes, events, workspace/tab/pane/agent methods, reads, waits, and input |
+| [herdr.dev](https://herdr.dev/) | Install, overview, comparison vs tmux/GUI managers, remote attach, supported agents, socket examples |
+| [CONFIGURATION.md](https://github.com/ogulcancelik/herdr/blob/master/CONFIGURATION.md) | Config file, live reload, keybindings, indexed shortcuts, commands, themes, UI, notifications, scrollback |
+| [SOCKET_API.md](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md) | The newline-delimited JSON protocol — envelopes, events, workspace/tab/pane/agent methods, reads, waits, input |
 | [INTEGRATIONS.md](https://github.com/ogulcancelik/herdr/blob/master/INTEGRATIONS.md) | Built-in integrations for Pi, Claude Code, Codex, and OpenCode |
-| [SKILL.md](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) | Reusable skill instructions for agents already running inside Herdr |
-| [Herdr Releases](https://github.com/ogulcancelik/herdr/releases) | Current release stream and compatibility changes |
+| [SKILL.md](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) | Skill instructions for agents already running inside Herdr |
+| [Releases](https://github.com/ogulcancelik/herdr/releases) | Current release stream and compatibility changes |
 
 Local guides in this repo:
 
 | Guide | Covers |
 |---|---|
-| [Configuration](./docs/configuration.md) | Config file location, reload model, keybindings, themes, UI, notifications, logs |
+| [Configuration](./docs/configuration.md) | Config location, reload model, keybindings, themes, UI, notifications, logs |
 | [Socket API](./docs/socket-api.md) | Protocol shape, method families, reads, waits, events, client-library checklist |
 | [Integrations](./docs/integrations.md) | Built-in integrations, hook paths, env vars, custom integration checklist |
 | [Agent Workflows](./docs/agent-workflows.md) | Worker panes, pair programming, watcher panes, waits, safety notes |
@@ -172,119 +162,27 @@ Local guides in this repo:
 
 ---
 
-## Herdr Primitives
+## Reference
 
-These are the Herdr concepts most ecosystem projects build on.
+**Primitives.** Nearly every project here builds on the same handful of ideas — `workspace.*`, `tab.*`, and `pane.*` for layout; `agent.*` for terminal-backed agents; and `events.subscribe` for watching status, output, and layout changes. Config lives in `~/.config/herdr/config.toml` (keys, indexed shortcuts, custom commands, UI, toasts, sounds), and integrations install with `herdr integration install <pi|claude|codex|opencode>`. The full surface — config areas, the raw socket methods, and the agent-workflow command families — is in [docs/](./docs) and the upstream [SOCKET_API.md](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md).
 
-### Configuration
+**Releases.** Herdr moves fast. The ecosystem-relevant recent additions are indexed keybind families (`[keys.indexed]`), terminal-backed agent socket methods, direct terminal attach, manual pane labels (`pane.rename`), and remote attach (`herdr --remote`). Always check the upstream [releases](https://github.com/ogulcancelik/herdr/releases) for the version your project depends on. *Last reviewed: 2026-05-25.*
 
-| Area | Why it matters |
-|---|---|
-| `[keys]` | Prefix mode, direct terminal-mode jumps, pane focus, tab/workspace navigation, resize, zoom, and custom command entrypoints |
-| `[keys.indexed]` | Number-key families for direct workspace, tab, or visible-agent jumps |
-| `[[keys.command]]` | Prefix-mode commands that launch detached shell helpers or temporary panes |
-| `[ui]` | Sidebar width, mouse capture, close confirmation, promptless tab names, agent labels, and panel scope |
-| `[ui.toast]` / `[ui.sound]` | Background notifications and per-agent sound policy |
-| `[experimental]` | Nested Herdr launches and local Kitty graphics rendering |
-| `[advanced]` | Per-pane retained scrollback size |
-
-### Socket API
-
-| Primitive | Use it for |
-|---|---|
-| `workspace.*` | Create, list, focus, rename, and close project contexts |
-| `tab.*` | Create, focus, rename, and close subcontexts inside a workspace |
-| `pane.*` | Split panes, read output, send input, report agent state, wait for output, and close panes |
-| `agent.*` | List, read, send to, rename, focus, and start terminal-backed agents |
-| `events.subscribe` | Build watchers for workspace, tab, pane, output, and agent-status changes |
-
-Direct terminal attachment is exposed through CLI commands such as `herdr agent attach <target>` and `herdr terminal attach <terminal_id>`. Check the upstream socket reference for the exact raw method surface before implementing a client.
-
-### Integrations
-
-Built-in install commands:
-
-```sh
-herdr integration install pi
-herdr integration install claude
-herdr integration install codex
-herdr integration install opencode
-```
-
-Important integration paths and variables:
-
-| Runtime | Herdr integration surface |
-|---|---|
-| Pi | `~/.pi/agent/extensions/herdr-agent-state.ts`, `$PI_CODING_AGENT_DIR` |
-| Claude Code | `~/.claude/hooks/herdr-agent-state.sh`, `$CLAUDE_CONFIG_DIR` |
-| Codex | `~/.codex/herdr-agent-state.sh`, `$CODEX_HOME` |
-| OpenCode | `~/.config/opencode/plugins/herdr-agent-state.js` |
-
-### Agent Workflows
-
-| Capability | Herdr command family |
-|---|---|
-| See what other panes and agents are doing | `workspace list`, `tab list`, `pane list`, `agent list` |
-| Start helper panes | `pane split`, `pane run`, `pane send-input` |
-| Watch logs or test output | `pane read`, `wait output` |
-| Wait for another agent | `wait agent-status --status done` |
-| Keep context separated | `workspace create`, `tab create` |
-
----
-
-## Release Notes
-
-Herdr is moving quickly. For ecosystem authors, the most important recent changes are:
-
-| Release | Ecosystem impact |
-|---|---|
-| `v0.5.10` | Indexed keybind families under `[keys.indexed]`, hook-owned custom status labels, terminal-backed agent socket methods, direct terminal attach, promptless tab creation, `keys.edit_scrollback`, and `keys.zoom` rename |
-| `v0.5.9` | Experimental Kitty graphics, system toast delivery, light theme variants, and `[experimental]` config migration |
-| `v0.5.8` | Manual pane labels, `pane.rename`, pane-border agent labels, and integration status checks |
-| `v0.5.7` | ANSI-formatted pane reads for CLI/socket feedback loops |
-| `v0.5.6` | `herdr --remote <ssh-target>` and no-focus defaults for created workspace/tab/pane wrappers |
-| `v0.5.3` | Named persistent sessions with separate sockets/runtime state and shared global config |
-
-Source: [Herdr releases](https://github.com/ogulcancelik/herdr/releases). Last reviewed: 2026-05-25.
-
----
-
-## Build Your Own
-
-Good Herdr ecosystem projects usually do one of these:
-
-| Project type | Start with | Example in this list |
-|---|---|---|
-| Shortcut/config pack | `CONFIGURATION.md`, `[keys]`, `[keys.indexed]`, Ghostty key routing | [native-shortcuts-herd](#terminal-ux--keymaps) |
-| Socket client library | `SOCKET_API.md`, socket discovery, request envelopes, subscriptions | [herdr-python-client](#socket-clients--libraries) |
-| Socket bridge for an editor/agent SDK | `pane.report_agent`, `pane.release_agent`, `HERDR_ENV` / `HERDR_PANE_ID` | [herdr-cursor](#socket-clients--libraries) |
-| MCP server | `herdr` CLI subcommands, MCP stdio + HTTP transports | [herdr-mcp](#mcp-servers) |
-| Agent skill | `SKILL.md`, `HERDR_ENV=1`, CLI wrappers, `pane read`, `wait output` | [herdr-peer-agents-skill](#agent-skills--plugins) |
-| Hook integration | `INTEGRATIONS.md`, `pane.report_agent`, semantic status labels | [git-wt-herdr](#worktree--workflow-orchestration) |
-| Workflow orchestrator | Workspaces/tabs/panes, `pane run`, `wait agent-status`, `events.subscribe` | [pi-overseer](#worktree--workflow-orchestration) |
-| Session manager | CLI snapshot of `workspace list` / `tab list` / `agent list`, per-agent resume IDs | [herdr-session-restore](#session-persistence) |
-
-Submission quality bar:
-
-1. Public repository with a working README.
-2. Uses Herdr directly or teaches/configures Herdr behavior.
-3. Explains install/setup clearly.
-4. States which Herdr version or feature family it relies on.
-5. Avoids claiming official status unless it lives in `ogulcancelik/herdr`.
+**Building your own.** Most projects start from one primitive: a shortcut/config pack from `[keys]`, a socket client from `SOCKET_API.md`, an editor bridge via `pane.report_agent`, an MCP server over the CLI, a skill via `SKILL.md`, a hook integration via `INTEGRATIONS.md`, or an orchestrator over `pane run` + `wait agent-status` + `events.subscribe`. Pick the closest example above and read its source.
 
 ---
 
 ## Contributing
 
-Pull requests are welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) and [docs/curation.md](./docs/curation.md) before adding a project.
+Pull requests welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) and [docs/curation.md](./docs/curation.md) first.
 
 Entry format:
 
 ```md
-- [owner/repo](https://github.com/owner/repo) - Neutral, specific description that explains the Herdr integration surface and who should use it. `Language`
+- [owner/repo](https://github.com/owner/repo) - Specific description of the Herdr integration surface and who should use it.
 ```
 
-Keep entries factual. Avoid hype words, affiliate links, generated filler, and unmaintained private repos. Scaffold-only repos belong in [Work in Progress](#work-in-progress), not the main index.
+The bar: a public repo with a working README, that uses or configures Herdr directly, explains its setup, and states which Herdr version or feature it relies on. Keep it factual — no hype words, affiliate links, generated filler, or unmaintained private repos. Don't claim official status unless it lives in `ogulcancelik/herdr`. Scaffold-only repos go in [Work in progress](#work-in-progress).
 
 ## Related
 

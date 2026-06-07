@@ -17,6 +17,7 @@ Everything below builds on those primitives — running fleets of agents side by
 
 | Group | Project | What it gives you |
 |---|---|---|
+| Orchestrate | ![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) [herdr/SKILL.md](#run--orchestrate-agents) | Official skill for agents inside Herdr |
 | Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](#run--orchestrate-agents) | Claude Code driving Codex in another pane |
 | Orchestrate | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](#run--orchestrate-agents) | Agents that spawn and talk to peers |
 | Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](#run--orchestrate-agents) | Pairing Claude and Codex as peers |
@@ -45,6 +46,10 @@ Everything below builds on those primitives — running fleets of agents side by
 ## Run & orchestrate agents
 
 The headline use: more than one agent working at once, in panes you can watch.
+
+![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) **[ogulcancelik/herdr · SKILL.md](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md)**
+
+The official, upstream skill file: drop-in instructions that teach an agent already running inside a Herdr pane to use the multiplexer — list workspaces, tabs, and panes, spawn helpers, send input, and wait on output and agent status. The canonical starting point before reaching for any of the third-party skills below.
 
 ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[yigitkonur/claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin)**
 

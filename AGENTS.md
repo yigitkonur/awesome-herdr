@@ -9,18 +9,18 @@ Add it in **two** places:
 **1. The `## At a glance` table** — one scannable row:
 
 ```md
-| [repo](https://github.com/owner/repo) ![Lang](badge) | ≤8-word hook |
+| ![Lang](badge) [repo](https://github.com/owner/repo) | ≤8-word hook |
 ```
 
 **2. A blurb under the right showcase section:**
 
 ```md
-**[owner/repo](https://github.com/owner/repo)** ![Lang](badge)
+![Lang](badge) **[owner/repo](https://github.com/owner/repo)**
 
 Two or three sentences on what it lets a Herdr user *do* and who it's for — not a feature list. No inline install commands (those live in the linked repo).
 ```
 
-Use the project's real GitHub link. Don't add a trailing `` `Language` `` — the badge carries the language.
+Lead with the language badge(s), then the link — icons aligned on the left scan faster. Use the project's real GitHub link, and when the bare repo name is generic (like `skills`), write the text as `owner/repo` so it stays unambiguous if someone adds a similarly-named project later. Don't add a trailing `` `Language` `` — the badge carries the language.
 
 ## Sections
 
@@ -37,19 +37,19 @@ Put a project where a *user* would look for it, not where the author would file 
 ## Language badges
 
 ```md
-![Rust](https://img.shields.io/badge/-DEA584?logo=rust&logoColor=black&style=flat-square)
-![Python](https://img.shields.io/badge/-3776AB?logo=python&logoColor=white&style=flat-square)
-![TypeScript](https://img.shields.io/badge/-3178C6?logo=typescript&logoColor=white&style=flat-square)
-![Go](https://img.shields.io/badge/-00ADD8?logo=go&logoColor=white&style=flat-square)
-![Lua](https://img.shields.io/badge/-2C2D72?logo=lua&logoColor=white&style=flat-square)
-![Swift](https://img.shields.io/badge/-FA7343?logo=swift&logoColor=white&style=flat-square)
-![C++](https://img.shields.io/badge/-00599C?logo=cplusplus&logoColor=white&style=flat-square)
-![Shell](https://img.shields.io/badge/-4EAA25?logo=gnubash&logoColor=white&style=flat-square)
-![Nix](https://img.shields.io/badge/-5277C3?logo=nixos&logoColor=white&style=flat-square)
-![YAML](https://img.shields.io/badge/-CB171E?logo=yaml&logoColor=white&style=flat-square)
+![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square)
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square)
+![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square)
+![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square)
+![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square)
+![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square)
+![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square)
+![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square)
+![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square)
+![YAML](https://img.shields.io/badge/-555555?logo=yaml&logoColor=white&style=flat-square)
 ```
 
-A repo with a Rust helper behind a plugin (e.g. a `.nvim`) can carry two badges. Pick the [Simple Icons](https://simpleicons.org) slug for any language not listed here.
+Every badge uses the same gray (`555555`) and a white icon — only the `logo` slug changes, so a row reads as one consistent monochrome strip. Keep it that way. A repo with a helper in another language (e.g. a Rust-backed `.nvim`) can carry two badges. Pick the [Simple Icons](https://simpleicons.org) slug for any language not listed here.
 
 ## The bar
 

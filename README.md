@@ -13,49 +13,32 @@ Everything below builds on those primitives — running fleets of agents side by
 
 ---
 
-## Contents
-
-- [At a glance](#at-a-glance)
-- [Run & orchestrate agents](#run--orchestrate-agents)
-- [Connect over socket & MCP](#connect-over-socket--mcp)
-- [Editor integrations](#editor-integrations)
-- [Sessions: switch & restore](#sessions-switch--restore)
-- [Worktrees, config & terminal UX](#worktrees-config--terminal-ux)
-- [Desktop apps & packaging](#desktop-apps--packaging)
-- [Work in progress](#work-in-progress)
-- [Resources](#resources)
-- [Reference](#reference)
-- [Contributing](#contributing)
-- [Related](#related)
-
----
-
 ## At a glance
 
 | Group | Project | What it gives you |
 |---|---|---|
-| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](https://github.com/yigitkonur/claude-code-herdr-plugin) | Claude Code driving Codex in another pane |
-| Orchestrate | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](https://github.com/msadig/herdr-peer-agents-skill) | Agents that spawn and talk to peers |
-| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](https://github.com/hcaiano/skills) | Pairing Claude and Codex as peers |
-| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-overseer](https://github.com/SecretAardvark/pi-overseer) | Role-based Pi agent fleets |
-| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-workflow-kit](https://github.com/Jackliu-miaozi/pi-herdr-workflow-kit) | Gated planner → coder → reviewer pipeline |
-| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [mcdonc-pi-herdr](https://github.com/mcdonc/mcdonc-pi-herdr) | Background Pi tasks into panes & tabs |
-| Connect | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-python-client](https://github.com/54rt1n/herdr-python-client) | A Python client for the socket API |
-| Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-mcp](https://github.com/eugeneb50/herdr-mcp) | Drive Herdr from any MCP client |
-| Connect | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-mesh](https://github.com/runchr-works/herdr-mesh) | MCP tools for agent-to-agent orchestration |
-| Editor | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [herdr.nvim](https://github.com/devxplay/herdr.nvim) | Neovim ↔ Herdr pane navigation |
-| Editor | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-cursor](https://github.com/rbb/herdr-cursor) | Cursor agent state shown in Herdr |
-| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](https://github.com/ridho9/switchr) | TUI session picker with pane tree |
-| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](https://github.com/j0urneyk/herdrctx) | TUI to attach, stop, manage sessions |
-| Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore) | Layout + Claude sessions across reboots |
-| Worktrees | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) | Git worktrees mapped to tabs |
-| Worktrees | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [superherd](https://github.com/SirTenzin/superherd) | Bridge Superset workspaces into Herdr |
-| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-tab-sync](https://github.com/justcyl/pi-herdr-tab-sync) | Pi session names on your tabs |
-| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [native-shortcuts-herd](https://github.com/yigitkonur/native-shortcuts-herd) | macOS-native keys in Ghostty + Herdr |
-| Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-dotfiles](https://github.com/Taeyoung96/herdr-dotfiles) | Drop-in config: prefix-free navigation |
-| Desktop | ![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) [herdr-menu-bar](https://github.com/hmu332233/herdr-menu-bar) | macOS menu-bar agent-status widget |
-| Desktop | ![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square) [deepin-herdr](https://github.com/re2zero/deepin-herdr) | Native Deepin Linux window for Herdr |
-| Packaging | ![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square) [herdr-nix](https://github.com/AodhanHayter/herdr-nix) | Nix flake, auto-updated, with binary cache |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [claude-code-herdr-plugin](#run--orchestrate-agents) | Claude Code driving Codex in another pane |
+| Orchestrate | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-peer-agents-skill](#run--orchestrate-agents) | Agents that spawn and talk to peers |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [hcaiano/skills](#run--orchestrate-agents) | Pairing Claude and Codex as peers |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-overseer](#run--orchestrate-agents) | Role-based Pi agent fleets |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-workflow-kit](#run--orchestrate-agents) | Gated planner → coder → reviewer pipeline |
+| Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [mcdonc-pi-herdr](#run--orchestrate-agents) | Background Pi tasks into panes & tabs |
+| Connect | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-python-client](#connect-over-socket--mcp) | A Python client for the socket API |
+| Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-mcp](#connect-over-socket--mcp) | Drive Herdr from any MCP client |
+| Connect | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-mesh](#connect-over-socket--mcp) | MCP tools for agent-to-agent orchestration |
+| Editor | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [herdr.nvim](#editor-integrations) | Neovim ↔ Herdr pane navigation |
+| Editor | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-cursor](#editor-integrations) | Cursor agent state shown in Herdr |
+| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](#sessions-switch--restore) | TUI session picker with pane tree |
+| Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](#sessions-switch--restore) | TUI to attach, stop, manage sessions |
+| Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](#sessions-switch--restore) | Layout + Claude sessions across reboots |
+| Worktrees | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [git-wt-herdr](#worktrees-config--terminal-ux) | Git worktrees mapped to tabs |
+| Worktrees | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [superherd](#worktrees-config--terminal-ux) | Bridge Superset workspaces into Herdr |
+| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-tab-sync](#worktrees-config--terminal-ux) | Pi session names on your tabs |
+| Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [native-shortcuts-herd](#worktrees-config--terminal-ux) | macOS-native keys in Ghostty + Herdr |
+| Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-dotfiles](#worktrees-config--terminal-ux) | Drop-in config: prefix-free navigation |
+| Desktop | ![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) [herdr-menu-bar](#desktop-apps--packaging) | macOS menu-bar agent-status widget |
+| Desktop | ![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square) [deepin-herdr](#desktop-apps--packaging) | Native Deepin Linux window for Herdr |
+| Packaging | ![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square) [herdr-nix](#desktop-apps--packaging) | Nix flake, auto-updated, with binary cache |
 
 ---
 
@@ -228,14 +211,3 @@ Local guides in this repo:
 **Releases.** Herdr moves fast — it's in the `v0.6.x` line as of mid-2026. The capabilities most projects here lean on are indexed keybind families (`[keys.indexed]`), terminal-backed agent socket methods, direct terminal attach, manual pane labels (`pane.rename`), and remote attach (`herdr --remote`). Always check the upstream [releases](https://github.com/ogulcancelik/herdr/releases) for the version your project depends on.
 
 **Building your own.** Most projects start from one primitive: a config/keymap pack from `[keys]`, a socket client from `SOCKET_API.md`, an editor bridge via `pane.report_agent`, an MCP server over the CLI, a skill via `SKILL.md`, a hook integration via `INTEGRATIONS.md`, or an orchestrator over `pane run` + `wait agent-status` + `events.subscribe`. Pick the closest example above and read its source.
-
----
-
-## Contributing
-
-Pull requests welcome. See [AGENTS.md](./AGENTS.md) for the entry format, sections, language badges, and the inclusion bar, and [CONTRIBUTING.md](./CONTRIBUTING.md) for the PR checklist. Scaffold-only or not-yet-usable repos go in [Work in progress](#work-in-progress).
-
-## Related
-
-- [awesome-cmux](https://github.com/yigitkonur/awesome-cmux) - Similar ecosystem index for cmux.
-- [awesome](https://github.com/sindresorhus/awesome) - The canonical awesome-list convention.

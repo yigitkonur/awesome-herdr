@@ -26,7 +26,6 @@ Use the project's real GitHub link. Don't add a trailing `` `Language` `` — th
 
 Put a project where a *user* would look for it, not where the author would file it:
 
-- **Core & forks** — Herdr itself and standalone forks.
 - **Run & orchestrate agents** — spawning, pairing, or coordinating multiple agents.
 - **Connect over socket & MCP** — socket clients and MCP servers.
 - **Editor integrations** — bringing Herdr into Neovim, Cursor, and other editors.
@@ -38,16 +37,16 @@ Put a project where a *user* would look for it, not where the author would file 
 ## Language badges
 
 ```md
-![Rust](https://img.shields.io/badge/-Rust-DEA584?logo=rust&logoColor=black&style=flat-square)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
-![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white&style=flat-square)
-![Lua](https://img.shields.io/badge/-Lua-2C2D72?logo=lua&logoColor=white&style=flat-square)
-![Swift](https://img.shields.io/badge/-Swift-FA7343?logo=swift&logoColor=white&style=flat-square)
-![C++](https://img.shields.io/badge/-C%2B%2B-00599C?logo=cplusplus&logoColor=white&style=flat-square)
-![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white&style=flat-square)
-![Nix](https://img.shields.io/badge/-Nix-5277C3?logo=nixos&logoColor=white&style=flat-square)
-![YAML](https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white&style=flat-square)
+![Rust](https://img.shields.io/badge/-DEA584?logo=rust&logoColor=black&style=flat-square)
+![Python](https://img.shields.io/badge/-3776AB?logo=python&logoColor=white&style=flat-square)
+![TypeScript](https://img.shields.io/badge/-3178C6?logo=typescript&logoColor=white&style=flat-square)
+![Go](https://img.shields.io/badge/-00ADD8?logo=go&logoColor=white&style=flat-square)
+![Lua](https://img.shields.io/badge/-2C2D72?logo=lua&logoColor=white&style=flat-square)
+![Swift](https://img.shields.io/badge/-FA7343?logo=swift&logoColor=white&style=flat-square)
+![C++](https://img.shields.io/badge/-00599C?logo=cplusplus&logoColor=white&style=flat-square)
+![Shell](https://img.shields.io/badge/-4EAA25?logo=gnubash&logoColor=white&style=flat-square)
+![Nix](https://img.shields.io/badge/-5277C3?logo=nixos&logoColor=white&style=flat-square)
+![YAML](https://img.shields.io/badge/-CB171E?logo=yaml&logoColor=white&style=flat-square)
 ```
 
 A repo with a Rust helper behind a plugin (e.g. a `.nvim`) can carry two badges. Pick the [Simple Icons](https://simpleicons.org) slug for any language not listed here.

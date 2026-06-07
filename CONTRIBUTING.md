@@ -1,61 +1,13 @@
 # Contributing
 
-Thanks for improving Awesome Herdr.
+Thanks for improving Awesome Herdr. This is a curated list — a good entry helps someone discover a high-quality Herdr tool, client, skill, integration, or workflow.
 
-This list is curated. A good entry should help someone discover a high-quality Herdr-related tool, config, skill, client, integration, or workflow.
+**Read [AGENTS.md](./AGENTS.md) first** — it has the entry format, the sections, the language badges, and the inclusion bar. Everything you need to add a project is there.
 
-## Before Opening a Pull Request
+## Pull request checklist
 
-Check that your entry is:
-
-1. Publicly accessible.
-2. Related to Herdr specifically.
-3. Documented enough for a new user to install or understand.
-4. Placed in the most useful section.
-5. Written in neutral, specific language.
-
-## Entry Format
-
-Use this format:
-
-```md
-- [owner/repo](https://github.com/owner/repo) - What it does, which Herdr surface it uses, and who should care. `Language`
-```
-
-Descriptions should be one sentence. Mention the integration surface when useful:
-
-- Herdr CLI
-- `HERDR_ENV`
-- `HERDR_SOCKET_PATH`
-- `config.toml`
-- `[keys]` / `[keys.indexed]`
-- socket methods such as `pane.read` or `events.subscribe`
-- agent hooks or skills
-
-## Quality Bar
-
-Prefer:
-
-- working tools
-- useful docs
-- clear install instructions
-- version compatibility notes
-- small focused integrations
-- projects that demonstrate a reusable pattern
-
-Avoid:
-
-- abandoned empty repos
-- private links
-- duplicate forks with no new value
-- generated filler descriptions
-- unsourced claims of official support
-
-## Pull Request Checklist
-
-- [ ] I read [docs/curation.md](./docs/curation.md).
-- [ ] The project is Herdr-specific.
-- [ ] The entry uses the standard format.
-- [ ] The description is factual and specific.
-- [ ] Links work.
-- [ ] New docs, if any, cite the official upstream source.
+- [ ] I read [AGENTS.md](./AGENTS.md).
+- [ ] The project is Herdr-specific and publicly accessible.
+- [ ] The entry uses the current format (badge + blurb) and is in the right section.
+- [ ] The description is factual and specific — no hype, no filler.
+- [ ] Links work and `npx markdownlint-cli2 "**/*.md"` passes.

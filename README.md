@@ -158,7 +158,6 @@ Local guides in this repo:
 | [Socket API](./docs/socket-api.md) | Protocol shape, method families, reads, waits, events, client-library checklist |
 | [Integrations](./docs/integrations.md) | Built-in integrations, hook paths, env vars, custom integration checklist |
 | [Agent Workflows](./docs/agent-workflows.md) | Worker panes, pair programming, watcher panes, waits, safety notes |
-| [Curation](./docs/curation.md) | Inclusion rules, entry format, category policy |
 
 ---
 
@@ -174,7 +173,7 @@ Local guides in this repo:
 
 ## Contributing
 
-Pull requests welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) and [docs/curation.md](./docs/curation.md) first.
+Pull requests welcome. Read [AGENTS.md](./AGENTS.md) for the entry format and rules, and [CONTRIBUTING.md](./CONTRIBUTING.md) for the PR checklist.
 
 Entry format:
 

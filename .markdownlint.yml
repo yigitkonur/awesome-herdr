@@ -1,4 +1,3 @@
-MD013: false
-MD033: false
-MD041: false
-MD060: false
+MD013: false  # line length — long entries and table rows are fine
+MD060: false  # table pipe-style — awesome-list tables vary
+MD041: false  # first-line heading — PR template starts with a section

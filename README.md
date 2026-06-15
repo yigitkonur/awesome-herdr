@@ -43,6 +43,17 @@ Everything below builds on those primitives — running fleets of agents side by
 | Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [ogulcancelik/pi-extensions](#run--orchestrate-agents) | Pi extensions suite with Herdr pane orchestration |
 | Orchestrate | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [aldrickdev/herdr_subagents](#run--orchestrate-agents) | Pi subagents in a shared visible Herdr pane |
 | Connect | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-codex-usage-kit](#connect-over-socket--mcp) | Codex quota live in your Herdr sidebar |
+| Connect | ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) [ogulcancelik/herdr-plugin-examples](#connect-over-socket--mcp) | Official plugin examples from Herdr's creator |
+| Connect | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [gaijinjoe/herdres](#connect-over-socket--mcp) | Herdr pane output piped to Telegram |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [LittleDrinks/herdr-orchestrator-skill](#run--orchestrate-agents) | Coordinator-only orchestration skill for multi-agent Herdr |
+| Orchestrate | ![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) [luweiCN/herdr-ops](#run--orchestrate-agents) | Natural language workspace and worktree ops |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [sarmientoF/herdr-pr-loop](#run--orchestrate-agents) | Multi-agent PR loop with durable state |
+| Orchestrate | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [david-lutz/herdr-claude-teams](#run--orchestrate-agents) | Claude agent-teams as native Herdr panes |
+| Worktrees | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [mattarau/wt-herdr](#worktrees-config--terminal-ux) | Worktrunk worktrees synced to Herdr workspaces |
+| Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [liu-qingyuan/herdr-tmux-local-config](#worktrees-config--terminal-ux) | Herdr + Codex + Oh My Tmux config |
+| Desktop | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [re2zero/zenix](#desktop-apps--packaging) | GPUI desktop app with system metrics sidebar |
+| Desktop | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [kcosr/herdr-web](#desktop-apps--packaging) | Browser-based Herdr viewer for any device |
+| Packaging | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [lachieh/vfox-herdr](#desktop-apps--packaging) | mise/vfox plugin with SHA256 verification |
 
 ---
 
@@ -86,6 +97,22 @@ A maintained suite of Pi coding-agent extensions from Herdr's creator, spanning 
 
 A Pi extension that delegates work to visible subagents in a shared Herdr tab named `subagents`, so you can watch each delegated task directly instead of waiting for a result. Parent Pi sessions get tools to spawn named child agents, steer them mid-run, and read their output when they go idle. Requires `herdr integration install pi` and Pi running inside a Herdr-managed pane.
 
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[LittleDrinks/herdr-orchestrator-skill](https://github.com/LittleDrinks/herdr-orchestrator-skill)**
+
+Turns the main Claude Code session into a coordinator that plans, dispatches workers to Herdr panes, and monitors their output — without writing code itself. Includes Python monitoring helpers, a YAML state-machine template, and prompt files for implementation, verification, and review roles. For teams who want enforced plan-then-execute discipline in Herdr without building their own multi-agent harness.
+
+![Markdown](https://img.shields.io/badge/-555555?logo=markdown&logoColor=white&style=flat-square) **[luweiCN/herdr-ops](https://github.com/luweiCN/herdr-ops)**
+
+Adds natural-language workspace control on top of Herdr's official skill: say "open a worktree for feat-login off main" and the agent translates it into the right herdr CLI commands, including worktree operations the upstream skill omits. Uses progressive disclosure — a lean primary document plus referenced detail files — to stay light on context. For developers who find the raw Herdr CLI syntax tedious to compose in conversation.
+
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[sarmientoF/herdr-pr-loop](https://github.com/sarmientoF/herdr-pr-loop)**
+
+Spawns tester, coder, and reviewer agents in dedicated Herdr tabs and orchestrates them through local task cycles and GitHub PR reviews, storing all state in files rather than session context so runs survive restarts. A human-approval gate and run log keep the loop auditable; a budget cap and pause file let you stop it mid-cycle. For developers who want automated PR review cycles that stay observable and interruptible.
+
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[david-lutz/herdr-claude-teams](https://github.com/david-lutz/herdr-claude-teams)**
+
+Shims Claude Code's experimental agent-teams feature onto Herdr so teammates spawn as native Herdr panes rather than tmux panes, using a translation layer between tmux commands and the Herdr socket API. Requires Herdr 0.6.10 and integrates with the sidebar, metadata, and notification surfaces natively. For Claude Code users who want visible team-mode panes without tmux inside a Herdr workspace.
+
 ---
 
 ## Connect over socket & MCP
@@ -107,6 +134,14 @@ Another MCP server, this one tuned for agents coordinating agents: it hands any 
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[jerryfane/herdr-codex-usage-kit](https://github.com/jerryfane/herdr-codex-usage-kit)**
 
 Publishes Codex subscription quota — remaining 5-hour and weekly usage — into the Herdr agents sidebar as compact labels refreshed every 30 seconds, and opens a live usage dashboard in any shell pane. It reads Codex's own JSONL session logs without calling an API or consuming tokens, and installs as a systemd service plus two terminal commands. For Codex users running on Linux who want quota awareness without leaving the Herdr workspace.
+
+![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) **[ogulcancelik/herdr-plugin-examples](https://github.com/ogulcancelik/herdr-plugin-examples)**
+
+Official reference plugins from Herdr's creator demonstrating four patterns: Telegram notification, development layout, GitHub link preview, and Rust release tracking — each a standalone `herdr-plugin.toml` package. They are provided as-is for adaptation rather than direct dependency. The canonical starting point for developers building their own Herdr plugins before reaching for the full API docs.
+
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[gaijinjoe/herdres](https://github.com/gaijinjoe/herdres)**
+
+Maps each live Herdr pane to a Telegram forum topic so your AI agent activity streams into a chat thread readable on any device. Accepts bot commands to relay input back into panes and consumes structured turn data from Herdr when available. For developers who want ambient monitoring of their Herdr sessions through Telegram without keeping a terminal window visible.
 
 ---
 
@@ -166,6 +201,14 @@ Patches Ghostty and Herdr together so `cmd+t`, `cmd+n`, `cmd+w`, `cmd+1..9`, and
 
 A drop-in Herdr `config.toml` built around prefix-free navigation: pane movement is mapped to bare `Shift+Alt+arrow` chords, the tmux-style prefix moves to `ctrl+space`, and it ships with the Catppuccin theme and a global agent panel. A one-command `install.sh` symlinks it in and backs up whatever was there — a clean, documented starting point for anyone who finds the default prefix-heavy bindings slow.
 
+![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[mattarau/wt-herdr](https://github.com/mattarau/wt-herdr)**
+
+Keeps Worktrunk-managed git worktrees and Herdr workspaces in sync: a workspace opens when a worktree is created, closes when it is removed, and focus follows when you switch. Ships health checks, dry-run mode, and toast notifications for lifecycle events. For teams running Worktrunk and Herdr side-by-side who want their workspace layout to mirror their worktree state without manual management.
+
+![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[liu-qingyuan/herdr-tmux-local-config](https://github.com/liu-qingyuan/herdr-tmux-local-config)**
+
+A workstation dotfile stack that integrates Herdr, Codex hook scripts, and Oh My Tmux into a single shell setup — Codex hook scripts report agent state to Herdr's sidebar, and Oh My Tmux adds theming alongside. Ships installation scripts and documented merge steps for each component. For Codex users who want a pre-integrated Herdr config without assembling the pieces themselves.
+
 ---
 
 ## Desktop apps & packaging
@@ -183,6 +226,18 @@ A native Deepin Linux / UOS app (Qt + the DTK toolkit) that launches Herdr insid
 ![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square) **[AodhanHayter/herdr-nix](https://github.com/AodhanHayter/herdr-nix)**
 
 A Nix flake that packages the Herdr CLI for macOS and Linux (Intel and ARM), so you can `nix run` it or wire it into a NixOS overlay or Home Manager config instead of reaching for Homebrew. An hourly GitHub Action watches upstream releases and bumps the version, hashes, and a public Cachix binary cache automatically — so the flake tracks Herdr with no manual upkeep. The canonical path for anyone on a declarative Nix setup.
+
+![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[re2zero/zenix](https://github.com/re2zero/zenix)**
+
+A GPUI-native desktop app that wraps Herdr workspace, tab, and pane management with a live system-metrics sidebar (CPU, memory, network, disk), four built-in themes (Gruvbox, Solarized, Tokyo Night, Matrix), and CJK input support. Bundles the Herdr binary with PATH isolation to prevent version conflicts inside spawned sessions. For developers who want a richer desktop UI around Herdr than the bare terminal client, built on the same GPUI framework as Zed.
+
+![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) **[kcosr/herdr-web](https://github.com/kcosr/herdr-web)**
+
+A React + Vite web UI for monitoring and controlling Herdr agents from any browser — desktop or mobile — over Herdr's socket API. Streams live pane state with terminal attachment, event subscriptions, and cross-client synchronization; a work-in-progress prototype with functional terminal attachment. For developers who want browser-based Herdr access without a native terminal, or a starting point for building their own remote client.
+
+![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) **[lachieh/vfox-herdr](https://github.com/lachieh/vfox-herdr)**
+
+A mise/vfox plugin for installing Herdr that verifies every download against GitHub's published SHA256 digest, supports preview builds via `herdr@preview`, and generates shell completions for bash, zsh, and fish that include live session data. Solves two gaps in Herdr's own self-updater: preview-channel access and completion scripts with dynamic data. For developers on declarative package setups who want versioned, verified Herdr installs outside Homebrew.
 
 ---
 

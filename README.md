@@ -28,7 +28,6 @@ Everything below builds on those primitives — running fleets of agents side by
 | Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-mcp](#connect-over-socket--mcp) | Drive Herdr from any MCP client |
 | Connect | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-mesh](#connect-over-socket--mcp) | MCP tools for agent-to-agent orchestration |
 | Editor | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [herdr.nvim](#editor-integrations) | Neovim ↔ Herdr pane navigation |
-| Editor | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-cursor](#editor-integrations) | Cursor agent state shown in Herdr |
 | Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](#sessions-switch--restore) | TUI session picker with pane tree |
 | Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](#sessions-switch--restore) | TUI to attach, stop, manage sessions |
 | Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](#sessions-switch--restore) | Layout + Claude sessions across reboots |
@@ -335,10 +334,6 @@ Bringing Herdr into the editor you already live in.
 
 Unifies pane navigation between Neovim and Herdr: the same `Ctrl+h/j/k/l` that moves between Vim splits flows straight into the adjacent Herdr pane when you hit an edge, and back again. A small Rust helper talks to the socket for focus, splits, and layout, and it coexists with vim-tmux-navigator — Neovim detects whether it's inside Herdr or tmux and routes accordingly. For Neovim users who want one set of muscle memory across editor and multiplexer.
 
-![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) **[rbb/herdr-cursor](https://github.com/rbb/herdr-cursor)**
-
-A planned shim around the Cursor SDK runtime that would report a Cursor agent's idle / working / blocked state back to Herdr, so a Cursor session shows up in your status sidebar like any native agent. Design-stage as of 2026-05 — the repo is a detailed spec with no code written yet, but the integration it sketches is a clean one to watch.
-
 ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) **[MomePP/herd.nvim](https://github.com/MomePP/herd.nvim)**
 
 Makes Neovim the top-level UI for Herdr coding agents: spawn an agent into a fullscreen floating terminal, toggle it with one key, and push the current visual selection straight to the active agent without submitting. Herdr stays the backend process owner, so its status hooks and grouped dashboard keep working. For Neovim-first developers who want editor-native agent UX without giving up Herdr's orchestration layer.
@@ -594,6 +589,10 @@ A cyberpunk pixel-art macOS app (built on Electrobun) where each running agent i
 ## Work in progress
 
 Announced or scaffolded, but not yet usable — listed so submitters know they exist, without endorsing them as ready.
+
+![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) **[rbb/herdr-cursor](https://github.com/rbb/herdr-cursor)**
+
+A planned shim around the Cursor SDK runtime that would report a Cursor agent's idle / working / blocked state back to Herdr, so a Cursor session shows up in your status sidebar like any native agent. Design-stage as of 2026-05 — the repo is a detailed spec with no code written yet, but the integration it sketches is a clean one to watch.
 
 ![YAML](https://img.shields.io/badge/-555555?logo=yaml&logoColor=white&style=flat-square) **[shippy/raycast-herdr](https://github.com/shippy/raycast-herdr)**
 

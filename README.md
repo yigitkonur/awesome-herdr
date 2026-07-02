@@ -76,6 +76,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-simple-mcp](#connect-over-socket--mcp) | Stateless MCP server, 75 tools, role profiles |
 | Connect | ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) [mimo-code-herdr-plugin](#connect-over-socket--mcp) | MiMo Code agent state in the sidebar |
 | Connect | ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) [herdr-ntfy-notify](#connect-over-socket--mcp) | ntfy push alerts with pane location |
+| Connect | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdr-ntfysh](#connect-over-socket--mcp) | ntfy push on done or blocked, zero deps |
 | Connect | ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) [tinysend-herdr](#connect-over-socket--mcp) | Email alerts you reply to unblock |
 | Connect | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [dcolinmorgan/herdr-push](#connect-over-socket--mcp) | Zero-dep event push to herdr-remote |
 | Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-focus-notify](#connect-over-socket--mcp) | Clickable macOS toast jumps to pane |
@@ -344,6 +345,10 @@ A user-level MiMo Code plugin that reports idle / working / blocked / done state
 ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) **[zom-2018/herdr-ntfy-notify](https://github.com/zom-2018/herdr-ntfy-notify)**
 
 A plugin that pushes a structured notification to any ntfy topic when an agent blocks or finishes, so alerts reach your phone, tablet, or desktop regardless of which machine is running the agents. Each message carries the workspace, tab, and pane ID so you know exactly where to return, and a local ntfy server is auto-detected for near-instant delivery before falling back over the network. For developers who want cross-device agent alerts through the open ntfy ecosystem.
+
+![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) **[cobanov/herdr-ntfysh](https://github.com/cobanov/herdr-ntfysh)**
+
+A single Go binary that pushes an ntfy notification the moment a herdr agent finishes a turn or blocks for input, tagging each alert with the workspace and pane so you know where to return. It reads herdr's completion signal from both the explicit `done` status and a `working → idle` transition, and debounces repeats per pane so a flapping agent can't spam you; auth covers Bearer tokens, Basic credentials, and self-hosted TLS with a custom CA. For developers running agents across several workspaces who want their phone to ping only when a session actually needs them, with no runtime dependencies to install.
 
 ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) **[tiny-send/tinysend-herdr](https://github.com/tiny-send/tinysend-herdr)**
 

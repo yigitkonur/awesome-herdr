@@ -106,6 +106,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-flist](#worktrees-config--terminal-ux) | Directory sidebar that follows focus |
 | Terminal UX | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdr-fzf-url](#worktrees-config--terminal-ux) | Scan panes for URLs, pick with fzf |
 | Terminal UX | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-pluck](#worktrees-config--terminal-ux) | Keyboard-hint copy for any pane token |
+| Terminal UX | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-leap](#worktrees-config--terminal-ux) | EasyMotion jump + copy any screen region |
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-lazygit-overlay](#worktrees-config--terminal-ux) | lazygit as a focus-restoring overlay |
 | Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-plugin-hunk](#worktrees-config--terminal-ux) | Open Hunk diffs in splits or tabs |
 | Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-plugin-tiles](#worktrees-config--terminal-ux) | Six split-ratio layout presets |
@@ -554,6 +555,10 @@ Iterates every Herdr pane, captures visible content, extracts URLs by regex, ded
 ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[rmarganti/herdr-pluck](https://github.com/rmarganti/herdr-pluck)**
 
 Mirrors tmux-fingers in Herdr: the bound key overlays one- and two-letter hints on every copyable token in the focused pane — URLs, paths, commit SHAs, UUIDs, IPs, Kubernetes refs, hex literals — and typing a hint copies that token to the clipboard, no mouse. A complement to herdr-fzf-url's URL-only scope. For anyone who copies long identifiers out of terminal output dozens of times a day.
+
+![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[RooseveltAdvisors/herdr-leap](https://github.com/RooseveltAdvisors/herdr-leap)**
+
+EasyMotion/leap-style motion for Herdr: press the key, type a character, and one- and two-letter hints land on every occurrence of it in the focused pane — jump to one, then pick a second to copy the arbitrary region between them. Where token pickers (herdr-pluck, herdr-fzf-url) only hit detected URLs/paths/SHAs, herdr-leap targets any character and any span, so you can grab prose, log lines, or a half-word. For anyone who wants tmux-jump and extrakto-style reach from the keyboard, not just token copy.
 
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[beomjungil/herdr-lazygit-overlay](https://github.com/beomjungil/herdr-lazygit-overlay)**
 

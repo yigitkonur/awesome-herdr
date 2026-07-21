@@ -143,6 +143,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [ppggff/herdr-plugin](#worktrees-config--terminal-ux) | Keep macOS input source per pane |
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [astkaasa/herdr-tokscale-dashboard](#worktrees-config--terminal-ux) | Tokscale cost dashboard as a pane |
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [aiki-sh/aiki-integration-herdr](#worktrees-config--terminal-ux) | Live aiki epic list in a pane |
+| Terminal UX | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [TaylorFinklea/herdr-ask](#worktrees-config--terminal-ux) | Generate shell commands; insert without executing |
 | Desktop | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [AltanS/collie](#desktop-apps--packaging) | Reply to agents from your phone |
 
 ---
@@ -626,6 +627,10 @@ Wires the Tokscale token/cost dashboard into Herdr as a split pane and a JSON-em
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[aiki-sh/aiki-integration-herdr](https://github.com/aiki-sh/aiki-integration-herdr)**
 
 Opens a live-refreshing sidebar pane listing your in-flight aiki epics inside Herdr, and its install step bootstraps the companion aiki session-identity hook. For teams already using the aiki task tracker who want epic status visible alongside their agent panes.
+
+![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[TaylorFinklea/herdr-ask](https://github.com/TaylorFinklea/herdr-ask)**
+
+Binds a popup to any Herdr key where you describe what you want in plain English and get back only the shell command, then review it and insert it into the originating pane with `Ctrl+Enter` — it never runs the command and never appends Enter. Backends are yours to pick: local Ollama or any OpenAI-compatible server with no account, the OpenAI and Anthropic APIs with keys in the OS keychain, or your existing Codex CLI, Claude Code, and Pi logins through ephemeral headless invocations. Conversations stay in memory, and a separate Chat mode answers terminal questions without inserting anything.
 
 ---
 

@@ -80,6 +80,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Connect | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [dcolinmorgan/herdr-push](#connect-over-socket--mcp) | Zero-dep event push to herdr-remote |
 | Connect | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-focus-notify](#connect-over-socket--mcp) | Clickable macOS toast jumps to pane |
 | Connect | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [herdr-terminal-notifier](#connect-over-socket--mcp) | Branded macOS notifications, click-to-jump |
+| Connect | ![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) [herdr-prompt-reply](#connect-over-socket--mcp) | Answer permission prompts from the notification |
 | Connect | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [herdr-hex-browser-voice-command](#connect-over-socket--mcp) | Voice transcripts routed to the right pane |
 | Editor | ![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square) [MomePP/herd.nvim](#editor-integrations) | Neovim as host for Herdr agents |
 | Editor | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [vim-herdr-navigation](#editor-integrations) | vim-tmux-navigator ported to Herdr |
@@ -356,6 +357,10 @@ A plugin that fires a clickable macOS notification when an agent goes blocked or
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[dot/herdr-terminal-notifier](https://github.com/dot/herdr-terminal-notifier)**
 
 A plugin that ships its own branded `HerdrNotify.app` so agent alerts carry the Herdr logo in macOS Notification Center — not a generic terminal icon — with templated messages and a click action that jumps to the blocked or finished pane. The bundled app re-registers with Launch Services on a six-hour TTL, recovering the icon automatically after reboots or OS updates without a cron job. For macOS users who want polished, on-brand desktop notifications from their agent fleet.
+
+![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square) **[cedrus-8864/herdr-prompt-reply](https://github.com/cedrus-8864/herdr-prompt-reply)**
+
+A plugin that posts a blocked agent's permission prompt as a macOS notification carrying its options as real buttons, so clicking *Yes* types that answer into the pane and the agent moves on without you returning to the terminal. It re-checks that the pane is still blocked before answering — answering in the terminal first never double-submits — and withdraws the notification as stale once you focus the pane yourself. For macOS users who want the alert to unblock the agent rather than only tell them which pane to walk back to.
 
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[dcolinmorgan/herdr-push](https://github.com/dcolinmorgan/herdr-push)**
 

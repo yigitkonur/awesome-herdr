@@ -144,6 +144,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [astkaasa/herdr-tokscale-dashboard](#worktrees-config--terminal-ux) | Tokscale cost dashboard as a pane |
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [aiki-sh/aiki-integration-herdr](#worktrees-config--terminal-ux) | Live aiki epic list in a pane |
 | Desktop | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [AltanS/collie](#desktop-apps--packaging) | Reply to agents from your phone |
+| Orchestrate | ![PowerShell](https://img.shields.io/badge/-555555?logo=powershell&logoColor=white&style=flat-square) [richardadonnell/herdr-claude-manager](#run--orchestrate-agents) | Windows PowerShell menu for N Claude panes |
 
 ---
 
@@ -294,6 +295,10 @@ Provisions an isolated worktree per branch or GitHub issue — its own ports, `.
 ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) **[noor-latif/herd](https://github.com/noor-latif/herd)**
 
 Two companion scripts that spin up a project-scoped Herdr workspace with an N-agent grid (default 2×2, one Pi agent per pane) keyed to the current directory, and relaunch any dead agents when you return. For anyone who wants a repeatable one-command "start a grid of agents for this repo" setup.
+
+![PowerShell](https://img.shields.io/badge/-555555?logo=powershell&logoColor=white&style=flat-square) **[richardadonnell/herdr-claude-manager](https://github.com/richardadonnell/herdr-claude-manager)**
+
+A PowerShell path into Herdr for Windows: name a workspace, say how many Claude Code panes you want, and it tiles any N, labels each pane `<name>-<n>`, launches `claude -n <name>-<n>` in every one, then lists, resumes, or kills those workspaces from the same menu. Each added pane splits the largest existing one, so a count that does not divide into a clean grid still comes out roughly even and there is no layout file to author. `-List` and `-New` skip the menu when a script drives it, and `-SelfTest` asserts the tiler against a live server.
 
 ---
 

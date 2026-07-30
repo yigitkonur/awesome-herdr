@@ -103,6 +103,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Terminal UX | ![JavaScript](https://img.shields.io/badge/-555555?logo=javascript&logoColor=white&style=flat-square) [herdr-launcher](#worktrees-config--terminal-ux) | Multi-field forms that run a command |
 | Terminal UX | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [JanTvrdik/herdr-command-palette](#worktrees-config--terminal-ux) | fzf palette over all plugin actions |
 | Terminal UX | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-file-viewer](#worktrees-config--terminal-ux) | Git-aware file viewer with diffs |
+| Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdr-extensions](#worktrees-config--terminal-ux) | Editor with LSP diagnostics, plus IDE panels |
 | Terminal UX | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-flist](#worktrees-config--terminal-ux) | Directory sidebar that follows focus |
 | Terminal UX | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdr-fzf-url](#worktrees-config--terminal-ux) | Scan panes for URLs, pick with fzf |
 | Terminal UX | ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) [herdr-pluck](#worktrees-config--terminal-ux) | Keyboard-hint copy for any pane token |
@@ -542,6 +543,10 @@ Opens an `fzf` overlay listing every action exposed by every installed plugin, s
 ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[smarzban/herdr-file-viewer](https://github.com/smarzban/herdr-file-viewer)**
 
 A read-only TUI that lives in a Herdr split: the left pane is a git-status directory tree (M/A/D/? markers, changed-files filter, merge-base or HEAD baseline) and the right pane renders diffs, Markdown, or syntax-highlighted code chosen automatically by file state. In-pane fuzzy search, per-file search, a worktree switcher, and zoom ship out of the box, delegating to `delta`/`bat`/`glow` when present and degrading gracefully when not. For developers who want to review an agent's working tree without switching context.
+
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) **[vonzelle-vzt/herdr-extensions](https://github.com/vonzelle-vzt/herdr-extensions)**
+
+One command installs an editor and thirteen panels into Herdr and keybinds them, checking every binding against Herdr's own so none are silently overridden. The editor it installs runs a real language server, so diagnostics, autocomplete, go-to-definition, rename and find-references work on the code an agent is changing rather than only after a build. The panels cover the rest of the loop: typecheck and lint output, tests, a debug-config launcher, ripgrep search, a screenshot of the running app, and a review pane that takes line comments on the agent's diff and sends them back to it. Uninstall restores `config.toml` byte-for-byte. For developers who want the parts of an IDE that make a codebase navigable while the agent works, without leaving the terminal or a dropped SSH session.
 
 ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[devskale/herdr-flist](https://github.com/devskale/herdr-flist)**
 

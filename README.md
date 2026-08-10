@@ -31,6 +31,7 @@ Everything below builds on those primitives — running fleets of agents side by
 | Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [switchr](#sessions-switch--restore) | TUI session picker with pane tree |
 | Sessions | ![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square) [herdrctx](#sessions-switch--restore) | TUI to attach, stop, manage sessions |
 | Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-session-restore](#sessions-switch--restore) | Layout + Claude sessions across reboots |
+| Sessions | ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) [herdr-fork-from-message](#sessions-switch--restore) | Fork Codex/Claude from an earlier message |
 | Worktrees | ![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square) [git-wt-herdr](#worktrees-config--terminal-ux) | Git worktrees mapped to tabs |
 | Worktrees | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [superherd](#worktrees-config--terminal-ux) | Bridge Superset workspaces into Herdr |
 | Terminal UX | ![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square) [pi-herdr-tab-sync](#worktrees-config--terminal-ux) | Pi session names on your tabs |
@@ -436,6 +437,10 @@ A keyboard-driven TUI for the housekeeping side of sessions — attach, stop, de
 ![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[nickmaglowsch/herdr-session-restore](https://github.com/nickmaglowsch/herdr-session-restore)**
 
 Tags every Claude Code pane with a session ID, then snapshots your workspace / tab / cwd layout on a clean `herdr server stop` and replays it on the next cold boot — `claude --resume` and all — so your conversations come back where you left them. Claude-only and clean-shutdown-only by design, it's the answer to losing your agent setup to a reboot.
+
+![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square) **[dmangla3/herdr-fork-from-message](https://github.com/dmangla3/herdr-fork-from-message)**
+
+Forks the focused Codex or Claude Code conversation from an earlier user message into a new tab, split pane, or workspace while leaving the source conversation untouched. It starts the agent's native fork from Herdr's reported session ID, opens the native message picker, and removes only an incomplete destination when launch fails. For users who want to branch a conversation without editing agent transcript files.
 
 ![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square) **[thanhdat77/herdr-picker-plus](https://github.com/thanhdat77/herdr-picker-plus)**
 

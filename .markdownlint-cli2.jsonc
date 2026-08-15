@@ -1,0 +1,12 @@
+{
+  "config": {
+    "MD013": false,
+    "MD060": false,
+    "MD041": false
+  },
+  "ignores": [
+    "scratch/**",
+    ".tmp/**",
+    "node_modules/**"
+  ]
+}

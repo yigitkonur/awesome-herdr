@@ -1094,7 +1094,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 6. Apps, companion integrations, and installation
 
-*75 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
+*76 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
 
 ### Native desktop and mobile apps
 

@@ -43,12 +43,12 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ## Contents
 
-1. [Run and orchestrate agents (157)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (156)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
    - [Multi-agent fleets and supervisors (20)](#multi-agent-fleets-and-supervisors)
    - [Claude Code multi-agent teams (18)](#claude-code-multi-agent-teams)
    - [Pi supervisor workflows and extensions (13)](#pi-supervisor-workflows-and-extensions)
-   - [Subagent launchers and delegation (40)](#subagent-launchers-and-delegation)
+   - [Subagent launchers and delegation (39)](#subagent-launchers-and-delegation)
    - [Autonomous coding and pull-request loops (10)](#autonomous-coding-and-pull-request-loops)
    - [Task queues, backlogs, and event triggers (6)](#task-queues-backlogs-and-event-triggers)
    - [General workflows and skill packs (49)](#general-workflows-and-skill-packs)
@@ -60,18 +60,18 @@ Most people do not need a large plugin stack. Begin with the official agent skil
    - [Telemetry, events, and quota streaming (7)](#telemetry-events-and-quota-streaming)
    - [Voice, hardware, and remote bridges (1)](#voice-hardware-and-remote-bridges)
    - [Protocol and third-party bridges (11)](#protocol-and-third-party-bridges)
-3. [Editor integrations (60)](#3-editor-integrations)
-   - [Neovim navigation and splits (32)](#neovim-navigation-and-splits)
+3. [Editor integrations (55)](#3-editor-integrations)
+   - [Neovim navigation and splits (30)](#neovim-navigation-and-splits)
    - [Full Neovim-hosted workspaces (1)](#full-neovim-hosted-workspaces)
    - [VS Code, Cursor, and dev containers (9)](#vs-code-cursor-and-dev-containers)
-   - [Vim, Kakoune, and other editors (13)](#vim-kakoune-and-other-editors)
-   - [REPL and code dispatchers (2)](#repl-and-code-dispatchers)
+   - [Vim, Kakoune, and other editors (11)](#vim-kakoune-and-other-editors)
+   - [REPL and code dispatchers (1)](#repl-and-code-dispatchers)
    - [Editor plugins and bridges (3)](#editor-plugins-and-bridges)
 4. [Switch and restore sessions (64)](#4-switch-and-restore-sessions)
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (363)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (357)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
@@ -83,7 +83,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
-   - [Dotfiles and ready-made configuration (12)](#dotfiles-and-ready-made-configuration)
+   - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (2)](#plugin-collections-and-developer-frameworks)
 6. [Apps, companion integrations, and installation (77)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (11)](#native-desktop-and-mobile-apps)
@@ -91,23 +91,23 @@ Most people do not need a large plugin stack. Begin with the official agent skil
    - [Hardware and ambient displays (12)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (29)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (9)](#setup-packages-and-version-management)
-7. [Experimental projects (16)](#7-experimental-projects)
-   - [Experiments, concepts, and scaffolds (16)](#experiments-concepts-and-scaffolds)
+7. [Experimental projects (12)](#7-experimental-projects)
+   - [Experiments, concepts, and scaffolds (12)](#experiments-concepts-and-scaffolds)
 8. [Resources](#resources)
 9. [Herdr reference](#herdr-reference)
 10. [About this edition](#about-this-edition)
 
 ## 1. Run and orchestrate agents
 
-*157 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*156 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official skill and foundation
 
-*1 project. The official instructions that teach an agent how to understand and control Herdr.*
+*1 project. The official instructions that teach an agent how to understand and control Herdr.**
 
 | Project | What it does |
 |---|---|
-| [**ogulcancelik/herdr · SKILL.md**](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) | The official Herdr skill file. It teaches an agent inside a Herdr pane how to inspect workspaces, tabs, and panes; start helpers; send input; and wait for output or status changes. |
+| [**ogulcancelik/herdr · SKILL.md**](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) | Teaches an agent inside a Herdr pane how to inspect workspaces, tabs, and panes, start helpers, send input, and wait for status changes. |
 
 ### Multi-agent fleets and supervisors
 
@@ -115,26 +115,26 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 | Project | What it does |
 |---|---|
-| [**tomoasleep/herdr-symphony**](https://github.com/tomoasleep/herdr-symphony) | A headless, Japanese-documented orchestrator that reads issues from GitHub Projects, creates `gwq` worktrees, and runs one OpenCode agent per issue in Herdr. Completion, state, and logs stay inside Herdr workspaces. |
+| [**tomoasleep/herdr-symphony**](https://github.com/tomoasleep/herdr-symphony) | Reads issues from GitHub Projects, creates `gwq` worktrees, and runs one OpenCode agent per issue inside Herdr workspaces. |
 | [**aashishd/herdr-agent-messenger**](https://github.com/aashishd/herdr-agent-messenger) | Defines a small messaging protocol for agents in separate Herdr panes. Peers use memorable call signs and exchange focused one-line messages, allowing coordination without sharing complete session histories. |
 | [**aemrebarut/herdr-dagr**](https://github.com/aemrebarut/herdr-dagr) | Shows a live directed graph of an agent workflow inside a Herdr split. It reads a structured `run.json` file and displays tasks, retries, review gates, evidence levels, and progress history. |
 | [**aorumbayev/herdr-workflows**](https://github.com/aorumbayev/herdr-workflows) | Runs repeatable development and agent workflows from YAML files. Each manifest defines an ordered sequence of commands and agent interactions to execute inside Herdr workspaces. |
-| [**bredebjorhovd/herdr-board**](https://github.com/bredebjorhovd/herdr-board) | A Kanban automation system that assigns GitHub issues to agents in dedicated Herdr panes. Cards record prompts, progress, and run history, then move completed work into pull-request review. |
+| [**bredebjorhovd/herdr-board**](https://github.com/bredebjorhovd/herdr-board) | Assigns GitHub issues to agents in dedicated Herdr panes and moves completed work into pull-request review. |
 | [**kay-ws/herdr-island**](https://github.com/kay-ws/herdr-island) | Filters Herdr's agent view to show only workers that are blocked or waiting for human input. It also reports the reason each agent stopped, making large fleets easier to triage. |
 | [**natori-hrj/herdr-standup**](https://github.com/natori-hrj/herdr-standup) | Builds a stand-up summary from recent commits and uncommitted changes across active agent workspaces. It provides one view of completed and ongoing work without opening every repository. |
 | [**natori-hrj/herdr-triage**](https://github.com/natori-hrj/herdr-triage) | Sorts active Herdr agents by how urgently they need attention. Blocked and stalled workers rise to the top based on their wait and idle time. |
 | [**steig/worktender**](https://github.com/steig/worktender) | Creates an isolated Git worktree and Herdr agent session for a GitHub issue. One command handles the branch, worktree, agent launch, and final cleanup. |
-| [**StructuPath/herdr-browser**](https://github.com/StructuPath/herdr-browser) | Displays an interactive Chromium browser inside a Herdr pane, with clicking, scrolling, and error logs. Humans can take over Playwright-driven sessions, and browser profiles persist between runs. |
+| [**StructuPath/herdr-browser**](https://github.com/StructuPath/herdr-browser) | Renders an interactive Chromium browser inside a Herdr pane with Playwright automation and manual control. |
 | [**StructuPath/herdr-conductor**](https://github.com/StructuPath/herdr-conductor) | Coordinates producer and reviewer agents with strict task and report formats, Git compare-and-swap checks, and a passive status board. It is designed for visible, operator-supervised delivery rather than free-form swarming. |
 | [**StructuPath/herdr-swarm**](https://github.com/StructuPath/herdr-swarm) | Runs several coding agents in parallel, each with its own branch, worktree, and Herdr pane, making it easy to watch competing implementations, compare changes, and keep the strongest result. |
-| [**voodootikigod/adlc-herdr**](https://github.com/voodootikigod/adlc-herdr) | Brings Agentic Development Lifecycle gates into Herdr. It shows ticket states, per-pane phases, and backlog boards, and provides actions for unblocking controlled milestones. |
+| [**voodootikigod/adlc-herdr**](https://github.com/voodootikigod/adlc-herdr) | Adds Agentic Development Lifecycle gates into Herdr. It shows ticket states, per-pane phases, and backlog boards, and provides actions for unblocking controlled milestones. |
 | [**zhenyufu/herdr-cadence**](https://github.com/zhenyufu/herdr-cadence) | Uses a lead agent to sort tasks and start specialized workers in separate Herdr tabs and Git worktrees. It checks for a clean repository state and gives each worker only the context it needs. |
 | [**cowcow02/herdr-agent-orchestrator**](https://github.com/cowcow02/herdr-agent-orchestrator) | Adds event-driven orchestration around one existing controller agent while Herdr observes and reports the work. It avoids replacing the controller with a separate fleet manager. |
 | [**mikeyobrien/herdr-agent-profiles**](https://github.com/mikeyobrien/herdr-agent-profiles) | Provides a data-driven command-line harness and reusable model profiles for agents running through Herdr. |
-| [**misty-step/kelpie**](https://github.com/misty-step/kelpie) | A phone-first console for checking and triaging OMP coding agents that run in Herdr workspaces. |
-| [**persinac/agents-nexus**](https://github.com/persinac/agents-nexus) | A broad toolkit for operating agent fleets on Herdr. It includes runtime components, plugins, memory and observability tools, conductor missions, and an optional installer. |
-| [**kyokosawada/viu**](https://github.com/kyokosawada/viu) | A mobile client for checking a Herdr agent fleet and answering workers from a phone by voice or keyboard. |
-| [**hewel/herdr-harness-coordinator**](https://github.com/hewel/herdr-harness-coordinator) | A Herdr plugin for coordinating autonomous coding-agent harnesses across separate panes and tracking their current tasks. |
+| [**misty-step/kelpie**](https://github.com/misty-step/kelpie) | Provides a phone-first mobile console for checking and triaging OMP coding agents in Herdr workspaces. |
+| [**persinac/agents-nexus**](https://github.com/persinac/agents-nexus) | Operates agent fleets on Herdr with runtime components, plugins, memory and observability tools, and conductor missions. |
+| [**kyokosawada/viu**](https://github.com/kyokosawada/viu) | Lets developers monitor Herdr agent fleets and respond to workers by voice or keyboard from a mobile phone. |
+| [**hewel/herdr-harness-coordinator**](https://github.com/hewel/herdr-harness-coordinator) | Coordinates autonomous coding-agent harnesses across separate Herdr panes and tracks their active tasks. |
 
 ### Claude Code multi-agent teams
 
@@ -144,21 +144,21 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 |---|---|
 | [**yigitkonur/herdr-pm**](https://github.com/yigitkonur/herdr-pm) | Adds a technical project manager to each live agent tab. The manager reads the session and Git state, ranks possible actions, and guides the existing agent. It supports Claude, Codex, Pi, and Hermes, with optional persistent notes. |
 | [**msadig/herdr-peer-agents-skill**](https://github.com/msadig/herdr-peer-agents-skill) | Teaches Claude, Pi, or Codex to start a named peer agent, assign work, and collect its result. A shell wrapper handles common startup failures and Codex input quirks. |
-| [**hcaiano/skills**](https://github.com/hcaiano/skills) | Includes a `herdr-pair` skill that runs Claude and Codex as equal partners in one tab. The agents exchange structured task, review, question, and approval messages until both accept the result. |
+| [**hcaiano/skills**](https://github.com/hcaiano/skills) | Provides a `herdr-pair` skill that pairs Claude and Codex as equal collaborative partners in one tab. |
 | [**LittleDrinks/herdr-orchestrator-skill**](https://github.com/LittleDrinks/herdr-orchestrator-skill) | Turns the main Claude Code session into a coordinator that plans work, starts workers in Herdr panes, and monitors them without editing code itself. It includes Python monitors, a YAML state-machine template, and role prompts. |
 | [**david-lutz/herdr-claude-teams**](https://github.com/david-lutz/herdr-claude-teams) | Maps Claude Code's experimental agent-team commands to Herdr's socket API, so teammates open as native Herdr panes instead of tmux panes. It requires Herdr 0.6.10 and supports Herdr metadata, notifications, and sidebar views. |
-| [**bakescakes/claude-orchestration**](https://github.com/bakescakes/claude-orchestration) | A Claude Code plugin with five orchestration skills and supporting hooks. Its full-lifecycle mode manages a parallel backlog from spawning and QA through merging, deployment, live verification, and cleanup. |
-| [**erwins-enkel/shepherd**](https://github.com/erwins-enkel/shepherd) | A self-hosted browser and mobile control panel for parallel Claude Code or Codex sessions. Agents run in separate worktree panes, with optional plan review, pull-request criticism, and merge-train gates. |
+| [**bakescakes/claude-orchestration**](https://github.com/bakescakes/claude-orchestration) | Provides five orchestration skills and hooks for Claude Code to manage parallel backlogs from QA to deployment. |
+| [**erwins-enkel/shepherd**](https://github.com/erwins-enkel/shepherd) | Hosts a browser and mobile control panel for parallel Claude Code or Codex sessions in isolated worktree panes. |
 | [**caioniehues/herdmates**](https://github.com/caioniehues/herdmates) | Runs Claude Code multi-agent teams in Herdr through a teammux translation layer. Teammates work in isolated panes while a mission-control view reports their status and task progress. |
 | [**clawsouls/clawsouls-herdr-plugin**](https://github.com/clawsouls/clawsouls-herdr-plugin) | Applies ClawSouls persona definitions to agents running in Herdr. It sets role-specific environments and behavioral rules for Claude Code and other supported agents across multiple panes. |
 | [**Elio2000/herdr-peer-review**](https://github.com/Elio2000/herdr-peer-review) | Starts a second coding agent in a split pane to review the current workspace diff. The tool runs a protected review, revision, and decision loop and includes a Claude Code skill for orchestration. |
-| [**jeffory/herdr-walkietalkie**](https://github.com/jeffory/herdr-walkietalkie) | Lets an orchestrator delegate work to Claude, OpenCode, or Antigravity sessions in separate Herdr tabs and worktrees. File-based handoffs and structured completion signals keep the parent context small. |
-| [**kiitosu/herdr-jira-board**](https://github.com/kiitosu/herdr-jira-board) | A Jira Kanban board that runs in a Herdr pane, changes ticket states, launches Claude Code sessions with one key, and shows live agent status on active cards. |
+| [**jeffory/herdr-walkietalkie**](https://github.com/jeffory/herdr-walkietalkie) | Enables an orchestrator delegate work to Claude, OpenCode, or Antigravity sessions in separate Herdr tabs and worktrees. File-based handoffs and structured completion signals keep the parent context small. |
+| [**kiitosu/herdr-jira-board**](https://github.com/kiitosu/herdr-jira-board) | Embeds a Jira Kanban board in a Herdr pane with one-key Claude Code session launching and live card status updates. |
 | [**wilbeibi/herdr-catchup**](https://github.com/wilbeibi/herdr-catchup) | Transfers work between Claude Code, Codex, Cursor, Cline, and OpenCode sessions in Herdr. It captures and summarizes a live pane so another agent can continue or branch the task with useful context. |
-| [**vinicius91carvalho/harness-engineering**](https://github.com/vinicius91carvalho/harness-engineering) | A harness-engineering toolkit for Claude Code, Codex, OpenCode, Pi, and Herdr. It provides shared patterns for running and coordinating multiple coding agents. |
+| [**vinicius91carvalho/harness-engineering**](https://github.com/vinicius91carvalho/harness-engineering) | Provides shared harness-engineering patterns for running and coordinating Claude Code, Codex, OpenCode, and Pi in Herdr. |
 | [**chetanunadkat-lang/herdr-fleet**](https://github.com/chetanunadkat-lang/herdr-fleet) | Runs Claude and Codex workers as a fleet in Herdr panes. The project includes orchestration skills, an `hm` command-line tool, agent definitions, and a Claude Code installer. |
-| [**inbeomheo/herdr-orchestra**](https://github.com/inbeomheo/herdr-orchestra) | A Herdr orchestration skill that uses Claude Code as the coordinator and Codex, Grok, Gemini, or Claude sessions as workers in separate panes. |
-| [**eciuca/herdr-drover**](https://github.com/eciuca/herdr-drover) | An agent orchestrator for Claude Code, Codex, Kira CLI, and tmux-style workflows running through Herdr. |
+| [**inbeomheo/herdr-orchestra**](https://github.com/inbeomheo/herdr-orchestra) | Coordinates Codex, Grok, Gemini, or Claude worker panes from a central Claude Code controller session. |
+| [**eciuca/herdr-drover**](https://github.com/eciuca/herdr-drover) | Orchestrates Claude Code, Codex, and Kira CLI agents across tmux-style Herdr workflows. |
 | [**terafin/herdr-restart-always**](https://github.com/terafin/herdr-restart-always) | Supervises processes running in Herdr agent panes and restarts them after a crash. It works with Claude, Hermes, Codex, Pi, OpenCode, and other pane-based agents. |
 
 ### Pi supervisor workflows and extensions
@@ -169,76 +169,75 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 |---|---|
 | [**SecretAardvark/pi-overseer**](https://github.com/SecretAardvark/pi-overseer) | Runs implementer, tester, reviewer, and researcher agents under one supervisor. Each role has command limits, sensitive actions require approval, and task state is saved under `.pi/overseer/` so work can resume after a restart. |
 | [**Jackliu-miaozi/pi-herdr-workflow-kit**](https://github.com/Jackliu-miaozi/pi-herdr-workflow-kit) | Creates a controlled Pi workflow with separate planner, coder, and reviewer panes. Plans must be approved before coding, each phase is reviewed, and large handoffs are stored in `.pi-herdr/` files instead of pasted into the terminal. |
-| [**ogulcancelik/pi-extensions**](https://github.com/ogulcancelik/pi-extensions) | A maintained collection of Pi extensions from Herdr's creator. It covers overlays, parallel agents, session recall, and direct control of Herdr panes, tabs, and workspaces through the `pi-herdr` package. |
+| [**ogulcancelik/pi-extensions**](https://github.com/ogulcancelik/pi-extensions) | Extends Pi with overlays, parallel agent spawners, session recall, and direct Herdr pane control. |
 | [**joelhooks/pi-bellwether**](https://github.com/joelhooks/pi-bellwether) | Exposes Herdr agent, pane, and session controls as Pi slash commands and LLM tools. It provides reusable start, send, read, focus, and stop operations for higher-level Pi workflows. |
 | [**NickPittas/pi-herdr-subagents**](https://github.com/NickPittas/pi-herdr-subagents) | Monitors Pi's asynchronous subagents and shows their IDs, tasks, states, and session files in a TUI. It can open or focus a subagent session, or start one in a pane, without changing how Pi runs it. |
 | [**kirel/herdr-subagents**](https://github.com/kirel/herdr-subagents) | Starts each Pi subagent in its own Herdr pane or tab, manages session files, and notifies the parent when work finishes. Panes remain available for follow-up, and different subagents may use different models. |
 | [**joelhooks/herdr-pings**](https://github.com/joelhooks/herdr-pings) | Adds turn-completion alerts and crash detection for Pi agents in Herdr. A Pi extension and companion wait command track workers, while short call signs make concurrent agents easier to identify. |
 | [**joshka0/herdr-watcher**](https://github.com/joshka0/herdr-watcher) | Tracks detached or long-running work and resumes the relevant agent when a background task completes. It uses the Herdr socket API to support workflows that must survive disconnects and interrupted sessions. |
 | [**neilwashere/herdr-unrecoverable**](https://github.com/neilwashere/herdr-unrecoverable) | Watches Pi sessions for terminal-provider failures and attempts recovery automatically. It confirms the problem from transcripts, shows a countdown, and can submit a continue command up to three times. |
-| [**edxeth/pi-subagents**](https://github.com/edxeth/pi-subagents) | A Pi framework for foreground and background subagents, synchronous or asynchronous coordination, fresh or forked context, messaging, and orchestrator mode. It supports Herdr as well as tmux, Zellij, WezTerm, and cmux. |
+| [**edxeth/pi-subagents**](https://github.com/edxeth/pi-subagents) | Provides a Pi framework for foreground and background subagents, messaging, and multi-pane orchestration. |
 | [**jillesme/pi-herdr-squad**](https://github.com/jillesme/pi-herdr-squad) | Creates visible, strictly read-only investigation teams for Pi inside Herdr. It is intended for parallel research and review tasks that must not modify the workspace. |
-| [**muslihudindev/herdr-agent-orchestrator**](https://github.com/muslihudindev/herdr-agent-orchestrator) | A local-first, provider-independent orchestration system for the Pi Coding Agent TUI running in Herdr. It coordinates multiple software-engineering agents across isolated panes. |
+| [**muslihudindev/herdr-agent-orchestrator**](https://github.com/muslihudindev/herdr-agent-orchestrator) | Coordinates multiple Pi software-engineering agents across isolated Herdr panes. |
 | [**yanekyuk/pi-herdr-orchestrator**](https://github.com/yanekyuk/pi-herdr-orchestrator) | Provides project-independent orchestration for Pi agents running in Herdr, with work distributed across visible panes. |
 
 ### Subagent launchers and delegation
 
-*40 projects. Tools for launching workers in separate panes and passing work between a lead agent and its helpers.*
+*39 projects. Tools for launching workers in separate panes and passing work between a lead agent and its helpers.**
 
 | Project | What it does |
 |---|---|
 | [**mcdonc/mcdonc-pi-herdr**](https://github.com/mcdonc/mcdonc-pi-herdr) | Makes Pi's background work visible in Herdr. `/bg` moves the current task into a pane, while `/tab` forks the conversation into a new tab through the socket API. |
-| [**aldrickdev/herdr_subagents**](https://github.com/aldrickdev/herdr_subagents) | Lets a Pi session create, guide, and inspect named subagents in a shared Herdr tab. Each delegated task remains visible, and the parent can read the worker's output after it becomes idle. |
-| [**ogulcancelik/herdr-plugin-github-start**](https://github.com/ogulcancelik/herdr-plugin-github-start) | An official plugin that turns a GitHub issue, pull request, or discussion into a prepared agent tab. One key creates and names the tab, starts Codex or Claude, and sends a structured prompt from either a URL or short reference. |
+| [**aldrickdev/herdr_subagents**](https://github.com/aldrickdev/herdr_subagents) | Enables a Pi session create, guide, and inspect named subagents in a shared Herdr tab. Each delegated task remains visible, and the parent can read the worker's output after it becomes idle. |
+| [**ogulcancelik/herdr-plugin-github-start**](https://github.com/ogulcancelik/herdr-plugin-github-start) | Turns a GitHub issue, pull request, or discussion into a prepared agent tab with one key. |
 | [**gustavocaiano/opencode-herdr**](https://github.com/gustavocaiano/opencode-herdr) | Opens a new Herdr pane whenever OpenCode creates a subagent session, then attaches OpenCode and arranges the panes in a readable grid. Panes may close automatically when a task becomes idle, fails, or is deleted. |
-| [**machine-machine/ask-fable-skill**](https://github.com/machine-machine/ask-fable-skill) | A Hermes and Claude Code skill for sending a task to a Claude Code Fable 5 worker in Herdr. File-based prompts avoid terminal truncation, and the returned session ID allows follow-up questions in the same conversation. |
-| [**rohanthewiz/herdr-todo**](https://github.com/rohanthewiz/herdr-todo) | A terminal prompt queue built with Bubble Tea. Save titled or multi-line prompts, filter them, then paste one into an existing Claude Code pane or start a new tab. Backlogs can be project-specific or global. |
+| [**machine-machine/ask-fable-skill**](https://github.com/machine-machine/ask-fable-skill) | Delegates tasks from Hermes or Claude Code to a Claude Code Fable 5 worker in a separate Herdr pane. |
+| [**rohanthewiz/herdr-todo**](https://github.com/rohanthewiz/herdr-todo) | Queues terminal prompts using Bubble Tea, letting you filter and paste them into Claude Code panes. |
 | [**freewillythe4th/action-button-agent**](https://github.com/freewillythe4th/action-button-agent) | Connects an iPhone Action Button to personal Herdr agents. Voice input passes through an iOS Shortcut, Tailscale, Telegram, and a Claude Agent SDK operator, which starts or targets a Herdr session and returns the response. |
 | [**noor-latif/herd**](https://github.com/noor-latif/herd) | Two scripts that create a project-specific Herdr workspace with a configurable grid of Pi agents. The workspace follows the current directory and restarts dead agents when the project is reopened. |
-| [**a2u/herdr-jira**](https://github.com/a2u/herdr-jira) | A Ratatui Jira client for browsing, filtering, and moving issues inside Herdr. One-key delegation opens a pane or workspace and gives a coding agent the selected ticket's details. |
-| [**alvinunreal/oh-my-opencode-slim**](https://github.com/alvinunreal/oh-my-opencode-slim) | An OpenCode multi-agent package that assigns work to specialist roles such as fixers, librarians, and explorers in dedicated Herdr panes. It serializes pane creation and manages the split layout. |
+| [**a2u/herdr-jira**](https://github.com/a2u/herdr-jira) | Provides a Ratatui Jira client to browse, filter, and assign tickets directly to Herdr agent panes. |
+| [**alvinunreal/oh-my-opencode-slim**](https://github.com/alvinunreal/oh-my-opencode-slim) | Assigns OpenCode specialist roles (fixers, librarians, explorers) to dedicated Herdr panes. |
 | [**cyperx84/herdr-loop**](https://github.com/cyperx84/herdr-loop) | Runs iterative planner, coder, and reviewer graphs across Claude Code, Codex, OpenCode, and Pi panes. Socket events and pane output are used to pass intermediate results until the workflow reaches its stopping condition. |
 | [**darjss/herdr-orchestrate**](https://github.com/darjss/herdr-orchestrate) | Provides Pi-native orchestration with visible workers, a live run board, persistent state, and isolated Git worktrees. Model and reasoning profiles can route simple evidence gathering separately from deeper analysis and review. |
 | [**GavinTomlins/herdr-oh-my-agent**](https://github.com/GavinTomlins/herdr-oh-my-agent) | Mirrors oh-my-openagent delegations into Herdr panes or tabs as they happen. It records live state and full scrollback transcripts, supports split or tabbed layouts, and does not change the agents' execution. |
 | [**JLighter/herdr-spawn**](https://github.com/JLighter/herdr-spawn) | Starts coding agents in separate Herdr panes and creates an isolated Git worktree for each one. Commands are provided for assigning work, checking jobs, and collecting completed results. |
-| [**vekexasia/pi-extensible-workflows**](https://github.com/vekexasia/pi-extensible-workflows) | A deterministic Pi workflow engine with on-disk checkpoints and Git worktree isolation. It scripts parallel agent stages and opens every worker in its own Herdr pane. |
+| [**vekexasia/pi-extensible-workflows**](https://github.com/vekexasia/pi-extensible-workflows) | Runs deterministic Pi workflows with on-disk checkpoints and Git worktree isolation in Herdr. |
 | [**vercel-labs/herdr-vercel-sandbox-plugin**](https://github.com/vercel-labs/herdr-vercel-sandbox-plugin) | Runs Claude Code, Codex, or OpenCode inside isolated Vercel Sandbox microVMs while showing each session as a Herdr pane. It previews uploads, excludes secrets, and exports agent changes back as Git patches. |
-| [**hungv47/herdr-agent-orchestration**](https://github.com/hungv47/herdr-agent-orchestration) | A Herdr-first captain-and-worker workflow for Hermes, Codex, Grok, OpenCode, Cline, Buzz, and other coding agents. |
-| [**jbaham2/herdr-plugin**](https://github.com/jbaham2/herdr-plugin) | A Claude Code plugin covering Herdr orchestration, layouts, agent monitoring, workspace and session management, and configuration. |
+| [**hungv47/herdr-agent-orchestration**](https://github.com/hungv47/herdr-agent-orchestration) | Provides a captain-and-worker workflow for Hermes, Codex, Grok, OpenCode, and Cline agents in Herdr. |
+| [**jbaham2/herdr-plugin**](https://github.com/jbaham2/herdr-plugin) | Provides Claude Code skills for Herdr orchestration, layouts, agent monitoring, and session management. |
 | [**noctaIO/herdr-plugin-aos**](https://github.com/noctaIO/herdr-plugin-aos) | Starts Agentic OS-enabled Claude Code agents in a Herdr pane from any workspace without modifying the surrounding project setup. |
-| [**lalanikarim/herdr-skills**](https://github.com/lalanikarim/herdr-skills) | A collection of Pi skills for creating, navigating, and managing Herdr terminal workspaces. |
-| [**marv1nnnnn/pi-yahe**](https://github.com/marv1nnnnn/pi-yahe) | A single composable Herdr tool for Pi that supports visible, task-based multi-agent work and automatically steers asynchronous results back to the parent. |
-| [**MinhDuyDEV/pi-subagents**](https://github.com/MinhDuyDEV/pi-subagents) | A Pi delegation runtime for foreground and background subagents over Herdr, tmux, or the SDK. It adds claims, leases, context packs, evidence-only review, diagnostics, telemetry, and retry handling for pane creation, but no agent profiles. |
+| [**lalanikarim/herdr-skills**](https://github.com/lalanikarim/herdr-skills) | Provides Pi skills for creating, navigating, and managing Herdr terminal workspaces. |
+| [**marv1nnnnn/pi-yahe**](https://github.com/marv1nnnnn/pi-yahe) | Provides a composable Pi tool for visible task-based multi-agent work that steers async results back to the parent. |
+| [**MinhDuyDEV/pi-subagents**](https://github.com/MinhDuyDEV/pi-subagents) | Provides a Pi delegation runtime with claims, leases, context packs, and diagnostic retry handling in Herdr. |
 | [**giuseppecrj/pi-herdr-agents**](https://github.com/giuseppecrj/pi-herdr-agents) | Runs asynchronous Pi subagents and approval-based review workflows entirely inside Herdr. |
-| [**thkt/herdr-agentchat**](https://github.com/thkt/herdr-agentchat) | A Herdr plugin for a two-agent leader-and-coder conversation between Claude Code and Codex, with send-and-wake coordination. |
-| [**eliebak/herdr-agent-island**](https://github.com/eliebak/herdr-agent-island) | A small personal prototype for coordinating several agent loops in separate Herdr panes and tracking their active tasks. |
-| [**aerain/herdr-agent-orchestration**](https://github.com/aerain/herdr-agent-orchestration) | A pane-based orchestration skill for OMP, Claude Code, and other coding agents running through Herdr. |
+| [**thkt/herdr-agentchat**](https://github.com/thkt/herdr-agentchat) | Coordinates a two-agent leader-and-coder conversation between Claude Code and Codex with send-and-wake sync. |
+| [**eliebak/herdr-agent-island**](https://github.com/eliebak/herdr-agent-island) | Coordinates multiple agent loops in separate Herdr panes and tracks their active tasks. |
+| [**aerain/herdr-agent-orchestration**](https://github.com/aerain/herdr-agent-orchestration) | Provides a pane-based orchestration skill for OMP and Claude Code running in Herdr. |
 | [**shubham399/herdr-agents-auto-compact**](https://github.com/shubham399/herdr-agents-auto-compact) | Automatically compacts long Claude Code and OpenCode sessions in Herdr so they do not exhaust their context windows. |
 | [**minhtran3124/Brichan**](https://github.com/minhtran3124/Brichan) | A repository-local AI chief of staff for Codex. It keeps project work bounded, coordinates Herdr agents, checks outputs, and stores durable project memory. |
 | [**lucasdeprit/Puppy**](https://github.com/lucasdeprit/Puppy) | A basic multi-agent system built around Claude Code sessions running in the Herdr terminal. |
-| [**Sebastiangmz/herdr-plus**](https://github.com/Sebastiangmz/herdr-plus) | A skill that teaches coding agents to operate Herdr and delegate work to subagents in Herdr spaces. |
-| [**yigitkonur/claude-code-herdr-plugin**](https://github.com/yigitkonur/claude-code-herdr-plugin) | A Claude Code skill that controls a Codex subagent from start to finish through one tool backed by the Herdr multiplexer. |
-| [**goatbjh/pi-herdr-claude-subagents**](https://github.com/goatbjh/pi-herdr-claude-subagents) | Lets Pi call Herdr-backed Claude sessions directly as an oracle, reviewer, or planner. |
-| [**EDMND-SRC/herdr-subagents**](https://github.com/EDMND-SRC/herdr-subagents) | An OpenCode plugin that starts subagents in named Herdr panes. It includes automatic interception, delegation tools, and a grid layout that adapts as workers are added. |
+| [**Sebastiangmz/herdr-plus**](https://github.com/Sebastiangmz/herdr-plus) | Teaches coding agents to operate Herdr and delegate work to subagents in Herdr spaces. |
+| [**yigitkonur/claude-code-herdr-plugin**](https://github.com/yigitkonur/claude-code-herdr-plugin) | Controls a Codex subagent from start to finish through one tool backed by the Herdr multiplexer. |
+| [**goatbjh/pi-herdr-claude-subagents**](https://github.com/goatbjh/pi-herdr-claude-subagents) | Enables Pi call Herdr-backed Claude sessions directly as an oracle, reviewer, or planner. |
+| [**EDMND-SRC/herdr-subagents**](https://github.com/EDMND-SRC/herdr-subagents) | Starts subagents in named Herdr panes. It includes automatic interception, delegation tools, and a grid layout that adapts as workers are added. |
 | [**BrianM0330/pi-herdr-snooze**](https://github.com/BrianM0330/pi-herdr-snooze) | Adds a forced snooze state to Pi agents in Herdr, controlled through `/snooze` or a key binding and independent of the underlying agent type. |
-| [**shimo4228/herdr-toolkit**](https://github.com/shimo4228/herdr-toolkit) | A Claude Code plugin for cross-vendor delegation on Herdr. It adds acceptance checks intended to reduce fabricated results and can start detached sessions from a phone. |
+| [**shimo4228/herdr-toolkit**](https://github.com/shimo4228/herdr-toolkit) | Provides tools for cross-vendor delegation on Herdr. It adds acceptance checks intended to reduce fabricated results and can start detached sessions from a phone. |
 | [**Idan-Levin/herdr-implement-review**](https://github.com/Idan-Levin/herdr-implement-review) | A Herdr workflow in which Codex implements changes, a security scan checks them, and a parent agent performs the final review. |
 | [**mithyer/ry-skill**](https://github.com/mithyer/ry-skill) | A personal collection of Pi skills for faster Herdr-based workflows. |
 | [**regenrek/codex-orchestration-herdr**](https://github.com/regenrek/codex-orchestration-herdr) | A reusable Codex Sol/Luna orchestration skill that assigns workers through Herdr and reuses panes in a predictable way. |
-| [**di-rs/.dotfiles**](https://github.com/di-rs/.dotfiles) | Personal dotfiles for Helix, Ghostty, Zsh with Zim, Herdr, Pi, Claude Code, and agent skills, managed with GNU Stow. |
 | [**sh1ny/herdr-switchyard**](https://github.com/sh1ny/herdr-switchyard) | A human-approved Hermes and Herdr workflow for isolated OMP coding workers, using Beads as the persistent task ledger. |
 
 ### Autonomous coding and pull-request loops
 
-*10 projects. Long-running workflows that implement changes, open pull requests, review results, and react to CI.*
+*10 projects. Long-running workflows that implement changes, open pull requests, review results, and react to CI.**
 
 | Project | What it does |
 |---|---|
 | [**sarmientoF/herdr-pr-loop**](https://github.com/sarmientoF/herdr-pr-loop) | Runs tester, coder, and reviewer agents through local task cycles and GitHub pull-request reviews in separate tabs. State is stored in files, while approval gates, logs, a budget limit, and a pause file keep runs controllable. |
-| [**firegnu/herdr-loop-lab**](https://github.com/firegnu/herdr-loop-lab) | A toolkit for bounded agent loops at three levels: one-task convergence with mechanical and cross-model checks, parallel worktree fleets, and large-goal decomposition with branch integration. All state is saved on disk for clean recovery. |
+| [**firegnu/herdr-loop-lab**](https://github.com/firegnu/herdr-loop-lab) | Provides bounded agent loops at three levels: one-task convergence with mechanical and cross-model checks, parallel worktree fleets, and large-goal decomposition with branch integration. All state is saved on disk for clean recovery. |
 | [**Tudor0404/dual-author**](https://github.com/Tudor0404/dual-author) | Processes GitHub issues through isolated worktrees, Claude implementation, draft pull requests, and paired Codex and Claude review rounds. A dashboard shows each issue's stage and elapsed time until the change is ready for automatic merging. |
 | [**razajamil/herdr-factory**](https://github.com/razajamil/herdr-factory) | Claims work from Jira or Markdown task files, creates one Herdr worktree per item, and moves Claude Code through a configurable YAML pipeline. It can follow pull requests through CI, review, and merge under a shared concurrency limit. |
-| [**machine-machine/herdr-factory-loop-skill**](https://github.com/machine-machine/herdr-factory-loop-skill) | An installable skill for running Claude Code or Hermes agent fleets through Herdr. It covers discovery, spawning, dispatch, fan-out and convergence, approvals, `tasks.md`-driven workers, spec-kit integration, and guided setup through a TUI. |
+| [**machine-machine/herdr-factory-loop-skill**](https://github.com/machine-machine/herdr-factory-loop-skill) | Provides tools for running Claude Code or Hermes agent fleets through Herdr. It covers discovery, spawning, dispatch, fan-out and convergence, approvals, `tasks.md`-driven workers, spec-kit integration, and guided setup through a TUI. |
 | [**sean1588/herdr-orchestrator**](https://github.com/sean1588/herdr-orchestrator) | A Go daemon that runs an issue-to-pull-request workflow from a validated YAML state graph. Herdr hosts implementer and reviewer agents, while the daemon checks GitHub's merge gate and can squash-merge, with dry-run enabled by default. |
 | [**talent-factory/herdr-linear**](https://github.com/talent-factory/herdr-linear) | Adds an interactive Linear issue browser to Herdr. Selecting an issue opens a dedicated agent pane and supplies the ticket context so implementation can begin immediately. |
 | [**tomasvarga/herdr-sniffr**](https://github.com/tomasvarga/herdr-sniffr) | Starts an agent in Herdr to perform an initial quality and bug review of a pull request, then writes draft comments into tuicr. It supports Claude, Codex, Cursor, and Grok backends. |
@@ -247,7 +246,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Task queues, backlogs, and event triggers
 
-*6 projects. Queues and event-driven systems that turn stored work into agent jobs.*
+*6 projects. Queues and event-driven systems that turn stored work into agent jobs.**
 
 | Project | What it does |
 |---|---|
@@ -260,7 +259,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### General workflows and skill packs
 
-*49 projects. Reusable skills, commands, and opinionated setups for common agent workflows.*
+*49 projects. Reusable skills, commands, and opinionated setups for common agent workflows.**
 
 | Project | What it does |
 |---|---|
@@ -274,13 +273,13 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**quan-meng/herdr-slurm**](https://github.com/quan-meng/herdr-slurm) | Connects Slurm allocations to Herdr by creating dedicated workspaces and monitored agent tabs for compute jobs. It tracks queue state and reports job and agent progress in the terminal. |
 | [**sanirudh17/herdr-agent-handoff**](https://github.com/sanirudh17/herdr-agent-handoff) | Moves an active coding conversation to a new session using another installed agent CLI. The complete transcript and command history are passed to the replacement agent, avoiding a manual handoff summary. |
 | [**cobanov/herdr-ntfysh**](https://github.com/cobanov/herdr-ntfysh) | Sends ntfy push notifications when a Herdr agent finishes or asks for input. |
-| [**jhochenbaum/herdr-hunk-diff**](https://github.com/jhochenbaum/herdr-hunk-diff) | Opens agent-written changes in Hunk for review and sends inline comments back to the responsible Herdr agent. |
+| [**jhochenbaum/herdr-hunk-diff**](https://github.com/jhochenbaum/herdr-hunk-diff) | Displays side-by-side git diffs in an adjacent pane and lets developers leave review comments for agents. |
 | [**pbean/bmad-loop-adapter-herdr**](https://github.com/pbean/bmad-loop-adapter-herdr) | Provides a Herdr terminal-multiplexer backend for bmad-loop. |
-| [**transparent-pegasus/herdrpowers**](https://github.com/transparent-pegasus/herdrpowers) | A toolkit for adding advanced agent workflows to pane-based Herdr sessions. The source description does not list specific features. |
+| [**transparent-pegasus/herdrpowers**](https://github.com/transparent-pegasus/herdrpowers) | Provides adding advanced agent workflows to pane-based Herdr sessions. The source description does not list specific features. |
 | [**pdjsh/herdr-plugins**](https://github.com/pdjsh/herdr-plugins) | A pair of Rust plugins for Herdr: one displays agents in a radial map, and the other reorders workspaces from the keyboard. |
 | [**loopkeep/herdr-plugin-loopreview**](https://github.com/loopkeep/herdr-plugin-loopreview) | Integrates the loopreview workflow with Herdr as a plugin. |
-| [**y011d4/herdr-plugin-agentweb**](https://github.com/y011d4/herdr-plugin-agentweb) | A Herdr plugin for monitoring and controlling sessions through a small local bridge server. |
-| [**zoridos/herdr-skill**](https://github.com/zoridos/herdr-skill) | An agent skill for controlling Herdr panes, starting agents, and coordinating multi-agent work from inside a Herdr session. |
+| [**y011d4/herdr-plugin-agentweb**](https://github.com/y011d4/herdr-plugin-agentweb) | Provides tools for monitoring and controlling sessions through a small local bridge server. |
+| [**zoridos/herdr-skill**](https://github.com/zoridos/herdr-skill) | Provides tools for controlling Herdr panes, starting agents, and coordinating multi-agent work from inside a Herdr session. |
 | [**TheShellLand/herdr-agent**](https://github.com/TheShellLand/herdr-agent) | A Herdr agent project with no further description in the source catalog. |
 | [**hewenyu/herdr-agent**](https://github.com/hewenyu/herdr-agent) | An agent focused on managing Herdr and making development conversations easier from a phone. |
 | [**calebcauthon/herdr-agent-copy-paste-fork**](https://github.com/calebcauthon/herdr-agent-copy-paste-fork) | Forks an agent session into a new Herdr pane by copying and pasting, either manually or through a hotkey. |
@@ -290,22 +289,22 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**zerodice0/herdr-agent-labels**](https://github.com/zerodice0/herdr-agent-labels) | Assigns readable color-and-animal names to Herdr agents that do not already have labels. |
 | [**okonomi/herdr-agent-queue**](https://github.com/okonomi/herdr-agent-queue) | Cycles through stopped or waiting Herdr agents with one key, starting with the agent that has been waiting longest. |
 | [**hisetu/herdr-agent-skill**](https://github.com/hisetu/herdr-agent-skill) | Adds integration support and dedicated helpers for using an agent skill inside Herdr sessions. |
-| [**lifez/herdr-agent-dashboard**](https://github.com/lifez/herdr-agent-dashboard) | A read-only local dashboard for standard `herdr agent` processes. It runs on macOS and serves a touch-friendly page that devices such as a Boox can open over the same local network. |
-| [**ahnsv/maeh**](https://github.com/ahnsv/maeh) | A Rust command-line tool for hmph and Herdr agent orchestration. |
-| [**eyalev/herdr-web**](https://github.com/eyalev/herdr-web) | A mobile-first web interface for viewing and controlling Herdr agents from a phone. |
-| [**Xz-FreeMan/herdr-hint**](https://github.com/Xz-FreeMan/herdr-hint) | A small utility that adds agent-session hints to Herdr. |
-| [**dkarter/foreman**](https://github.com/dkarter/foreman) | A hardware-based live dashboard for monitoring Herdr agents. |
+| [**lifez/herdr-agent-dashboard**](https://github.com/lifez/herdr-agent-dashboard) | Provides tools for standard `herdr agent` processes. It runs on macOS and serves a touch-friendly page that devices such as a Boox can open over the same local network. |
+| [**ahnsv/maeh**](https://github.com/ahnsv/maeh) | Provides tools for hmph and Herdr agent orchestration. |
+| [**eyalev/herdr-web**](https://github.com/eyalev/herdr-web) | Provides tools for viewing and controlling Herdr agents from a phone. |
+| [**Xz-FreeMan/herdr-hint**](https://github.com/Xz-FreeMan/herdr-hint) | Adds agent-session hints to Herdr. |
+| [**dkarter/foreman**](https://github.com/dkarter/foreman) | Provides tools for monitoring Herdr agents. |
 | [**BlazzzPlay/herdr-office**](https://github.com/BlazzzPlay/herdr-office) | A read-only pixel-art office that visualizes Herdr agents and their activity. |
 | [**mikhail-angelov/herdr-review-loop**](https://github.com/mikhail-angelov/herdr-review-loop) | Automates a repeated cross-review loop in which one agent writes changes and another reviews them inside the same Herdr workspace. |
-| [**jwkicklighter/herdr-prompt-library**](https://github.com/jwkicklighter/herdr-prompt-library) | A plugin for browsing, organizing, and inserting reusable Markdown prompts into the focused pane. Prompt libraries may be local to a project or shared globally. |
+| [**jwkicklighter/herdr-prompt-library**](https://github.com/jwkicklighter/herdr-prompt-library) | Provides browsing, organizing, and inserting reusable Markdown prompts into the focused pane. Prompt libraries may be local to a project or shared globally. |
 | [**masakirocorp/oh-my-herdr**](https://github.com/masakirocorp/oh-my-herdr) | A terminal workspace manager for AI coding agents built around Herdr. |
 | [**egriff38/effect-herdr**](https://github.com/egriff38/effect-herdr) | A typed Effect-TS SDK for controlling the Herdr terminal agent multiplexer. |
-| [**Drozerah/herdr-voice**](https://github.com/Drozerah/herdr-voice) | A real-time text-to-speech plugin for Herdr with audio-stream management for several agents working in the same workspace. |
+| [**Drozerah/herdr-voice**](https://github.com/Drozerah/herdr-voice) | Provides tools for Herdr with audio-stream management for several agents working in the same workspace. |
 | [**wenxichang/herdr-pal**](https://github.com/wenxichang/herdr-pal) | Provides instant-messaging control of Herdr-based AI agents. |
 | [**motionharvest/herdr**](https://github.com/motionharvest/herdr) | A terminal-based agent multiplexer project. The source catalog provides no additional detail beyond its Herdr name and purpose. |
 | [**RenKoya1/herdr-approve-all**](https://github.com/RenKoya1/herdr-approve-all) | Approves every pending agent permission request in Herdr with one keystroke. |
 | [**nhclink16/herdr-announcer**](https://github.com/nhclink16/herdr-announcer) | Speaks a one-sentence AI summary when an agent finishes or needs input. It supports local text-to-speech, ElevenLabs, or any custom command. |
-| [**hoon-ch/herdr-gjc-plugin**](https://github.com/hoon-ch/herdr-gjc-plugin) | A Gajae Code plugin that reports agent launch, exit, idle, working, and blocked states to Herdr. |
+| [**hoon-ch/herdr-gjc-plugin**](https://github.com/hoon-ch/herdr-gjc-plugin) | Reports agent launch, exit, idle, working, and blocked states to Herdr. |
 | [**narumiruna/herdr-web**](https://github.com/narumiruna/herdr-web) | A terminal-focused browser workbench for viewing and operating the Herdr agent runtime. |
 | [**wtcrowe4/DialDeck**](https://github.com/wtcrowe4/DialDeck) | Uses a Microsoft Surface Dial and an AutoHotkey v2 engine as a keyless control surface for Herdr orchestration, development commands, and modelling macros. |
 | [**IgorWarzocha/herdr-annotations**](https://github.com/IgorWarzocha/herdr-annotations) | Captures notes attached to selected terminal text and stages those annotations for Herdr agents to act on. |
@@ -320,26 +319,26 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### MCP servers
 
-*6 projects. Servers that expose Herdr operations as MCP tools for compatible AI clients.*
+*6 projects. Servers that expose Herdr operations as MCP tools for compatible AI clients.**
 
 | Project | What it does |
 |---|---|
-| [**eugeneb50/herdr-mcp**](https://github.com/eugeneb50/herdr-mcp) | An MCP server that exposes Herdr through 21 pane and agent tools. A recipe engine combines calls into reusable workflows with step-result variables, while an HTTP bridge and React playground support testing outside MCP clients. |
-| [**runchr-works/herdr-mesh**](https://github.com/runchr-works/herdr-mesh) | An MCP server designed for agents that manage other agents. It can read panes, relay messages, hand off tasks, start workers, and wait for results, and its installer can register the server with Claude Code, Codex, or OpenCode. |
-| [**54rt1n/herdr-simple-mcp**](https://github.com/54rt1n/herdr-simple-mcp) | A stateless, single-binary MCP server covering 75 Herdr socket methods. Role profiles limit tools for coordinators, clients, or observers, deny patterns provide finer control, and unknown profiles default to read-only access. |
-| [**Phoobobo/herdr-agent-config-manager**](https://github.com/Phoobobo/herdr-agent-config-manager) | A command-line tool and Herdr plugin for auditing and managing skills, MCP servers, plugins, and lifecycle hooks across workspaces. A central manifest helps keep agent configuration consistent. |
+| [**eugeneb50/herdr-mcp**](https://github.com/eugeneb50/herdr-mcp) | Exposes Herdr workspace and pane controls as tools to any Model Context Protocol (MCP) client. |
+| [**runchr-works/herdr-mesh**](https://github.com/runchr-works/herdr-mesh) | Connects multiple Herdr instances into a coordinated mesh over Model Context Protocol. |
+| [**54rt1n/herdr-simple-mcp**](https://github.com/54rt1n/herdr-simple-mcp) | Provides a lightweight Model Context Protocol server for driving Herdr from Claude Desktop and Cursor. |
+| [**Phoobobo/herdr-agent-config-manager**](https://github.com/Phoobobo/herdr-agent-config-manager) | Provides tools for auditing and managing skills, MCP servers, plugins, and lifecycle hooks across workspaces. A central manifest helps keep agent configuration consistent. |
 | [**islam3zzat/herdr-mcp**](https://github.com/islam3zzat/herdr-mcp) | An MCP server that lets AI assistants inspect and control coding agents running in Herdr through a socket-based communication bridge. |
 | [**bonsai/herdr-mcp**](https://github.com/bonsai/herdr-mcp) | Provides Herdr tab control from OpenCode through MCP and also works as a Herdr plugin. |
 
 ### Socket API clients and SDKs
 
-*54 projects. Libraries, command-line clients, and services that communicate with Herdr through its local socket.*
+*54 projects. Libraries, command-line clients, and services that communicate with Herdr through its local socket.**
 
 | Project | What it does |
 |---|---|
-| [**54rt1n/herdr-python-client**](https://github.com/54rt1n/herdr-python-client) | A zero-dependency Python client for Herdr's Unix socket. It handles socket discovery, request envelopes, typed errors, events, pane reads, and waits, with convenience helpers plus a raw `request()` method. |
+| [**54rt1n/herdr-python-client**](https://github.com/54rt1n/herdr-python-client) | Provides typed Python bindings and socket utilities for automating Herdr programmatically. |
 | [**jerryfane/herdr-codex-usage-kit**](https://github.com/jerryfane/herdr-codex-usage-kit) | Shows remaining Codex five-hour and weekly quota in the Herdr sidebar and provides a live shell dashboard. It reads local Codex JSONL logs, refreshes every 30 seconds, and does not call an external API. |
-| [**lib-x/herdr-sock-go**](https://github.com/lib-x/herdr-sock-go) | A Go client for Herdr's newline-delimited JSON socket protocol, generated for the 0.7.0 API. It includes typed helpers for common operations and raw call methods for the full surface. |
+| [**lib-x/herdr-sock-go**](https://github.com/lib-x/herdr-sock-go) | Provides tools for Herdr's newline-delimited JSON socket protocol, generated for the 0.7.0 API. It includes typed helpers for common operations and raw call methods for the full surface. |
 | [**CodyBontecou/herdr-telemetry-bridge**](https://github.com/CodyBontecou/herdr-telemetry-bridge) | Streams structured Herdr activity as NDJSON, including pane focus time, detected agent and model details, and local session summaries. Output can go to a file, webhook, or command, and transcript text is hidden by default. |
 | [**klittle32/letta-herdr-mod**](https://github.com/klittle32/letta-herdr-mod) | Modifies Letta Code so sessions running in Herdr report accurate idle, working, and blocked states to the sidebar. |
 | [**Phoobobo/herdr-traex-integration**](https://github.com/Phoobobo/herdr-traex-integration) | Connects TraeX lifecycle hooks to Herdr's agent-reporting socket methods, giving TraeX panes correct idle, working, and blocked status. |
@@ -347,49 +346,49 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**benkraus/herdr-plugin-codex-subs**](https://github.com/benkraus/herdr-plugin-codex-subs) | A Bubble Tea popup that reads local CLIProxyAPI credentials and displays Codex subscription quota, reset times, and credit balances for multiple accounts. |
 | [**cdpath/herdr-warp**](https://github.com/cdpath/herdr-warp) | Integrates the Warp Agent CLI with Herdr. It can send prompts, wait for output, approve or reject actions, and infer idle, working, and blocked status from terminal output. |
 | [**gejiliang/herdr-openclaw**](https://github.com/gejiliang/herdr-openclaw) | Treats OpenClaw TUI sessions as Herdr agents, with live state, model information, and token use in the sidebar. A background watcher parses OpenClaw status lines and reports them through the socket API. |
-| [**kevinWangSheng/herdr-kit**](https://github.com/kevinWangSheng/herdr-kit) | A toolkit for building Herdr integrations, with declarative layouts, an event-watcher service, plugin helpers, and a typed socket client exposing streaming and low-level features beyond the standard CLI. |
+| [**kevinWangSheng/herdr-kit**](https://github.com/kevinWangSheng/herdr-kit) | Provides building Herdr integrations, with declarative layouts, an event-watcher service, plugin helpers, and a typed socket client exposing streaming and low-level features beyond the standard CLI. |
 | [**scott-the-programmer/vscode-devcontainers-herdr**](https://github.com/scott-the-programmer/vscode-devcontainers-herdr) | Forwards Herdr's Unix socket into VS Code development containers through a loopback TCP bridge, allowing containerized agents to report status and receive commands from the host Herdr instance. |
-| [**speardragon/herdr-agents-history**](https://github.com/speardragon/herdr-agents-history) | A keyboard-controlled dashboard that combines live tool calls and command output from Claude Code and Codex agents. It reads Herdr's event stream and provides one searchable, filterable activity feed. |
+| [**speardragon/herdr-agents-history**](https://github.com/speardragon/herdr-agents-history) | Combines live tool calls and command output from Claude Code and Codex agents. It reads Herdr's event stream and provides one searchable, filterable activity feed. |
 | [**TheMetalStorm/herdr-freebuff-plugin**](https://github.com/TheMetalStorm/herdr-freebuff-plugin) | Integrates Freebuff agents with Herdr by reading PTY output and local session files, then reporting idle, working, and blocked states through the socket API. |
 | [**usrivastava92/herdr-wakeup**](https://github.com/usrivastava92/herdr-wakeup) | Prevents macOS or Linux from sleeping while Herdr agents are working. It enables an operating-system sleep inhibitor when activity begins and releases it when every agent is idle. |
 | [**uuie/reasonix-herdr**](https://github.com/uuie/reasonix-herdr) | Reports Reasonix agent lifecycle states to Herdr in real time and adds native workspace and pane controls for supervising Reasonix alongside other agents. |
 | [**yuuta1219/claude-usage**](https://github.com/yuuta1219/claude-usage) | Reads local Claude Code telemetry and shows session and weekly token-use percentages at the bottom of the Herdr sidebar. |
-| [**schacon/micro-manager**](https://github.com/schacon/micro-manager) | A macOS bridge that uses the Creator Micro 2 hardware controller to operate Herdr. |
+| [**schacon/micro-manager**](https://github.com/schacon/micro-manager) | Uses the Creator Micro 2 hardware controller to operate Herdr. |
 | [**DanielOu1208/agentslate**](https://github.com/DanielOu1208/agentslate) | An iPhone remote keypad for supervising Herdr coding agents over Tailscale. |
 | [**Tomyail/herdr-connect**](https://github.com/Tomyail/herdr-connect) | An open-source LAN companion app that discovers nearby Herdr installations and connects to them. |
 | [**vantt/herdr-go**](https://github.com/vantt/herdr-go) | A web-first remote gateway and supervisor for controlling Herdr coding agents from a phone. |
-| [**benkraus/herdr-plugin-mobile-relay**](https://github.com/benkraus/herdr-plugin-mobile-relay) | A Herdr plugin that provides mobile-relay integration. The source catalog does not describe its controls in more detail. |
-| [**nyanyaon/github-issue-herdr-plugin**](https://github.com/nyanyaon/github-issue-herdr-plugin) | A Claude Code plugin for organizing and dispatching work from GitHub issues through Herdr. |
+| [**benkraus/herdr-plugin-mobile-relay**](https://github.com/benkraus/herdr-plugin-mobile-relay) | Provides mobile-relay integration. The source catalog does not describe its controls in more detail. |
+| [**nyanyaon/github-issue-herdr-plugin**](https://github.com/nyanyaon/github-issue-herdr-plugin) | Provides tools for organizing and dispatching work from GitHub issues through Herdr. |
 | [**cryks/shepherd**](https://github.com/cryks/shepherd) | Monitors Herdr agents on local and remote machines from the macOS menu bar. |
-| [**LoneExile/merino**](https://github.com/LoneExile/merino) | A remote-tunnel dashboard for viewing and controlling Herdr agents. |
+| [**LoneExile/merino**](https://github.com/LoneExile/merino) | Provides tools for viewing and controlling Herdr agents. |
 | [**akhileshrangani4/herdr-bridge**](https://github.com/akhileshrangani4/herdr-bridge) | An HTTP bridge with a terminal-friendly control panel for Herdr agents. |
-| [**maedana/herdr-agents-bridge**](https://github.com/maedana/herdr-agents-bridge) | A mobile bridge for Herdr agents that runs a web server and uses a QR code for easy connection. |
-| [**maxandersen/jherdr**](https://github.com/maxandersen/jherdr) | A Java client for the Herdr socket API. |
-| [**cyperx84/herdr-api**](https://github.com/cyperx84/herdr-api) | A Go client for Herdr protocol 19, with transport handling, event streaming, and a typed agent model. |
+| [**maedana/herdr-agents-bridge**](https://github.com/maedana/herdr-agents-bridge) | Provides tools for Herdr agents that runs a web server and uses a QR code for easy connection. |
+| [**maxandersen/jherdr**](https://github.com/maxandersen/jherdr) | Provides tools for the Herdr socket API. |
+| [**cyperx84/herdr-api**](https://github.com/cyperx84/herdr-api) | Provides tools for Herdr protocol 19, with transport handling, event streaming, and a typed agent model. |
 | [**thanh-dong/herdr-rich-preview**](https://github.com/thanh-dong/herdr-rich-preview) | A browser preview for files changed by agents in Herdr. It renders Markdown, Mermaid, D2, HTML, and SVG and works with SSH and remote Herdr sessions. |
 | [**flaricy/herdr-bridge**](https://github.com/flaricy/herdr-bridge) | Reports DeepSeek Harness activity to the Herdr pane that hosts it, including live working, blocked, and idle states, without requiring changes to Herdr. |
 | [**PlaneshiftDev/microd**](https://github.com/PlaneshiftDev/microd) | A companion service for the Codex Micro macropad that handles button events, gestures, and RGB control over a Unix socket, with an optional Herdr bridge. |
 | [**atnine-ai/herdr-bridge**](https://github.com/atnine-ai/herdr-bridge) | Connects Herdr panes to chat services for communicating with agents outside the terminal. |
 | [**aiken884/herdr-bridge**](https://github.com/aiken884/herdr-bridge) | A single command center for sending tasks to several coding agents, following their progress, and checking the final result through Herdr. |
-| [**damozhang/dsh-herdr-bridge**](https://github.com/damozhang/dsh-herdr-bridge) | A DeepSeek Harness plugin that lets the web interface discover, start, prompt, and monitor Pi, Claude, Codex, and other agents running under Herdr. |
+| [**damozhang/dsh-herdr-bridge**](https://github.com/damozhang/dsh-herdr-bridge) | Lets the web interface discover, start, prompt, and monitor Pi, Claude, Codex, and other agents running under Herdr. |
 | [**sina85/herdr-mobile**](https://github.com/sina85/herdr-mobile) | A password-protected, mobile-first Next.js panel for a local Herdr session, published through Cloudflare Tunnel and Access. |
-| [**pepperhorn/herdr-remote**](https://github.com/pepperhorn/herdr-remote) | A small remote dashboard for a running Herdr server. |
-| [**deanbaker/herdr-remote**](https://github.com/deanbaker/herdr-remote) | A web and mobile client for inspecting and controlling Herdr workspaces remotely. |
+| [**pepperhorn/herdr-remote**](https://github.com/pepperhorn/herdr-remote) | Provides tools for a running Herdr server. |
+| [**deanbaker/herdr-remote**](https://github.com/deanbaker/herdr-remote) | Provides tools for inspecting and controlling Herdr workspaces remotely. |
 | [**hisetu/pi-herdr-remote**](https://github.com/hisetu/pi-herdr-remote) | Pi-native tools for operating Herdr servers on explicitly approved SSH hosts. |
 | [**bradydibble/herdi**](https://github.com/bradydibble/herdi) | A private remote client and relay for Herdr; development moved away from its former public fork. |
 | [**kkunkunya/herdr-remote-phone**](https://github.com/kkunkunya/herdr-remote-phone) | A phone-focused fork of herdr-remote with profiles for several Macs, a conversation view, and model and command pickers designed for small screens. |
 | [**alex-devdone/herdr-remote-agent-watch**](https://github.com/alex-devdone/herdr-remote-agent-watch) | Shows a Claude session running behind SSH and tmux as a live Herdr sidebar agent. It also provides more resilient SSH and remote-Herdr wrapper commands. |
 | [**Mic92/herdr-eternal**](https://github.com/Mic92/herdr-eternal) | A roaming-friendly transport for `herdr --remote` using QUIC with a WebSocket fallback, exact byte-stream resumption, and OIDC authentication. |
-| [**georgolden/herdr-remote-setup**](https://github.com/georgolden/herdr-remote-setup) | A personal reference setup for multi-project Herdr development with remote phone access. |
-| [**backpine/remote-agent-workspace**](https://github.com/backpine/remote-agent-workspace) | A blueprint for an always-on remote agent environment: edit on macOS, run Herdr work on Linux, synchronize files with Syncthing, and expose services through Cloudflare Tunnel and Caddy. |
-| [**0xGosu/herdr-auto-pilot**](https://github.com/0xGosu/herdr-auto-pilot) | A plugin that prompts a running coding CLI through the Herdr API. A training mode observes user actions, safety checks block dangerous operations, and an optional autonomous mode can continue prompting after sufficient setup. |
+| [**georgolden/herdr-remote-setup**](https://github.com/georgolden/herdr-remote-setup) | Provides tools for multi-project Herdr development with remote phone access. |
+| [**backpine/remote-agent-workspace**](https://github.com/backpine/remote-agent-workspace) | Provides an always-on remote agent environment: edit on macOS, run Herdr work on Linux, synchronize files with Syncthing, and expose services through Cloudflare Tunnel and Caddy. |
+| [**0xGosu/herdr-auto-pilot**](https://github.com/0xGosu/herdr-auto-pilot) | Prompts a running coding CLI through the Herdr API. A training mode observes user actions, safety checks block dangerous operations, and an optional autonomous mode can continue prompting after sufficient setup. |
 | [**ryonakae/shepherd**](https://github.com/ryonakae/shepherd) | A worker-observability service and set of runtime bridges for coding agents managed by Herdr. |
 | [**AgentWorkforce/herdr-relay-bridge**](https://github.com/AgentWorkforce/herdr-relay-bridge) | A relay bridge intended to connect Herdr agents as a cooperating team. The source catalog gives no further protocol details. |
 | [**pinksaucepasta/paperboat-helper**](https://github.com/pinksaucepasta/paperboat-helper) | A remote runtime for Paperboat environments, covering PTYs, Herdr agents, previews, images, activity reporting, and configuration synchronization. |
-| [**shaunbntan-create/vgpt-app**](https://github.com/shaunbntan-create/vgpt-app) | A phone web interface for a Herdr agent fleet, served over Tailscale and based on AltanS/collie. |
-| [**shaunbntan-create/vgpt**](https://github.com/shaunbntan-create/vgpt) | A Tailscale-served phone web interface for viewing and controlling a Herdr agent fleet, maintained as a fork of AltanS/collie. |
-| [**crabfishxy/awaytome**](https://github.com/crabfishxy/awaytome) | A progressive web app and tailnet bridge for monitoring and controlling Herdr agents from a phone, with full terminal mirroring. |
-| [**LuYanFCP/herdr-wechat-plugin**](https://github.com/LuYanFCP/herdr-wechat-plugin) | A Herdr plugin for remote control through WeChat. |
+| [**shaunbntan-create/vgpt-app**](https://github.com/shaunbntan-create/vgpt-app) | Provides tools for a Herdr agent fleet, served over Tailscale and based on AltanS/collie. |
+| [**shaunbntan-create/vgpt**](https://github.com/shaunbntan-create/vgpt) | Provides tools for viewing and controlling a Herdr agent fleet, maintained as a fork of AltanS/collie. |
+| [**crabfishxy/awaytome**](https://github.com/crabfishxy/awaytome) | Provides tools for monitoring and controlling Herdr agents from a phone, with full terminal mirroring. |
+| [**LuYanFCP/herdr-wechat-plugin**](https://github.com/LuYanFCP/herdr-wechat-plugin) | Provides tools for remote control through WeChat. |
 | [**trillium/herdr-tailscale**](https://github.com/trillium/herdr-tailscale) | Automatically attaches trusted Tailscale peers to Herdr as remote tabs. |
 
 ### Chat alerts: Telegram, Discord, and Slack
@@ -401,17 +400,17 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**ogulcancelik/herdr-plugin-examples**](https://github.com/ogulcancelik/herdr-plugin-examples) | Official sample plugins showing four common patterns: Telegram notifications, development layouts, GitHub link previews, and Rust release tracking. Each example is a standalone package meant to be adapted when building a new plugin. |
 | [**gaijinjoe/herdres**](https://github.com/gaijinjoe/herdres) | Maps every live Herdr pane to a Telegram forum topic. Agent activity appears in the topic, and bot commands can send input back to the matching pane from any device. |
 | [**dcolinmorgan/herdr-push**](https://github.com/dcolinmorgan/herdr-push) | Forwards agent status changes to the herdr-remote relay using only curl and system Python or jq. A single relay setting enables mobile, menu-bar, or Telegram monitoring, and a test action checks the connection. |
-| [**alexei-led/ccgram**](https://github.com/alexei-led/ccgram) | A Telegram bridge that maps forum topics to terminal windows running Claude Code, Codex, Gemini, Pi, or a shell. It relays output and input through Herdr or tmux so sessions remain usable from a phone. |
+| [**alexei-led/ccgram**](https://github.com/alexei-led/ccgram) | Maps forum topics to terminal windows running Claude Code, Codex, Gemini, Pi, or a shell. It relays output and input through Herdr or tmux so sessions remain usable from a phone. |
 | [**blockshiftnetwork/herdr-telegram-attention**](https://github.com/blockshiftnetwork/herdr-telegram-attention) | Sends Telegram alerts for blocked, finished, or approval-waiting Herdr agents and supports quick replies for unblocking them remotely. |
 | [**cokekitten/herdr-telegram-bridge**](https://github.com/cokekitten/herdr-telegram-bridge) | Sends Telegram notifications when an agent finishes or waits for input. Replies, including files, are delivered to the correct pane without requiring a public server or port tunnel. |
 | [**happyeric77/agent-webhook-notify**](https://github.com/happyeric77/agent-webhook-notify) | Posts structured HTTP webhooks when agents block or finish. Payloads can include workspace and pane details, model information, and recent scrollback for use in Slack, Discord, or mobile-alert systems. |
 | [**natori-hrj/herdr-hail**](https://github.com/natori-hrj/herdr-hail) | Connects Herdr to Slack and Discord through a two-way webhook bridge. Blocked-agent alerts can be answered through replies or action buttons without opening a network tunnel. |
 | [**revanp/herdr-discord-presence**](https://github.com/revanp/herdr-discord-presence) | Publishes the active Herdr project, current agent, and total active-agent count through Discord Rich Presence using a local RPC service, with no bot or external server required. |
-| [**luminexord/herdres**](https://github.com/luminexord/herdres) | A Tendwire-powered Telegram interface for monitoring and messaging Herdr coding agents. |
+| [**luminexord/herdres**](https://github.com/luminexord/herdres) | Provides tools for monitoring and messaging Herdr coding agents. |
 | [**juninaba/herdr-slack-notify**](https://github.com/juninaba/herdr-slack-notify) | Sends Slack notifications when Herdr agents finish or become blocked. |
 | [**dcieslak19973/herdr-slackr**](https://github.com/dcieslak19973/herdr-slackr) | Displays a real-time Slack feed inside a Herdr pane, using Socket Mode with polling as a fallback. |
 | [**mvallebr/herdr-telegram-plugin**](https://github.com/mvallebr/herdr-telegram-plugin) | A Telegram bot companion that maps Herdr agents to forum topics and provides remote control without placing an LLM between the user and the pane. |
-| [**sbulav/herdr-relay**](https://github.com/sbulav/herdr-relay) | A relay for monitoring and approving Herdr agents from a phone, menu bar, or Telegram without using SSH. |
+| [**sbulav/herdr-relay**](https://github.com/sbulav/herdr-relay) | Provides monitoring and approving Herdr agents from a phone, menu bar, or Telegram without using SSH. |
 
 ### Desktop, mobile, and webhook notifications
 
@@ -424,7 +423,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**yankewei/herdr-focus-notify**](https://github.com/yankewei/herdr-focus-notify) | Shows a clickable macOS notification when an unseen pane becomes blocked or finishes. Clicking the alert brings the terminal forward and focuses the exact pane through `alerter`. |
 | [**dot/herdr-terminal-notifier**](https://github.com/dot/herdr-terminal-notifier) | Bundles a branded macOS notification app so Herdr alerts use the correct icon and can jump to the relevant pane. The app periodically refreshes its Launch Services registration to recover cleanly after reboots or updates. |
 | [**HikaruEgashira/say-hook**](https://github.com/HikaruEgashira/say-hook) | Reads a one-line status summary aloud when an agent becomes done or blocked, using ElevenLabs or macOS speech through a Herdr state-change hook. |
-| [**horn553/herdr-ntfy**](https://github.com/horn553/herdr-ntfy) | A small shell plugin that sends ntfy alerts for done and blocked agent states using standard command-line tools and curl. |
+| [**horn553/herdr-ntfy**](https://github.com/horn553/herdr-ntfy) | Sends ntfy alerts for done and blocked agent states using standard command-line tools and curl. |
 | [**keinstn/drover-notify**](https://github.com/keinstn/drover-notify) | Sends a push alert to the Drover iOS app when a Herdr agent becomes blocked. It uses built-in Node.js features only and stores encrypted pairing information locally. |
 | [**ram4-dev/herdr-notify-center**](https://github.com/ram4-dev/herdr-notify-center) | Stores notifications from all workspaces in a durable popup inbox. Items can be reviewed, opened in their related pane, cleared when resolved, and retained across restarts. |
 | [**saeedrahimi/herdr-notify-wsl**](https://github.com/saeedrahimi/herdr-notify-wsl) | Converts Herdr lifecycle events inside WSL into native Windows 11 toast notifications by invoking PowerShell across the WSL boundary. |
@@ -434,13 +433,13 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Telemetry, events, and quota streaming
 
-*7 projects. Event collectors and monitors for agent state, usage, cost, and runtime activity.*
+*7 projects. Event collectors and monitors for agent state, usage, cost, and runtime activity.**
 
 | Project | What it does |
 |---|---|
 | [**alejodelosrios/herdr-claude-usage**](https://github.com/alejodelosrios/herdr-claude-usage) | Shows live Claude plan usage for both the current session and the weekly limit in the Herdr sidebar. It reads Claude Code's own authentication and status data rather than estimating usage. |
-| [**amurru/herdr-whistle**](https://github.com/amurru/herdr-whistle) | A Go plugin for monitoring and controlling agents across remote Herdr daemon instances. It streams lifecycle updates and sends commands without taking over the terminal session. |
-| [**DIodide/herdr-telemetry**](https://github.com/DIodide/herdr-telemetry) | A small Go plugin that sends workspace and agent telemetry to an endpoint chosen by the user. It removes tokens, redacts sensitive prompts, and ships as a single binary. |
+| [**amurru/herdr-whistle**](https://github.com/amurru/herdr-whistle) | Provides tools for monitoring and controlling agents across remote Herdr daemon instances. It streams lifecycle updates and sends commands without taking over the terminal session. |
+| [**DIodide/herdr-telemetry**](https://github.com/DIodide/herdr-telemetry) | Sends workspace and agent telemetry to an endpoint chosen by the user. It removes tokens, redacts sensitive prompts, and ships as a single binary. |
 | [**iamhouser/herdr-claude-usage-multi**](https://github.com/iamhouser/herdr-claude-usage-multi) | Adds session and weekly Claude rate-limit gauges, color thresholds, and unblock countdowns to workspace rows. It supports several accounts by matching pane directories to profile folders without using tokens. |
 | [**Javamomma/herdr-scribe**](https://github.com/Javamomma/herdr-scribe) | Streams microphone audio into temporary in-memory transcript and analysis panes. When recording ends, it creates structured meeting notes, policy checks, and draft task tickets without saving the raw audio. |
 | [**kosuketut/herdr-remotedownloder**](https://github.com/kosuketut/herdr-remotedownloder) | Downloads files created or changed in a remote Herdr pane to a local Mac. A plugin action detects paths in the active pane and transfers the selected artifact over the remote connection. |
@@ -448,7 +447,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Voice, hardware, and remote bridges
 
-*1 project. Interfaces that connect Herdr to spoken input, physical devices, or remote control surfaces.*
+*1 project. Interfaces that connect Herdr to spoken input, physical devices, or remote control surfaces.**
 
 | Project | What it does |
 |---|---|
@@ -456,11 +455,11 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Protocol and third-party bridges
 
-*11 projects. Adapters between Herdr and other multiplexers, platforms, messaging systems, or automation protocols.*
+*11 projects. Adapters between Herdr and other multiplexers, platforms, messaging systems, or automation protocols.**
 
 | Project | What it does |
 |---|---|
-| [**junliu-mde/mimo-code-herdr-plugin**](https://github.com/junliu-mde/mimo-code-herdr-plugin) | A user-level MiMo Code plugin that combines all subagent states into a stable idle, working, blocked, or done status for Herdr. A watchdog releases stale labels after crashes, and nested MiMo tool calls are ignored. |
+| [**junliu-mde/mimo-code-herdr-plugin**](https://github.com/junliu-mde/mimo-code-herdr-plugin) | Combines all subagent states into a stable idle, working, blocked, or done status for Herdr. A watchdog releases stale labels after crashes, and nested MiMo tool calls are ignored. |
 | [**vaclavik-xyz/herdwatch**](https://github.com/vaclavik-xyz/herdwatch) | Keeps a pane marked as working while CI, review, or another background condition is still pending after the agent itself becomes idle. It can run once or as a background service. |
 | [**carsonjones/herdr-agent-dashboard**](https://github.com/carsonjones/herdr-agent-dashboard) | A Bun and React/OpenTUI dashboard that lists all running Herdr agents with live status. It can be opened as a key-bound plugin action or run as a standalone terminal app. |
 | [**abtris/herdr-plugin-jira-pr**](https://github.com/abtris/herdr-plugin-jira-pr) | Checks the current branch's GitHub pull request against linked Jira tickets. It shows ticket state and warns when issue keys are missing or do not match, keeping Jira context visible in Herdr. |
@@ -469,26 +468,26 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**jatingargiitk/herdr-memory**](https://github.com/jatingargiitk/herdr-memory) | Builds persistent project memory from agent actions, successful approaches, and earlier decisions across Herdr sessions, then adds relevant context to later prompts to reduce repeated mistakes. |
 | [**JYasha11/herdr-in-your-face**](https://github.com/JYasha11/herdr-in-your-face) | Shows an increasingly urgent ASCII-art face when a Herdr agent is blocked and waiting for input, making overlooked approvals difficult to miss. |
 | [**kukv/herdr-plugin-github-dash**](https://github.com/kukv/herdr-plugin-github-dash) | Adds GitHub issue and pull-request management to Herdr, including review, tracking, and assignment of GitHub work to agent tabs from inside the terminal. |
-| [**neon-solutions/neon-herdr**](https://github.com/neon-solutions/neon-herdr) | An official Neon plugin that embeds a serverless Postgres dashboard in a Herdr pane. It can create database branches per agent worktree, start or stop compute, and insert connection strings. |
+| [**neon-solutions/neon-herdr**](https://github.com/neon-solutions/neon-herdr) | Embeds a serverless Postgres dashboard in a Herdr pane. It can create database branches per agent worktree, start or stop compute, and insert connection strings. |
 | [**openclaw/crabbox**](https://github.com/openclaw/crabbox) | Adds Crabbox sandbox provisioning and remote test execution to Herdr. Plugin actions can prewarm temporary environments, synchronize diffs, and inspect active leases from an overlay. |
 
 ## 3. Editor integrations
 
-*60 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
+*55 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
 
 ### Neovim navigation and splits
 
-*32 projects. Plugins that make movement between Neovim windows and Herdr panes feel continuous.*
+*30 projects. Plugins that make movement between Neovim windows and Herdr panes feel continuous.**
 
 | Project | What it does |
 |---|---|
-| [**devxplay/herdr.nvim**](https://github.com/devxplay/herdr.nvim) | Uses the same `Ctrl+h/j/k/l` keys to move between Neovim splits and neighboring Herdr panes. A Rust helper handles focus and layout through the socket, and the plugin can coexist with vim-tmux-navigator. |
+| [**devxplay/herdr.nvim**](https://github.com/devxplay/herdr.nvim) | Provides seamless directional split navigation (Ctrl+h/j/k/l) between Neovim and Herdr panes. |
 | [**paulbkim-dev/vim-herdr-navigation**](https://github.com/paulbkim-dev/vim-herdr-navigation) | Ports vim-tmux-navigator behavior to Herdr. Direction keys move within Vim or Neovim until an edge is reached, then shift focus to the adjacent Herdr pane based on the pane's foreground process. |
-| [**lmilojevicc/herdr-splits.nvim**](https://github.com/lmilojevicc/herdr-splits.nvim) | Ports smart-splits.nvim to Herdr, providing shared navigation and resize keys across Neovim and Herdr boundaries. It supports configurable edge behavior, numeric counts, and automatic unzooming during navigation. |
+| [**lmilojevicc/herdr-splits.nvim**](https://github.com/lmilojevicc/herdr-splits.nvim) | Bridges Neovim split navigation and smart pane resizing with Herdr terminal panes. |
 | [**luiarthur/herdr.vim**](https://github.com/luiarthur/herdr.vim) | Starts a language-appropriate REPL in a Herdr pane and sends the current line, whole file, or visual selection from Vim or Neovim. It supports older Vim releases as well as modern Neovim. |
 | [**UN-9BOT/sidekick_herdr**](https://github.com/UN-9BOT/sidekick_herdr) | Adds Herdr as a session backend for sidekick.nvim, giving its AI CLI launcher the same workflow available with tmux or Zellij without requiring a fork. |
 | [**aimdevlee/herdr-nvim-nav**](https://github.com/aimdevlee/herdr-nvim-nav) | Provides shared `Ctrl+h/j/k/l` navigation between Neovim splits and Herdr panes using socket-based focus tracking. |
-| [**bojackduy/nvim-herdr-navigation**](https://github.com/bojackduy/nvim-herdr-navigation) | A Neovim plugin that applies vim-tmux-navigator-style directional keys across internal splits and surrounding Herdr panes. |
+| [**bojackduy/nvim-herdr-navigation**](https://github.com/bojackduy/nvim-herdr-navigation) | Applies vim-tmux-navigator-style directional keys across internal splits and surrounding Herdr panes. |
 | [**chmarax/herdr-nvim**](https://github.com/chmarax/herdr-nvim) | A Neovim bridge with a Rust core and Lua configuration for inspecting Herdr panes, starting agent sessions, and sending editor selections to active panes. |
 | [**cinco/herdr-grep-nvim**](https://github.com/cinco/herdr-grep-nvim) | Combines ripgrep and fzf for live searching, then opens a selected match in a Neovim split beside the active Herdr agent. |
 | [**makyinmars/herdr-context.nvim**](https://github.com/makyinmars/herdr-context.nvim) | A two-pane Neovim composer that turns selections, cursor positions, and file details into structured Markdown context for a Herdr agent. The prompt is staged for review rather than submitted automatically. |
@@ -496,15 +495,14 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**shadowfax92/herdr-comments**](https://github.com/shadowfax92/herdr-comments) | Imports output from a Herdr agent pane into Neovim for line-level comments and organized review notes in editor buffers. |
 | [**willfish/herdr-navigator**](https://github.com/willfish/herdr-navigator) | Provides the Herdr-side actions needed for shared Vim or Neovim navigation. It checks the active pane process and either forwards the key to the editor or moves Herdr focus. |
 | [**nettlesh/dotfiles**](https://github.com/nettlesh/dotfiles) | Personal Alacritty, Fish, Herdr, and Neovim dotfiles with workspace navigation and agent-dispatch configuration. |
-| [**uncaughterrs/dotfile**](https://github.com/uncaughterrs/dotfile) | Personal configuration for Ghostty, Neovim, Herdr, tmux, and related development tools. |
 | [**luisgui1757/dotfiles**](https://github.com/luisgui1757/dotfiles) | A cross-platform Rose Pine terminal and editor setup for macOS, Linux, WSL2, and Windows. It includes Neovim, Herdr, tmux or psmux, several terminals and shells, Nix on POSIX, and chezmoi-managed configuration. |
-| [**ctbaum/herdr-agents.nvim**](https://github.com/ctbaum/herdr-agents.nvim) | A Neovim bridge for starting and working with editor-integrated coding agents in Herdr panes. |
+| [**ctbaum/herdr-agents.nvim**](https://github.com/ctbaum/herdr-agents.nvim) | Provides tools for starting and working with editor-integrated coding agents in Herdr panes. |
 | [**RooseveltAdvisors/vim-herdr-navigation**](https://github.com/RooseveltAdvisors/vim-herdr-navigation) | A fork of `vim-herdr-navigation` with shared Ctrl and Alt directional keys across Herdr panes and Vim or Neovim splits. |
 | [**willfish/herdr-navigator.nvim**](https://github.com/willfish/herdr-navigator.nvim) | Provides unified movement between Neovim windows and Herdr panes. |
-| [**joo-was-already-taken/herdr-navigator.nvim**](https://github.com/joo-was-already-taken/herdr-navigator.nvim) | A Neovim plugin for navigating between editor splits and surrounding Herdr panes. |
+| [**joo-was-already-taken/herdr-navigator.nvim**](https://github.com/joo-was-already-taken/herdr-navigator.nvim) | Provides tools for navigating between editor splits and surrounding Herdr panes. |
 | [**kaar/nvim-herdr-navigator**](https://github.com/kaar/nvim-herdr-navigator) | Uses one set of `Ctrl+h/j/k/l` shortcuts to move through both Neovim splits and Herdr panes. |
 | [**inferst/herdr-review.nvim**](https://github.com/inferst/herdr-review.nvim) | A Neovim code-review interface with Git and Herdr integration. |
-| [**utahta/herdr-prompt.nvim**](https://github.com/utahta/herdr-prompt.nvim) | Lets a Neovim user ask a Herdr agent about the code currently being viewed or edited. |
+| [**utahta/herdr-prompt.nvim**](https://github.com/utahta/herdr-prompt.nvim) | Enables a Neovim user ask a Herdr agent about the code currently being viewed or edited. |
 | [**ocyedwin/editor**](https://github.com/ocyedwin/editor) | A portable development setup combining Ghostty, Herdr, Vim, Neovim, and VSCodeVim. |
 | [**TianZuo555/herdr.nvim**](https://github.com/TianZuo555/herdr.nvim) | Sends Neovim file and code references to coding agents running in the same Herdr tab. |
 | [**rahadur/herdr.nvim**](https://github.com/rahadur/herdr.nvim) | Ports the Ink and Paper color schemes from herdr.dev to Neovim. |
@@ -512,20 +510,19 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**nwiizo/signalbox.nvim**](https://github.com/nwiizo/signalbox.nvim) | An attention-focused Neovim control surface for persistent coding agents running in Herdr. |
 | [**s-0-a-r/copse**](https://github.com/s-0-a-r/copse) | A command-line agent development environment combining Herdr, Neovim, and parallel agent fan-out. |
 | [**jakkzz/herdr-setup**](https://github.com/jakkzz/herdr-setup) | A reproducible Herdr and Neovim setup with pinned plugins and a cross-platform installer for macOS, Linux, and WSL. |
-| [**vanducng/dotfiles**](https://github.com/vanducng/dotfiles) | Personal macOS development configuration built around Herdr, Neovim, Yabai, and AI tools. |
 | [**mirkobozzetto/dotfiles**](https://github.com/mirkobozzetto/dotfiles) | A macOS terminal setup using Ghostty with tmux or Herdr, Neovim, and routing that brings the user to whichever coding agent needs attention. |
 
 ### Full Neovim-hosted workspaces
 
-*1 project. A deeper integration that uses Neovim as the main interface while Herdr owns the agent processes.*
+*1 project. A deeper integration that uses Neovim as the main interface while Herdr owns the agent processes.**
 
 | Project | What it does |
 |---|---|
-| [**MomePP/herd.nvim**](https://github.com/MomePP/herd.nvim) | Makes Neovim the main interface for Herdr agents. It opens an agent in a full-screen floating terminal, toggles it with one key, and stages visual selections for the active agent while Herdr continues to own and monitor the process. |
+| [**MomePP/herd.nvim**](https://github.com/MomePP/herd.nvim) | Uses Neovim as the primary dashboard to launch, monitor, and control background Herdr agent sessions. |
 
 ### VS Code, Cursor, and dev containers
 
-*9 projects. Extensions and environment setups for graphical editors and container-based development.*
+*9 projects. Extensions and environment setups for graphical editors and container-based development.**
 
 | Project | What it does |
 |---|---|
@@ -534,14 +531,14 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**endoumame/herdr-vscode**](https://github.com/endoumame/herdr-vscode) | Adds an inline code-review workflow to VS Code for work associated with Herdr agent sessions. The source description is incomplete beyond writing comments where the code is read. |
 | [**andorexu/hermes-agent-skills-pack**](https://github.com/andorexu/hermes-agent-skills-pack) | A pack of 28 Hermes Agent skills covering decision methods, reasoning workflows, engineering tools, OCR, and web tasks, with support for Hermes, Claude Code, Herdr, and Cursor. |
 | [**alex-devdone/herdr-cursor-open**](https://github.com/alex-devdone/herdr-cursor-open) | Opens the focused Herdr pane's project in Cursor or VS Code, including remote panes through the editor's Remote SSH support. |
-| [**lurepos/herdr-vscode-tasks**](https://github.com/lurepos/herdr-vscode-tasks) | A Herdr picker for projects that use a `.vscode` directory and VS Code task configuration. The source catalog provides no further detail. |
-| [**magimetal/matrix-themes**](https://github.com/magimetal/matrix-themes) | A collection of Matrix-inspired themes for Pi Coding Agent, Ghostty, Herdr, VS Code, and Zed. |
-| [**gogamid/pi-herdr-cursor-focus**](https://github.com/gogamid/pi-herdr-cursor-focus) | A Pi extension that hides the editor cursor in Herdr panes that are not currently focused. |
+| [**lurepos/herdr-vscode-tasks**](https://github.com/lurepos/herdr-vscode-tasks) | Provides tools for projects that use a `.vscode` directory and VS Code task configuration. The source catalog provides no further detail. |
+| [**magimetal/matrix-themes**](https://github.com/magimetal/matrix-themes) | Provides Pi Coding Agent, Ghostty, Herdr, VS Code, and Zed. |
+| [**gogamid/pi-herdr-cursor-focus**](https://github.com/gogamid/pi-herdr-cursor-focus) | Hides the editor cursor in Herdr panes that are not currently focused. |
 | [**beraterkanelcelik/agent-army**](https://github.com/beraterkanelcelik/agent-army) | A three-level agent hierarchy for parallel coding missions under one human operator, using Claude Code, Herdr, cursor-agent, and files as the command channel. |
 
 ### Vim, Kakoune, and other editors
 
-*13 projects. Navigation and workflow integrations for editors outside Neovim and VS Code.*
+*11 projects. Navigation and workflow integrations for editors outside Neovim and VS Code.**
 
 | Project | What it does |
 |---|---|
@@ -551,8 +548,6 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**AVGVSTVS96/vim-herdr-navigator**](https://github.com/AVGVSTVS96/vim-herdr-navigator) | Provides unified directional navigation between Herdr panes and Vim or Neovim splits. |
 | [**ChmaraX/herdr-gitview**](https://github.com/ChmaraX/herdr-gitview) | A Git status and diff panel for Herdr with file editing in Neovim, hunk staging and discarding, and commits from inside the terminal. |
 | [**eddof13/herdr.el**](https://github.com/eddof13/herdr.el) | Controls Herdr from Emacs while hosting Herdr's terminal sessions inside Emacs through ghostel. |
-| [**acmmarques/dotfiles**](https://github.com/acmmarques/dotfiles) | Personal configuration for Ghostty, Zsh, Herdr, Neovim, Karabiner, and Git. |
-| [**Jalmar01/my-dots**](https://github.com/Jalmar01/my-dots) | A personal Nix Home Manager flake for Fish, Ghostty, Zellij, Herdr, Neovim, and WezTerm. |
 | [**SamuelCastrillon/tzemed**](https://github.com/SamuelCastrillon/tzemed) | A Windows-native development stack combining Herdr, Neovim, Peri, and Gentle-ai specification-driven development. |
 | [**GMakeziG/ninjatronics-ai**](https://github.com/GMakeziG/ninjatronics-ai) | An AI operating environment for coordinating specialist engineering agents through Hermes, Herdr, Claude Code, and Codex. |
 | [**AVGVSTVS96/starter-dotfiles**](https://github.com/AVGVSTVS96/starter-dotfiles) | Minimal, agent-first macOS dotfiles for React and TypeScript development, including Ghostty, Herdr, Claude Code, Codex, LazyVim, Vite+, Nub, and basic shell tooling. |
@@ -561,20 +556,19 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### REPL and code dispatchers
 
-*2 projects. Tools for sending code or commands from an editor to a running pane or interactive session.*
+*1 project. Tools for sending code or commands from an editor to a running pane or interactive session.**
 
 | Project | What it does |
 |---|---|
 | [**AbhijithAnirudhan2907/herdr-sidebar**](https://github.com/AbhijithAnirudhan2907/herdr-sidebar) | A fork of herdr-sidebar that adds an editor inside the pane, including save, syntax highlighting, undo and redo, and find and replace. |
-| [**sjdonado/dotfiles**](https://github.com/sjdonado/dotfiles) | Cross-platform personal configuration for terminal tools, editors, shells, and AI coding harnesses on macOS and Linux. |
 
 ### Editor plugins and bridges
 
-*3 projects. General-purpose bridges that synchronize editor state with Herdr panes and agents.*
+*3 projects. General-purpose bridges that synchronize editor state with Herdr panes and agents.**
 
 | Project | What it does |
 |---|---|
-| [**Daniel-Steinberger/obsidian-herdr**](https://github.com/Daniel-Steinberger/obsidian-herdr) | An Obsidian plugin that sends the next unchecked Markdown task to an agent in the matching Herdr workspace and marks it complete when the agent finishes. Continuous mode can process an entire checklist. |
+| [**Daniel-Steinberger/obsidian-herdr**](https://github.com/Daniel-Steinberger/obsidian-herdr) | Sends the next unchecked Markdown task to an agent in the matching Herdr workspace and marks it complete when the agent finishes. Continuous mode can process an entire checklist. |
 | [**aclima01/herdr-edit-windows**](https://github.com/aclima01/herdr-edit-windows) | A small Windows text editor that opens in a Herdr split, with a directory tree, syntax highlighting, and an uncommitted-diff tab. Files can be edited and staged without leaving the multiplexer. |
 | [**vonzelle-vzt/herdr-extensions**](https://github.com/vonzelle-vzt/herdr-extensions) | Adds a 12-panel terminal IDE layer to Herdr with diagnostics, completion, source control, tests, editing, and agent diff review. A single repeatable installer sets up the environment. |
 
@@ -584,7 +578,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Fuzzy session switchers and terminal pickers
 
-*46 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.*
+*46 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.**
 
 | Project | What it does |
 |---|---|
@@ -599,45 +593,45 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**AVGVSTVS96/herdr-drovr**](https://github.com/AVGVSTVS96/herdr-drovr) | Uses fzf and the Herdr socket API to move live tabs and panes between workspaces without stopping their processes. |
 | [**beyondlex/herdr-recent-navigator**](https://github.com/beyondlex/herdr-recent-navigator) | A Rust popup that tracks recently focused workspaces, tabs, panes, and agents through socket events. It provides a live most-recently-used index, keyboard navigation, and fuzzy search. |
 | [**damianpoole/herdr-opencode-sessions**](https://github.com/damianpoole/herdr-opencode-sessions) | Searches earlier OpenCode sessions by project, title, date, or transcript text. Conversation previews and shortcuts make it possible to resume or fork a result into a new Herdr pane. |
-| [**dleen/herdr-agents**](https://github.com/dleen/herdr-agents) | An fzf agent picker that lists all active panes and puts blocked agents first. It shows live previews, jumps to existing workers, and can start new agents with one key. |
-| [**haphamdev/herdr-simple-switcher**](https://github.com/haphamdev/herdr-simple-switcher) | A lightweight fzf picker for active Herdr workspaces, tabs, and agents. Selecting an item immediately focuses the matching location. |
-| [**ImArtisann/herdr-workspace-launcher**](https://github.com/ImArtisann/herdr-workspace-launcher) | A macOS-focused directory picker that scans configured project roots and creates or focuses Herdr workspaces with one keyboard action. |
+| [**dleen/herdr-agents**](https://github.com/dleen/herdr-agents) | Lists all active panes and puts blocked agents first. It shows live previews, jumps to existing workers, and can start new agents with one key. |
+| [**haphamdev/herdr-simple-switcher**](https://github.com/haphamdev/herdr-simple-switcher) | Provides tools for active Herdr workspaces, tabs, and agents. Selecting an item immediately focuses the matching location. |
+| [**ImArtisann/herdr-workspace-launcher**](https://github.com/ImArtisann/herdr-workspace-launcher) | Scans configured project roots and creates or focuses Herdr workspaces with one keyboard action. |
 | [**iskwyuki/herdr-control-panel**](https://github.com/iskwyuki/herdr-control-panel) | A no-build popup panel using fzf to switch through workspace history, open paths, and run custom actions from Herdr key bindings. |
 | [**ismaelosuna7824/herdr-recent-workspaces**](https://github.com/ismaelosuna7824/herdr-recent-workspaces) | Keeps searchable history of workspace directories, refocuses active workspaces, restores older locations, and includes a filesystem browser for creating new workspaces. |
 | [**jeffarese/herdr-bar**](https://github.com/jeffarese/herdr-bar) | A dependency-free Python command palette for jumping to any Herdr tab, agent, repository, or branch. |
-| [**joshuadavidthomas/hrd**](https://github.com/joshuadavidthomas/hrd) | A Bubble Tea interface that combines local and remote Herdr sessions with isolated sandboxes for discovery, inspection, and attachment across machines and containers. |
-| [**kenchan/herdr-ghq-open-agent**](https://github.com/kenchan/herdr-ghq-open-agent) | An fzf picker for ghq repositories that opens the selected project in a Herdr workspace or tab and starts Claude Code in that directory. |
-| [**lmilojevicc/seshagy**](https://github.com/lmilojevicc/seshagy) | A Bubble Tea session picker for repositories, tmux sessions, and Herdr workspaces. It also shows running agent state before the user attaches. |
-| [**marcoskichel/herdr-muster**](https://github.com/marcoskichel/herdr-muster) | A fuzzy workspace picker that labels each Herdr workspace with live agent states such as working or blocked, making attention-heavy workspaces easy to spot. |
+| [**joshuadavidthomas/hrd**](https://github.com/joshuadavidthomas/hrd) | Combines local and remote Herdr sessions with isolated sandboxes for discovery, inspection, and attachment across machines and containers. |
+| [**kenchan/herdr-ghq-open-agent**](https://github.com/kenchan/herdr-ghq-open-agent) | Provides tools for ghq repositories that opens the selected project in a Herdr workspace or tab and starts Claude Code in that directory. |
+| [**lmilojevicc/seshagy**](https://github.com/lmilojevicc/seshagy) | Provides tools for repositories, tmux sessions, and Herdr workspaces. It also shows running agent state before the user attaches. |
+| [**marcoskichel/herdr-muster**](https://github.com/marcoskichel/herdr-muster) | Labels each Herdr workspace with live agent states such as working or blocked, making attention-heavy workspaces easy to spot. |
 | [**mikedclarke/herdr-workspaces**](https://github.com/mikedclarke/herdr-workspaces) | Registers frequently used project directories and opens them through a fuzzy picker. Existing workspaces are focused instead of duplicated. |
 | [**mr04vv/herdr-pane-navigator**](https://github.com/mr04vv/herdr-pane-navigator) | A fuzzy tree for workspaces, tabs, and panes, sorted by agent urgency. Its preview shows directory, status, and recent scrollback so blocked or completed work can be triaged quickly. |
 | [**nicosuave/memex**](https://github.com/nicosuave/memex) | Indexes conversations from Claude Code, Codex, Pi, OpenCode, and Cursor with hybrid search. A Herdr TUI searches the archive and can resume a selected interaction in a fresh tab. |
 | [**pedroloch/herdr-undo-close**](https://github.com/pedroloch/herdr-undo-close) | Restores recently closed panes or tabs, including their split hierarchy, directories, labels, and launched agents, through a shortcut or history picker. |
 | [**shadowfax92/herdr-ferry**](https://github.com/shadowfax92/herdr-ferry) | A native Rust popup for moving running panes or whole tabs between Herdr workspaces without restarting them or requiring fzf or Node.js. |
-| [**thanhdat77/herdr-navigator**](https://github.com/thanhdat77/herdr-navigator) | A unified fuzzy overlay for switching among Herdr workspaces, agents, remote hosts, and plugin actions from one keyboard-driven palette. |
+| [**thanhdat77/herdr-navigator**](https://github.com/thanhdat77/herdr-navigator) | Searches and switches between active Herdr sessions and workspaces using an interactive fuzzy picker. |
 | [**TheThoughtagen/attic**](https://github.com/TheThoughtagen/attic) | Finds idle coding-agent sessions, saves their state, and closes them to reclaim resources while keeping them restorable. A Textual dashboard and Herdr plugin support pinning, snoozing, and reviewing archived workspaces. |
-| [**ugurtarlig/herdr-agent-recency**](https://github.com/ugurtarlig/herdr-agent-recency) | A theme-aware fuzzy picker that ranks agents and workspaces by the time of their latest real Claude or Codex turn, bringing the most recently finished or stalled sessions to the top. |
+| [**ugurtarlig/herdr-agent-recency**](https://github.com/ugurtarlig/herdr-agent-recency) | Ranks agents and workspaces by the time of their latest real Claude or Codex turn, bringing the most recently finished or stalled sessions to the top. |
 | [**wraithyy/herdr-waypoint**](https://github.com/wraithyy/herdr-waypoint) | Saves frequently used project directories as named waypoints in a small text file and opens them as new Herdr workspaces through fzf. |
 | [**yoshiori/herdr-configurable-picker**](https://github.com/yoshiori/herdr-configurable-picker) | A tree-style Herdr navigator with fully configurable keys, designed for shortcut layouts that conflict with input methods such as Japanese IMEs. |
 | [**yxhta/herdr-agents-picker**](https://github.com/yxhta/herdr-agents-picker) | A Ratatui fuzzy-search popup with live previews of active agent panes. Pressing Enter focuses the selected session. |
 | [**code-yeongyu/web-terminal**](https://github.com/code-yeongyu/web-terminal) | A self-hosted, mobile-first web terminal built on Ghostty WASM, with sessions that survive disconnects, a file explorer, and Herdr integration. |
 | [**Joxtacy/herdr-plugin-vault**](https://github.com/Joxtacy/herdr-plugin-vault) | Browses earlier Claude Code sessions in a Herdr popup and resumes the selected conversation in a new tab. |
-| [**htlin222/herdr-agent-self-reload-skill**](https://github.com/htlin222/herdr-agent-self-reload-skill) | A skill that re-prompts the agent in the current Herdr pane after a chosen delay. |
+| [**htlin222/herdr-agent-self-reload-skill**](https://github.com/htlin222/herdr-agent-self-reload-skill) | Re-prompts the agent in the current Herdr pane after a chosen delay. |
 | [**vsem-azamat/herdr-telegram**](https://github.com/vsem-azamat/herdr-telegram) | Connects Telegram forum topics to stable Herdr agent sessions for ongoing remote conversations. |
-| [**BradleyLWood/herdr-sessions**](https://github.com/BradleyLWood/herdr-sessions) | A project for managing Herdr sessions. The source catalog provides no specific feature list. |
-| [**fjordlars/herdr-session-manager**](https://github.com/fjordlars/herdr-session-manager) | A small terminal interface for creating and managing named Herdr sessions. |
+| [**BradleyLWood/herdr-sessions**](https://github.com/BradleyLWood/herdr-sessions) | Provides managing Herdr sessions. The source catalog provides no specific feature list. |
+| [**fjordlars/herdr-session-manager**](https://github.com/fjordlars/herdr-session-manager) | Provides tools for creating and managing named Herdr sessions. |
 | [**salkhalil/herdr-sessionizer**](https://github.com/salkhalil/herdr-sessionizer) | A Herdr sessionizer that uses fzf to search open workspaces and zoxide directories, then creates or focuses a workspace with template tabs. |
 | [**Duzc01/herdr-session-finder**](https://github.com/Duzc01/herdr-session-finder) | Searches Claude Code sessions across all projects and resumes the selected conversation through a Herdr plugin. |
 | [**iiii1224/herdr-statusline**](https://github.com/iiii1224/herdr-statusline) | A configurable status line for Herdr sessions. |
 | [**pawaca/even-better**](https://github.com/pawaca/even-better) | Mirrors live Claude Code and Codex sessions from Herdr to Even Realities G2 glasses using the even-terminal-compatible protocol. |
-| [**JeremiahChurch/herd-remote**](https://github.com/JeremiahChurch/herd-remote) | A phone-friendly web interface for starting, watching, and controlling Claude or Codex sessions in Herdr. |
+| [**JeremiahChurch/herd-remote**](https://github.com/JeremiahChurch/herd-remote) | Provides tools for starting, watching, and controlling Claude or Codex sessions in Herdr. |
 | [**nickboy/herddeck**](https://github.com/nickboy/herddeck) | A Stream Deck control surface for local and remote Herdr agent sessions. |
 | [**KUKARAF/collie_voice_commands**](https://github.com/KUKARAF/collie_voice_commands) | A Rust and Tauri Android app that sends voice commands to Collie or Herdr sessions and produces spoken summaries through OpenRouter. |
-| [**lsisoft/herdr-telegram-slack-bridge**](https://github.com/lsisoft/herdr-telegram-slack-bridge) | A two-way Telegram and Slack bot bridge for Herdr sessions. It sends blocked-agent alerts and routes chat replies back to Herdr or tmux panes. |
+| [**lsisoft/herdr-telegram-slack-bridge**](https://github.com/lsisoft/herdr-telegram-slack-bridge) | Provides tools for Herdr sessions. It sends blocked-agent alerts and routes chat replies back to Herdr or tmux panes. |
 
 ### Persistence, snapshots, and state restoration
 
-*11 projects. Tools that record layouts and process context, then rebuild or resume them after a restart.*
+*11 projects. Tools that record layouts and process context, then rebuild or resume them after a restart.**
 
 | Project | What it does |
 |---|---|
@@ -655,7 +649,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Workspace and multi-session management
 
-*7 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.*
+*7 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.**
 
 | Project | What it does |
 |---|---|
@@ -669,15 +663,15 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ## 5. Worktrees and terminal experience
 
-*363 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+*357 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
 
 ### Git worktree automation
 
-*99 projects. Tools that create isolated branches and worktrees for agents, then connect them to Herdr workspaces or tabs.*
+*99 projects. Tools that create isolated branches and worktrees for agents, then connect them to Herdr workspaces or tabs.**
 
 | Project | What it does |
 |---|---|
-| [**noamsiegel/git-wt-herdr**](https://github.com/noamsiegel/git-wt-herdr) | Connects the `git-wt` lifecycle to Herdr: creating a worktree opens a focused tab, removing it closes the tab, and switching follows the matching worktree. It is the Bash reference implementation of `git-wt.plugin.v0`. |
+| [**noamsiegel/git-wt-herdr**](https://github.com/noamsiegel/git-wt-herdr) | Automates Git worktree creation and lifecycle management by mapping worktrees directly to Herdr tabs. |
 | [**SirTenzin/superherd**](https://github.com/SirTenzin/superherd) | Connects the Superset workspace manager to Herdr. One command creates a worktree and Herdr workspace, mirrors Superset setup terminals as tabs, forwards interrupts, and removes the launcher pane when setup completes. |
 | [**mattarau/wt-herdr**](https://github.com/mattarau/wt-herdr) | Keeps Worktrunk worktrees and Herdr workspaces synchronized. Workspace creation, removal, and focus follow Worktrunk changes, with health checks, dry runs, and lifecycle notifications. |
 | [**qdentity/herdr-worktree-lifecycle**](https://github.com/qdentity/herdr-worktree-lifecycle) | Routes worktree lifecycle events to setup and teardown scripts stored in the repository itself. Events are serialized per path, so each project owns its provisioning logic while the plugin handles delivery. |
@@ -686,16 +680,16 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**razajamil/herdr-plugin-workspace-manager**](https://github.com/razajamil/herdr-plugin-workspace-manager) | Defines tabs, splits, and startup commands in YAML and applies the layout whenever a new worktree opens. It can run a blocking setup command first and prune worktrees whose upstream branch has been removed. |
 | [**peterferguson/herdr-conductor-worktree**](https://github.com/peterferguson/herdr-conductor-worktree) | Creates worktrees in Conductor's expected directory structure, registers them in Conductor's database, and provides a synchronization pane for opening active workspaces and closing archived ones. |
 | [**NathanFlurry/herdr-plugin-jj-workspace**](https://github.com/NathanFlurry/herdr-plugin-jj-workspace) | Adds key bindings for creating and removing Jujutsu workspaces through `jj workspace`, opening the result as a Herdr workspace or tab. |
-| [**devashish2203/herdr-worktrunk**](https://github.com/devashish2203/herdr-worktrunk) | An fzf interface for Worktrunk inside Herdr. It switches to existing worktrees or creates a branch with Worktrunk hooks, and its removal action checks for dirty or unmerged work first. |
+| [**devashish2203/herdr-worktrunk**](https://github.com/devashish2203/herdr-worktrunk) | Provides tools for Worktrunk inside Herdr. It switches to existing worktrees or creates a branch with Worktrunk hooks, and its removal action checks for dirty or unmerged work first. |
 | [**kkckkc/herdr-plugin-gh-workflow**](https://github.com/kkckkc/herdr-plugin-gh-workflow) | Takes a GitHub issue number, creates a branch and worktree through `gh issue develop`, and builds a Herdr workspace from the repository's `herdr-workspace.yaml` layout. |
-| [**persiyanov/herdr-reviewr**](https://github.com/persiyanov/herdr-reviewr) | Opens a persistent diff pane beside an agent, supports line-range comment cards, and sends all review notes to the agent in one action. It also includes themes, a GitHub pull-request view, and a worktree browser. |
+| [**persiyanov/herdr-reviewr**](https://github.com/persiyanov/herdr-reviewr) | Provides an interactive diff review interface for inspecting agent changes and dispatching review feedback. |
 | [**smarzban/herdr-file-viewer**](https://github.com/smarzban/herdr-file-viewer) | A read-only split-pane file viewer with a Git-status tree and automatic rendering for diffs, Markdown, or source code. It includes search, worktree switching, and optional integration with delta, bat, and glow. |
 | [**beomjungil/herdr-lazygit-overlay**](https://github.com/beomjungil/herdr-lazygit-overlay) | Opens lazygit as an overlay using the focused pane's working directory, then restores the previous focus and zoom state when lazygit exits. |
 | [**edmundmiller/herdr-plugin-hunk**](https://github.com/edmundmiller/herdr-plugin-hunk) | Adds six Hunk actions for worktree, staged, and branch diffs, each opening in either a split or a new tab. The active workspace and selected Herdr theme are passed to Hunk automatically. |
 | [**wyattjoh/herdr-plugin-renamer**](https://github.com/wyattjoh/herdr-plugin-renamer) | Renames numbered tabs from the agent's first prompt and can also rename an automatically linked worktree's branch and workspace. The short task name is generated locally with Apple Foundation Models or Codex. |
 | [**ynny-github/herdr-event-hook**](https://github.com/ynny-github/herdr-event-hook) | Reads a committed `.herdr-event-hook.toml` and runs configured commands when worktrees are created or removed, making it possible to start and stop per-worktree services automatically. |
 | [**mkdir700/herdr-config**](https://github.com/mkdir700/herdr-config) | A portable Herdr configuration with worktree settings, LazyVim-style keys, and small plugins for diff review, copying workspace paths, opening lazygit, and showing pull-request status. |
-| [**aleslanger/herdr-strays**](https://github.com/aleslanger/herdr-strays) | A terminal dashboard for finding and removing abandoned Git worktrees from parallel agent runs. It shows project trees and live diffs and can send follow-up prompts to Claude Code panes. |
+| [**aleslanger/herdr-strays**](https://github.com/aleslanger/herdr-strays) | Provides tools for finding and removing abandoned Git worktrees from parallel agent runs. It shows project trees and live diffs and can send follow-up prompts to Claude Code panes. |
 | [**alexarthurs/herdr-sidebar**](https://github.com/alexarthurs/herdr-sidebar) | A persistent sidebar combining a file explorer and Git controls. It includes syntax-highlighted previews, visual diffs, detailed change information, and AI-generated commit messages. |
 | [**asumaran/gotopr**](https://github.com/asumaran/gotopr) | Finds open GitHub pull requests across local repositories and worktrees, then focuses the Herdr workspace that matches the selected review branch. |
 | [**azizuysal/herdr-workbench**](https://github.com/azizuysal/herdr-workbench) | An IDE-style Herdr sidebar with collapsible files, live text search, Git status groups, syntax-highlighted previews, editor handoff, and quick-look views. |
@@ -703,7 +697,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**bfreed/herdr-corral**](https://github.com/bfreed/herdr-corral) | A Herdr-focused replacement for workmux that creates Git worktrees, branch-specific environment files, dependencies, and tabs for agents, shells, and development servers, with merge-aware cleanup. |
 | [**blurname/herdr-git-tab-name**](https://github.com/blurname/herdr-git-tab-name) | Keeps Herdr tab labels synchronized with the Git branch in the focused pane. |
 | [**brianh20/herdr-stagr**](https://github.com/brianh20/herdr-stagr) | Adds a source-control sidebar for staging, unstaging, and discarding changes with side-by-side diffs inside Herdr. |
-| [**cdowell09/herdr-pr-board**](https://github.com/cdowell09/herdr-pr-board) | A configurable Herdr dashboard that combines open pull requests from several repositories and shows CI, review, and branch state beside agent workspaces. |
+| [**cdowell09/herdr-pr-board**](https://github.com/cdowell09/herdr-pr-board) | Combines open pull requests from several repositories and shows CI, review, and branch state beside agent workspaces. |
 | [**chouxcreams/herdr-dashboard**](https://github.com/chouxcreams/herdr-dashboard) | A Ratatui pull-request dashboard covering all workspaces and panes. A background service caches CI and approval state, and keyboard actions jump to the responsible pane or open the pull request. |
 | [**crexi/herdr-worktree-copy**](https://github.com/crexi/herdr-worktree-copy) | Reads a `.worktree-copy` manifest when Herdr creates a worktree and copies environment files or symlinks shared directories from the main checkout. |
 | [**Crokily/herdr-lazygit**](https://github.com/Crokily/herdr-lazygit) | Runs lazygit in a Herdr sidebar with shortcuts for opening, expanding, and staging changes, plus AI-assisted commit-message generation from the pending diff. |
@@ -746,10 +740,10 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**wyattjoh/herdr-plugin-gh-pr**](https://github.com/wyattjoh/herdr-plugin-gh-pr) | Shows the GitHub pull-request number and CI state for the focused agent pane's branch in the Herdr sidebar. Updates are rate-limited, with shortcuts for manual refresh and opening the pull request. |
 | [**zerodice0/herdr-plugin-worktree-bootstrap**](https://github.com/zerodice0/herdr-plugin-worktree-bootstrap) | Copies ignored local configuration, environment files, and credentials into new worktrees and runs required setup commands so agent panes can start working immediately. |
 | [**kenn-io/ghosthub**](https://github.com/kenn-io/ghosthub) | A power terminal for local and remote sessions that supports tmux, Herdr, and Zellij, with built-in Git worktree creation, isolation, and repository-specific setup. |
-| [**spirin22/herdr-plugins**](https://github.com/spirin22/herdr-plugins) | A collection of Herdr plugins for seeding new worktrees with ignored files and running project-specific setup steps. |
+| [**spirin22/herdr-plugins**](https://github.com/spirin22/herdr-plugins) | Provides seeding new worktrees with ignored files and running project-specific setup steps. |
 | [**mkdir700/herdr-plugin-worktree**](https://github.com/mkdir700/herdr-plugin-worktree) | Creates a Git worktree from a GitHub issue, pull request, or branch name, automatically detecting the input type and using Claude-generated naming where supported. |
 | [**timofey-TK/herdr-worktree-hooks**](https://github.com/timofey-TK/herdr-worktree-hooks) | Runs custom setup and teardown commands when a Herdr worktree is created, opened, or removed. |
-| [**dkarter/hwt**](https://github.com/dkarter/hwt) | A command-line tool for simplifying Herdr worktree orchestration. The source catalog provides no detailed feature list. |
+| [**dkarter/hwt**](https://github.com/dkarter/hwt) | Provides tools for simplifying Herdr worktree orchestration. The source catalog provides no detailed feature list. |
 | [**kennethkoontz/herdr-worktree-sync**](https://github.com/kennethkoontz/herdr-worktree-sync) | Copies ignored files selected by `.worktreeinclude` into new worktrees, then allows and reloads direnv at the new root. |
 | [**arjenblokzijl/herdr-worktree-autosetup**](https://github.com/arjenblokzijl/herdr-worktree-autosetup) | Runs a configured setup command in a visible pane whenever Herdr creates a Git worktree. |
 | [**eightHundreds/herdr-worktreeinclude**](https://github.com/eightHundreds/herdr-worktreeinclude) | Copies gitignored files selected by `.worktreeinclude` into new Herdr worktrees. |
@@ -758,12 +752,12 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**botonddombi/boti-toolkit**](https://github.com/botonddombi/boti-toolkit) | A personal development toolkit with Herdr worktree helpers, a machine-setup playbook, and a Claude Code setup agent. |
 | [**snics/herdr-worktree-from-gitlab**](https://github.com/snics/herdr-worktree-from-gitlab) | Creates a Git worktree and Herdr workspace from a GitLab issue through the `glab` CLI. |
 | [**dabeeeenster/herdr-worktree-local-files**](https://github.com/dabeeeenster/herdr-worktree-local-files) | Links ignored local configuration files from the main checkout into newly created Git worktrees. |
-| [**jal-co/pi-herdr-worktree**](https://github.com/jal-co/pi-herdr-worktree) | A Pi extension for managing Git worktrees through Herdr's native API, with project-level hooks before removal and after creation. |
+| [**jal-co/pi-herdr-worktree**](https://github.com/jal-co/pi-herdr-worktree) | Provides tools for managing Git worktrees through Herdr's native API, with project-level hooks before removal and after creation. |
 | [**toyamarinyon/herdr-worktree-setup**](https://github.com/toyamarinyon/herdr-worktree-setup) | Runs a setup script committed to the repository whenever Herdr creates a new worktree. |
 | [**AndreGeng/herdr-worktree-dispatcher**](https://github.com/AndreGeng/herdr-worktree-dispatcher) | Dispatches coding tasks into temporary Git worktrees and starts an agent in each checkout. The public entry point is `scripts/dispatch.sh`, backed by a compiled TypeScript command-line implementation. |
 | [**wthorp/squeeze-chute**](https://github.com/wthorp/squeeze-chute) | Coordinates GitHub issues through isolated Herdr worktree teams. |
 | [**mopeneko/herdr-worktree-hook-plugin**](https://github.com/mopeneko/herdr-worktree-hook-plugin) | Runs user-defined shell commands immediately after a new worktree is created, providing a simple post-create hook for Herdr. |
-| [**ralphcrisostomo/herdr-goal-skill**](https://github.com/ralphcrisostomo/herdr-goal-skill) | A Claude Code skill for splitting a goal among parallel lead agents in Herdr worktrees, with model tiering and self-updating coordination. |
+| [**ralphcrisostomo/herdr-goal-skill**](https://github.com/ralphcrisostomo/herdr-goal-skill) | Provides tools for splitting a goal among parallel lead agents in Herdr worktrees, with model tiering and self-updating coordination. |
 | [**mholtzscher/herdr-worktree-picker**](https://github.com/mholtzscher/herdr-worktree-picker) | Creates Herdr worktrees from either local or remote Git branches. |
 | [**arjenblokzijl/herdr-worktree-provisioner**](https://github.com/arjenblokzijl/herdr-worktree-provisioner) | Runs repository-specific setup in a visible pane inside each new worktree, with a deliberately simple and composable design. |
 | [**hung-eggie-do-covergo/delegate-orchestrator**](https://github.com/hung-eggie-do-covergo/delegate-orchestrator) | Starts one isolated Claude Code subagent per repository through Herdr worktrees, with multi-repository coordination, worktree reuse, and session resumption. |
@@ -774,12 +768,12 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**ditwrd/herdr-remote-worktrunk**](https://github.com/ditwrd/herdr-remote-worktrunk) | A remote Herdr workspace setup built around Worktrunk. The source catalog does not describe the workflow further. |
 | [**ribbons-digital/pi-herd**](https://github.com/ribbons-digital/pi-herd) | Provides visible Pi session orchestration through Herdr panes and isolated Git worktrees. |
 | [**simoncrypta/agentic-dev-setup**](https://github.com/simoncrypta/agentic-dev-setup) | A shareable development layout combining Herdr and Worktrunk for agent-oriented coding workflows. |
-| [**sample-usr/herdr-devenv-worktree**](https://github.com/sample-usr/herdr-devenv-worktree) | A Herdr plugin for using devenv inside Git worktrees. |
+| [**sample-usr/herdr-devenv-worktree**](https://github.com/sample-usr/herdr-devenv-worktree) | Provides tools for using devenv inside Git worktrees. |
 | [**danieljvdm/herdr-worktrunk**](https://github.com/danieljvdm/herdr-worktrunk) | Integrates Worktrunk worktree management with Herdr as a plugin. |
 
 ### Workspace lifecycle and multi-repository tools
 
-*4 projects. Higher-level utilities for starting, tracking, and removing workspaces that span one or more repositories.*
+*4 projects. Higher-level utilities for starting, tracking, and removing workspaces that span one or more repositories.**
 
 | Project | What it does |
 |---|---|
@@ -806,12 +800,12 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**speardragon/herdr-ask-inbox**](https://github.com/speardragon/herdr-ask-inbox) | Collects blocked Claude `AskUserQuestion` prompts from all Herdr workspaces into one popup, where pending questions can be reviewed and answered safely. |
 | [**tomasvarga/herdr-pickr**](https://github.com/tomasvarga/herdr-pickr) | Intercepts clicked GitHub pull-request and GitLab merge-request links and opens their diffs in tuicr, Hunk, or a browser, with an optional AI first-pass review. |
 | [**Tomatio13/herdr-google-gmail**](https://github.com/Tomatio13/herdr-google-gmail) | A keyboard-driven Gmail browser inside a Herdr split, using `gogcli` and fzf to navigate mail and render HTML messages as readable text previews. |
-| [**yuucu/herdr-hunk**](https://github.com/yuucu/herdr-hunk) | A small fzf and Hunk plugin for browsing modified files and opening interactive diffs in a split or tab, optionally whenever an agent finishes with uncommitted changes. |
+| [**yuucu/herdr-hunk**](https://github.com/yuucu/herdr-hunk) | Provides tools for browsing modified files and opening interactive diffs in a split or tab, optionally whenever an agent finishes with uncommitted changes. |
 | [**Volpestyle/herdr-plugin-mermaid-preview**](https://github.com/Volpestyle/herdr-plugin-mermaid-preview) | Shows live Mermaid diagram previews for Claude Code and Codex output inside Herdr. |
 | [**CyPack/herdr-plugins**](https://github.com/CyPack/herdr-plugins) | File-manager extensions for the CyPack Herdr fork that preview spreadsheets, images, PDFs, and text files. |
-| [**dannycroft/hunk-herdr-plugin**](https://github.com/dannycroft/hunk-herdr-plugin) | A Zig plugin for opening Hunk diffs in either a Herdr split or a tab. |
+| [**dannycroft/hunk-herdr-plugin**](https://github.com/dannycroft/hunk-herdr-plugin) | Provides tools for opening Hunk diffs in either a Herdr split or a tab. |
 | [**cevr/herdr-hunk**](https://github.com/cevr/herdr-hunk) | Routes Hunk review notes back to the correct Herdr agent pane. |
-| [**caoer/ccc-herdr-layout**](https://github.com/caoer/ccc-herdr-layout) | A one-key visual layout picker for Herdr with live previews. |
+| [**caoer/ccc-herdr-layout**](https://github.com/caoer/ccc-herdr-layout) | Provides tools for Herdr with live previews. |
 | [**devenjarvis/herdr-review**](https://github.com/devenjarvis/herdr-review) | Adds an interactive plan-review stage to Herdr workflows. |
 | [**pi-dal/herdr-preview**](https://github.com/pi-dal/herdr-preview) | A diff-first review pane with restricted file browsing, comments, and image previews. |
 | [**arvindparmar-me/herdr-markdown-viewer**](https://github.com/arvindparmar-me/herdr-markdown-viewer) | Previews a selected Markdown file path in a right-hand Herdr split through a single shortcut. |
@@ -826,7 +820,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**devskale/herdr-flist**](https://github.com/devskale/herdr-flist) | Opens a narrow directory sidebar beside the focused pane and follows its current directory, including remote SSH shells where the path is parsed from the prompt. Entries are directory-first and include Git status markers. |
 | [**ppggff/herdr-plugin**](https://github.com/ppggff/herdr-plugin) | Remembers the macOS keyboard input source used in each Herdr pane and restores it when focus returns, using a bundled Swift helper or macism. |
 | [**carellano/herdr-dev-servers**](https://github.com/carellano/herdr-dev-servers) | Detects development servers running in Herdr panes, records their ports and process state, and can focus or safely stop orphaned services. |
-| [**cpcloud/herdr-agentsview**](https://github.com/cpcloud/herdr-agentsview) | A terminal dashboard that combines active AgentsView sessions across projects, models, and agents, with real-time timelines and metrics inside Herdr. |
+| [**cpcloud/herdr-agentsview**](https://github.com/cpcloud/herdr-agentsview) | Combines active AgentsView sessions across projects, models, and agents, with real-time timelines and metrics inside Herdr. |
 | [**iurysza/termscope**](https://github.com/iurysza/termscope) | Finds visible file paths and web links on the terminal screen, lets the user select one with fuzzy search, and opens it in a separate split without disturbing the main pane. |
 | [**jagzmz/herdr-annotations**](https://github.com/jagzmz/herdr-annotations) | Attaches local annotations to selected terminal text and groups them into reusable collections. Line-specific notes can be combined into one feedback prompt for an agent. |
 | [**lucasleon2107/herdr-tab-title-sync**](https://github.com/lucasleon2107/herdr-tab-title-sync) | Updates Herdr tab labels from agent conversation titles and prompt summaries, allowing names to change as the task evolves. |
@@ -851,7 +845,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**JanTvrdik/herdr-command-palette**](https://github.com/JanTvrdik/herdr-command-palette) | Opens an fzf overlay containing every action from every installed plugin. It preserves the originating workspace directory, runs the selected action, and removes the temporary overlay afterward. |
 | [**rmarganti/herdr-pluck**](https://github.com/rmarganti/herdr-pluck) | Adds one- and two-letter hints for copyable terminal tokens, including URLs, paths, hashes, UUIDs, IP addresses, Kubernetes references, and hexadecimal values. |
 | [**jeffarese/herdr-newtab-plus**](https://github.com/jeffarese/herdr-newtab-plus) | Replaces the normal new-tab action with a directory and project picker that includes autocomplete, recent locations, and an optional agent to start. If the directory is already open, it focuses that workspace instead. |
-| [**KonstantinKai/herdr-harpoon**](https://github.com/KonstantinKai/herdr-harpoon) | A small Harpoon-style bookmark system for frequently used Herdr panes. Numeric shortcuts jump to saved panes, using only shell scripts and the Herdr CLI. |
+| [**KonstantinKai/herdr-harpoon**](https://github.com/KonstantinKai/herdr-harpoon) | Provides tools for frequently used Herdr panes. Numeric shortcuts jump to saved panes, using only shell scripts and the Herdr CLI. |
 | [**maedana/herdr-hint**](https://github.com/maedana/herdr-hint) | Displays Vimium-style single-letter labels over active tabs and agent panes so focus can jump directly to a target without cycling through the layout. |
 | [**malone-c/herdr-keybind-search**](https://github.com/malone-c/herdr-keybind-search) | Parses Herdr key bindings into an fzf overlay for searching and running configured actions without memorizing every shortcut. |
 | [**wraithyy/herdr-hintr**](https://github.com/wraithyy/herdr-hintr) | An early which-key-style popup that shows available Herdr shortcuts and can run the selected action. |
@@ -870,7 +864,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**Taeyoung96/herdr-dotfiles**](https://github.com/Taeyoung96/herdr-dotfiles) | A ready-to-use Herdr configuration with prefix-free pane movement, `Ctrl+Space` as the prefix, Catppuccin styling, and a global agent panel. The installer symlinks the file and backs up the previous config. |
 | [**kamaaina/herdr_sync**](https://github.com/kamaaina/herdr_sync) | Sends the command currently typed in one pane to every other pane in the same tab, providing synchronized-pane behavior for Herdr. |
 | [**twadams21/cc-controller**](https://github.com/twadams21/cc-controller) | Maps SDL game controllers to Herdr socket commands for navigation, scrolling, and voice mode. The controller may be local or connected from another machine over SSH. |
-| [**Davidcreador/herdr-token-dashboard**](https://github.com/Davidcreador/herdr-token-dashboard) | A Bubble Tea dashboard for Pi and OpenCode token use, cost, model, messages, and tool breakdowns across panes. It refreshes live and shows a Herdr toast with the final cost when an agent finishes. |
+| [**Davidcreador/herdr-token-dashboard**](https://github.com/Davidcreador/herdr-token-dashboard) | Provides tools for Pi and OpenCode token use, cost, model, messages, and tool breakdowns across panes. It refreshes live and shows a Herdr toast with the final cost when an agent finishes. |
 | [**astkaasa/herdr-tokscale-dashboard**](https://github.com/astkaasa/herdr-tokscale-dashboard) | Opens the existing Tokscale token and cost dashboard in a Herdr split and exposes a JSON quick action without reimplementing Tokscale. |
 | [**3mmdrew/herdr-layout**](https://github.com/3mmdrew/herdr-layout) | Defines and creates Herdr workspace layouts in plain Lua, including pane splits and startup commands, without YAML or a separate service. |
 | [**a-curious-coder/herdr-plugin-manager**](https://github.com/a-curious-coder/herdr-plugin-manager) | An fzf plugin manager for finding, installing, updating, enabling, and disabling Herdr plugins from the public registry. It also stops orphaned background services when a plugin is turned off. |
@@ -909,7 +903,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**GroepOnline/herdr-plugins**](https://github.com/GroepOnline/herdr-plugins) | A mirrored Herdr plugin collection migrated from OnlineChefGroep/herdr-plugins. |
 | [**SeanRoberts/herdr-plugins**](https://github.com/SeanRoberts/herdr-plugins) | A repository of Herdr plugins. The source catalog provides no individual descriptions. |
 | [**lliwi/herdr-plugins**](https://github.com/lliwi/herdr-plugins) | A personal collection of Herdr plugins. |
-| [**aiki-sh/aiki-plugin-herdr**](https://github.com/aiki-sh/aiki-plugin-herdr) | A Herdr plugin for Aiki integration. |
+| [**aiki-sh/aiki-plugin-herdr**](https://github.com/aiki-sh/aiki-plugin-herdr) | Provides tools for Aiki integration. |
 | [**boooowy/herdr_plugins**](https://github.com/boooowy/herdr_plugins) | A Herdr plugin collection with no specific features described in the source catalog. |
 | [**BlockedPath/herdr-plugin**](https://github.com/BlockedPath/herdr-plugin) | A Herdr plugin project with no specific features described in the source catalog. |
 | [**michiomochi/herdr-plugin-sidenote**](https://github.com/michiomochi/herdr-plugin-sidenote) | A TUI plugin intended to remain in the right pane of a main Herdr workspace. The source description ends before explaining the per-workspace behavior. |
@@ -924,11 +918,11 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**spr-networks/spr-herdr**](https://github.com/spr-networks/spr-herdr) | Runs a Herdr TUI inside an SPR-managed KVM microVM. |
 | [**amiramay/herdr-layout-cycle**](https://github.com/amiramay/herdr-layout-cycle) | Cycles through preset Herdr pane layouts with a tmux-style prefix-and-space action. |
 | [**shadowfax92/herdr-layouts**](https://github.com/shadowfax92/herdr-layouts) | Adds tmux-style narrow splits and focused-pane equalization to Herdr. |
-| [**jmarcelomb/herdr-nav**](https://github.com/jmarcelomb/herdr-nav) | A navigation plugin for Herdr panes, tabs, and workspaces. |
+| [**jmarcelomb/herdr-nav**](https://github.com/jmarcelomb/herdr-nav) | Provides tools for Herdr panes, tabs, and workspaces. |
 | [**iQua/herdr-flakes**](https://github.com/iQua/herdr-flakes) | Mirrors and controls Flakes runs from a local Herdr session. |
 | [**corrius/herdr-numbered-navigation**](https://github.com/corrius/herdr-numbered-navigation) | Deprecated. Its numbered-navigation features moved to herdr-session-organizer version 0.3.0 and later. |
 | [**jrswab/herdr-status**](https://github.com/jrswab/herdr-status) | An ambient Linux machine-status pane for Herdr. |
-| [**markbrutx/pif-herdr-reporter**](https://github.com/markbrutx/pif-herdr-reporter) | A Herdr status-reporting extension for the pif coding agent. |
+| [**markbrutx/pif-herdr-reporter**](https://github.com/markbrutx/pif-herdr-reporter) | Provides tools for the pif coding agent. |
 | [**jeph/herdr-pane-balancer**](https://github.com/jeph/herdr-pane-balancer) | Automatically retile and equalizes Herdr panes whenever a pane is created, closed, or exits. |
 | [**Tetat-Chulchue/meadow**](https://github.com/Tetat-Chulchue/meadow) | A mouse-driven file explorer that runs in a Herdr pane. |
 | [**jlangston/herdr-clipboard**](https://github.com/jlangston/herdr-clipboard) | Adds tmux-style clipboard history to Herdr, including image entries. |
@@ -950,7 +944,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Command palettes and workspace switchers
 
-*13 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.*
+*13 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.**
 
 | Project | What it does |
 |---|---|
@@ -959,10 +953,10 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**phine-apps/mux-prompter**](https://github.com/phine-apps/mux-prompter) | Searches local prompt libraries with fzf and inserts a context-aware template into the active Herdr pane. |
 | [**fullerzz/herdr-plugin-sesh**](https://github.com/fullerzz/herdr-plugin-sesh) | A sesh-style Herdr workspace picker with zoxide integration for creating workspaces from frequently used directories. |
 | [**ramarivera/herdr-palette**](https://github.com/ramarivera/herdr-palette) | A Rust and Ratatui fuzzy command palette for Herdr workspaces. |
-| [**tomotochi/herdr-plugin-picker**](https://github.com/tomotochi/herdr-plugin-picker) | A Herdr file picker that takes selections from terminal browsers or search tools and inserts them into the pane that opened the picker. |
+| [**tomotochi/herdr-plugin-picker**](https://github.com/tomotochi/herdr-plugin-picker) | Takes selections from terminal browsers or search tools and inserts them into the pane that opened the picker. |
 | [**daltonkyemiller/herdr-plugin-switchboard**](https://github.com/daltonkyemiller/herdr-plugin-switchboard) | A Herdr plugin built for one focused switchboard workflow. The source catalog does not describe that workflow. |
 | [**AnnanKhan/herdr-agent-launcher**](https://github.com/AnnanKhan/herdr-agent-launcher) | Adds a clickable agent-launcher pane. Left-click starts the configured default agent, while right-click opens the full list. |
-| [**ningxiaoxiao/herdr-agent-picker**](https://github.com/ningxiaoxiao/herdr-agent-picker) | Lets the user choose an AI agent and working directory before Herdr creates a new tab, split, or workspace. |
+| [**ningxiaoxiao/herdr-agent-picker**](https://github.com/ningxiaoxiao/herdr-agent-picker) | Enables the user choose an AI agent and working directory before Herdr creates a new tab, split, or workspace. |
 | [**spro/herdr-agent-launcher**](https://github.com/spro/herdr-agent-launcher) | Opens a named Herdr tab running a selected Claude model. |
 | [**bkroeze/omherdr**](https://github.com/bkroeze/omherdr) | An Omarchy and Wayland Quickshell status launcher for Herdr. |
 | [**lucasleon2107/herdr-claude-launcher**](https://github.com/lucasleon2107/herdr-claude-launcher) | Opens a new Herdr tab with Claude Code already running. |
@@ -970,7 +964,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Status lines, sidebars, and tab synchronization
 
-*70 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.*
+*70 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.**
 
 | Project | What it does |
 |---|---|
@@ -1022,7 +1016,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**wenhanweime/herdr-plugin-renamer**](https://github.com/wenhanweime/herdr-plugin-renamer) | Uses an LLM to name sessions for Claude Code, Codex, Grok, Pi, and OpenCode, with Chinese or English labels and OpenCode Zen as the default engine. |
 | [**lachieh/herdr-plugin-cmux**](https://github.com/lachieh/herdr-plugin-cmux) | Mirrors every Herdr agent into the cmux sidebar. |
 | [**rcosteira79/herdr-plugins**](https://github.com/rcosteira79/herdr-plugins) | Contains two separate Herdr plugins: an idle-shell badge and a read-pending indicator. |
-| [**cokekitten/pi-recap**](https://github.com/cokekitten/pi-recap) | A compact Pi extension that summarizes recent activity and can synchronize session titles with Herdr or tmux. |
+| [**cokekitten/pi-recap**](https://github.com/cokekitten/pi-recap) | Summarizes recent activity and can synchronize session titles with Herdr or tmux. |
 | [**bleedingfight/herdr-agent-manager**](https://github.com/bleedingfight/herdr-agent-manager) | An fzf-based fuzzy finder for Herdr workspaces, tabs, panes, and agents. |
 | [**scaryrawr/herdr-agent-title**](https://github.com/scaryrawr/herdr-agent-title) | Displays Herdr agent information in the outer terminal window title. |
 | [**Vistyy/pi-herdr-agents**](https://github.com/Vistyy/pi-herdr-agents) | Runs user-owned Pi agents in dedicated Herdr tabs. |
@@ -1040,10 +1034,10 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**phillipleblanc/ad**](https://github.com/phillipleblanc/ad) | A command-line dispatcher for sending messages between local Herdr agent tabs. |
 | [**TheMetalStorm/herdr-cline-plugin**](https://github.com/TheMetalStorm/herdr-cline-plugin) | Makes a plain Cline CLI process appear as a native Herdr agent with lifecycle reporting. |
 | [**mrcndz/herdr-routines**](https://github.com/mrcndz/herdr-routines) | Runs scheduled routines on cron or interval timers by opening a tab in a chosen workspace and executing a command or starting an agent. |
-| [**MartinKei/herdr-tab-notes**](https://github.com/MartinKei/herdr-tab-notes) | A simple Herdr plugin for taking notes. |
+| [**MartinKei/herdr-tab-notes**](https://github.com/MartinKei/herdr-tab-notes) | Provides tools for taking notes. |
 | [**varelaseb/tabherd**](https://github.com/varelaseb/tabherd) | Adds pinned agents, color-coded session tabs, and collapsible workspace folders to Herdr. |
 | [**QuantumDancer/herdr-last-tab**](https://github.com/QuantumDancer/herdr-last-tab) | Switches back to the previously focused Herdr tab. |
-| [**nmogil/agent-skill-patterns**](https://github.com/nmogil/agent-skill-patterns) | A collection of portable Agent Skill patterns for Claude Code, Hermes, and Herdr workflows. |
+| [**nmogil/agent-skill-patterns**](https://github.com/nmogil/agent-skill-patterns) | Provides Claude Code, Hermes, and Herdr workflows. |
 
 ### Status overlays, HUDs, and agent timers
 
@@ -1083,7 +1077,7 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Output inspection, logs, and transcripts
 
-*9 projects. Tools for searching, cleaning, exporting, or reviewing pane output and agent conversations.*
+*9 projects. Tools for searching, cleaning, exporting, or reviewing pane output and agent conversations.**
 
 | Project | What it does |
 |---|---|
@@ -1099,31 +1093,25 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Dotfiles and ready-made configuration
 
-*12 projects. Complete or partial Herdr configurations that can be installed and adapted instead of written from zero.*
+*6 projects. Complete or partial Herdr configurations that can be installed and adapted instead of written from zero.**
 
 | Project | What it does |
 |---|---|
 | [**ddfonseca/herdr-paste-image**](https://github.com/ddfonseca/herdr-paste-image) | Saves an image from the macOS or Linux clipboard to disk and pastes its file path into the active pane for use by multimodal agents. |
 | [**ogulcancelik/herdr-browser**](https://github.com/ogulcancelik/herdr-browser) | Renders an interactive Chromium browser inside a Herdr pane through the Kitty graphics protocol. Chrome DevTools Protocol support lets agents automate the browser while humans observe and intervene with keyboard or mouse. |
-| [**poweroutlet2/herdr-confirm-close-pane**](https://github.com/poweroutlet2/herdr-confirm-close-pane) | Adds a tmux-style confirmation step before closing a Herdr pane. The source description is truncated after mentioning configurable key bindings. |
 | [**multiplex-term/Multiplex**](https://github.com/multiplex-term/Multiplex) | An SSH, tmux, and Herdr terminal client for Apple Vision Pro and iPad. |
-| [**RestartDK/scatterer**](https://github.com/RestartDK/scatterer) | A personal Herdr plugin configuration. |
 | [**crierr/herdr-tmux-layout**](https://github.com/crierr/herdr-tmux-layout) | Adds tmux-style layout presets for Herdr, including even horizontal, even vertical, main horizontal, main vertical, tiled, cycle, and balance. |
 | [**VinhLe1410/herdr-agent-priority**](https://github.com/VinhLe1410/herdr-agent-priority) | Configures how Herdr agent states are prioritized. |
 | [**masatokawano/to-herdr**](https://github.com/masatokawano/to-herdr) | Configuration and notes for migrating a terminal setup from Zellij to Herdr. |
-| [**kogakure/dotfiles**](https://github.com/kogakure/dotfiles) | A dotfiles repository whose source description only begins with the Xcode command-line-tools installation step. |
-| [**edmundmiller/herdr-plugin-dotfiles-dev-layout**](https://github.com/edmundmiller/herdr-plugin-dotfiles-dev-layout) | A Herdr plugin for opening the author's dotfiles development workspace layout. |
-| [**datalover37/dotfiles**](https://github.com/datalover37/dotfiles) | Personal dotfiles for Ghostty, Zsh, Herdr, and OpenCode. |
-| [**Angel-O/dotfiles**](https://github.com/Angel-O/dotfiles) | A modular chezmoi configuration for Ghostty, Herdr, OpenCode, Starship, Zsh, and Git. |
 
 ### Plugin collections and developer frameworks
 
-*2 projects. Collections and scaffolding for discovering, creating, or maintaining several Herdr extensions.*
+*2 projects. Collections and scaffolding for discovering, creating, or maintaining several Herdr extensions.**
 
 | Project | What it does |
 |---|---|
 | [**MIDO-ruby7/herdr-plugins-directory**](https://github.com/MIDO-ruby7/herdr-plugins-directory) | A directory of Herdr plugins organized by the task a user wants to accomplish. |
-| [**Newt6611/herdr-plugin-rust**](https://github.com/Newt6611/herdr-plugin-rust) | A Rust application framework for developing Herdr plugins. |
+| [**Newt6611/herdr-plugin-rust**](https://github.com/Newt6611/herdr-plugin-rust) | Provides tools for developing Herdr plugins. |
 
 ## 6. Apps, companion integrations, and installation
 
@@ -1131,30 +1119,30 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ### Native desktop and mobile apps
 
-*11 projects. Installed applications and launchers that provide a native interface to Herdr on desktop or mobile operating systems.*
+*11 projects. Installed applications and launchers that provide a native interface to Herdr on desktop or mobile operating systems.**
 
 | Project | What it does |
 |---|---|
 | [**hmu332233/herdr-menu-bar**](https://github.com/hmu332233/herdr-menu-bar) | A macOS menu-bar app showing agent state by workspace. Selecting an agent can return directly to its Herdr pane. |
 | [**re2zero/deepin-herdr**](https://github.com/re2zero/deepin-herdr) | A native Deepin Linux and UOS desktop app that embeds Herdr in a Qt terminal, installs the binary on first launch, and is distributed as a Debian package. |
-| [**re2zero/zenix**](https://github.com/re2zero/zenix) | A GPUI desktop client for Herdr with workspace controls, live system metrics, built-in themes, CJK input support, and an isolated bundled Herdr binary. |
-| [**zackbart/herdr-ios**](https://github.com/zackbart/herdr-ios) | A native SwiftUI iOS client that connects to Herdr over SSH, lists workspaces, displays live scrollback, subscribes to events, and sends terminal input without a relay service. |
+| [**re2zero/zenix**](https://github.com/re2zero/zenix) | Provides tools for Herdr with workspace controls, live system metrics, built-in themes, CJK input support, and an isolated bundled Herdr binary. |
+| [**zackbart/herdr-ios**](https://github.com/zackbart/herdr-ios) | Connects to Herdr over SSH, lists workspaces, displays live scrollback, subscribes to events, and sends terminal input without a relay service. |
 | [**jgwesterlund/agent-view**](https://github.com/jgwesterlund/agent-view) | A playful macOS status app that represents agents as pixel-art office characters, changes their behavior with agent state, and focuses a pane when its character is opened. |
-| [**bsorescu/herdr-mobile**](https://github.com/bsorescu/herdr-mobile) | A narrow-screen terminal interface that connects to Herdr over SSH and provides mobile-friendly status cards, filtered scrollback, and quick approval actions. |
-| [**sunnoy/livis**](https://github.com/sunnoy/livis) | A self-hosted Android terminal client for monitoring agents over SSH or Mosh, working with Herdr or tmux, and sending approval alerts to a phone. |
+| [**bsorescu/herdr-mobile**](https://github.com/bsorescu/herdr-mobile) | Connects to Herdr over SSH and provides mobile-friendly status cards, filtered scrollback, and quick approval actions. |
+| [**sunnoy/livis**](https://github.com/sunnoy/livis) | Provides tools for monitoring agents over SSH or Mosh, working with Herdr or tmux, and sending approval alerts to a phone. |
 | [**mohamed-essam/herdr-mobile**](https://github.com/mohamed-essam/herdr-mobile) | An Android companion made from a Go daemon and a Kotlin Compose app for monitoring Herdr agents and answering blocked prompts from a phone. |
 | [**Tatendaz/herdr-launcher**](https://github.com/Tatendaz/herdr-launcher) | An unofficial macOS Dock launcher that opens the Herdr terminal interface with one click. |
-| [**undivisible/herdr-gui**](https://github.com/undivisible/herdr-gui) | An experimental GPUI graphical interface for Herdr and related development tools. |
-| [**skeletor-js/bessie**](https://github.com/skeletor-js/bessie) | A native macOS client for Herdr. |
+| [**undivisible/herdr-gui**](https://github.com/undivisible/herdr-gui) | Provides tools for Herdr and related development tools. |
+| [**skeletor-js/bessie**](https://github.com/skeletor-js/bessie) | Provides tools for Herdr. |
 
 ### Web dashboards and remote viewers
 
-*16 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.*
+*16 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.**
 
 | Project | What it does |
 |---|---|
-| [**kcosr/herdr-web**](https://github.com/kcosr/herdr-web) | A React and Vite web interface for viewing and controlling Herdr from a desktop or mobile browser, including live pane state, terminal attachment, and event updates. |
-| [**alecuba16/herdr-webui**](https://github.com/alecuba16/herdr-webui) | A browser interface for Herdr with workspace and worktree navigation, agent status, live terminal access, and service scripts for persistent macOS or Linux use. |
+| [**kcosr/herdr-web**](https://github.com/kcosr/herdr-web) | Provides tools for viewing and controlling Herdr from a desktop or mobile browser, including live pane state, terminal attachment, and event updates. |
+| [**alecuba16/herdr-webui**](https://github.com/alecuba16/herdr-webui) | Provides tools for Herdr with workspace and worktree navigation, agent status, live terminal access, and service scripts for persistent macOS or Linux use. |
 | [**dcolinmorgan/herdr-remote**](https://github.com/dcolinmorgan/herdr-remote) | A remote monitoring suite with a mobile web app, macOS menu-bar app, Telegram bot, push notifications, terminal views, and one-tap responses to blocked agents through a Cloudflare tunnel. |
 | [**0cv/herdr-mobile-relay**](https://github.com/0cv/herdr-mobile-relay) | A mobile web app and relay for monitoring Herdr, approving blocked actions, pairing by QR code, receiving push alerts, and combining several machines in one dashboard. |
 | [**gabrielbarretoo/herdr-medieval**](https://github.com/gabrielbarretoo/herdr-medieval) | A Three.js visualization that turns Herdr workspaces into medieval camps and panes into animated adventurers whose behavior reflects each agent's state. |
@@ -1167,103 +1155,99 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**hmu332233/herdr-f1**](https://github.com/hmu332233/herdr-f1) | A web visualization that represents active Herdr agents as Formula 1 cars, using race and pit-stop states to show whether agents are running, blocked, or finished. |
 | [**mejiasd3v/herdr-farm**](https://github.com/mejiasd3v/herdr-farm) | A Three.js dashboard that represents Herdr workspaces and agents as a 3D farm, with animal animations tied to live idle, working, and blocked states. |
 | [**allmight-ai/herdr-pet**](https://github.com/allmight-ai/herdr-pet) | A retro virtual-pet display that reacts to live Herdr agent states and creates a persistent pet identity from the user's GitHub ID. |
-| [**ragamo/herdr-flock**](https://github.com/ragamo/herdr-flock) | A pixel-art farm dashboard that represents active Herdr agents as animated sheep and records completed sessions in a persistent graveyard log. |
-| [**funsaized/herdr-mise**](https://github.com/funsaized/herdr-mise) | A pixel-art kitchen dashboard that represents Herdr agents as line cooks and animates their work, tool use, and blocked states from live socket events. |
+| [**ragamo/herdr-flock**](https://github.com/ragamo/herdr-flock) | Represents active Herdr agents as animated sheep and records completed sessions in a persistent graveyard log. |
+| [**funsaized/herdr-mise**](https://github.com/funsaized/herdr-mise) | Represents Herdr agents as line cooks and animates their work, tool use, and blocked states from live socket events. |
 
 ### Hardware and ambient displays
 
-*12 projects. Keypads, watches, desk devices, and compact displays that turn agent state into physical controls or at-a-glance signals.*
+*12 projects. Keypads, watches, desk devices, and compact displays that turn agent state into physical controls or at-a-glance signals.**
 
 | Project | What it does |
 |---|---|
-| [**alasano/house-of-herdr**](https://github.com/alasano/house-of-herdr) | A hardware bridge for the Work Louder Codex Micro keypad that maps Herdr events to status lights, dials, shortcuts, and approval controls. |
+| [**alasano/house-of-herdr**](https://github.com/alasano/house-of-herdr) | Provides tools for the Work Louder Codex Micro keypad that maps Herdr events to status lights, dials, shortcuts, and approval controls. |
 | [**Pimpmuckl/herdr-streamdeck**](https://github.com/Pimpmuckl/herdr-streamdeck) | A Stream Deck+ integration that maps Herdr agent states and actions to LCD keys, touch controls, and dials for quick status checks and pane switching. |
 | [**Unayung/herdr-watch**](https://github.com/Unayung/herdr-watch) | A native Apple Watch companion that shows Herdr agent activity and alerts the wearer when an agent finishes or needs input. |
 | [**walcew/herdr-assist**](https://github.com/walcew/herdr-assist) | An ESP32-S3 desk display that shows Herdr session states and sounds a bell when an agent is waiting for a decision or approval. |
 | [**spencerbull/xeneon-edge-agents**](https://github.com/spencerbull/xeneon-edge-agents) | An Omarchy and Herdr agent command center designed for the Corsair XENEON EDGE display, with conservative handling when state cannot be confirmed. |
 | [**AlexBSoD/qubeherd**](https://github.com/AlexBSoD/qubeherd) | A hardware integration that shows Herdr agent state, the host clock, and keyboard layout on an Ergohaven Qube dongle display. |
 | [**8-BitRhyon/bantay-tui**](https://github.com/8-BitRhyon/bantay-tui) | A macOS notch HUD that combines Herdr approvals, live usage and cost data, a file shelf, task tracking, Apple Reminders sync, and session controls. |
-| [**omerturhan/herdr-touchbar**](https://github.com/omerturhan/herdr-touchbar) | A MacBook Touch Bar utility that shows working and blocked Herdr agents and jumps to a selected agent's tab when tapped. |
-| [**timvdhoorn/stream-deck-herdr-plugin**](https://github.com/timvdhoorn/stream-deck-herdr-plugin) | An Elgato Stream Deck plugin that assigns a key to each agent, displays its state with a color and icon, and focuses the matching Herdr pane when pressed. |
+| [**omerturhan/herdr-touchbar**](https://github.com/omerturhan/herdr-touchbar) | Shows working and blocked Herdr agents and jumps to a selected agent's tab when tapped. |
+| [**timvdhoorn/stream-deck-herdr-plugin**](https://github.com/timvdhoorn/stream-deck-herdr-plugin) | Assigns a key to each agent, displays its state with a color and icon, and focuses the matching Herdr pane when pressed. |
 | [**zhongpei/herdr-ulanzi-deck**](https://github.com/zhongpei/herdr-ulanzi-deck) | A Ulanzi D200X keypad integration that shows live, priority-sorted Herdr agent states on LCD keys and can monitor several Herdr machines over SSH. |
 | [**bowlofsoup/herdr-stoplight**](https://github.com/bowlofsoup/herdr-stoplight) | An Arduino integration that uses a physical traffic light to show aggregate Herdr status: green for working, red for blocked or failed, and yellow for idle. |
 | [**third774/herdr-sidepulse**](https://github.com/third774/herdr-sidepulse) | A USB hardware integration for SidePulse Pro and Dot devices that turns combined Herdr agent states into ambient LED patterns, including prominent alerts for blocked agents. |
 
 ### Plugins and supporting utilities
 
-*29 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.*
+*29 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.**
 
 | Project | What it does |
 |---|---|
 | [**cxnmai/dms-herdr-plugin**](https://github.com/cxnmai/dms-herdr-plugin) | A DankMaterialShell widget for viewing Herdr agent states and accessing basic controls from the desktop shell. |
-| [**A1exthegreat/herdr-agent-notify**](https://github.com/A1exthegreat/herdr-agent-notify) | A Herdr plugin that sends desktop notifications when agents finish, request confirmation, or become idle. |
-| [**TianZuo555/pi-herdr-agents**](https://github.com/TianZuo555/pi-herdr-agents) | A Pi extension that starts role-guided peer coding agents in separate Herdr panes. |
+| [**A1exthegreat/herdr-agent-notify**](https://github.com/A1exthegreat/herdr-agent-notify) | Sends desktop notifications when agents finish, request confirmation, or become idle. |
+| [**TianZuo555/pi-herdr-agents**](https://github.com/TianZuo555/pi-herdr-agents) | Starts role-guided peer coding agents in separate Herdr panes. |
 | [**hbacheller-tribe/herdrStatusWidget**](https://github.com/hbacheller-tribe/herdrStatusWidget) | A Herdr status widget that highlights tabs containing agents that are waiting for approval. |
-| [**leset0ng/pi-todo-herdr**](https://github.com/leset0ng/pi-todo-herdr) | A hierarchical task extension for Pi with a live task widget and integration with the Herdr sidebar. |
-| [**cedrus-8864/herdr-prompt-reply**](https://github.com/cedrus-8864/herdr-prompt-reply) | A small Swift utility that places working response buttons in macOS notifications so Herdr permission prompts can be answered without opening the terminal. |
+| [**leset0ng/pi-todo-herdr**](https://github.com/leset0ng/pi-todo-herdr) | Provides tools for Pi with a live task widget and integration with the Herdr sidebar. |
+| [**cedrus-8864/herdr-prompt-reply**](https://github.com/cedrus-8864/herdr-prompt-reply) | Places working response buttons in macOS notifications so Herdr permission prompts can be answered without opening the terminal. |
 | [**richardadonnell/herdr-claude-manager**](https://github.com/richardadonnell/herdr-claude-manager) | A cross-platform manager that creates a tiled Herdr workspace with multiple Claude Code panes and provides commands to list, resume, or stop the group. |
-| [**miiraheart/herdr-beads**](https://github.com/miiraheart/herdr-beads) | A task-board plugin that displays Beads issues as a list, table, or Kanban board in a Herdr sidebar or floating pane. |
-| [**zerodice0/herdr-booking-task-plugin**](https://github.com/zerodice0/herdr-booking-task-plugin) | A scheduler for sending prompts to Herdr agents or running local command-line tasks at chosen times on macOS and Linux. |
-| [**calorie/herdr-auto-focus**](https://github.com/calorie/herdr-auto-focus) | A macOS helper that focuses the Herdr agent needing attention after the computer has been idle. |
-| [**quinnjr/herdr-notifications**](https://github.com/quinnjr/herdr-notifications) | A cross-platform plugin that sends native desktop notifications when Herdr agent states change on Linux, macOS, Windows, and BSD. |
-| [**neefrehman/herdr-caffeinate**](https://github.com/neefrehman/herdr-caffeinate) | A macOS helper that prevents sleep while any Herdr agent pane is actively working, including when the laptop lid is closed. |
-| [**afogel/shepherdr**](https://github.com/afogel/shepherdr) | A Herdr plugin for launching delegated coding agents in visible panes that can be watched, resumed, audited, or taken over manually. |
+| [**miiraheart/herdr-beads**](https://github.com/miiraheart/herdr-beads) | Displays Beads issues as a list, table, or Kanban board in a Herdr sidebar or floating pane. |
+| [**zerodice0/herdr-booking-task-plugin**](https://github.com/zerodice0/herdr-booking-task-plugin) | Provides sending prompts to Herdr agents or running local command-line tasks at chosen times on macOS and Linux. |
+| [**calorie/herdr-auto-focus**](https://github.com/calorie/herdr-auto-focus) | Focuses the Herdr agent needing attention after the computer has been idle. |
+| [**quinnjr/herdr-notifications**](https://github.com/quinnjr/herdr-notifications) | Sends native desktop notifications when Herdr agent states change on Linux, macOS, Windows, and BSD. |
+| [**neefrehman/herdr-caffeinate**](https://github.com/neefrehman/herdr-caffeinate) | Prevents sleep while any Herdr agent pane is actively working, including when the laptop lid is closed. |
+| [**afogel/shepherdr**](https://github.com/afogel/shepherdr) | Provides tools for launching delegated coding agents in visible panes that can be watched, resumed, audited, or taken over manually. |
 | [**ablause/herdr-flutter**](https://github.com/ablause/herdr-flutter) | A Herdr sidebar for watching, hot-reloading, and inspecting a running Flutter app beside the coding agent working on it. |
 | [**aorumbayev/herdr-ctx**](https://github.com/aorumbayev/herdr-ctx) | A Herdr sidebar indicator that shows Claude's remaining context-window capacity. |
-| [**dio16/herdr-auto-update**](https://github.com/dio16/herdr-auto-update) | A startup plugin that checks installed Herdr plugins for newer upstream commits and reinstalls updated versions automatically. |
-| [**gw31415/herdr-amphetamine-macos**](https://github.com/gw31415/herdr-amphetamine-macos) | A macOS helper that watches Herdr agent-status events and keeps an Amphetamine session active while agents are working, preventing sleep during long tasks. |
+| [**dio16/herdr-auto-update**](https://github.com/dio16/herdr-auto-update) | Checks installed Herdr plugins for newer upstream commits and reinstalls updated versions automatically. |
+| [**gw31415/herdr-amphetamine-macos**](https://github.com/gw31415/herdr-amphetamine-macos) | Watches Herdr agent-status events and keeps an Amphetamine session active while agents are working, preventing sleep during long tasks. |
 | [**speardragon/herdr-plugin-manager**](https://github.com/speardragon/herdr-plugin-manager) | A small in-terminal menu for browsing, installing, updating, enabling, and disabling Herdr plugins through the standard plugin command-line interface. |
 | [**suisya-systems/herdr-agent-office**](https://github.com/suisya-systems/herdr-agent-office) | A terminal pixel-art office where Herdr agents appear as animated desk workers, blocked agents raise timed alerts, and selecting a character focuses its pane. |
-| [**ezcorp-org/herdr-git-status**](https://github.com/ezcorp-org/herdr-git-status) | A sidebar plugin that shows staged, modified, untracked, and conflicted Git files for each workspace beside its branch name. |
-| [**miya10kei/herdr-plugin-sidebar**](https://github.com/miya10kei/herdr-plugin-sidebar) | A Herdr plugin that displays Google Calendar events and GitHub Actions run status in a split pane styled as a sidebar. |
-| [**khatriafaz/herdr-plugin-agent-repo**](https://github.com/khatriafaz/herdr-plugin-agent-repo) | A plugin that adds the current agent, repository, and branch names to Herdr pane headers and the sidebar. |
+| [**ezcorp-org/herdr-git-status**](https://github.com/ezcorp-org/herdr-git-status) | Shows staged, modified, untracked, and conflicted Git files for each workspace beside its branch name. |
+| [**miya10kei/herdr-plugin-sidebar**](https://github.com/miya10kei/herdr-plugin-sidebar) | Displays Google Calendar events and GitHub Actions run status in a split pane styled as a sidebar. |
+| [**khatriafaz/herdr-plugin-agent-repo**](https://github.com/khatriafaz/herdr-plugin-agent-repo) | Adds the current agent, repository, and branch names to Herdr pane headers and the sidebar. |
 | [**levi-qiao/herdr-agent-quota**](https://github.com/levi-qiao/herdr-agent-quota) | A sidebar quota monitor for Claude, Codex, Grok, and Agy that shows the percentage remaining in five-hour and weekly limits. |
 | [**ondratuma/herdr-status-plugin**](https://github.com/ondratuma/herdr-status-plugin) | A per-pane activity plugin with sidebar icons, live timers, and a helper for renaming agent panes. |
-| [**cedrus-8864/herdr-sidebar-numbers**](https://github.com/cedrus-8864/herdr-sidebar-numbers) | A sidebar plugin that shows workspace and agent position numbers matching Herdr's numbered shortcuts. |
-| [**Coolsik/herdr-codex-cost**](https://github.com/Coolsik/herdr-codex-cost) | A sidebar plugin that estimates the cost of the current Codex session. |
-| [**samuelbaldwin05/herdr-burn**](https://github.com/samuelbaldwin05/herdr-burn) | A sidebar plugin that shows Claude Code cost and quota for each pane, plus a total spending overlay for the workspace. |
-| [**mougua/herdr-reasonix**](https://github.com/mougua/herdr-reasonix) | A Herdr plugin that detects Reasonix agents and displays their status correctly. |
+| [**cedrus-8864/herdr-sidebar-numbers**](https://github.com/cedrus-8864/herdr-sidebar-numbers) | Shows workspace and agent position numbers matching Herdr's numbered shortcuts. |
+| [**Coolsik/herdr-codex-cost**](https://github.com/Coolsik/herdr-codex-cost) | Estimates the cost of the current Codex session. |
+| [**samuelbaldwin05/herdr-burn**](https://github.com/samuelbaldwin05/herdr-burn) | Shows Claude Code cost and quota for each pane, plus a total spending overlay for the workspace. |
+| [**mougua/herdr-reasonix**](https://github.com/mougua/herdr-reasonix) | Detects Reasonix agents and displays their status correctly. |
 | [**natori-hrj/herdr-lazy**](https://github.com/natori-hrj/herdr-lazy) | A declarative Herdr plugin manager with a dedicated terminal interface, a lockfile, version pinning, synchronization from one list, and support for prebuilt binaries. |
 
 ### Setup, packages, and version management
 
-*9 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.*
+*9 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.**
 
 | Project | What it does |
 |---|---|
 | [**joeseesun/herdr-guide**](https://github.com/joeseesun/herdr-guide) | A Chinese-language practical guide that explains what Herdr is useful for and how to get started. |
 | [**yigitkonur/herdr-wezterm-setup**](https://github.com/yigitkonur/herdr-wezterm-setup) | A macOS terminal configuration that uses Herdr as the multiplexer and WezTerm as the keyboard-routing layer. |
 | [**DavidTWhitlatch/dotfiles-template**](https://github.com/DavidTWhitlatch/dotfiles-template) | A shareable macOS dotfiles template with zsh, Oh My Zsh, Oh My Posh, Herdr, Git template hooks, and a symlink-based setup. |
-| [**maxto/dotfiles**](https://github.com/maxto/dotfiles) | A WSL2 dotfiles setup for a human-and-agent terminal environment using Herdr, broot, Micro, shell configuration, a symlink installer, and a ready-made layout. |
+| [**maxto/dotfiles**](https://github.com/maxto/dotfiles) | Provides tools for a human-and-agent terminal environment using Herdr, broot, Micro, shell configuration, a symlink installer, and a ready-made layout. |
 | [**Yassimba/loom**](https://github.com/Yassimba/loom) | A curated collection of agent skills, Pi packages, and Herdr plugins with a single command-line setup tool. |
 | [**tyler-jewell/herdr-bootstrap**](https://github.com/tyler-jewell/herdr-bootstrap) | An idempotent machine-bootstrap script for Herdr, Node tooling, Grok, and the Herdr agent skill. |
 | [**AodhanHayter/herdr-nix**](https://github.com/AodhanHayter/herdr-nix) | A Nix flake for installing Herdr on Intel and ARM macOS or Linux, with automated upstream release tracking and a Cachix binary cache. |
-| [**lachieh/vfox-herdr**](https://github.com/lachieh/vfox-herdr) | A mise and vfox installer plugin for versioned Herdr releases, verified downloads, preview builds, and shell completions that can include live session data. |
-| [**chrisjohnson/asdf-herdr**](https://github.com/chrisjohnson/asdf-herdr) | An asdf plugin for installing and switching between Herdr versions. |
+| [**lachieh/vfox-herdr**](https://github.com/lachieh/vfox-herdr) | Provides tools for versioned Herdr releases, verified downloads, preview builds, and shell completions that can include live session data. |
+| [**chrisjohnson/asdf-herdr**](https://github.com/chrisjohnson/asdf-herdr) | Provides tools for installing and switching between Herdr versions. |
 
 ## 7. Experimental projects
 
-*16 projects. Early experiments, design documents, and incomplete prototypes. Check each repository before relying on one in daily work.*
+*12 projects. Early experiments, design documents, and incomplete prototypes. Check each repository before relying on one in daily work.*
 
 ### Experiments, concepts, and scaffolds
 
-*16 projects. Ideas and prototypes that are useful to study but may be incomplete, read-only, or not yet installable.*
+*12 projects. Ideas and prototypes that are useful to study but may be incomplete, read-only, or not yet installable.**
 
 | Project | What it does |
 |---|---|
 | [**rbb/herdr-cursor**](https://github.com/rbb/herdr-cursor) | A design-stage Cursor integration intended to report Cursor agent states to Herdr so they appear alongside other agents in the status interface. |
-| [**shippy/raycast-herdr**](https://github.com/shippy/raycast-herdr) | An early Raycast extension scaffold intended to expose Herdr controls through Raycast; the command implementation has not yet been added. |
-| [**SuperInstance/herdr-cocapn**](https://github.com/SuperInstance/herdr-cocapn) | An experimental Herdr fork that models agents as tiered CoCapn devices and moves work between local and cloud agents according to load; its current local-path dependency prevents a normal build. |
-| [**rohanthewiz/herdr-web**](https://github.com/rohanthewiz/herdr-web) | An alpha browser client that renders Herdr pane frames with color, mouse, clipboard, and hyperlink support; keyboard and paste input are currently disabled, so it mainly works as a viewer. |
-| [**Matovidlo/herdr-pr-tracker**](https://github.com/Matovidlo/herdr-pr-tracker) | An unfinished pull-request status board that associates Claude Code sessions with GitHub pull requests through the Herdr and GitHub command-line tools; its installation details still need cleanup. |
-| [**makyinmars/muster**](https://github.com/makyinmars/muster) | A planned native macOS command center for Herdr and Ghostty that currently consists of product and architecture documents rather than a working application. |
+| [**rohanthewiz/herdr-web**](https://github.com/rohanthewiz/herdr-web) | Renders Herdr pane frames with color, mouse, clipboard, and hyperlink support; keyboard and paste input are currently disabled, so it mainly works as a viewer. |
 | [**eliasstravik/herdr-call**](https://github.com/eliasstravik/herdr-call) | An early TypeScript prototype for translating spoken commands into Herdr navigation and input through the local socket. |
 | [**hmu332233/herdr-plugins-labs**](https://github.com/hmu332233/herdr-plugins-labs) | An experimental plugin laboratory containing early prototypes for agent launching, workspace metrics, and worktree symlinking before they move into separate projects. |
 | [**malone-c/herdr-pane-balancer**](https://github.com/malone-c/herdr-pane-balancer) | An in-development layout manager that automatically rebalances pane sizes when splits are opened or closed, reducing cramped nested layouts. |
 | [**meerzulee/herdr-float**](https://github.com/meerzulee/herdr-float) | An early plugin scaffold exploring Zellij-style floating terminal panes that can be toggled without changing the main Herdr grid. |
 | [**shoaibkhanz/herdr-nav-plus**](https://github.com/shoaibkhanz/herdr-nav-plus) | An early navigation plugin designed to move with Ctrl+h/j/k/l across Herdr panes and wrap at workspace boundaries. |
 | [**ugurtarlig/herdr-pane-picker**](https://github.com/ugurtarlig/herdr-pane-picker) | An early pane-picker prototype that overlays one-character hints on visible panes for direct keyboard focus. |
-| [**wraithyy/herdr-openr**](https://github.com/wraithyy/herdr-openr) | A prototype that extracts file paths and URLs from recent pane output and Claude Code transcripts, then presents them in a fuzzy finder for quick opening. |
+| [**wraithyy/herdr-openr**](https://github.com/wraithyy/herdr-openr) | Extracts file paths and URLs from recent pane output and Claude Code transcripts, then presents them in a fuzzy finder for quick opening. |
 | [**GoCodeAlone/mission-control-provider-herdr**](https://github.com/GoCodeAlone/mission-control-provider-herdr) | An early Mission Control provider intended to use Herdr sessions as an external runtime. |
 | [**robinbraemer/herdr-axi**](https://github.com/robinbraemer/herdr-axi) | An early command-line interface designed to make Herdr workspace operations easier for coding agents to use. |
 | [**yoshimi-I/gengar.nvim**](https://github.com/yoshimi-I/gengar.nvim) | An early Neovim environment that keeps agents and Hunk-based diff review in Herdr while leaving Neovim focused on editing. |
@@ -1292,4 +1276,4 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 
 ## About this edition
 
-This catalog is maintained as a clean, developer-friendly, plain-English reference for the Herdr ecosystem. All 842 ecosystem projects are verified, categorized into focused micro-categories, and formatted with concise descriptions explaining what each tool does and who it is for.
+This catalog is maintained as a clean, developer-friendly, plain-English reference for the Herdr ecosystem. All 826 ecosystem projects are verified, categorized into focused micro-categories, and formatted with concise descriptions explaining what each tool does and who it is for.

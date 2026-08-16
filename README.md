@@ -50,9 +50,9 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (3)](#plugin-collections-and-developer-frameworks)
-6. [Apps, companion integrations, and installation (75)](#6-apps-companion-integrations-and-installation)
+6. [Apps, companion integrations, and installation (76)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (11)](#native-desktop-and-mobile-apps)
-   - [Web dashboards and remote viewers (16)](#web-dashboards-and-remote-viewers)
+   - [Web dashboards and remote viewers (17)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (12)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (27)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (9)](#setup-packages-and-version-management)
@@ -1116,7 +1116,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Web dashboards and remote viewers
 
-*16 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.**
+*17 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.**
 
 | Project | What it does |
 |---|---|
@@ -1136,6 +1136,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**tigorlazuardi/herdr-web-tui**](https://github.com/tigorlazuardi/herdr-web-tui) | A lightweight browser and progressive web app client for daemon-mode Herdr, with terminal viewing, pane navigation, and plugin launching on desktop or mobile devices. |
 | [**funsaized/herdr-mise**](https://github.com/funsaized/herdr-mise) | Represents Herdr agents as line cooks and animates their work, tool use, and blocked states from live socket events. |
 | [**gabrielbarretoo/herdr-medieval**](https://github.com/gabrielbarretoo/herdr-medieval) | A Three.js visualization that turns Herdr workspaces into medieval camps and panes into animated adventurers whose behavior reflects each agent's state. |
+| [**neyham/herdr-paddock**](https://github.com/neyham/herdr-paddock) | Shows every Herdr agent as a card in a scrollable waterfall feed over plain SSH, with blocked agents pinned to the top and cleaned pane output on each card. Runs standalone or as a Herdr plugin popup, responsive down to a 40-column phone terminal, with no relay or web server. |
 
 ### Hardware and ambient displays
 

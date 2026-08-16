@@ -21,27 +21,27 @@ Every project entry must be strictly 1 or 2 concise sentences:
 - **Sentence 1:** What the tool specifically does for a Herdr user.
 - **Sentence 2 (optional):** Key capabilities, supported models/agents (Claude, Pi, Codex, OpenCode), or notable workflows.
 
-### 1.3. Subcategory Header Standards
+### 1.3. Subcategory Header & Table Standards
 
-Every subcategory section begins with a count and a 1-sentence summary:
+Every subcategory begins with a count and a 1-sentence summary, followed by a clean markdown table:
 
 ```markdown
 ### Multi-agent fleets and supervisors
 
-*51 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
+*35 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
+
+| Project | What it does |
+|---|---|
+| [**owner/repo**](https://github.com/owner/repo) | Plain-English explanation of what the tool does and who it is for. |
 ```
 
 ---
 
 ## 2. Adding a Project
 
-Add new projects in the appropriate subcategory using the compact bullet format:
+Add new projects in the appropriate subcategory table:
 
-```markdown
-- **[owner/repo](https://github.com/owner/repo)**: Plain-English explanation of what the tool does and who it is for.
-```
-
-- Always use the real GitHub repository URL.
+- Always use the real GitHub repository URL with bold name: `[**owner/repo**](https://github.com/owner/repo)`.
 - When the repo name is generic (like `skills` or `herdr-plugins`), write the text as `owner/repo` to prevent ambiguity.
 - Do not add trailing language badges or install commands inside the blurb (installation instructions live in the target repo).
 
@@ -54,6 +54,8 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 1. **Run and orchestrate agents**
    - Official skill and foundation
    - Multi-agent fleets and supervisors
+   - Claude Code multi-agent teams
+   - Pi supervisor workflows and extensions
    - Subagent launchers and delegation
    - Autonomous coding and pull-request loops
    - Task queues, backlogs, and event triggers
@@ -62,7 +64,8 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 2. **Connect through MCP and the socket API**
    - MCP servers
    - Socket API clients and SDKs
-   - Push notifications and webhook alerts
+   - Chat alerts: Telegram, Discord, and Slack
+   - Desktop, mobile, and webhook notifications
    - Telemetry, events, and quota streaming
    - Voice, hardware, and remote bridges
    - Protocol and third-party bridges
@@ -83,11 +86,14 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 5. **Worktrees and terminal experience**
    - Git worktree automation
    - Workspace lifecycle and multi-repository tools
-   - Diff review and file viewers
-   - Pane navigation, keymaps, and hints
+   - Diff review and code inspection
+   - File viewers and markdown previews
+   - Pane navigation and overlay hints
+   - Terminal keybindings and shortcut helpers
    - Command palettes and workspace switchers
    - Status lines, sidebars, and tab synchronization
-   - Status overlays, HUDs, and agent gauges
+   - Status overlays, HUDs, and agent timers
+   - Context meters and rate-limit gauges
    - Output inspection, logs, and transcripts
    - Dotfiles and ready-made configuration
    - Plugin collections and developer frameworks

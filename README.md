@@ -1,45 +1,10 @@
-# Awesome Herdr
+# Awesome Herdr [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A plain-English guide to tools built around [Herdr](https://herdr.dev/), a terminal multiplexer for AI coding agents. Herdr keeps work in persistent workspaces, tabs, and panes; tracks agent activity; supports detaching, reconnecting, and remote access; and exposes a local Unix socket for automation.
+> A curated plain-English index of tools built for **[Herdr](https://herdr.dev/)**, the terminal-native agent multiplexer.
 
-## Install Herdr
+Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogulcancelik/herdr) · [Documentation](https://herdr.dev/docs/) · [Plugin Marketplace](https://herdr.dev/plugins/) · [Agent Skill](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) · [Socket API](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md)
 
-```sh
-curl -fsSL https://herdr.dev/install.sh | sh
-herdr
-```
-
-Official links: [website](https://herdr.dev/) · [source code](https://github.com/ogulcancelik/herdr) · [documentation](https://herdr.dev/docs/) · [plugin marketplace](https://herdr.dev/plugins/) · [agent skill](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md) · [socket API](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md)
-
-## Start with a small setup
-
-Most people do not need a large plugin stack. Begin with the official agent skill, one navigation tool, and one review tool. Add orchestration, remote access, or hardware integrations only when a real workflow calls for them.
-
-| Goal | Good starting points | What they add |
-|---|---|---|
-| Learn and automate Herdr | [Official Agent Skill](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md), [herdr-python-client](https://github.com/54rt1n/herdr-python-client), [herdr-simple-mcp](https://github.com/54rt1n/herdr-simple-mcp) | Agent instructions, Python automation, and a focused MCP interface. |
-| Run several agents | [pi-subagents](https://github.com/edxeth/pi-subagents), [herdrpowers](https://github.com/transparent-pegasus/herdrpowers), [herdr-pm](https://github.com/yigitkonur/herdr-pm), [pi-herdr-squad](https://github.com/jillesme/pi-herdr-squad) | Visible worker panes, delegation, supervision, and review loops. |
-| Connect an editor | [herd.nvim](https://github.com/MomePP/herd.nvim), [herdr-splits.nvim](https://github.com/lmilojevicc/herdr-splits.nvim), [herdr.nvim](https://github.com/devxplay/herdr.nvim) | Consistent movement between editor windows and Herdr panes. |
-| Find and restore sessions | [herdr-navigator](https://github.com/thanhdat77/herdr-navigator), [herdrctx](https://github.com/j0urneyk/herdrctx), [switchr](https://github.com/ridho9/switchr) | Fast switching, attachment, and layout restoration. |
-| Use worktrees and review diffs | [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr), [herdr-plugin-workspace-manager](https://github.com/razajamil/herdr-plugin-workspace-manager), [herdr-reviewr](https://github.com/persiyanov/herdr-reviewr), [herdr-hunk-diff](https://github.com/jhochenbaum/herdr-hunk-diff) | Isolated branches, managed workspaces, and structured code review. |
-| Monitor agents remotely | [herdr-plugin-agentweb](https://github.com/y011d4/herdr-plugin-agentweb), [herdr-remote](https://github.com/dcolinmorgan/herdr-remote), [collie](https://github.com/AltanS/collie) | Browser and phone access for status checks, terminal views, and approvals. |
-
-### Practical starter setups
-
-- **Basic local setup:** Use the [Official Agent Skill](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md), [herdr-navigator](https://github.com/thanhdat77/herdr-navigator), and [herdr-hunk-diff](https://github.com/jhochenbaum/herdr-hunk-diff). This gives agents Herdr awareness, adds fast session navigation, and keeps diff review beside the agent.
-- **Neovim setup:** Keep Neovim focused on editing with [herd.nvim](https://github.com/MomePP/herd.nvim) or [herdr-splits.nvim](https://github.com/lmilojevicc/herdr-splits.nvim), while Herdr owns the agent terminals and background processes.
-- **Parallel development setup:** Use [git-wt-herdr](https://github.com/noamsiegel/git-wt-herdr) for branch isolation, [herdr-pm](https://github.com/yigitkonur/herdr-pm) or [pi-subagents](https://github.com/edxeth/pi-subagents) for delegation, and [herdr-reviewr](https://github.com/persiyanov/herdr-reviewr) for review gates.
-- **Remote setup:** Use [herdr-remote](https://github.com/dcolinmorgan/herdr-remote) or [collie](https://github.com/AltanS/collie) over a private network such as Tailscale, or use an SSH-based client when you prefer direct host access.
-
-### Choose the right integration layer
-
-| Need | Use | Reason |
-|---|---|---|
-| Teach an agent Herdr commands | The official `SKILL.md` | It has no extra runtime and works inside the agent's existing context. |
-| Build scripts or services | A typed socket client | Structured JSON is safer and easier to maintain than reading terminal pixels. |
-| Connect an external AI client | A focused MCP server | MCP exposes Herdr operations through a standard tool interface. |
-| Run agents in parallel | One Git worktree per task, tab, or workspace | Separate working trees reduce file collisions and accidental branch overlap. |
-| Watch long-running work | A read-only dashboard or notifier | Monitoring stays separate from control, reducing accidental input. |
+---
 
 ## Contents
 
@@ -94,8 +59,9 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 7. [Experimental projects (12)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (12)](#experiments-concepts-and-scaffolds)
 8. [Resources](#resources)
-9. [Herdr reference](#herdr-reference)
-10. [About this edition](#about-this-edition)
+9. [Reference](#reference)
+
+---
 
 ## 1. Run and orchestrate agents
 
@@ -313,6 +279,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**ryanlewis/herdr-workspace-renamer**](https://github.com/ryanlewis/herdr-workspace-renamer) | Copies agent session names onto the corresponding Herdr workspace labels. |
 | [**andpeicunha/herdr-output-comment-composer**](https://github.com/andpeicunha/herdr-output-comment-composer) | Adds inline comments directly to AI-agent output in a Herdr pane. |
 
+---
+
 ## 2. Connect through MCP and the socket API
 
 *105 projects. MCP servers, socket clients, notifications, telemetry, hardware links, and bridges to other protocols or services.*
@@ -471,6 +439,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**neon-solutions/neon-herdr**](https://github.com/neon-solutions/neon-herdr) | Embeds a serverless Postgres dashboard in a Herdr pane. It can create database branches per agent worktree, start or stop compute, and insert connection strings. |
 | [**openclaw/crabbox**](https://github.com/openclaw/crabbox) | Adds Crabbox sandbox provisioning and remote test execution to Herdr. Plugin actions can prewarm temporary environments, synchronize diffs, and inspect active leases from an overlay. |
 
+---
+
 ## 3. Editor integrations
 
 *55 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
@@ -572,6 +542,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**aclima01/herdr-edit-windows**](https://github.com/aclima01/herdr-edit-windows) | A small Windows text editor that opens in a Herdr split, with a directory tree, syntax highlighting, and an uncommitted-diff tab. Files can be edited and staged without leaving the multiplexer. |
 | [**vonzelle-vzt/herdr-extensions**](https://github.com/vonzelle-vzt/herdr-extensions) | Adds a 12-panel terminal IDE layer to Herdr with diagnostics, completion, source control, tests, editing, and agent diff review. A single repeatable installer sets up the environment. |
 
+---
+
 ## 4. Switch and restore sessions
 
 *64 projects. Pickers, switchers, snapshots, restoration tools, and managers for moving among persistent Herdr sessions.*
@@ -660,6 +632,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**osamahbeig/herdr-grove**](https://github.com/osamahbeig/herdr-grove) | Displays projects and directories as a grouped tree in a Herdr popup and opens the selected workspace or folder by key or click. |
 | [**taxueseek/session-digger**](https://github.com/taxueseek/session-digger) | Indexes conversations from Claude Code, Codex, and other agents in SQLite FTS5. It also tracks token and cache data and creates local HTML reports for review. |
 | [**to4iki/herdr-unread-jump**](https://github.com/to4iki/herdr-unread-jump) | Jumps to the next Herdr pane needing attention, prioritizing blocked agents before cycling through completed tasks. |
+
+---
 
 ## 5. Worktrees and terminal experience
 
@@ -1113,6 +1087,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**MIDO-ruby7/herdr-plugins-directory**](https://github.com/MIDO-ruby7/herdr-plugins-directory) | A directory of Herdr plugins organized by the task a user wants to accomplish. |
 | [**Newt6611/herdr-plugin-rust**](https://github.com/Newt6611/herdr-plugin-rust) | Provides tools for developing Herdr plugins. |
 
+---
+
 ## 6. Apps, companion integrations, and installation
 
 *77 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
@@ -1229,6 +1205,8 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**lachieh/vfox-herdr**](https://github.com/lachieh/vfox-herdr) | Provides tools for versioned Herdr releases, verified downloads, preview builds, and shell completions that can include live session data. |
 | [**chrisjohnson/asdf-herdr**](https://github.com/chrisjohnson/asdf-herdr) | Provides tools for installing and switching between Herdr versions. |
 
+---
+
 ## 7. Experimental projects
 
 *12 projects. Early experiments, design documents, and incomplete prototypes. Check each repository before relying on one in daily work.*
@@ -1252,28 +1230,18 @@ Most people do not need a large plugin stack. Begin with the official agent skil
 | [**robinbraemer/herdr-axi**](https://github.com/robinbraemer/herdr-axi) | An early command-line interface designed to make Herdr workspace operations easier for coding agents to use. |
 | [**yoshimi-I/gengar.nvim**](https://github.com/yoshimi-I/gengar.nvim) | An early Neovim environment that keeps agents and Hunk-based diff review in Herdr while leaving Neovim focused on editing. |
 
+---
+
 ## Resources
 
-### Official documentation
-
 - **[Herdr Documentation](https://herdr.dev/docs/)**: The official manual covering installation, workspaces, keybindings, and configuration.
-- **[Herdr Socket API Reference](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md)**: Full protocol documentation for controlling Herdr programmatically over Unix sockets.
+- **[Herdr Socket API Reference](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md)**: Protocol documentation for controlling Herdr programmatically over Unix domain sockets.
 - **[Herdr Plugin Marketplace](https://herdr.dev/plugins/)**: The official directory of community plugins and integrations.
 - **[Herdr Official Agent Skill](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md)**: Standard instructions teaching LLM agents how to interact with Herdr.
 
-### Community guides and tools
+## Reference
 
-- **[Awesome Herdr](https://github.com/yigitkonur/awesome-herdr)**: This curated plain-English index of the Herdr ecosystem.
-
-## Herdr reference
-
-### Common ways to build an integration
-
-- **Agent Skill (`SKILL.md`):** Teach Claude, Pi, Codex, or OpenCode how to drive Herdr without code dependencies.
-- **Socket Client (`SOCKET_API.md`):** Connect to `~/.herdr/herdr.sock` using JSON commands to manage tabs, panes, and agents programmatically.
+- **Agent Skill (`SKILL.md`):** Teach Claude, Pi, Codex, or OpenCode how to drive Herdr without external runtime dependencies.
+- **Socket Client (`SOCKET_API.md`):** Connect to `~/.herdr/herdr.sock` using JSON commands to manage tabs, panes, and agents.
 - **MCP Server:** Expose Herdr commands as tools to any Model Context Protocol host application.
 - **Git Worktrees:** Pair Herdr tabs with isolated git worktrees (`git worktree add`) to run concurrent agents safely.
-
-## About this edition
-
-This catalog is maintained as a clean, developer-friendly, plain-English reference for the Herdr ecosystem. All 826 ecosystem projects are verified, categorized into focused micro-categories, and formatted with concise descriptions explaining what each tool does and who it is for.

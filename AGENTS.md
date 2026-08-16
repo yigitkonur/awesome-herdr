@@ -1,34 +1,41 @@
 # AGENTS.md
 
-Working rules and language guidelines for anyone — human or agent — editing this repository. It is a curated, plain-English index of the [Herdr](https://github.com/ogulcancelik/herdr) ecosystem. Keep it lean, simple, and immediately useful.
+Working rules and language guidelines for anyone — human or agent — editing this repository. It is a curated, plain-English index of the [Herdr](https://github.com/ogulcancelik/herdr) ecosystem. Keep it lean, minimalist, and immediately useful.
 
 ---
 
-## 1. Project Language & Voice Values
+## 1. Project Philosophy & Minimalist Structure
 
-The language of this catalog must be simple, direct, and developer-friendly. Follow these core value entities across all descriptions and sections:
+- **No Onboarding Tutorials:** Do not add introductory installation essays, "how to choose your layer" tables, or getting-started walkthroughs to the catalog root. Keep the README strictly minimalist: title, official links, Table of Contents with counts, and direct jump links into the tables.
+- **Fast Jump Navigation:** Readers should jump straight to the relevant problem domain from the Table of Contents in 1 click.
 
-### 1.1. Plain-English, Verb-First Prose
+---
 
-- Lead with active verbs (*Adds*, *Teaches*, *Runs*, *Maps*, *Monitors*, *Filters*, *Connects*).
+## 2. Project Language & Voice Values
+
+The language of this catalog must be simple, direct, and developer-friendly:
+
+### 2.1. Plain-English, Verb-First Prose
+
+- Lead with active verbs (*Adds*, *Teaches*, *Runs*, *Maps*, *Monitors*, *Filters*, *Connects*, *Orchestrates*, *Embeds*, *Extends*, *Dispatches*).
 - Avoid passive constructions, convoluted em-dash chains, and marketing buzzwords (*"ultimate"*, *"blazing fast"*, *"revolutionary"*).
 - State clearly what a Herdr user can *do* with the tool, not a laundry list of generic features.
 
-### 1.2. The 1–2 Sentence Rule
+### 2.2. The 1–2 Sentence Rule
 
 Every project entry must be strictly 1 or 2 concise sentences:
 
 - **Sentence 1:** What the tool specifically does for a Herdr user.
 - **Sentence 2 (optional):** Key capabilities, supported models/agents (Claude, Pi, Codex, OpenCode), or notable workflows.
 
-### 1.3. Subcategory Header & Table Standards
+### 2.3. Subcategory Header & Table Standards
 
-Every subcategory begins with a count and a 1-sentence summary, followed by a clean markdown table:
+Every subcategory begins with a count and a 1-sentence summary, followed by a clean 2-column markdown table:
 
 ```markdown
 ### Multi-agent fleets and supervisors
 
-*35 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
+*20 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
 
 | Project | What it does |
 |---|---|
@@ -37,17 +44,18 @@ Every subcategory begins with a count and a 1-sentence summary, followed by a cl
 
 ---
 
-## 2. Adding a Project
+## 3. Strict Exclusion Criteria (What NEVER Belongs Here)
 
-Add new projects in the appropriate subcategory table:
+To maintain a high-signal catalog, the following must **never** be added:
 
-- Always use the real GitHub repository URL with bold name: `[**owner/repo**](https://github.com/owner/repo)`.
-- When the repo name is generic (like `skills` or `herdr-plugins`), write the text as `owner/repo` to prevent ambiguity.
-- Do not add trailing language badges or install commands inside the blurb (installation instructions live in the target repo).
+1. **NO Personal Dotfiles:** Generic personal `~/.dotfiles`, chezmoi/stow repos, or personal machine configurations with a `.herdr` config file. Only standalone, packaged, reusable plugins or shareable templates belong in this index.
+2. **NO Empty Scaffolds or Incomplete Stubs:** Repositories without working command implementations, design-only documents, or broken builds.
+3. **NO Trivial Copy-Paste Wrappers:** Near-duplicate forks or minimal shims without substantive standalone utility.
+4. **NO Marketing Hype or AI Filler:** Descriptions must remain factual, concise, and neutral.
 
 ---
 
-## 3. Canonical Section Structure
+## 4. Canonical Section Structure
 
 Organize projects across the 7 numbered domains and their plain-English micro-categories:
 
@@ -107,20 +115,6 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 
 7. **Experimental projects**
    - Experiments, concepts, and scaffolds
-
----
-
-## 4. The Bar (Inclusion Criteria)
-
-A project belongs here only if it meets all of the following:
-
-- **Public:** Anyone can access the repository and its documentation.
-- **Herdr-specific:** Specifically configures, extends, drives, or teaches Herdr (via CLI, socket API, hooks, skills, or plugin manifest), not a generic terminal multiplexer tool.
-- **Documented:** A new user can understand what it does and how to get started.
-- **Meaningfully distinct:** Not an empty fork or duplicate upload without added functionality.
-- **Factual:** Honest, neutral, and clear about current state and limitations.
-
-*Unfinished, announced, or scaffold-only projects belong under **Experimental projects**, never in the main categories.*
 
 ---
 

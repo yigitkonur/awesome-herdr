@@ -8,53 +8,53 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## Contents
 
-1. [Run and orchestrate agents (156)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (157)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
    - [Multi-agent fleets and supervisors (20)](#multi-agent-fleets-and-supervisors)
-   - [Claude Code multi-agent teams (18)](#claude-code-multi-agent-teams)
+   - [Claude Code multi-agent teams (19)](#claude-code-multi-agent-teams)
    - [Pi supervisor workflows and extensions (13)](#pi-supervisor-workflows-and-extensions)
    - [Subagent launchers and delegation (39)](#subagent-launchers-and-delegation)
    - [Autonomous coding and pull-request loops (10)](#autonomous-coding-and-pull-request-loops)
    - [Task queues, backlogs, and event triggers (6)](#task-queues-backlogs-and-event-triggers)
    - [General workflows and skill packs (49)](#general-workflows-and-skill-packs)
-2. [Connect through MCP and the socket API (105)](#2-connect-through-mcp-and-the-socket-api)
+2. [Connect through MCP and the socket API (106)](#2-connect-through-mcp-and-the-socket-api)
    - [MCP servers (6)](#mcp-servers)
    - [Socket API clients and SDKs (54)](#socket-api-clients-and-sdks)
    - [Chat alerts: Telegram, Discord, and Slack (14)](#chat-alerts-telegram-discord-and-slack)
-   - [Desktop, mobile, and webhook notifications (12)](#desktop-mobile-and-webhook-notifications)
+   - [Desktop, mobile, and webhook notifications (13)](#desktop-mobile-and-webhook-notifications)
    - [Telemetry, events, and quota streaming (7)](#telemetry-events-and-quota-streaming)
    - [Voice, hardware, and remote bridges (1)](#voice-hardware-and-remote-bridges)
    - [Protocol and third-party bridges (11)](#protocol-and-third-party-bridges)
-3. [Editor integrations (55)](#3-editor-integrations)
+3. [Editor integrations (54)](#3-editor-integrations)
    - [Neovim navigation and splits (30)](#neovim-navigation-and-splits)
    - [Full Neovim-hosted workspaces (1)](#full-neovim-hosted-workspaces)
    - [VS Code, Cursor, and dev containers (9)](#vs-code-cursor-and-dev-containers)
    - [Vim, Kakoune, and other editors (11)](#vim-kakoune-and-other-editors)
    - [REPL and code dispatchers (1)](#repl-and-code-dispatchers)
-   - [Editor plugins and bridges (3)](#editor-plugins-and-bridges)
+   - [Editor plugins and bridges (2)](#editor-plugins-and-bridges)
 4. [Switch and restore sessions (64)](#4-switch-and-restore-sessions)
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (357)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
    - [File viewers and markdown previews (19)](#file-viewers-and-markdown-previews)
    - [Pane navigation and overlay hints (11)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
-   - [Command palettes and workspace switchers (13)](#command-palettes-and-workspace-switchers)
+   - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
-   - [Plugin collections and developer frameworks (2)](#plugin-collections-and-developer-frameworks)
-6. [Apps, companion integrations, and installation (77)](#6-apps-companion-integrations-and-installation)
+   - [Plugin collections and developer frameworks (3)](#plugin-collections-and-developer-frameworks)
+6. [Apps, companion integrations, and installation (75)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (11)](#native-desktop-and-mobile-apps)
    - [Web dashboards and remote viewers (16)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (12)](#hardware-and-ambient-displays)
-   - [Plugins and supporting utilities (29)](#plugins-and-supporting-utilities)
+   - [Plugins and supporting utilities (27)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (9)](#setup-packages-and-version-management)
 7. [Experimental projects (12)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (12)](#experiments-concepts-and-scaffolds)
@@ -65,7 +65,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 1. Run and orchestrate agents
 
-*156 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*157 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official skill and foundation
 
@@ -104,10 +104,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Claude Code multi-agent teams
 
-*18 projects. Adapters and skills that organize Claude Code sessions into structured teams.*
+*19 projects. Adapters and skills that organize Claude Code sessions into structured teams.*
 
 | Project | What it does |
 |---|---|
+| [**richardadonnell/herdr-claude-manager**](https://github.com/richardadonnell/herdr-claude-manager) | Tiles and manages an N-agent grid of labeled Claude Code panes on Windows and macOS, with menu commands to list, resume, and stop workspaces. |
 | [**yigitkonur/herdr-pm**](https://github.com/yigitkonur/herdr-pm) | Adds a technical project manager to each live agent tab. The manager reads the session and Git state, ranks possible actions, and guides the existing agent. It supports Claude, Codex, Pi, and Hermes, with optional persistent notes. |
 | [**msadig/herdr-peer-agents-skill**](https://github.com/msadig/herdr-peer-agents-skill) | Teaches Claude, Pi, or Codex to start a named peer agent, assign work, and collect its result. A shell wrapper handles common startup failures and Codex input quirks. |
 | [**hcaiano/skills**](https://github.com/hcaiano/skills) | Provides a `herdr-pair` skill that pairs Claude and Codex as equal collaborative partners in one tab. |
@@ -283,7 +284,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 2. Connect through MCP and the socket API
 
-*105 projects. MCP servers, socket clients, notifications, telemetry, hardware links, and bridges to other protocols or services.*
+*106 projects. MCP servers, socket clients, notifications, telemetry, hardware links, and bridges to other protocols or services.*
 
 ### MCP servers
 
@@ -382,10 +383,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Desktop, mobile, and webhook notifications
 
-*12 projects. System toasts, ntfy pings, and webhook triggers for agent events.*
+*13 projects. System toasts, ntfy pings, and webhook triggers for agent events.*
 
 | Project | What it does |
 |---|---|
+| [**cedrus-8864/herdr-prompt-reply**](https://github.com/cedrus-8864/herdr-prompt-reply) | Posts blocked agent permission prompts as interactive macOS notifications with action buttons, allowing responses without switching back to the terminal. |
 | [**zom-2018/herdr-ntfy-notify**](https://github.com/zom-2018/herdr-ntfy-notify) | Sends structured ntfy alerts when an agent blocks or finishes. Notifications include the workspace, tab, and pane, and the plugin prefers a detected local ntfy server before using the network. |
 | [**tiny-send/tinysend-herdr**](https://github.com/tiny-send/tinysend-herdr) | Emails a one-line summary when an agent blocks, finishes, or fails. Replying to the message sends input to the correct pane, making an email client a simple remote approval interface. |
 | [**yankewei/herdr-focus-notify**](https://github.com/yankewei/herdr-focus-notify) | Shows a clickable macOS notification when an unseen pane becomes blocked or finishes. Clicking the alert brings the terminal forward and focuses the exact pane through `alerter`. |
@@ -443,7 +445,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 3. Editor integrations
 
-*55 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
+*54 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
 
 ### Neovim navigation and splits
 
@@ -534,13 +536,12 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Editor plugins and bridges
 
-*3 projects. General-purpose bridges that synchronize editor state with Herdr panes and agents.**
+*2 projects. General-purpose bridges that synchronize editor state with Herdr panes and agents.**
 
 | Project | What it does |
 |---|---|
 | [**Daniel-Steinberger/obsidian-herdr**](https://github.com/Daniel-Steinberger/obsidian-herdr) | Sends the next unchecked Markdown task to an agent in the matching Herdr workspace and marks it complete when the agent finishes. Continuous mode can process an entire checklist. |
 | [**aclima01/herdr-edit-windows**](https://github.com/aclima01/herdr-edit-windows) | A small Windows text editor that opens in a Herdr split, with a directory tree, syntax highlighting, and an uncommitted-diff tab. Files can be edited and staged without leaving the multiplexer. |
-| [**vonzelle-vzt/herdr-extensions**](https://github.com/vonzelle-vzt/herdr-extensions) | Adds a 12-panel terminal IDE layer to Herdr with diagnostics, completion, source control, tests, editing, and agent diff review. A single repeatable installer sets up the environment. |
 
 ---
 
@@ -607,10 +608,10 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 | Project | What it does |
 |---|---|
+| [**dmangla3/herdr-fork-from-message**](https://github.com/dmangla3/herdr-fork-from-message) | Forks a Claude Code or Codex conversation from an earlier user message into a new tab, split pane, or workspace without modifying source transcripts. |
 | [**nickmaglowsch/herdr-session-restore**](https://github.com/nickmaglowsch/herdr-session-restore) | Tags Claude Code panes with session IDs, saves the workspace, tab, and directory layout during a clean server stop, and rebuilds it on the next cold start using `claude --resume`. It is intentionally Claude-only and requires a clean shutdown. |
 | [**Angel-O/herdr-agent-resume**](https://github.com/Angel-O/herdr-agent-resume) | Generates the exact resume command for an interrupted Claude Code, Codex, or custom agent session and either copies it or pastes it into a Herdr pane. |
 | [**bengemine/herdr-hibernate**](https://github.com/bengemine/herdr-hibernate) | Suspends idle Claude Code, Codex, or Grok panes to reduce memory use while keeping pane state and directory context. Pressing Enter resumes a hibernated session. |
-| [**dmangla3/herdr-fork-from-message**](https://github.com/dmangla3/herdr-fork-from-message) | Forks a Claude Code or Codex conversation from an earlier message into a new Herdr workspace, tab, or pane, allowing alternative approaches without changing the original session. |
 | [**iviaxpow3r/herdr-session-parker**](https://github.com/iviaxpow3r/herdr-session-parker) | Parks active panes and tabs outside the current working layout and restores them later with agent state and prompt progress intact. |
 | [**mo-arvan/herdr-claude-auto-retry**](https://github.com/mo-arvan/herdr-claude-auto-retry) | Detects Claude Code stalls caused by rate limits or server errors and safely resumes only idle or blocked panes, leaving actively working agents untouched. |
 | [**moneycaringcoder/herdr-tether**](https://github.com/moneycaringcoder/herdr-tether) | Moves long-running terminal commands into background services so local or remote tasks continue after the main Herdr window closes. |
@@ -637,7 +638,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*357 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+*359 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
 
 ### Git worktree automation
 
@@ -918,10 +919,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Command palettes and workspace switchers
 
-*13 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.**
+*14 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.**
 
 | Project | What it does |
 |---|---|
+| [**TaylorFinklea/herdr-ask**](https://github.com/TaylorFinklea/herdr-ask) | Opens a popup to translate plain-English requests into shell commands, letting you review and insert them into the active pane with Ctrl+Enter. |
 | [**arjenblokzijl/herdr-launcher**](https://github.com/arjenblokzijl/herdr-launcher) | Defines named workflows as `.mjs` files with custom input fields and a `run()` function. Workflows can be launched from a Herdr picker or through `herdr-launcher run`, supporting interactive and scripted use. |
 | [**mackt/herdr-window-title**](https://github.com/mackt/herdr-window-title) | Writes template-formatted Herdr session and agent state into the outer terminal window title, including whether background agents are working, blocked, or done. |
 | [**phine-apps/mux-prompter**](https://github.com/phine-apps/mux-prompter) | Searches local prompt libraries with fzf and inserts a context-aware template into the active Herdr pane. |
@@ -1080,10 +1082,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Plugin collections and developer frameworks
 
-*2 projects. Collections and scaffolding for discovering, creating, or maintaining several Herdr extensions.**
+*3 projects. Collections and scaffolding for discovering, creating, or maintaining several Herdr extensions.**
 
 | Project | What it does |
 |---|---|
+| [**vonzelle-vzt/herdr-extensions**](https://github.com/vonzelle-vzt/herdr-extensions) | Installs a complete 13-panel developer environment inside Herdr for diagnostics, language-server completion, tests, and in-terminal agent diff review. |
 | [**MIDO-ruby7/herdr-plugins-directory**](https://github.com/MIDO-ruby7/herdr-plugins-directory) | A directory of Herdr plugins organized by the task a user wants to accomplish. |
 | [**Newt6611/herdr-plugin-rust**](https://github.com/Newt6611/herdr-plugin-rust) | Provides tools for developing Herdr plugins. |
 
@@ -1091,7 +1094,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 6. Apps, companion integrations, and installation
 
-*77 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
+*75 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
 
 ### Native desktop and mobile apps
 
@@ -1155,7 +1158,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Plugins and supporting utilities
 
-*29 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.**
+*27 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.**
 
 | Project | What it does |
 |---|---|
@@ -1164,8 +1167,6 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**TianZuo555/pi-herdr-agents**](https://github.com/TianZuo555/pi-herdr-agents) | Starts role-guided peer coding agents in separate Herdr panes. |
 | [**hbacheller-tribe/herdrStatusWidget**](https://github.com/hbacheller-tribe/herdrStatusWidget) | A Herdr status widget that highlights tabs containing agents that are waiting for approval. |
 | [**leset0ng/pi-todo-herdr**](https://github.com/leset0ng/pi-todo-herdr) | Provides tools for Pi with a live task widget and integration with the Herdr sidebar. |
-| [**cedrus-8864/herdr-prompt-reply**](https://github.com/cedrus-8864/herdr-prompt-reply) | Places working response buttons in macOS notifications so Herdr permission prompts can be answered without opening the terminal. |
-| [**richardadonnell/herdr-claude-manager**](https://github.com/richardadonnell/herdr-claude-manager) | A cross-platform manager that creates a tiled Herdr workspace with multiple Claude Code panes and provides commands to list, resume, or stop the group. |
 | [**miiraheart/herdr-beads**](https://github.com/miiraheart/herdr-beads) | Displays Beads issues as a list, table, or Kanban board in a Herdr sidebar or floating pane. |
 | [**zerodice0/herdr-booking-task-plugin**](https://github.com/zerodice0/herdr-booking-task-plugin) | Provides sending prompts to Herdr agents or running local command-line tasks at chosen times on macOS and Linux. |
 | [**calorie/herdr-auto-focus**](https://github.com/calorie/herdr-auto-focus) | Focuses the Herdr agent needing attention after the computer has been idle. |

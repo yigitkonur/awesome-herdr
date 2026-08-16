@@ -106,104 +106,104 @@ If you are new to the ecosystem, start with these focused, high-leverage tools:
 
 ## At a glance category map
 
-A structured index of the **842 Herdr ecosystem projects** across **7 main domains** and **28 micro-categories**. Use the jump links to explore each area in the detailed showcase below:
+A structured index of the **842 Herdr ecosystem projects** across **7 main domains** and **28 micro-categories**. Click any subcategory link below to jump directly to its tools and showcase entries:
 
 ### [1. Run & orchestrate agents](#run--orchestrate-agents) (157 tools)
 
-*Spawning, supervising, and coordinating fleets of autonomous agents across multiplexed panes and workspaces.*
+*Run and coordinate multiple coding agents at the same time across terminal panes.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Orchestration › Official Skills & Foundation**](#orchestration--official-skills--foundation) (1) | Drop-in instructions teaching agents to inspect and drive Herdr | [herdr/SKILL.md](#orchestration--official-skills--foundation) |
-| [**Orchestration › Multi-Agent Fleets & Supervisors**](#orchestration--multi-agent-fleets--supervisors) (51) | Technical PM conductors, supervisor overseers, and swarm coordinators | [yigitkonur/herdr-pm](#orchestration--multi-agent-fleets--supervisors) · [SecretAardvark/pi-overseer](#orchestration--multi-agent-fleets--supervisors) · [Jackliu-miaozi/pi-herdr-workflow-kit](#orchestration--multi-agent-fleets--supervisors) · [vinicius91carvalho/harness-engineering](#orchestration--multi-agent-fleets--supervisors) |
-| [**Orchestration › Subagent Spawners & Delegation**](#orchestration--subagent-spawners--delegation) (40) | Spawning visible child agents from Claude Code, Pi, Codex, and OpenCode | [edxeth/pi-subagents](#orchestration--subagent-spawners--delegation) · [aldrickdev/herdr_subagents](#orchestration--subagent-spawners--delegation) · [mcdonc/mcdonc-pi-herdr](#orchestration--subagent-spawners--delegation) |
-| [**Orchestration › Autonomous PR & Coding Loops**](#orchestration--autonomous-pr--coding-loops) (10) | Gated issue → implement → review → merge cycles with durable logs | [sarmientoF/herdr-pr-loop](#orchestration--autonomous-pr--coding-loops) · [Tudor0404/dual-author](#orchestration--autonomous-pr--coding-loops) · [firegnu/herdr-loop-lab](#orchestration--autonomous-pr--coding-loops) |
-| [**Orchestration › Task Queues, Backlogs & Event Triggers**](#orchestration--task-queues-backlogs--event-triggers) (6) | GitHub projects, backlog prompts, and webhook events driving tasks | [tomoasleep/herdr-symphony](#orchestration--task-queues-backlogs--event-triggers) · [cloudmanic/herdr-todo](#orchestration--task-queues-backlogs--event-triggers) · [bredebjorhovd/herdr-board](#orchestration--task-queues-backlogs--event-triggers) |
-| [**Orchestration › General Workflows & Skill Packs**](#orchestration--general-workflows--skill-packs) (49) | Natural-language commands, persona packs, and multi-skill kits | [bakescakes/claude-orchestration](#orchestration--general-workflows--skill-packs) · [luweiCN/herdr-ops](#orchestration--general-workflows--skill-packs) · [LittleDrinks/herdr-orchestrator-skill](#orchestration--general-workflows--skill-packs) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Orchestration › Official Skills & Foundation**](#orchestration--official-skills--foundation) (1) | Teach any agent running in Herdr how to open panes, list tabs, and talk to other agents. |
+| [**Orchestration › Multi-Agent Fleets & Supervisors**](#orchestration--multi-agent-fleets--supervisors) (51) | Put a manager agent in charge to assign tasks, check work, and supervise a team of coders. |
+| [**Orchestration › Subagent Spawners & Delegation**](#orchestration--subagent-spawners--delegation) (40) | Let Claude, Pi, or Codex spin up visible child agents in side panes to handle smaller sub-tasks. |
+| [**Orchestration › Autonomous PR & Coding Loops**](#orchestration--autonomous-pr--coding-loops) (10) | Automatically turn issues into pull requests through a plan-code-review loop before merging. |
+| [**Orchestration › Task Queues, Backlogs & Event Triggers**](#orchestration--task-queues-backlogs--event-triggers) (6) | Trigger agent runs from GitHub issues, kanban boards, todo files, or phone buttons. |
+| [**Orchestration › General Workflows & Skill Packs**](#orchestration--general-workflows--skill-packs) (49) | Pre-made prompt skills, persona setups, and command shortcuts for daily agent work. |
 
 ---
 
 ### [2. Connect over socket & MCP](#connect-over-socket--mcp) (105 tools)
 
-*Driving Herdr externally via Model Context Protocol (MCP), Unix domain sockets, and notification channels.*
+*Drive Herdr from outside the terminal using MCP servers, scripts, and notifications.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Connect › Model Context Protocol (MCP) Servers**](#connect--model-context-protocol-mcp-servers) (6) | Standard MCP servers exposing Herdr CLI and multiplexer control | [eugeneb50/herdr-mcp](#connect--model-context-protocol-mcp-servers) · [54rt1n/herdr-simple-mcp](#connect--model-context-protocol-mcp-servers) · [runchr-works/herdr-mesh](#connect--model-context-protocol-mcp-servers) |
-| [**Connect › Socket API Clients & SDKs**](#connect--socket-api-clients--sdks) (54) | Zero-dependency typed socket clients for Python, Go, Node, and Rust | [54rt1n/herdr-python-client](#connect--socket-api-clients--sdks) · [herdr-sock-go](#connect--socket-api-clients--sdks) |
-| [**Connect › Push Notifications & Webhook Alerts**](#connect--push-notifications--webhook-alerts) (26) | Telegram, Discord, Slack, ntfy, email, and native desktop toast alerts | [herdr-ntfy-notify](#connect--push-notifications--webhook-alerts) · [gaijinjoe/herdres](#connect--push-notifications--webhook-alerts) · [tinysend-herdr](#connect--push-notifications--webhook-alerts) |
-| [**Connect › Telemetry, Events & Quota Streaming**](#connect--telemetry-events--quota-streaming) (7) | Live agent-status streams, quota meters, and token usage monitors | [herdr-telemetry-bridge](#connect--telemetry-events--quota-streaming) · [herdr-codex-usage-kit](#connect--telemetry-events--quota-streaming) · [herdr-agent-usage](#connect--telemetry-events--quota-streaming) |
-| [**Connect › Voice, Hardware & Remote Bridges**](#connect--voice-hardware--remote-bridges) (1) | Macro-pad bridges, iPhone action buttons, and voice input routing | [schacon/micro-manager](#connect--voice-hardware--remote-bridges) · [action-button-agent](#connect--voice-hardware--remote-bridges) · [herdr-hex-browser-voice-command](#connect--voice-hardware--remote-bridges) |
-| [**Connect › Protocol & Third-Party Bridges**](#connect--protocol--third-party-bridges) (11) | Socket forwarding into Devcontainers and external runtime proxies | [devcontainer socket bridges](#connect--protocol--third-party-bridges) · [dcolinmorgan/herdr-push](#connect--protocol--third-party-bridges) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Connect › Model Context Protocol (MCP) Servers**](#connect--model-context-protocol-mcp-servers) (6) | Connect Herdr to Claude Desktop, Cursor, or any MCP client as a native tool. |
+| [**Connect › Socket API Clients & SDKs**](#connect--socket-api-clients--sdks) (54) | Write your own Python, Go, Node, or Rust scripts to control Herdr panes over a Unix socket. |
+| [**Connect › Push Notifications & Webhook Alerts**](#connect--push-notifications--webhook-alerts) (26) | Get pinged on Telegram, Discord, Slack, email, or desktop when an agent needs input or finishes. |
+| [**Connect › Telemetry, Events & Quota Streaming**](#connect--telemetry-events--quota-streaming) (7) | Watch agent state changes, track token usage, and monitor API rate limits in real time. |
+| [**Connect › Voice, Hardware & Remote Bridges**](#connect--voice-hardware--remote-bridges) (1) | Control Herdr using voice commands, hardware macro pads, or iPhone action buttons. |
+| [**Connect › Protocol & Third-Party Bridges**](#connect--protocol--third-party-bridges) (11) | Forward Herdr socket connections into VS Code devcontainers or remote environments. |
 
 ---
 
 ### [3. Editor integrations](#editor-integrations) (60 tools)
 
-*Navigating seamlessly between code editors and Herdr multiplexer panes without leaving the keyboard.*
+*Move seamlessly between your text editor and agent terminal panes without touching the mouse.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Editor › Neovim Navigation & Splits**](#editor--neovim-navigation--splits) (32) | Unified split navigation (Ctrl+h/j/k/l) and smart pane resizing in Neovim | [devxplay/herdr.nvim](#editor--neovim-navigation--splits) · [lmilojevicc/herdr-splits.nvim](#editor--neovim-navigation--splits) · [sidekick_herdr](#editor--neovim-navigation--splits) |
-| [**Editor › Full Neovim-Hosted Workspaces**](#editor--full-neovim-hosted-workspaces) (1) | Neovim as the top-level host UI controlling background Herdr agent panes | [MomePP/herd.nvim](#editor--full-neovim-hosted-workspaces) |
-| [**Editor › VS Code, Cursor & Devcontainers**](#editor--vs-code-cursor--devcontainers) (9) | Cursor and VS Code integration, devcontainer bridges, and socket tunnels | [rbb/herdr-cursor](#editor--vs-code-cursor--devcontainers) · [vscode socket bridges](#editor--vs-code-cursor--devcontainers) |
-| [**Editor › Vim, Kakoune & Other Editors**](#editor--vim-kakoune--other-editors) (13) | vim-tmux-navigator ports, Kakoune clients, and Zed editor bridges | [paulbkim-dev/vim-herdr-navigation](#editor--vim-kakoune--other-editors) · [herdr.vim](#editor--vim-kakoune--other-editors) |
-| [**Editor › REPL & Code Dispatchers**](#editor--repl--code-dispatchers) (2) | Send lines, blocks, and visual selections from editors into agent panes | [herdr REPL dispatchers](#editor--repl--code-dispatchers) |
-| [**Editor › Editor Plugins & Bridges**](#editor--editor-plugins--bridges) (3) | General editor bridges and agent metadata reporting shims | [editor shims](#editor--editor-plugins--bridges) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Editor › Neovim Navigation & Splits**](#editor--neovim-navigation--splits) (32) | Use standard Ctrl+h/j/k/l keys to jump smoothly between Neovim buffers and Herdr panes. |
+| [**Editor › Full Neovim-Hosted Workspaces**](#editor--full-neovim-hosted-workspaces) (1) | Use Neovim as your main dashboard while Herdr runs agent sessions quietly behind the scenes. |
+| [**Editor › VS Code, Cursor & Devcontainers**](#editor--vs-code-cursor--devcontainers) (9) | Bridge VS Code and Cursor windows directly to Herdr terminal sessions and devcontainers. |
+| [**Editor › Vim, Kakoune & Other Editors**](#editor--vim-kakoune--other-editors) (13) | Navigate panes and send commands from classic Vim, Kakoune, or Zed editors. |
+| [**Editor › REPL & Code Dispatchers**](#editor--repl--code-dispatchers) (2) | Send selected lines or functions directly from your editor into an agent's terminal pane. |
+| [**Editor › Editor Plugins & Bridges**](#editor--editor-plugins--bridges) (3) | General editor shims and helper plugins for reporting editor focus to Herdr. |
 
 ---
 
 ### [4. Sessions: switch & restore](#sessions-switch--restore) (64 tools)
 
-*Finding, attaching to, managing, and restoring complex multi-agent sessions across reboots.*
+*Quickly jump between running agent sessions and restore your layout after a reboot.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Sessions › Fuzzy Session Switchers & TUI Pickers**](#sessions--fuzzy-session-switchers--tui-pickers) (46) | Fast keyboard-driven fuzzy pickers, TUI navigators, and session tree views | [thanhdat77/herdr-navigator](#sessions--fuzzy-session-switchers--tui-pickers) · [ridho9/switchr](#sessions--fuzzy-session-switchers--tui-pickers) · [j0urneyk/herdrctx](#sessions--fuzzy-session-switchers--tui-pickers) |
-| [**Sessions › Persistence, Snapshot & State Restore**](#sessions--persistence-snapshot--state-restore) (11) | Layout snapshotting and agent session state recovery across machine reboots | [nickmaglowsch/herdr-session-restore](#sessions--persistence-snapshot--state-restore) · [session state snapshotters](#sessions--persistence-snapshot--state-restore) |
-| [**Sessions › Workspace & Multi-Session Management**](#sessions--workspace--multi-session-management) (7) | Remote attach tooling, multi-session coordination, and cleanup hooks | [session lifecycle managers](#sessions--workspace--multi-session-management) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Sessions › Fuzzy Session Switchers & TUI Pickers**](#sessions--fuzzy-session-switchers--tui-pickers) (46) | Search and switch between dozens of open sessions and workspaces with an interactive fuzzy picker. |
+| [**Sessions › Persistence, Snapshot & State Restore**](#sessions--persistence-snapshot--state-restore) (11) | Save your full workspace layout and active agent sessions so everything reopens after a reboot. |
+| [**Sessions › Workspace & Multi-Session Management**](#sessions--workspace--multi-session-management) (7) | Manage session lifecycles, attach remotely, and clean up abandoned agent processes. |
 
 ---
 
 ### [5. Worktrees, config & terminal UX](#worktrees-config--terminal-ux) (363 tools)
 
-*Worktree automation, pane hints, statuslines, diff review tools, and drop-in dotfiles configurations.*
+*Keep agents isolated in git worktrees, polish your terminal UI, and inspect code diffs.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Worktrees › Git Worktree Automation**](#worktrees--git-worktree-automation) (99) | Map git worktree lifecycles directly onto Herdr tabs and workspaces | [noamsiegel/git-wt-herdr](#worktrees--git-worktree-automation) · [mattarau/wt-herdr](#worktrees--git-worktree-automation) |
-| [**Worktrees › Workspace Lifecycle & Multi-Repo**](#worktrees--workspace-lifecycle--multi-repo) (4) | Superset workspace bridging, conductor workspaces, and monorepo trees | [SirTenzin/superherd](#worktrees--workspace-lifecycle--multi-repo) · [razajamil/herdr-plugin-workspace-manager](#worktrees--workspace-lifecycle--multi-repo) |
-| [**Terminal UX › Diff Review & File Viewers**](#terminal-ux--diff-review--file-viewers) (40) | Side-by-side diff viewers, markdown previews, and comment-to-agent review | [jhochenbaum/herdr-hunk-diff](#terminal-ux--diff-review--file-viewers) · [persiyanov/herdr-reviewr](#terminal-ux--diff-review--file-viewers) · [smarzban/herdr-file-viewer](#terminal-ux--diff-review--file-viewers) |
-| [**Terminal UX › Pane Navigation, Keymaps & Hints**](#terminal-ux--pane-navigation-keymaps--hints) (92) | 1-character overlay jump hints, prefix-free navigation, and keymap packs | [ugurtarlig/herdr-pane-picker](#terminal-ux--pane-navigation-keymaps--hints) · [shoaibkhanz/herdr-nav-plus](#terminal-ux--pane-navigation-keymaps--hints) · [native-shortcuts-herd](#terminal-ux--pane-navigation-keymaps--hints) |
-| [**Terminal UX › Command Palettes & Workspace Switchers**](#terminal-ux--command-palettes--workspace-switchers) (13) | Sesh-style zoxide pickers, Ratatui palettes, and command switchboards | [ramarivera/herdr-palette](#terminal-ux--command-palettes--workspace-switchers) · [fullerzz/herdr-plugin-sesh](#terminal-ux--command-palettes--workspace-switchers) |
-| [**Terminal UX › Statuslines, Sidebars & Tab Sync**](#terminal-ux--statuslines-sidebars--tab-sync) (70) | Live Pi tab renaming, agent status in sidebars, and tmux theme ports | [justcyl/pi-herdr-tab-sync](#terminal-ux--statuslines-sidebars--tab-sync) · [liu-qingyuan/herdr-tmux-local-config](#terminal-ux--statuslines-sidebars--tab-sync) |
-| [**Terminal UX › Status Overlays, HUDs & Agent Gauges**](#terminal-ux--status-overlays-huds--agent-gauges) (22) | Floating HUD popups, agent turn timers, context meters, and caffeinate helpers | [zetlen/herdr-hud](#terminal-ux--status-overlays-huds--agent-gauges) · [Yemeni/herdr-agent-timer](#terminal-ux--status-overlays-huds--agent-gauges) · [mgh3326/scopefuel](#terminal-ux--status-overlays-huds--agent-gauges) · [nwarwick/herdr-caffeinate](#terminal-ux--status-overlays-huds--agent-gauges) |
-| [**Terminal UX › Output Inspection, Logs & Transcripts**](#terminal-ux--output-inspection-logs--transcripts) (9) | Fuzzy jump to URLs/files in pane viewports and Claude JSONL transcripts | [wraithyy/herdr-openr](#terminal-ux--output-inspection-logs--transcripts) · [fredrikkvalvik/herdr-scratch](#terminal-ux--output-inspection-logs--transcripts) |
-| [**Terminal UX › Dotfiles & Drop-in Config Packs**](#terminal-ux--dotfiles--drop-in-config-packs) (12) | Turnkey Ghostty, Kitty, WezTerm, Oh-My-Zsh, and tmux configs for Herdr | [herdr-dotfiles](#terminal-ux--dotfiles--drop-in-config-packs) · [ghostty & kitty packs](#terminal-ux--dotfiles--drop-in-config-packs) |
-| [**Terminal UX › Plugin Collections & Developer Frameworks**](#terminal-ux--plugin-collections--developer-frameworks) (2) | Plugin monorepos, Rust plugin frameworks, and standard plugin templates | [tyler-jewell/herdr-plugins](#terminal-ux--plugin-collections--developer-frameworks) · [Newt6611/herdr-plugin-rust](#terminal-ux--plugin-collections--developer-frameworks) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Worktrees › Git Worktree Automation**](#worktrees--git-worktree-automation) (99) | Give every agent its own isolated git worktree tab so they never overwrite each other's files. |
+| [**Worktrees › Workspace Lifecycle & Multi-Repo**](#worktrees--workspace-lifecycle--multi-repo) (4) | Manage complex monorepo layouts and multi-repository project workspaces inside Herdr. |
+| [**Terminal UX › Diff Review & File Viewers**](#terminal-ux--diff-review--file-viewers) (40) | View agent git diffs side-by-side in adjacent panes and leave comments for the agent to fix. |
+| [**Terminal UX › Pane Navigation, Keymaps & Hints**](#terminal-ux--pane-navigation-keymaps--hints) (92) | Jump directly to any pane with 1-character overlay hints and prefix-free key combinations. |
+| [**Terminal UX › Command Palettes & Workspace Switchers**](#terminal-ux--command-palettes--workspace-switchers) (13) | Fast pop-up command palettes and directory switchers powered by zoxide and sesh. |
+| [**Terminal UX › Statuslines, Sidebars & Tab Sync**](#terminal-ux--statuslines-sidebars--tab-sync) (70) | Sync tab names with agent task titles and show agent status icons in your terminal statusline. |
+| [**Terminal UX › Status Overlays, HUDs & Agent Gauges**](#terminal-ux--status-overlays-huds--agent-gauges) (22) | Floating HUDs and gauges that show agent thinking timers, CPU usage, and rate-limit headroom. |
+| [**Terminal UX › Output Inspection, Logs & Transcripts**](#terminal-ux--output-inspection-logs--transcripts) (9) | Fuzzy search through terminal transcripts and click directly on URLs or file paths mentioned by agents. |
+| [**Terminal UX › Dotfiles & Drop-in Config Packs**](#terminal-ux--dotfiles--drop-in-config-packs) (12) | Ready-to-use configuration files for Ghostty, Kitty, WezTerm, Oh My Zsh, and tmux keymaps. |
+| [**Terminal UX › Plugin Collections & Developer Frameworks**](#terminal-ux--plugin-collections--developer-frameworks) (2) | Plugin monorepos and Rust frameworks to help you build your own custom Herdr plugins. |
 
 ---
 
 ### [6. Desktop apps & packaging](#desktop-apps--packaging) (77 tools)
 
-*Native desktop statusbars, mobile companions, web dashboards, and package manager formulas.*
+*Native status widgets, menu bar apps, web UIs, and package manager installers.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**Desktop › Native GUI & Menu Bar Apps**](#desktop--native-gui--menu-bar-apps) (47) | macOS menu-bar widgets, GPUI desktop apps, and Deepin Linux windows | [hmu332233/herdr-menu-bar](#desktop--native-gui--menu-bar-apps) · [re2zero/zenix](#desktop--native-gui--menu-bar-apps) · [re2zero/deepin-herdr](#desktop--native-gui--menu-bar-apps) |
-| [**Desktop › Web Dashboards & Remote Viewers**](#desktop--web-dashboards--remote-viewers) (4) | Browser-based live viewer, mobile control surfaces, and remote HTTP relays | [y011d4/herdr-plugin-agentweb](#desktop--web-dashboards--remote-viewers) · [dcolinmorgan/herdr-remote](#desktop--web-dashboards--remote-viewers) · [AltanS/collie](#desktop--web-dashboards--remote-viewers) |
-| [**Packaging › Package Managers & Flakes**](#packaging--package-managers--flakes) (21) | Auto-updating Nix flakes, Homebrew taps, and binary release packages | [AodhanHayter/herdr-nix](#packaging--package-managers--flakes) · [nix packaging](#packaging--package-managers--flakes) |
-| [**Packaging › Version Managers (mise, vfox)**](#packaging--version-managers-mise-vfox) (5) | Verified plugins for mise, vfox, and asdf version managers | [lachieh/vfox-herdr](#packaging--version-managers-mise-vfox) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**Desktop › Native GUI & Menu Bar Apps**](#desktop--native-gui--menu-bar-apps) (47) | Glance at agent statuses from your macOS menu bar, Linux desktop tray, or dedicated GUI app. |
+| [**Desktop › Web Dashboards & Remote Viewers**](#desktop--web-dashboards--remote-viewers) (4) | Watch and steer your terminal agents from any browser or phone over a secure connection. |
+| [**Packaging › Package Managers & Flakes**](#packaging--package-managers--flakes) (21) | Install and update Herdr using Nix flakes, Homebrew, and Linux package managers. |
+| [**Packaging › Version Managers (mise, vfox)**](#packaging--version-managers-mise-vfox) (5) | Manage Herdr versions through mise, vfox, and asdf version managers. |
 
 ---
 
 ### [7. Work in progress](#work-in-progress) (16 tools)
 
-*Early-stage concepts, scaffolds, and announced prototypes exploring future Herdr workflows.*
+*Experimental concepts, scaffolds, and early prototypes exploring future Herdr ideas.*
 
-| Subcategory | What it gives you | Key projects |
-|---|---|---|
-| [**WIP › Experiments, Concepts & Scaffolds**](#wip--experiments-concepts--scaffolds) (16) | Raycast extensions, editor scaffolds, and experimental fleet prototypes | [shippy/raycast-herdr](#wip--experiments-concepts--scaffolds) · [SuperInstance/herdr-cocapn](#wip--experiments-concepts--scaffolds) |
+| Subcategory | What it lets you do |
+|---|---|
+| [**WIP › Experiments, Concepts & Scaffolds**](#wip--experiments-concepts--scaffolds) (16) | Explore early prototypes like Raycast extensions, editor scaffolds, and experimental fleets. |
 
 [↑ Back to contents](#contents)
 

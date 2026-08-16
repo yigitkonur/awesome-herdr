@@ -1,72 +1,125 @@
 # AGENTS.md
 
-Working rules for anyone — human or agent — editing this repo. It is a curated index of the [Herdr](https://github.com/ogulcancelik/herdr) ecosystem. Keep it lean and scannable.
+Working rules and language guidelines for anyone — human or agent — editing this repository. It is a curated, plain-English index of the [Herdr](https://github.com/ogulcancelik/herdr) ecosystem. Keep it lean, simple, and immediately useful.
 
-## Adding a project
+---
 
-Add it in **two** places:
+## 1. Project Language & Voice Values
 
-**1. The `## At a glance` table** — one scannable row:
+The language of this catalog must be simple, direct, and developer-friendly. Follow these core value entities across all descriptions and sections:
 
-```md
-| Group | ![Lang](badge) [repo](https://github.com/owner/repo) | ≤8-word hook |
+### 1.1. Plain-English, Verb-First Prose
+
+- Lead with active verbs (*Adds*, *Teaches*, *Runs*, *Maps*, *Monitors*, *Filters*, *Connects*).
+- Avoid passive constructions, convoluted em-dash chains, and marketing buzzwords (*"ultimate"*, *"blazing fast"*, *"revolutionary"*).
+- State clearly what a Herdr user can *do* with the tool, not a laundry list of generic features.
+
+### 1.2. The 1–2 Sentence Rule
+
+Every project entry must be strictly 1 or 2 concise sentences:
+
+- **Sentence 1:** What the tool specifically does for a Herdr user.
+- **Sentence 2 (optional):** Key capabilities, supported models/agents (Claude, Pi, Codex, OpenCode), or notable workflows.
+
+### 1.3. Subcategory Header Standards
+
+Every subcategory section begins with a count and a 1-sentence summary:
+
+```markdown
+### Multi-agent fleets and supervisors
+
+*51 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
 ```
 
-The first cell is a 1–2 word **group** tag — reuse an existing one (Orchestrate · Connect · Editor · Sessions · Worktrees · Terminal UX · Desktop · Packaging) so the column keeps clustering by category.
+---
 
-**2. A blurb under the right showcase section:**
+## 2. Adding a Project
 
-```md
-![Lang](badge) **[owner/repo](https://github.com/owner/repo)**
+Add new projects in the appropriate subcategory using the compact bullet format:
 
-Two or three sentences on what it lets a Herdr user *do* and who it's for — not a feature list. No inline install commands (those live in the linked repo).
+```markdown
+- **[owner/repo](https://github.com/owner/repo)**: Plain-English explanation of what the tool does and who it is for.
 ```
 
-Lead with the language badge(s), then the link — icons aligned on the left scan faster. Use the project's real GitHub link, and when the bare repo name is generic (like `skills`), write the text as `owner/repo` so it stays unambiguous if someone adds a similarly-named project later. Don't add a trailing `` `Language` `` — the badge carries the language.
+- Always use the real GitHub repository URL.
+- When the repo name is generic (like `skills` or `herdr-plugins`), write the text as `owner/repo` to prevent ambiguity.
+- Do not add trailing language badges or install commands inside the blurb (installation instructions live in the target repo).
 
-## Sections
+---
 
-Put a project where a *user* would look for it, not where the author would file it:
+## 3. Canonical Section Structure
 
-- **Run & orchestrate agents** — spawning, pairing, or coordinating multiple agents.
-- **Connect over socket & MCP** — socket clients and MCP servers.
-- **Editor integrations** — bringing Herdr into Neovim, Cursor, and other editors.
-- **Sessions: switch & restore** — finding, attaching to, and restoring sessions.
-- **Worktrees, config & terminal UX** — layout bridges, config/keymap packs, terminal polish.
-- **Desktop apps & packaging** — GUI/menu-bar apps and install/distribution (Nix, `.deb`).
-- **Work in progress** — announced or scaffolded but not yet usable (keep the caveat).
+Organize projects across the 7 numbered domains and their plain-English micro-categories:
 
-## Language badges
+1. **Run and orchestrate agents**
+   - Official skill and foundation
+   - Multi-agent fleets and supervisors
+   - Subagent launchers and delegation
+   - Autonomous coding and pull-request loops
+   - Task queues, backlogs, and event triggers
+   - General workflows and skill packs
 
-```md
-![Rust](https://img.shields.io/badge/-555555?logo=rust&logoColor=white&style=flat-square)
-![Python](https://img.shields.io/badge/-555555?logo=python&logoColor=white&style=flat-square)
-![TypeScript](https://img.shields.io/badge/-555555?logo=typescript&logoColor=white&style=flat-square)
-![Go](https://img.shields.io/badge/-555555?logo=go&logoColor=white&style=flat-square)
-![Lua](https://img.shields.io/badge/-555555?logo=lua&logoColor=white&style=flat-square)
-![Swift](https://img.shields.io/badge/-555555?logo=swift&logoColor=white&style=flat-square)
-![C++](https://img.shields.io/badge/-555555?logo=cplusplus&logoColor=white&style=flat-square)
-![Shell](https://img.shields.io/badge/-555555?logo=gnubash&logoColor=white&style=flat-square)
-![Nix](https://img.shields.io/badge/-555555?logo=nixos&logoColor=white&style=flat-square)
-![YAML](https://img.shields.io/badge/-555555?logo=yaml&logoColor=white&style=flat-square)
-```
+2. **Connect through MCP and the socket API**
+   - MCP servers
+   - Socket API clients and SDKs
+   - Push notifications and webhook alerts
+   - Telemetry, events, and quota streaming
+   - Voice, hardware, and remote bridges
+   - Protocol and third-party bridges
 
-Every badge uses the same gray (`555555`) and a white icon — only the `logo` slug changes, so a row reads as one consistent monochrome strip. Keep it that way. A repo with a helper in another language (e.g. a Rust-backed `.nvim`) can carry two badges. Pick the [Simple Icons](https://simpleicons.org) slug for any language not listed here.
+3. **Editor integrations**
+   - Neovim navigation and splits
+   - Full Neovim-hosted workspaces
+   - VS Code, Cursor, and dev containers
+   - Vim, Kakoune, and other editors
+   - REPL and code dispatchers
+   - Editor plugins and bridges
 
-## The bar
+4. **Switch and restore sessions**
+   - Fuzzy session switchers and terminal pickers
+   - Persistence, snapshots, and state restoration
+   - Workspace and multi-session management
 
-A project belongs here only if it is:
+5. **Worktrees and terminal experience**
+   - Git worktree automation
+   - Workspace lifecycle and multi-repository tools
+   - Diff review and file viewers
+   - Pane navigation, keymaps, and hints
+   - Command palettes and workspace switchers
+   - Status lines, sidebars, and tab synchronization
+   - Status overlays, HUDs, and agent gauges
+   - Output inspection, logs, and transcripts
+   - Dotfiles and ready-made configuration
+   - Plugin collections and developer frameworks
 
-- **Public** — repo or docs anyone can open.
-- **Herdr-specific** — uses, configures, or teaches Herdr (socket/CLI/config/hooks/skills), not a generic terminal or AI tool.
-- **Documented** — a new user can understand its setup and value.
-- **Meaningfully distinct** — not a near-duplicate fork with no added value.
-- **Factual** — neutral, specific prose. No hype ("best", "ultimate"), no affiliate links, no generated filler, no repeating the repo name as the description.
+6. **Apps, companion integrations, and installation**
+   - Native desktop and mobile apps
+   - Web dashboards and remote viewers
+   - Hardware and ambient displays
+   - Plugins and supporting utilities
+   - Setup, packages, and version management
 
-Scaffold-only or not-yet-usable repos go in **Work in progress**, not the main list.
+7. **Experimental projects**
+   - Experiments, concepts, and scaffolds
 
-## Before committing
+---
 
-- Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean (same check CI runs).
-- Confirm links work and the project appears in both the table and a section.
-- Commit as `docs(awesome-list): <summary>`.
+## 4. The Bar (Inclusion Criteria)
+
+A project belongs here only if it meets all of the following:
+
+- **Public:** Anyone can access the repository and its documentation.
+- **Herdr-specific:** Specifically configures, extends, drives, or teaches Herdr (via CLI, socket API, hooks, skills, or plugin manifest), not a generic terminal multiplexer tool.
+- **Documented:** A new user can understand what it does and how to get started.
+- **Meaningfully distinct:** Not an empty fork or duplicate upload without added functionality.
+- **Factual:** Honest, neutral, and clear about current state and limitations.
+
+*Unfinished, announced, or scaffold-only projects belong under **Experimental projects**, never in the main categories.*
+
+---
+
+## 5. Before Committing
+
+1. Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean with **0 issues** (same check CI runs).
+2. Ensure every internal anchor link resolves correctly.
+3. Commit with the conventional commit format: `docs(awesome-list): <summary>`.

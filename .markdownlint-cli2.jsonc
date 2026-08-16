@@ -2,7 +2,8 @@
   "config": {
     "MD013": false,
     "MD060": false,
-    "MD041": false
+    "MD041": false,
+    "MD033": false
   },
   "ignores": [
     "scratch/**",

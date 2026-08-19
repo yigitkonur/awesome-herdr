@@ -46,7 +46,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
-   - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
+   - [Context meters and rate-limit gauges (8)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (3)](#plugin-collections-and-developer-frameworks)
@@ -1039,7 +1039,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Context meters and rate-limit gauges
 
-*7 projects. Live token headroom meters, quota tracking, and agent cost gauges.*
+*8 projects. Live token headroom meters, quota tracking, and agent cost gauges.*
 
 | Project | What it does |
 |---|---|
@@ -1050,6 +1050,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**szrenwei/herdr-agent-metrics**](https://github.com/szrenwei/herdr-agent-metrics) | Tracks context-window and token metrics for Claude Code, Codex, and TraeX sessions and summarizes them in a small Herdr overlay. |
 | [**tomys22/herdr-agent-usage-plugin**](https://github.com/tomys22/herdr-agent-usage-plugin) | Displays Claude, Codex, and Gemini API usage, including session and weekly percentages and reset times, in a Herdr split. |
 | [**ram4-dev/herdr-codex-usage**](https://github.com/ram4-dev/herdr-codex-usage) | Detects installed agents and shows their usage quotas inside Herdr. |
+| [**sjh9714/herdr-fleece**](https://github.com/sjh9714/herdr-fleece) | Shows live tokens, dollars, and a $/hour burn rate for every Herdr pane in one `npx` console, attributing spend to panes by working directory. Reads the usage files Claude Code and Codex already write, keeps unattributed spend visible as an off-herd line, and prints the whole board as JSON for status bars. |
 
 ### Output inspection, logs, and transcripts
 

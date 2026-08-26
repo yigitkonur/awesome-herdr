@@ -50,11 +50,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (3)](#plugin-collections-and-developer-frameworks)
-6. [Apps, companion integrations, and installation (75)](#6-apps-companion-integrations-and-installation)
+6. [Apps, companion integrations, and installation (76)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (11)](#native-desktop-and-mobile-apps)
    - [Web dashboards and remote viewers (16)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (12)](#hardware-and-ambient-displays)
-   - [Plugins and supporting utilities (27)](#plugins-and-supporting-utilities)
+   - [Plugins and supporting utilities (28)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (9)](#setup-packages-and-version-management)
 7. [Experimental projects (12)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (12)](#experiments-concepts-and-scaffolds)
@@ -1094,7 +1094,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 6. Apps, companion integrations, and installation
 
-*75 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
+*76 projects. Desktop and mobile clients, browser dashboards, physical status devices, supporting plugins, and reproducible installation tools.*
 
 ### Native desktop and mobile apps
 
@@ -1158,7 +1158,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Plugins and supporting utilities
 
-*27 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.**
+*28 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.**
 
 | Project | What it does |
 |---|---|
@@ -1181,6 +1181,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**calorie/herdr-auto-focus**](https://github.com/calorie/herdr-auto-focus) | Focuses the Herdr agent needing attention after the computer has been idle. |
 | [**quinnjr/herdr-notifications**](https://github.com/quinnjr/herdr-notifications) | Sends native desktop notifications when Herdr agent states change on Linux, macOS, Windows, and BSD. |
 | [**ablause/herdr-flutter**](https://github.com/ablause/herdr-flutter) | A Herdr sidebar for watching, hot-reloading, and inspecting a running Flutter app beside the coding agent working on it. |
+| [**aorumbayev/herdr-canvas**](https://github.com/aorumbayev/herdr-canvas) | Opens a mouse-driven ASCII diagram canvas in a Herdr split. Humans draw boxes, lines, and text; agents read and edit the same JSON-backed diagrams through the CLI and skill. |
 | [**aorumbayev/herdr-ctx**](https://github.com/aorumbayev/herdr-ctx) | A Herdr sidebar indicator that shows Claude's remaining context-window capacity. |
 | [**miya10kei/herdr-plugin-sidebar**](https://github.com/miya10kei/herdr-plugin-sidebar) | Displays Google Calendar events and GitHub Actions run status in a split pane styled as a sidebar. |
 | [**khatriafaz/herdr-plugin-agent-repo**](https://github.com/khatriafaz/herdr-plugin-agent-repo) | Adds the current agent, repository, and branch names to Herdr pane headers and the sidebar. |

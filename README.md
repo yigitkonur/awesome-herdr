@@ -25,8 +25,8 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Telemetry, events, and quota streaming (7)](#telemetry-events-and-quota-streaming)
    - [Voice, hardware, and remote bridges (1)](#voice-hardware-and-remote-bridges)
    - [Protocol and third-party bridges (11)](#protocol-and-third-party-bridges)
-3. [Editor integrations (54)](#3-editor-integrations)
-   - [Neovim navigation and splits (30)](#neovim-navigation-and-splits)
+3. [Editor integrations (55)](#3-editor-integrations)
+   - [Neovim navigation and splits (31)](#neovim-navigation-and-splits)
    - [Full Neovim-hosted workspaces (1)](#full-neovim-hosted-workspaces)
    - [VS Code, Cursor, and dev containers (9)](#vs-code-cursor-and-dev-containers)
    - [Vim, Kakoune, and other editors (11)](#vim-kakoune-and-other-editors)
@@ -445,11 +445,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 3. Editor integrations
 
-*54 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
+*55 projects. Tools that connect Herdr with Neovim, VS Code, Cursor, Vim, Kakoune, REPLs, and other editing environments.*
 
 ### Neovim navigation and splits
 
-*30 projects. Plugins that make movement between Neovim windows and Herdr panes feel continuous.**
+*31 projects. Plugins that make movement between Neovim windows and Herdr panes feel continuous.**
 
 | Project | What it does |
 |---|---|
@@ -460,6 +460,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**nettlesh/dotfiles**](https://github.com/nettlesh/dotfiles) | Personal Alacritty, Fish, Herdr, and Neovim dotfiles with workspace navigation and agent-dispatch configuration. |
 | [**devxplay/herdr.nvim**](https://github.com/devxplay/herdr.nvim) | Provides seamless directional split navigation (Ctrl+h/j/k/l) between Neovim and Herdr panes. |
 | [**makyinmars/herdr-context.nvim**](https://github.com/makyinmars/herdr-context.nvim) | A two-pane Neovim composer that turns selections, cursor positions, and file details into structured Markdown context for a Herdr agent. The prompt is staged for review rather than submitted automatically. |
+| [**mcuste/herdr-context.nvim**](https://github.com/mcuste/herdr-context.nvim) | Sends the current Neovim buffer, open buffers, or a Visual selection to a Herdr coding agent as a correctly formatted file reference. It targets one workspace agent automatically or opens a fuzzy picker when several agents are in the tab or workspace. |
 | [**nwiizo/signalbox.nvim**](https://github.com/nwiizo/signalbox.nvim) | An attention-focused Neovim control surface for persistent coding agents running in Herdr. |
 | [**cinco/herdr-grep-nvim**](https://github.com/cinco/herdr-grep-nvim) | Combines ripgrep and fzf for live searching, then opens a selected match in a Neovim split beside the active Herdr agent. |
 | [**willfish/herdr-navigator**](https://github.com/willfish/herdr-navigator) | Provides the Herdr-side actions needed for shared Vim or Neovim navigation. It checks the active pane process and either forwards the key to the editor or moves Herdr focus. |

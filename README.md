@@ -36,7 +36,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (360)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
@@ -44,7 +44,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Pane navigation and overlay hints (11)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
-   - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
+   - [Status lines, sidebars, and tab synchronization (71)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
@@ -638,7 +638,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*359 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+*360 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
 
 ### Git worktree automation
 
@@ -940,7 +940,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Status lines, sidebars, and tab synchronization
 
-*70 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.**
+*71 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.**
 
 | Project | What it does |
 |---|---|
@@ -956,6 +956,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**wjarka/herdr-ghostty-tab-title**](https://github.com/wjarka/herdr-ghostty-tab-title) | Writes color-coded counts of working, blocked, done, and idle Herdr agents into Ghostty tab titles. |
 | [**cdc-lst/herdr-wait**](https://github.com/cdc-lst/herdr-wait) | Examines the process tree of idle or blocked panes and replaces generic state with a specific waiting label, such as a build or external CLI name. |
 | [**edouard-andrei/herdr-layout-tools**](https://github.com/edouard-andrei/herdr-layout-tools) | Rearranges existing panes into main-left, grid, or equalized presets without changing pane IDs, tab IDs, or running processes. |
+| [**thuanlm215/herdr-grid**](https://github.com/thuanlm215/herdr-grid) | Opens a visual editor for dragging, resizing, and safely rearranging live pane layouts without restarting pane processes. It can add shell panes, apply fixed presets, or build a preset in a new workspace. |
 | [**getpipher/herdr-sysmon**](https://github.com/getpipher/herdr-sysmon) | Adds CPU, memory, battery, network, and disk measurements to Herdr sidebar tokens, with configurable refresh intervals and macOS-focused probes. |
 | [**rohankewal/herdr-nerd-font-tab-name**](https://github.com/rohankewal/herdr-nerd-font-tab-name) | Ports tmux-nerd-font-window-name to Herdr, updating tab icons from the running program and directory context. |
 | [**lachieh/herdr-plugin-cmux**](https://github.com/lachieh/herdr-plugin-cmux) | Mirrors every Herdr agent into the cmux sidebar. |

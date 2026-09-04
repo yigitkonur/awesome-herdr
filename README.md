@@ -36,12 +36,12 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (360)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
    - [File viewers and markdown previews (19)](#file-viewers-and-markdown-previews)
-   - [Pane navigation and overlay hints (11)](#pane-navigation-and-overlay-hints)
+   - [Pane navigation and overlay hints (12)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
@@ -813,7 +813,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Pane navigation and overlay hints
 
-*11 projects. Direct 1-character overlay hints and smart directional pane jumping.*
+*12 projects. Direct 1-character overlay hints and smart directional pane jumping.*
 
 | Project | What it does |
 |---|---|
@@ -828,6 +828,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**yigitkg/herdr-open-local-paths**](https://github.com/yigitkg/herdr-open-local-paths) | Finds file and folder paths mentioned in recent pane output and opens them with the operating system or reveals them in a file manager. When several paths exist, a picker lists files before folders. |
 | [**RooseveltAdvisors/herdr-leap**](https://github.com/RooseveltAdvisors/herdr-leap) | Provides EasyMotion or Leap-style character jumps and selection-to-copy inside Herdr terminal panes. |
 | [**stappmus/Udder**](https://github.com/stappmus/Udder) | Shows Herdr agents in the Omarchy bar, notifies when work finishes, and jumps back to the relevant pane. |
+| [**vjeantet/herdr-mission-control**](https://github.com/vjeantet/herdr-mission-control) | Opens a full-screen overlay showing every pane of the current workspace as a live tile grouped by tab, with styled ANSI previews and agent status. Arrows or `hjkl` move the selection, `Enter` focuses the pane, and `Backspace` closes it without leaving the overview. |
 
 ### Terminal keybindings and shortcut helpers
 

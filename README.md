@@ -36,14 +36,14 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (360)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
    - [File viewers and markdown previews (19)](#file-viewers-and-markdown-previews)
    - [Pane navigation and overlay hints (11)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
-   - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
+   - [Command palettes and workspace switchers (15)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
@@ -638,7 +638,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*359 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+*360 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
 
 ### Git worktree automation
 
@@ -919,13 +919,14 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Command palettes and workspace switchers
 
-*14 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.**
+*15 projects. Searchable menus for Herdr commands, projects, workspaces, and common actions.**
 
 | Project | What it does |
 |---|---|
 | [**TaylorFinklea/herdr-ask**](https://github.com/TaylorFinklea/herdr-ask) | Opens a popup to translate plain-English requests into shell commands, letting you review and insert them into the active pane with Ctrl+Enter. |
 | [**fullerzz/herdr-plugin-sesh**](https://github.com/fullerzz/herdr-plugin-sesh) | A sesh-style Herdr workspace picker with zoxide integration for creating workspaces from frequently used directories. |
 | [**ramarivera/herdr-palette**](https://github.com/ramarivera/herdr-palette) | A Rust and Ratatui fuzzy command palette for Herdr workspaces. |
+| [**vjeantet/herdr-palette**](https://github.com/vjeantet/herdr-palette) | Combines Herdr's built-in operations, every installed plugin's actions, user-defined commands, and reusable prompts in one fuzzy Rust/Ratatui palette. It preserves the originating pane context and asks for inputs, selections, or confirmation when an operation needs them. |
 | [**arjenblokzijl/herdr-launcher**](https://github.com/arjenblokzijl/herdr-launcher) | Defines named workflows as `.mjs` files with custom input fields and a `run()` function. Workflows can be launched from a Herdr picker or through `herdr-launcher run`, supporting interactive and scripted use. |
 | [**ningxiaoxiao/herdr-agent-picker**](https://github.com/ningxiaoxiao/herdr-agent-picker) | Enables the user choose an AI agent and working directory before Herdr creates a new tab, split, or workspace. |
 | [**mackt/herdr-window-title**](https://github.com/mackt/herdr-window-title) | Writes template-formatted Herdr session and agent state into the outer terminal window title, including whether background agents are working, blocked, or done. |

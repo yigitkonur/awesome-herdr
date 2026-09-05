@@ -36,13 +36,13 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (360)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
    - [File viewers and markdown previews (19)](#file-viewers-and-markdown-previews)
    - [Pane navigation and overlay hints (11)](#pane-navigation-and-overlay-hints)
-   - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
+   - [Terminal keybindings and shortcut helpers (82)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
@@ -831,7 +831,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Terminal keybindings and shortcut helpers
 
-*81 projects. Custom keymap packs, leader-key setups, and prefix-free navigation.*
+*82 projects. Custom keymap packs, leader-key setups, and prefix-free navigation.*
 
 | Project | What it does |
 |---|---|
@@ -916,6 +916,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**donghaolicd/herdr-teams-notify**](https://github.com/donghaolicd/herdr-teams-notify) | Sends bounded Microsoft Teams notifications for Herdr agent lifecycle events. |
 | [**capt-marbles/herdr-jcode-integration**](https://github.com/capt-marbles/herdr-jcode-integration) | Reports Jcode session and lifecycle state to Herdr. |
 | [**DMelisena/shipmates**](https://github.com/DMelisena/shipmates) | A Hermes plugin offering a preconfigured Kun Chen-style Herdr and OpenCode first-mate workflow. The source catalog does not describe its individual controls. |
+| [**vjeantet/herdr-scratchpad**](https://github.com/vjeantet/herdr-scratchpad) | Docks a plain-text scratchpad at the bottom of a tab, one persistent buffer per tab, for composing a prompt where Enter can't send it half-finished. `Ctrl+E` moves it, or just the selection, into an agent of the same tab without submitting; `Ctrl+C` copies over OSC 52. |
 
 ### Command palettes and workspace switchers
 

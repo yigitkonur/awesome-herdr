@@ -36,7 +36,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (360)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
@@ -45,7 +45,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Terminal keybindings and shortcut helpers (81)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (14)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (70)](#status-lines-sidebars-and-tab-synchronization)
-   - [Status overlays, HUDs, and agent timers (15)](#status-overlays-huds-and-agent-timers)
+   - [Status overlays, HUDs, and agent timers (16)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
@@ -1017,7 +1017,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Status overlays, HUDs, and agent timers
 
-*15 projects. Floating status HUDs, turn timers, and keep-awake utilities.*
+*16 projects. Floating status HUDs, turn timers, and keep-awake utilities.*
 
 | Project | What it does |
 |---|---|
@@ -1036,6 +1036,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**shadowfax92/herdr-scratch**](https://github.com/shadowfax92/herdr-scratch) | Gives each Herdr pane a persistent scratch overlay backed by a private tmux session, keeping notes, REPLs, and side commands tied to that pane. |
 | [**zetlen/herdr-hud**](https://github.com/zetlen/herdr-hud) | A floating, customizable HUD for host, network, session, and agent metrics, with support for extra data supplied by shell scripts. |
 | [**speardragon/herdr-status-platform**](https://github.com/speardragon/herdr-status-platform) | A Herdr status-platform integration. The source catalog does not explain its displayed data or controls. |
+| [**parker-brown-family/omarchy-crook**](https://github.com/parker-brown-family/omarchy-crook) | Puts Herdr agent state on the Omarchy desktop bar: one icon that turns urgent when an agent is blocked, and a tray listing every agent grouped by whether it needs you. Clicking a row focuses that pane and raises the terminal window on Hyprland. |
 
 ### Context meters and rate-limit gauges
 

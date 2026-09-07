@@ -8,14 +8,14 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## Contents
 
-1. [Run and orchestrate agents (157)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (158)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
    - [Multi-agent fleets and supervisors (20)](#multi-agent-fleets-and-supervisors)
    - [Claude Code multi-agent teams (19)](#claude-code-multi-agent-teams)
    - [Pi supervisor workflows and extensions (13)](#pi-supervisor-workflows-and-extensions)
    - [Subagent launchers and delegation (39)](#subagent-launchers-and-delegation)
    - [Autonomous coding and pull-request loops (10)](#autonomous-coding-and-pull-request-loops)
-   - [Task queues, backlogs, and event triggers (6)](#task-queues-backlogs-and-event-triggers)
+   - [Task queues, backlogs, and event triggers (7)](#task-queues-backlogs-and-event-triggers)
    - [General workflows and skill packs (49)](#general-workflows-and-skill-packs)
 2. [Connect through MCP and the socket API (106)](#2-connect-through-mcp-and-the-socket-api)
    - [MCP servers (6)](#mcp-servers)
@@ -65,7 +65,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 1. Run and orchestrate agents
 
-*157 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*158 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official skill and foundation
 
@@ -213,7 +213,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Task queues, backlogs, and event triggers
 
-*6 projects. Queues and event-driven systems that turn stored work into agent jobs.**
+*7 projects. Queues and event-driven systems that turn stored work into agent jobs.**
 
 | Project | What it does |
 |---|---|
@@ -223,6 +223,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**saiashirwad/homestead**](https://github.com/saiashirwad/homestead) | Creates an isolated worktree for each branch or GitHub issue, including separate ports, environment files, and setup. It launches an agent in Herdr, tracks progress, lands completed branches, and removes finished environments. |
 | [**DnzzL/herdr-automations**](https://github.com/DnzzL/herdr-automations) | Schedules recurring prompts and cron jobs that run agents in fresh Herdr worktrees. It supports task-specific MCP settings, collision protection, persistent run history, and a live monitoring board. |
 | [**ram4-dev/herdr-automations**](https://github.com/ram4-dev/herdr-automations) | Runs scheduled or event-triggered agent jobs from cron expressions, intervals, and lifecycle hooks. It prevents overlapping runs, creates fresh Git worktrees, and records complete execution histories. |
+| [**Eslsamu/herdr-tasks**](https://github.com/Eslsamu/herdr-tasks) | Keeps an agent-owned task queue linked to each Herdr space, with atomic claims, priorities, dependencies, and durable conversation ownership. An always-visible Herdr summary and local read-only browser view let people follow the work without maintaining cards. |
 
 ### General workflows and skill packs
 

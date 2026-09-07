@@ -32,10 +32,10 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Vim, Kakoune, and other editors (11)](#vim-kakoune-and-other-editors)
    - [REPL and code dispatchers (1)](#repl-and-code-dispatchers)
    - [Editor plugins and bridges (2)](#editor-plugins-and-bridges)
-4. [Switch and restore sessions (64)](#4-switch-and-restore-sessions)
+4. [Switch and restore sessions (65)](#4-switch-and-restore-sessions)
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
-   - [Workspace and multi-session management (7)](#workspace-and-multi-session-management)
+   - [Workspace and multi-session management (8)](#workspace-and-multi-session-management)
 5. [Worktrees and terminal experience (359)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
@@ -549,7 +549,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 4. Switch and restore sessions
 
-*64 projects. Pickers, switchers, snapshots, restoration tools, and managers for moving among persistent Herdr sessions.*
+*65 projects. Pickers, switchers, snapshots, restoration tools, and managers for moving among persistent Herdr sessions.*
 
 ### Fuzzy session switchers and terminal pickers
 
@@ -624,7 +624,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Workspace and multi-session management
 
-*7 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.**
+*8 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.**
 
 | Project | What it does |
 |---|---|
@@ -635,6 +635,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**to4iki/herdr-unread-jump**](https://github.com/to4iki/herdr-unread-jump) | Jumps to the next Herdr pane needing attention, prioritizing blocked agents before cycling through completed tasks. |
 | [**dantehemerson/herdr-last-tab**](https://github.com/dantehemerson/herdr-last-tab) | Tracks tab focus history and returns to the previously active Herdr tab with one keystroke. |
 | [**osamahbeig/herdr-grove**](https://github.com/osamahbeig/herdr-grove) | Displays projects and directories as a grouped tree in a Herdr popup and opens the selected workspace or folder by key or click. |
+| [**oddurs/herdr-namesync**](https://github.com/oddurs/herdr-namesync) | Keeps workspace, tab, and agent names current as the work changes, reading the intent the coding agent already publishes as its terminal title. Applies a rename policy with debouncing, rate limits, and locks for names you set by hand, and runs without a model unless you configure an OpenAI-compatible endpoint for stale titles. |
 
 ---
 

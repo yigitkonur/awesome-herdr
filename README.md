@@ -622,7 +622,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Workspace and multi-session management
 
-*7 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.**
+*8 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.**
 
 | Project | What it does |
 |---|---|
@@ -639,6 +639,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 ## 5. Worktrees and terminal experience
 
 *359 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+| [**oddurs/herdr-namesync**](https://github.com/oddurs/herdr-namesync) | Keeps workspace, tab, and agent names current as the work changes, reading the intent the coding agent already publishes as its terminal title. Applies a rename policy with debouncing, rate limits, and locks for names you set by hand, and runs without a model unless you configure an OpenAI-compatible endpoint for stale titles. |
 
 ### Git worktree automation
 

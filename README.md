@@ -36,7 +36,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (46)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (11)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (8)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (364)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (365)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (99)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (21)](#diff-review-and-code-inspection)
@@ -44,7 +44,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Pane navigation and overlay hints (12)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (82)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (15)](#command-palettes-and-workspace-switchers)
-   - [Status lines, sidebars, and tab synchronization (71)](#status-lines-sidebars-and-tab-synchronization)
+   - [Status lines, sidebars, and tab synchronization (72)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (16)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (9)](#output-inspection-logs-and-transcripts)
@@ -641,7 +641,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*364 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
+*365 projects. Git worktree automation, diff review, navigation, status displays, logs, and ready-made terminal configurations.*
 
 ### Git worktree automation
 
@@ -1021,6 +1021,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**MartinKei/herdr-tab-notes**](https://github.com/MartinKei/herdr-tab-notes) | Provides tools for taking notes. |
 | [**QuantumDancer/herdr-last-tab**](https://github.com/QuantumDancer/herdr-last-tab) | Switches back to the previously focused Herdr tab. |
 | [**nmogil/agent-skill-patterns**](https://github.com/nmogil/agent-skill-patterns) | Provides Claude Code, Hermes, and Herdr workflows. |
+| [**ferretorres/herdr-plugin-space-colors**](https://github.com/ferretorres/herdr-plugin-space-colors) | Gives each workspace a colour that follows the focused workspace across the Herdr theme, a marker on every agent row and Space row, the pane backgrounds, and the macOS terminal window and its title bar. Rules pin a colour to a path or label; unmatched workspaces are coloured from a hash of their directory. |
 
 ### Status overlays, HUDs, and agent timers
 

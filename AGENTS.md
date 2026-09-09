@@ -62,11 +62,15 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 1. **Run and orchestrate agents**
    - Official skill and foundation
    - Multi-agent fleets and supervisors
+   - Swarm, mob, and consensus orchestrators
    - Claude Code multi-agent teams
+   - Claude Code: Account switchers and auth monitors
    - Pi supervisor workflows and extensions
+   - Pi: Presence, memory, and status extensions
    - Subagent launchers and delegation
    - Autonomous coding and pull-request loops
    - Task queues, backlogs, and event triggers
+   - Linear, GitHub Issues, and issue-to-PR automation
    - General workflows and skill packs
 
 2. **Connect through MCP and the socket API**
@@ -74,6 +78,7 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
    - Socket API clients and SDKs
    - Chat alerts: Telegram, Discord, and Slack
    - Desktop, mobile, and webhook notifications
+   - Push notifications, APNs, and mobile alerts
    - Telemetry, events, and quota streaming
    - Voice, hardware, and remote bridges
    - Protocol and third-party bridges
@@ -103,6 +108,7 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
    - Status overlays, HUDs, and agent timers
    - Context meters and rate-limit gauges
    - Output inspection, logs, and transcripts
+   - Security guards and collision detectors
    - Dotfiles and ready-made configuration
    - Plugin collections and developer frameworks
 

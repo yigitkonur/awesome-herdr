@@ -946,7 +946,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Status lines, sidebars, and tab synchronization
 
-*71 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.**
+*72 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.**
 
 | Project | What it does |
 |---|---|

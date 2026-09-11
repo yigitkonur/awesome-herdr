@@ -21,9 +21,9 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Task queues, backlogs, and event triggers (14)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (25)](#linear-github-issues-and-issue-to-pr-automation)
    - [General workflows and skill packs (138)](#general-workflows-and-skill-packs)
-2. [Connect through MCP and the socket API (236)](#2-connect-through-mcp-and-the-socket-api)
+2. [Connect through MCP and the socket API (237)](#2-connect-through-mcp-and-the-socket-api)
    - [MCP servers (14)](#mcp-servers)
-   - [Socket API clients and SDKs (73)](#socket-api-clients-and-sdks)
+   - [Socket API clients and SDKs (74)](#socket-api-clients-and-sdks)
    - [Chat alerts: Telegram, Discord, and Slack (22)](#chat-alerts-telegram-discord-and-slack)
    - [Desktop, mobile, and webhook notifications (48)](#desktop-mobile-and-webhook-notifications)
    - [Push notifications, APNs, and mobile alerts (2)](#push-notifications-apns-and-mobile-alerts)
@@ -1014,7 +1014,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 2. Connect through MCP and the socket API
 
-*236 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
+*237 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
 
 ### MCP servers
 
@@ -1039,7 +1039,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Socket API clients and SDKs
 
-*73 projects. Libraries, command-line clients, and services that communicate with Herdr through its local socket.*
+*74 projects. Libraries, command-line clients, and services that communicate with Herdr through its local socket.*
 
 | Project | What it does |
 |---|---|
@@ -1116,6 +1116,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**johnlindquist/herdr-game**](https://github.com/johnlindquist/herdr-game) | Provides Interactive game for learning Herdr shortcuts, workflows, and agent operations. |
 | [**bryandph/herdr-client**](https://github.com/bryandph/herdr-client) | Provides a typed Rust client for Herdr's socket API. |
 | [**StarDuster/mimo-code-herdr-plugin**](https://github.com/StarDuster/mimo-code-herdr-plugin) | Shows MiMo Code agent state in herdr's sidebar, a user-level MiMo plugin, no herdr changes required. |
+| [**vika2603/herdr-client**](https://github.com/vika2603/herdr-client) | Provides a typed Go client and plugin toolkit for Herdr's socket API, generated from the schema the herdr binary prints and covering all 102 methods of protocol 22. Adds a reconnecting session mirror, the pane graphics frame stream, and the manifest parser and entrypoint dispatch a Go plugin needs. |
 
 ### Chat alerts: Telegram, Discord, and Slack
 

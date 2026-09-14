@@ -819,6 +819,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 | Project | What it does |
 |---|---|
+| [**smarzban/herdr-tsk**](https://github.com/smarzban/herdr-tsk) | Terminal task board shared by you and your agents - TUI for you, CLI for them. Herdr-native. |
 | [**nelsonPires5/herdr-board**](https://github.com/nelsonPires5/herdr-board) | A Kanban TUI and background service that turns cards into prompts for agents in visible Herdr panes. Moving a card can create an agent, run it in a dedicated tab, and advance the work through review gates. |
 | [**0x5c0f/herdr-insight**](https://github.com/0x5c0f/herdr-insight) | A dockable timeline that combines agent events from every Herdr workspace. It shows active and blocked states, session IDs, configurable columns, and a deduplicated seven-day history that remains current across workspace changes. |
 | [**carze/herdr-smolmachine**](https://github.com/carze/herdr-smolmachine) | Starts a coding agent inside a libkrun/KVM microVM from a Herdr pane. A prepared image and shell pipeline manage the VM, while Herdr still provides normal pane control, detaching, and reattaching. |
@@ -828,7 +829,6 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**Eslsamu/herdr-tasks**](https://github.com/Eslsamu/herdr-tasks) | Keeps an agent-owned task queue linked to each Herdr space, with atomic claims, priorities, dependencies, and durable conversation ownership. An always-visible Herdr summary and local read-only browser view let people follow the work without maintaining cards. |
 | [**husniadil/herdr-tasks**](https://github.com/husniadil/herdr-tasks) | Provides Task backlog and notes board for coding agents on Herdr - claims with leases, evidence-backed review, and a human decision gate, in one Go binary. |
 | [**sazardev/herdr-code-board**](https://github.com/sazardev/herdr-code-board) | Provides a kanban queue for agentic prompts inside Herdr: cards dispatch real agents into panes, worktrees and workspaces, with rules that chain one card to the next. |
-| [**smarzban/herdr-tsk**](https://github.com/smarzban/herdr-tsk) | Terminal task board shared by you and your agents - TUI for you, CLI for them. Herdr-native. |
 | [**chris-yyau/hermes-herdr-auto-reconcile**](https://github.com/chris-yyau/hermes-herdr-auto-reconcile) | Provides Gateway liveness plugin for Hermes supervisors watching Herdr panes. |
 | [**MatheusBBarni/herdr-tasks**](https://github.com/MatheusBBarni/herdr-tasks) | Provides a kanban task runner for Herdr: OpenTUI board plus htasks CLI. |
 | [**btj93/herdr-tabline**](https://github.com/btj93/herdr-tabline) | Renders Herdr tab labels with safe templates and project-aware profiles. |

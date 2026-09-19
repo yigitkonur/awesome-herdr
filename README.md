@@ -1481,7 +1481,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 4. Switch and restore sessions
 
-*175 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*176 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy session switchers and terminal pickers
 

@@ -8,9 +8,9 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## Contents
 
-1. [Run and orchestrate agents (853)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (854)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
-   - [Multi-agent fleets and supervisors (106)](#multi-agent-fleets-and-supervisors)
+   - [Multi-agent fleets and supervisors (107)](#multi-agent-fleets-and-supervisors)
    - [Swarm, mob, and consensus orchestrators (44)](#swarm-mob-and-consensus-orchestrators)
    - [Claude Code multi-agent teams (260)](#claude-code-multi-agent-teams)
    - [Claude Code: Account switchers and auth monitors (3)](#claude-code-account-switchers-and-auth-monitors)
@@ -83,7 +83,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Multi-agent fleets and supervisors
 
-*106 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
+*107 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
 
 | Project | What it does |
 |---|---|
@@ -93,6 +93,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**natori-hrj/herdr-triage**](https://github.com/natori-hrj/herdr-triage) | Sorts active Herdr agents by how urgently they need attention. Blocked and stalled workers rise to the top based on their wait and idle time. |
 | [**StructuPath/herdr-swarm**](https://github.com/StructuPath/herdr-swarm) | Runs several coding agents in parallel, each with its own branch, worktree, and Herdr pane, making it easy to watch competing implementations, compare changes, and keep the strongest result. |
 | [**aashishd/herdr-agent-messenger**](https://github.com/aashishd/herdr-agent-messenger) | Defines a small messaging protocol for agents in separate Herdr panes. Peers use memorable call signs and exchange focused one-line messages, allowing coordination without sharing complete session histories. |
+| [**junghan0611/entwurf**](https://github.com/junghan0611/entwurf) | Connects Pi, Claude Code, Codex, Copilot, OMP, and Antigravity sessions in Herdr or tmux so they can address, message, and open visible siblings without sharing auth, tools, or transcripts. Includes a Herdr integration for pi and Claude Code. |
 | [**voodootikigod/adlc-herdr**](https://github.com/voodootikigod/adlc-herdr) | Adds Agentic Development Lifecycle gates into Herdr. It shows ticket states, per-pane phases, and backlog boards, and provides actions for unblocking controlled milestones. |
 | [**tomoasleep/herdr-symphony**](https://github.com/tomoasleep/herdr-symphony) | Reads issues from GitHub Projects, creates `gwq` worktrees, and runs one OpenCode agent per issue inside Herdr workspaces. |
 | [**bredebjorhovd/herdr-board**](https://github.com/bredebjorhovd/herdr-board) | Assigns GitHub issues to agents in dedicated Herdr panes and moves completed work into pull-request review. |

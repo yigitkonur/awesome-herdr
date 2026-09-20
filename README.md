@@ -8,7 +8,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## Contents
 
-1. [Run and orchestrate agents (854)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (855)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
    - [Multi-agent fleets and supervisors (107)](#multi-agent-fleets-and-supervisors)
    - [Swarm, mob, and consensus orchestrators (44)](#swarm-mob-and-consensus-orchestrators)
@@ -18,7 +18,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Pi: Presence, memory, and status extensions (5)](#pi-presence-memory-and-status-extensions)
    - [Subagent launchers and delegation (114)](#subagent-launchers-and-delegation)
    - [Autonomous coding and pull-request loops (10)](#autonomous-coding-and-pull-request-loops)
-   - [Task queues, backlogs, and event triggers (14)](#task-queues-backlogs-and-event-triggers)
+   - [Task queues, backlogs, and event triggers (15)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (25)](#linear-github-issues-and-issue-to-pr-automation)
    - [General workflows and skill packs (138)](#general-workflows-and-skill-packs)
 2. [Connect through MCP and the socket API (237)](#2-connect-through-mcp-and-the-socket-api)
@@ -71,7 +71,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 1. Run and orchestrate agents
 
-*854 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*855 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official skill and foundation
 
@@ -815,10 +815,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Task queues, backlogs, and event triggers
 
-*14 projects. Queues and event-driven systems that turn stored work into agent jobs.*
+*15 projects. Queues and event-driven systems that turn stored work into agent jobs.*
 
 | Project | What it does |
 |---|---|
+| [**smarzban/herdr-tsk**](https://github.com/smarzban/herdr-tsk) | Shares a terminal task board between you and your agents with a TUI for humans and a CLI for agents. |
 | [**nelsonPires5/herdr-board**](https://github.com/nelsonPires5/herdr-board) | A Kanban TUI and background service that turns cards into prompts for agents in visible Herdr panes. Moving a card can create an agent, run it in a dedicated tab, and advance the work through review gates. |
 | [**0x5c0f/herdr-insight**](https://github.com/0x5c0f/herdr-insight) | A dockable timeline that combines agent events from every Herdr workspace. It shows active and blocked states, session IDs, configurable columns, and a deduplicated seven-day history that remains current across workspace changes. |
 | [**carze/herdr-smolmachine**](https://github.com/carze/herdr-smolmachine) | Starts a coding agent inside a libkrun/KVM microVM from a Herdr pane. A prepared image and shell pipeline manage the VM, while Herdr still provides normal pane control, detaching, and reattaching. |

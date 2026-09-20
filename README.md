@@ -37,8 +37,8 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Vim, Kakoune, and other editors (17)](#vim-kakoune-and-other-editors)
    - [REPL and code dispatchers (21)](#repl-and-code-dispatchers)
    - [Editor plugins and bridges (2)](#editor-plugins-and-bridges)
-4. [Switch and restore sessions (175)](#4-switch-and-restore-sessions)
-   - [Fuzzy session switchers and terminal pickers (130)](#fuzzy-session-switchers-and-terminal-pickers)
+4. [Switch and restore sessions (176)](#4-switch-and-restore-sessions)
+   - [Fuzzy session switchers and terminal pickers (131)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (30)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (15)](#workspace-and-multi-session-management)
 5. [Worktrees and terminal experience (500)](#5-worktrees-and-terminal-experience)
@@ -1482,11 +1482,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 4. Switch and restore sessions
 
-*175 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*176 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy session switchers and terminal pickers
 
-*130 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.*
+*131 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.*
 
 | Project | What it does |
 |---|---|
@@ -1525,6 +1525,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**ridho9/switchr**](https://github.com/ridho9/switchr) | A full-screen Herdr session selector that shows each session with its workspace, tab, and pane tree. It can run at terminal startup and can offer to restart an incompatible daemon before attaching. |
 | [**adamwangxx/herdr-codex-resume**](https://github.com/adamwangxx/herdr-codex-resume) | Opens Codex's native resume picker in a new Herdr split, preserving the current view while previous Codex sessions are browsed and resumed. |
 | [**damianpoole/herdr-opencode-sessions**](https://github.com/damianpoole/herdr-opencode-sessions) | Searches earlier OpenCode sessions by project, title, date, or transcript text. Conversation previews and shortcuts make it possible to resume or fork a result into a new Herdr pane. |
+| [**hxreborn/herdr-transcripts**](https://github.com/hxreborn/herdr-transcripts) | Searches past and live coding-agent sessions by title, prompt, reply, or tool call in an fzf popup, then resumes the pick in a new Herdr tab or focuses its pane when it is already running. Covers Claude Code, Codex, OpenCode, Gemini CLI, Droid, Copilot CLI, Kimi Code, and Qwen Code with a pre-warmed index in standard-library Python. |
 | [**dleen/herdr-agents**](https://github.com/dleen/herdr-agents) | Lists all active panes and puts blocked agents first. It shows live previews, jumps to existing workers, and can start new agents with one key. |
 | [**iskwyuki/herdr-control-panel**](https://github.com/iskwyuki/herdr-control-panel) | A no-build popup panel using fzf to switch through workspace history, open paths, and run custom actions from Herdr key bindings. |
 | [**mikedclarke/herdr-workspaces**](https://github.com/mikedclarke/herdr-workspaces) | Registers frequently used project directories and opens them through a fuzzy picker. Existing workspaces are focused instead of duplicated. |

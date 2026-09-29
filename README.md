@@ -21,7 +21,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Task queues, backlogs, and event triggers (15)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (25)](#linear-github-issues-and-issue-to-pr-automation)
    - [General workflows and skill packs (138)](#general-workflows-and-skill-packs)
-2. [Connect through MCP and the socket API (237)](#2-connect-through-mcp-and-the-socket-api)
+2. [Connect through MCP and the socket API (238)](#2-connect-through-mcp-and-the-socket-api)
    - [MCP servers (14)](#mcp-servers)
    - [Socket API clients and SDKs (74)](#socket-api-clients-and-sdks)
    - [Chat alerts: Telegram, Discord, and Slack (22)](#chat-alerts-telegram-discord-and-slack)
@@ -29,7 +29,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Push notifications, APNs, and mobile alerts (2)](#push-notifications-apns-and-mobile-alerts)
    - [Telemetry, events, and quota streaming (18)](#telemetry-events-and-quota-streaming)
    - [Voice, hardware, and remote bridges (9)](#voice-hardware-and-remote-bridges)
-   - [Protocol and third-party bridges (50)](#protocol-and-third-party-bridges)
+   - [Protocol and third-party bridges (51)](#protocol-and-third-party-bridges)
 3. [Editor integrations (121)](#3-editor-integrations)
    - [Neovim navigation and splits (43)](#neovim-navigation-and-splits)
    - [Full Neovim-hosted workspaces (16)](#full-neovim-hosted-workspaces)
@@ -1016,7 +1016,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 2. Connect through MCP and the socket API
 
-*237 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
+*238 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
 
 ### MCP servers
 
@@ -1256,7 +1256,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Protocol and third-party bridges
 
-*50 projects. Adapters between Herdr and other multiplexers, platforms, messaging systems, or automation protocols.*
+*51 projects. Adapters between Herdr and other multiplexers, platforms, messaging systems, or automation protocols.*
 
 | Project | What it does |
 |---|---|
@@ -1310,6 +1310,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**black-atom-industries/herdr**](https://github.com/black-atom-industries/herdr) | Provides the Black Atom adapter for Herdr agent orchestration. |
 | [**opencharly/pod-herdr**](https://github.com/opencharly/pod-herdr) | Provides the herdr stack box (herdr.dev terminal multiplexer) + the check-herdr-pod R10 bed; herdr candy = pinned binary, supervised server, TCP socket bridge for the herdr: verb / charly herdr CLI. |
 | [**FrancoEscob/mc-agent-deck**](https://github.com/FrancoEscob/mc-agent-deck) | Provides Client-only Minecraft Control Deck for local AI agents (herdr/WSL bridge). |
+| [**frankjoshua/herdr-acp**](https://github.com/frankjoshua/herdr-acp) | Exposes a Herdr pane as an Agent Client Protocol (ACP) agent, so any ACP client can prompt Claude Code, Codex, Pi, or a plain shell running in that pane. Streams everything in the pane back to the client as one shared session, including text typed directly at the pane, and reads agent transcripts from the agent process without hooks. |
 
 ---
 

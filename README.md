@@ -56,9 +56,9 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Security guards and collision detectors (4)](#security-guards-and-collision-detectors)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (6)](#plugin-collections-and-developer-frameworks)
-6. [Apps, companion integrations, and installation (185)](#6-apps-companion-integrations-and-installation)
+6. [Apps, companion integrations, and installation (186)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (14)](#native-desktop-and-mobile-apps)
-   - [Web dashboards and remote viewers (22)](#web-dashboards-and-remote-viewers)
+   - [Web dashboards and remote viewers (23)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (22)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (103)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (24)](#setup-packages-and-version-management)
@@ -2291,7 +2291,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 6. Apps, companion integrations, and installation
 
-*185 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
+*186 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
 
 ### Native desktop and mobile apps
 
@@ -2316,7 +2316,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Web dashboards and remote viewers
 
-*22 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.*
+*23 projects. Browser-based monitors, remote controls, and visual scenes for following Herdr agents from another screen or device.*
 
 | Project | What it does |
 |---|---|
@@ -2326,6 +2326,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**0cv/herdr-mobile-relay**](https://github.com/0cv/herdr-mobile-relay) | A mobile web app and relay for monitoring Herdr, approving blocked actions, pairing by QR code, receiving push alerts, and combining several machines in one dashboard. |
 | [**KaminariOS/whip**](https://github.com/KaminariOS/whip) | A remote-control project for checking and directing Herdr agents running on a home machine while travelling. |
 | [**ragamo/herdr-flock**](https://github.com/ragamo/herdr-flock) | Represents active Herdr agents as animated sheep and records completed sessions in a persistent graveyard log. |
+| [**devswha/herdr-web-ui**](https://github.com/devswha/herdr-web-ui) | Shows each Herdr agent pane in a desktop or phone browser as a chat of its transcript (Claude Code, Codex, omp, omo, gjc) or as a live terminal, with tap-to-answer approval cards and web push alerts. Runs as a Herdr plugin and adds Linux and macOS machines over SSH to the same sidebar. |
 | [**alecuba16/herdr-webui**](https://github.com/alecuba16/herdr-webui) | Provides tools for Herdr with workspace and worktree navigation, agent status, live terminal access, and service scripts for persistent macOS or Linux use. |
 | [**hmu332233/herdr-f1**](https://github.com/hmu332233/herdr-f1) | A web visualization that represents active Herdr agents as Formula 1 cars, using race and pit-stop states to show whether agents are running, blocked, or finished. |
 | [**osuki-dev/muqun-gateway**](https://github.com/osuki-dev/muqun-gateway) | A local-first gateway that links Herdr to the Muqun mobile app over encrypted peer-to-peer connections, allowing private remote viewing, approvals, and prompts without cloud accounts. |

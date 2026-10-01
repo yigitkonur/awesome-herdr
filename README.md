@@ -37,8 +37,8 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Vim, Kakoune, and other editors (17)](#vim-kakoune-and-other-editors)
    - [REPL and code dispatchers (21)](#repl-and-code-dispatchers)
    - [Editor plugins and bridges (2)](#editor-plugins-and-bridges)
-4. [Switch and restore sessions (176)](#4-switch-and-restore-sessions)
-   - [Fuzzy session switchers and terminal pickers (131)](#fuzzy-session-switchers-and-terminal-pickers)
+4. [Switch and restore sessions (177)](#4-switch-and-restore-sessions)
+   - [Fuzzy session switchers and terminal pickers (132)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (30)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (15)](#workspace-and-multi-session-management)
 5. [Worktrees and terminal experience (500)](#5-worktrees-and-terminal-experience)
@@ -1484,14 +1484,15 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 4. Switch and restore sessions
 
-*176 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*177 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy session switchers and terminal pickers
 
-*131 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.*
+*132 projects. Interactive pickers for finding and focusing workspaces, tabs, panes, agents, or projects.*
 
 | Project | What it does |
 |---|---|
+| [**kakigakki/lazy-claude-herdr**](https://github.com/kakigakki/lazy-claude-herdr) | Lists Claude Code sessions from every Herdr space in one fzf popup and resumes the chosen one where it started, focusing its live pane or splitting a pane in the matching space to run `claude -r`. A per-session menu forks the session, opens or copies a review request for its PR, reads the transcript, or runs actions defined in TOML. |
 | [**nicosuave/memex**](https://github.com/nicosuave/memex) | Indexes conversations from Claude Code, Codex, Pi, OpenCode, and Cursor with hybrid search. A Herdr TUI searches the archive and can resume a selected interaction in a fresh tab. |
 | [**thanhdat77/herdr-picker-plus**](https://github.com/thanhdat77/herdr-picker-plus) | A Ratatui overlay that combines workspaces, project templates, directories, zoxide history, SSH hosts, agent panes, and plugin integrations. It reuses matching workspaces and can create or focus remote-host workspaces automatically. |
 | [**thanhdat77/herdr-navigator**](https://github.com/thanhdat77/herdr-navigator) | Searches and switches between active Herdr sessions and workspaces using an interactive fuzzy picker. |

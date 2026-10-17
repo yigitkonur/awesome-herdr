@@ -56,12 +56,12 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Security guards and collision detectors (4)](#security-guards-and-collision-detectors)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (6)](#plugin-collections-and-developer-frameworks)
-6. [Apps, companion integrations, and installation (185)](#6-apps-companion-integrations-and-installation)
+6. [Apps, companion integrations, and installation (186)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (14)](#native-desktop-and-mobile-apps)
    - [Web dashboards and remote viewers (22)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (22)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (103)](#plugins-and-supporting-utilities)
-   - [Setup, packages, and version management (24)](#setup-packages-and-version-management)
+   - [Setup, packages, and version management (25)](#setup-packages-and-version-management)
 7. [Experimental projects (15)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (15)](#experiments-concepts-and-scaffolds)
 8. [Resources](#resources)
@@ -2291,7 +2291,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 6. Apps, companion integrations, and installation
 
-*185 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
+*186 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
 
 ### Native desktop and mobile apps
 
@@ -2484,7 +2484,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Setup, packages, and version management
 
-*24 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.*
+*25 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.*
 
 | Project | What it does |
 |---|---|
@@ -2512,6 +2512,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**unok/stack-review**](https://github.com/unok/stack-review) | Provides Preflight review for stacked PRs: builds a herdr workspace and opens each layer's diff in hunk before gh stack submit. |
 | [**kingbywork-ui/issh-plugin-herdr**](https://github.com/kingbywork-ui/issh-plugin-herdr) | Provides issh terminal herdr workspace plugin. |
 | [**RobLoach/asdf-herdr**](https://github.com/RobLoach/asdf-herdr) | Provides Herdr for the asdf version manager. |
+| [**shaiu/ha-herdr**](https://github.com/shaiu/ha-herdr) | Runs a Herdr server with Claude Code as a Home Assistant add-on, so the HA box appears as a saved SSH machine in your Herdr client. Includes key-only SSH, an ingress panel attached to the same session, and Home Assistant tools through ha-mcp. |
 
 ---
 

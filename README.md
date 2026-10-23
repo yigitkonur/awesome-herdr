@@ -41,7 +41,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (131)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (30)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (15)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (500)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (501)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (129)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (30)](#diff-review-and-code-inspection)
@@ -49,7 +49,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Pane navigation and overlay hints (12)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (105)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (26)](#command-palettes-and-workspace-switchers)
-   - [Status lines, sidebars, and tab synchronization (109)](#status-lines-sidebars-and-tab-synchronization)
+   - [Status lines, sidebars, and tab synchronization (110)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (24)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (18)](#output-inspection-logs-and-transcripts)
@@ -1687,7 +1687,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*500 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*501 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Git worktree automation
 
@@ -2066,7 +2066,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Status lines, sidebars, and tab synchronization
 
-*109 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.*
+*110 projects. Persistent interface elements that show agent state, repository context, quotas, tasks, or synchronized tab information.*
 
 | Project | What it does |
 |---|---|
@@ -2179,6 +2179,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**Ra77a3l3-jar/herdnix**](https://github.com/Ra77a3l3-jar/herdnix) | Provides herdr plugins and configuration module in Nix. |
 | [**shubham-cpp/herdr-plugins**](https://github.com/shubham-cpp/herdr-plugins) | Provides Herdr plugins for tab/agent naming and directional pane focus. |
 | [**cxnmai/plexr**](https://github.com/cxnmai/plexr) | Provides tmux but tui version inspired by herdr. |
+| [**MrBogomips/herdr-tools**](https://github.com/MrBogomips/herdr-tools) | Keeps the spaces sidebar sorted into top, default and bottom groups and gives every space of one customer the same colour (Space Herder), and names tabs after their folder, repo or branch (auto-tab-name). Also ships herdr-jump, a macOS menu bar picker that lists the agents waiting for you, blocked first and oldest wait first, one key away from any app. |
 
 ### Status overlays, HUDs, and agent timers
 

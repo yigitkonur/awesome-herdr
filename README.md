@@ -60,7 +60,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Native desktop and mobile apps (14)](#native-desktop-and-mobile-apps)
    - [Web dashboards and remote viewers (22)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (22)](#hardware-and-ambient-displays)
-   - [Plugins and supporting utilities (103)](#plugins-and-supporting-utilities)
+   - [Plugins and supporting utilities (104)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (24)](#setup-packages-and-version-management)
 7. [Experimental projects (15)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (15)](#experiments-concepts-and-scaffolds)
@@ -2374,10 +2374,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Plugins and supporting utilities
 
-*103 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.*
+*104 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.*
 
 | Project | What it does |
 |---|---|
+| [**naruse/herdr-chat**](https://github.com/naruse/herdr-chat) | Adds a chat window over Claude Code and Codex agents in the Herdr app, with a slash-command menu, a side chat that does not interrupt the agent, and cards for context, usage and MCP servers. Streams replies and running commands live, shows images inline, and keeps the terminal one click away. |
 | [**natori-hrj/herdr-lazy**](https://github.com/natori-hrj/herdr-lazy) | A declarative Herdr plugin manager with a dedicated terminal interface, a lockfile, version pinning, synchronization from one list, and support for prebuilt binaries. |
 | [**speardragon/herdr-plugin-manager**](https://github.com/speardragon/herdr-plugin-manager) | A small in-terminal menu for browsing, installing, updating, enabling, and disabling Herdr plugins through the standard plugin command-line interface. |
 | [**miiraheart/herdr-beads**](https://github.com/miiraheart/herdr-beads) | Displays Beads issues as a list, table, or Kanban board in a Herdr sidebar or floating pane. |

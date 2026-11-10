@@ -6,7 +6,8 @@ Working rules and language guidelines for anyone — human or agent — editing 
 
 ## 1. Project Philosophy & Minimalist Structure
 
-- **No Onboarding Tutorials:** Do not add introductory installation essays, "how to choose your layer" tables, or getting-started walkthroughs to the catalog root. Keep the README strictly minimalist: title, official links, the Download Herdr block (platform badges, official store badges in `assets/badges/`, and the install one-liners from herdr.dev/download), Table of Contents with counts, and direct jump links into the tables.
+- **No Onboarding Tutorials:** Do not add introductory installation essays, "how to choose your layer" tables, or getting-started walkthroughs to the catalog root. Keep the README strictly minimalist: title, official links, the Download Herdr block (platform badges, official store badges in `assets/badges/`, and the install one-liners from herdr.dev/download), Table of Contents with counts, and per subcategory the top 10 projects by stars with a link to the full list.
+- **The catalog lives in `catalog/`:** one file per domain (`catalog/NN-*.md`) holds every entry. Edit those files, never the README tables: `scripts/sync-counts.py` regenerates the README from them. GitHub stops rendering a markdown file past 512 KB, so no single file may hold the whole catalog.
 - **Fast Jump Navigation:** Readers should jump straight to the relevant problem domain from the Table of Contents in 1 click.
 
 ---
@@ -143,13 +144,13 @@ Organize projects across the 8 numbered domains and their plain-English micro-ca
 8. **Experimental projects**
    - Experiments, concepts, and scaffolds
 
-Domain 2 opens with a `> Herdr has an official desktop app ... and an official iPhone, iPad, and Android app ...` note under its count line, and so do the other subcategories that collect desktop UIs, mobile clients, web viewers, or phone notifications; keep that note at the domain or subcategory level, never inside a row. Tables are ordered by GitHub stars, highest first, except the official subcategory.
+Domain 2 opens with a `> Herdr has an official desktop app ... and an official iPhone, iPad, and Android app ...` note under its count line, and so do the other subcategories that collect desktop UIs, mobile clients, web viewers, or phone notifications; keep that note at the domain or subcategory level, never inside a row. Tables are ordered by GitHub stars, highest first, except the official subcategory; insert a new row at its star position.
 
 ---
 
 ## 5. Before Committing
 
-1. Run `python3 scripts/sync-counts.py` after adding, moving, or removing rows; it rewrites every count from the tables and lists duplicate repos.
+1. Run `python3 scripts/sync-counts.py` after adding, moving, or removing rows in `catalog/`; it rewrites every count, regenerates the README, and lists duplicate repos. CI runs it with `--check`.
 2. Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean with **0 issues** (same check CI runs).
 3. Ensure every internal anchor link resolves correctly.
 4. Commit with the conventional commit format: `docs(awesome-list): <summary>`.
@@ -158,7 +159,7 @@ Domain 2 opens with a `> Herdr has an official desktop app ... and an official i
 
 ## 6. Finding New Projects
 
-Run `python3 scripts/discover.py` (add `--since YYYY-MM-DD` for the last run date). It writes every Herdr repo that is not in the README yet to `.tmp/candidates.json`, sorted by stars, from three sources:
+Run `python3 scripts/discover.py` (add `--since YYYY-MM-DD` for the last run date). It writes every Herdr repo that is not in `catalog/` or `scripts/skipped.txt` yet to `.tmp/candidates.json`, sorted by stars, from three sources:
 
 | Source | What it holds | Product |
 |---|---|---|
@@ -171,6 +172,6 @@ Then triage in batches of about 25 candidates per agent:
 1. Read the repo README and file tree. Apply section 3: personal dotfiles, stubs, and thin wrappers are excluded even with many stars.
 2. Pick the subcategory from section 4 and write a 1–2 sentence description that follows section 2.
 3. Group a gallery repo's layouts and mods into one entry for the repo.
-4. Insert the rows, run `python3 scripts/sync-counts.py`, lint, and commit one subcategory batch at a time.
+4. Insert the rows in the right `catalog/` file, add every skipped repo with its reason to `scripts/skipped.txt`, run `python3 scripts/sync-counts.py`, lint, and commit.
 
 Open pull requests go through the same checks; correct the description or section and merge rather than ask the author.

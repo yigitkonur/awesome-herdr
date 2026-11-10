@@ -8,6 +8,7 @@ Thanks for improving Awesome Herdr. This is a curated list — a good entry help
 
 - [ ] I read [AGENTS.md](./AGENTS.md).
 - [ ] The project is Herdr-specific and publicly accessible.
-- [ ] The entry uses the current format (badge + blurb) and is in the right section.
+- [ ] The entry is added to the right subcategory in `catalog/` (not the README, which is generated) and `python3 scripts/sync-counts.py` was run.
+- [ ] The entry uses the current format and its description follows AGENTS.md section 2.
 - [ ] The description is factual and specific — no hype, no filler.
 - [ ] Links work and `npx markdownlint-cli2 "**/*.md"` passes.

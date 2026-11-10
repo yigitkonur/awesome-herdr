@@ -74,8 +74,18 @@ Organize projects across the 8 numbered domains and their plain-English micro-ca
    - General workflows and skill packs
 
 2. **Herdr app layouts, mods, and themes**
-   - Herdr app layouts
-   - Herdr app mods and themes
+   - Herdr app agent boards and mission-control layouts
+   - Herdr app sidebar and space-organization layouts
+   - Herdr app IDE, editor and Git-panel layouts
+   - Herdr app palette, glass and desktop-OS themed layouts
+   - Herdr app pixel-art, game, anime and cyberpunk layouts
+   - Herdr app sidebars, tabs, and visual mods
+   - Herdr app keys, navigation, and attention alerts
+   - Herdr app usage, quota, and system status displays
+   - Herdr app Git, code review, and worktree panels
+   - Herdr app file, Markdown, and notes panels
+   - Herdr app task boards, developer services, and mod bundles
+   - Herdr app themes
 
 3. **Connect through MCP and the socket API**
    - MCP servers
@@ -109,7 +119,9 @@ Organize projects across the 8 numbered domains and their plain-English micro-ca
    - Terminal keybindings and shortcut helpers
    - Command palettes and workspace switchers
    - Status lines and workspace metadata
-   - Sidebar displays and tab labels
+   - Automatic tab, pane, and workspace names
+   - Sidebar grouping, ordering, and filtering
+   - Sidebar badges, tokens, and status indicators
    - Status overlays, HUDs, and agent timers
    - Context meters and rate-limit gauges
    - Output inspection, logs, and transcripts
@@ -122,13 +134,16 @@ Organize projects across the 8 numbered domains and their plain-English micro-ca
    - Native desktop and mobile apps
    - Web dashboards and remote viewers
    - Hardware and ambient displays
-   - Plugins and supporting utilities
+   - Processes, ports, sandboxes, and remote machines
+   - Agent support, auto-approve, retry, and keep-awake helpers
+   - Notes, prompts, clipboard, and file helpers
+   - Developer tool panes and everyday utilities
    - Setup, packages, and version management
 
 8. **Experimental projects**
    - Experiments, concepts, and scaffolds
 
-Herdr app layouts, mods, and themes go in domain 2. Subcategories that collect desktop UIs, mobile clients, web viewers, phone notifications, or app extensions open with a `> Herdr has an official desktop app ... and an official iPhone, iPad, and Android app ...` note under their count line; keep that note at the subcategory level, never inside a row. Tables are ordered by GitHub stars, highest first, except the official subcategory.
+Domain 2 opens with a `> Herdr has an official desktop app ... and an official iPhone, iPad, and Android app ...` note under its count line, and so do the other subcategories that collect desktop UIs, mobile clients, web viewers, or phone notifications; keep that note at the domain or subcategory level, never inside a row. Tables are ordered by GitHub stars, highest first, except the official subcategory.
 
 ---
 

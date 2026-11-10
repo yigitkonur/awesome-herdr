@@ -130,3 +130,24 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 2. Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean with **0 issues** (same check CI runs).
 3. Ensure every internal anchor link resolves correctly.
 4. Commit with the conventional commit format: `docs(awesome-list): <summary>`.
+
+---
+
+## 6. Finding New Projects
+
+Run `python3 scripts/discover.py` (add `--since YYYY-MM-DD` for the last run date). It writes every Herdr repo that is not in the README yet to `.tmp/candidates.json`, sorted by stars, from three sources:
+
+| Source | What it holds | Product |
+|---|---|---|
+| `assets.herdr.dev/plugins/index.json` | The TUI plugin marketplace: GitHub repos tagged `herdr-plugin` with a valid `herdr-plugin.toml` | Herdr TUI |
+| `herdr.dev/gallery/` | Layouts and mods for the Herdr app; one repo can hold many | Herdr app |
+| GitHub topics `herdr`, `herdr-layout`, `herdr-mod`, `herdr-app` | Everything else, including clients, SDKs, and dotfiles | Mixed |
+
+Then triage in batches of about 25 candidates per agent:
+
+1. Read the repo README and file tree. Apply section 3: personal dotfiles, stubs, and thin wrappers are excluded even with many stars.
+2. Pick the subcategory from section 4 and write a 1–2 sentence description that follows section 2.
+3. Group a gallery repo's layouts and mods into one entry for the repo.
+4. Insert the rows, run `python3 scripts/sync-counts.py`, lint, and commit one subcategory batch at a time.
+
+Open pull requests go through the same checks; correct the description or section and merge rather than ask the author.

@@ -5,7 +5,7 @@ catalog/NN-*.md hold the full tables, one file per domain; they are the files to
 edit. This script recounts every table there, rewrites the count lines and each
 file's own index, then regenerates the README between "## Contents" and
 "## Resources": the Contents list and, per subcategory, the top projects by
-GitHub stars (tables are kept in star order) with a link to the full list.
+GitHub stars (refresh-stars.py keeps tables in star order) with a link to the full list.
 Prints duplicate repo links.
 
 Usage: python3 scripts/sync-counts.py [--check]
@@ -53,7 +53,7 @@ def block(d, rows_for, more=None):
         out += [f"### {s['title']}", "", f"*{plural(n)}. {s['blurb']}.*", ""]
         if s["note"]:
             out += [f"> {s['note']}", ""]
-        out += ["| Project | What it does |", "|---|---|"] + rows_for(s) + [""]
+        out += ["| Project | Stars | What it does |", "|---|--:|---|"] + rows_for(s) + [""]
         if n > len(rows_for(s)):
             out += [f"**[All {n} projects →](catalog/{d['file']}#{slug(s['title'])})**", ""]
     return out, total

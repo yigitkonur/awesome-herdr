@@ -247,3 +247,46 @@ paddock-sh/paddock-herdr  # stub: README only, plugin not released
 phin-tech/herdr-roborev  # thin wrapper: 572-byte launcher for the roborev TUI
 abelfubu/herdr-popup  # thin wrapper: 664-byte popup launcher script
 davebird99/herdr-worktree-upstream  # thin wrapper: 511-byte script
+wayne930242/straw-boss  # repository is archived
+jirathip-dev/canter  # repository is archived
+kody-w/rapp-herdr  # repository is archived
+yigitkonur/herdr-pm  # repository is archived
+hungv47/herdr-agent-orchestration  # repository is archived
+sefuzhou770801-hub/herdr-dispatch-skill  # repository is archived
+yigitkonur/claude-code-herdr-plugin  # repository is archived
+igunublue/hirc  # repository is archived
+dkta-labs/agentd  # repository is archived
+code2m/herdr-session-labels  # repository is archived
+manastalukdar/herdr-agent-resume-plus  # repository is archived
+aiken884/herdr-bridge  # repository is archived
+cobanov/herdr-ntfysh  # repository is archived
+makgunay/herdr-atomic-reporter  # repository is archived
+no-phux/herdr-opencode  # repository is archived
+m4ttstack/herdr-chat  # repository is archived
+un-9bot/sidekick_herdr  # repository is archived
+webdavis/herdr-nvim-annotate-extension.nvim  # repository is archived
+lucasscariot/herdr-inbox  # repository is archived
+kenchan/herdr-ghq-open-agent  # repository is archived
+thomasschafer/herdr-kiosk  # repository is archived
+ynny-github/herdr-event-hook  # repository is archived
+arjenblokzijl/herdr-worktree-autosetup  # repository is archived
+rewt/herdr-lanes  # repository is archived
+kody-w/rapp-omarchy  # repository is archived
+reobin/herdr-link-hints  # repository is archived
+reobin/herdr-callsigns  # repository is archived
+yigitkonur/native-shortcuts-herd  # repository is archived
+corrius/herdr-numbered-navigation  # repository is archived
+reobin/herdr-close-other-panes  # repository is archived
+rcosteira79/herdr-plugins  # repository is archived
+ryanlewis/herdr-tab-renamer  # repository is archived
+mgh3326/scopefuel  # repository is archived
+igunublue/lerdr-rust-kotlin  # repository is archived
+jirathip-dev/corral  # repository is archived
+lamplitisles/kepos-herdr-mobile  # repository is archived
+misty-step/kelpie  # repository is archived
+simplicityguy/herdr-corral  # repository is archived
+mo-arvan/herdr-claude-auto-retry  # repository is archived
+gw31415/herdr-amphetamine-macos  # repository is archived
+nklmilojevic/herdr-flake  # repository is archived
+aodhanhayter/herdr-nix  # repository is archived
+yigitkonur/herdr-wezterm-setup  # repository is archived

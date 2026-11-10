@@ -2,27 +2,37 @@
 
 The full list for domain 8 of [Awesome Herdr](../README.md#8-experimental-projects), ordered by GitHub stars.
 
-- [Experiments, concepts, and scaffolds (10)](#experiments-concepts-and-scaffolds)
+- [Plugin labs and alternative interface experiments (6)](#plugin-labs-and-alternative-interface-experiments)
+- [Courses, maps and side projects built around Herdr (6)](#courses-maps-and-side-projects-built-around-herdr)
 
 ---
 
 ## 8. Experimental projects
 
-*10 projects. Experimental Herdr projects and prototypes.*
+*12 projects. Experimental Herdr projects and prototypes.*
 
-### Experiments, concepts, and scaffolds
+### Plugin labs and alternative interface experiments
 
-*10 projects. Ideas and prototypes that are useful to study but may be incomplete, read-only, or not yet installable.*
+*6 projects. Plugin laboratories and prototypes that try new ways to drive or view Herdr, such as voice commands, agent-friendly CLIs, and web frames.*
 
-| Project | What it does |
-|---|---|
-| [**eliasstravik/herdr-call**](https://github.com/eliasstravik/herdr-call) | An early TypeScript prototype for translating spoken commands into Herdr navigation and input through the local socket. |
-| [**wraithyy/herdr-openr**](https://github.com/wraithyy/herdr-openr) | Extracts file paths and URLs from recent pane output and Claude Code transcripts, then presents them in a fuzzy finder for quick opening. |
-| [**hmu332233/herdr-plugins-labs**](https://github.com/hmu332233/herdr-plugins-labs) | An experimental plugin laboratory containing early prototypes for agent launching, workspace metrics, and worktree symlinking before they move into separate projects. |
-| [**rohanthewiz/herdr-web**](https://github.com/rohanthewiz/herdr-web) | Renders Herdr pane frames with color, mouse, clipboard, and hyperlink support; keyboard and paste input are currently disabled, so it mainly works as a viewer. |
-| [**shoaibkhanz/herdr-nav-plus**](https://github.com/shoaibkhanz/herdr-nav-plus) | An early navigation plugin designed to move with Ctrl+h/j/k/l across Herdr panes and wrap at workspace boundaries. |
-| [**ugurtarlig/herdr-pane-picker**](https://github.com/ugurtarlig/herdr-pane-picker) | An early pane-picker prototype that overlays one-character hints on visible panes for direct keyboard focus. |
-| [**speardragon/herdr-labs**](https://github.com/speardragon/herdr-labs) | Provides herdr plugin lab, AI-agent plugin idea contests: 9 agents compete, AI judges score. |
-| [**malone-c/herdr-pane-balancer**](https://github.com/malone-c/herdr-pane-balancer) | An in-development layout manager that automatically rebalances pane sizes when splits are opened or closed, reducing cramped nested layouts. |
-| [**robinbraemer/herdr-axi**](https://github.com/robinbraemer/herdr-axi) | An early command-line interface designed to make Herdr workspace operations easier for coding agents to use. |
-| [**yoshimi-I/gengar.nvim**](https://github.com/yoshimi-I/gengar.nvim) | An early Neovim environment that keeps agents and Hunk-based diff review in Herdr while leaving Neovim focused on editing. |
+| Project | Stars | What it does |
+|---|--:|---|
+| [**eliasstravik/herdr-call**](https://github.com/eliasstravik/herdr-call) | 16 | An early TypeScript prototype for translating spoken commands into Herdr navigation and input through the local socket. |
+| [**hmu332233/herdr-plugins-labs**](https://github.com/hmu332233/herdr-plugins-labs) | 2 | An experimental plugin laboratory containing early prototypes for agent launching, workspace metrics, and worktree symlinking before they move into separate projects. |
+| [**rohanthewiz/herdr-web**](https://github.com/rohanthewiz/herdr-web) | 1 | Renders Herdr pane frames with color, mouse, clipboard, and hyperlink support; keyboard and paste input are currently disabled, so it mainly works as a viewer. |
+| [**speardragon/herdr-labs**](https://github.com/speardragon/herdr-labs) | 1 | Provides herdr plugin lab, AI-agent plugin idea contests: 9 agents compete, AI judges score. |
+| [**5qln/5qln-herdr-plugin**](https://github.com/5qln/5qln-herdr-plugin) | 0 | Provides the 4+1 cell as a Herdr instrument, sealed podium for human questions, and four agent desks. |
+| [**robinbraemer/herdr-axi**](https://github.com/robinbraemer/herdr-axi) | 0 | An early command-line interface designed to make Herdr workspace operations easier for coding agents to use. |
+
+### Courses, maps and side projects built around Herdr
+
+*6 projects. Learning material, architecture maps and side projects that sit around Herdr rather than extend it.*
+
+| Project | Stars | What it does |
+|---|--:|---|
+| [**shaun-agent/herdr-map**](https://github.com/shaun-agent/herdr-map) | 3 | Renders visual Mermaid diagrams mapping Herdr architecture, socket APIs, and workspace concepts. |
+| [**playsthisgame/herdr-x**](https://github.com/playsthisgame/herdr-x) | 3 | Browses x.com in a terminal split inside herdr, and draft posts in $EDITOR to send yourself. |
+| [**conpiracy/lzy-ad-factory**](https://github.com/conpiracy/lzy-ad-factory) | 1 | Creates a Herdr TUI workspace and Pi workflow for producing UGC ad scripts, prompts, QA, and export bundles. |
+| [**fpigeonjr/herdr-course**](https://github.com/fpigeonjr/herdr-course) | 0 | Provides a self-paced course for herding the pi coding agent with Herdr. |
+| [**agneym/herdr-lfm-finetune**](https://github.com/agneym/herdr-lfm-finetune) | 0 | Trains a LiquidAI LFM2-350M LoRA adapter to answer Herdr TUI operation questions using a supplied notebook and data. |
+| [**maxart/uniterm-benchmark**](https://github.com/maxart/uniterm-benchmark) | 0 | Benchmarks Herdr TUI, Uniterm, and optionally tmux with equivalent terminal workloads and reproducible reports. |

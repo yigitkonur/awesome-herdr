@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""List Herdr projects that are not in README.md yet.
+"""List Herdr projects that are not in the catalog yet.
 
 Sources, in order of signal:
   plugins  herdr.dev TUI marketplace index (GitHub topic:herdr-plugin, manifest-validated)
   gallery  herdr.dev/gallery layouts and mods for the Herdr app
   topics   GitHub search on topic:herdr, herdr-layout, herdr-mod, herdr-app (needs `gh`)
 
-Skips repos already in README.md or listed in scripts/skipped.txt.
+Skips repos already in catalog/*.md or listed in scripts/skipped.txt.
 Writes .tmp/candidates.json (gitignored) sorted by stars, prints counts per source.
 Usage: python3 scripts/discover.py [--no-github] [--since YYYY-MM-DD]
 """
@@ -31,7 +31,7 @@ def get(url):
 
 
 def listed():
-    text = (ROOT / "README.md").read_text().lower()
+    text = "\n".join(f.read_text() for f in (ROOT / "catalog").glob("*.md")).lower()
     skipped = (ROOT / "scripts" / "skipped.txt").read_text().lower().split("\n")
     return set(re.findall(r"github\.com/([^/)\s]+/[^/)#\s]+)", text)) | {
         line.split()[0] for line in skipped if line.strip() and not line.startswith("#")}
@@ -92,7 +92,7 @@ for source in sources:
             found[key].setdefault("also", []).append(c["source"])
         else:
             found[key] = c
-    print(f"{source.__name__[5:]}: {n} not in README")
+    print(f"{source.__name__[5:]}: {n} not in the catalog")
 
 rows = sorted(found.values(), key=lambda c: -c["stars"])
 (ROOT / ".tmp").mkdir(exist_ok=True)

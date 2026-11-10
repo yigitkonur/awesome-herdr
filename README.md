@@ -75,13 +75,13 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Fuzzy session switchers and terminal pickers (111)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (68)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (83)](#workspace-and-multi-session-management)
-6. [Worktrees and terminal experience (1336)](#6-worktrees-and-terminal-experience)
-   - [Git worktree automation (140)](#git-worktree-automation)
+6. [Worktrees and terminal experience (1333)](#6-worktrees-and-terminal-experience)
+   - [Git worktree automation (139)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (45)](#workspace-lifecycle-and-multi-repository-tools)
-   - [Diff review and code inspection (90)](#diff-review-and-code-inspection)
+   - [Diff review and code inspection (89)](#diff-review-and-code-inspection)
    - [File viewers, terminal browsers, and markdown previews (81)](#file-viewers-terminal-browsers-and-markdown-previews)
    - [Pane navigation and overlay hints (60)](#pane-navigation-and-overlay-hints)
-   - [Pane layout management (45)](#pane-layout-management)
+   - [Pane layout management (44)](#pane-layout-management)
    - [Terminal keybindings and shortcut helpers (88)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (62)](#command-palettes-and-workspace-switchers)
    - [Status lines and workspace metadata (142)](#status-lines-and-workspace-metadata)
@@ -95,11 +95,11 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Herdr TUI themes and appearance (19)](#herdr-tui-themes-and-appearance)
    - [Security guards and collision detectors (21)](#security-guards-and-collision-detectors)
    - [Plugin collections, frameworks, and ready-made configs (49)](#plugin-collections-frameworks-and-ready-made-configs)
-7. [Apps, companion integrations, and installation (492)](#7-apps-companion-integrations-and-installation)
+7. [Apps, companion integrations, and installation (491)](#7-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (126)](#native-desktop-and-mobile-apps)
    - [Web dashboards and remote viewers (127)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (47)](#hardware-and-ambient-displays)
-   - [Processes, ports, sandboxes, and remote machines (29)](#processes-ports-sandboxes-and-remote-machines)
+   - [Processes, ports, sandboxes, and remote machines (28)](#processes-ports-sandboxes-and-remote-machines)
    - [Agent support, auto-approve, retry, and keep-awake helpers (20)](#agent-support-auto-approve-retry-and-keep-awake-helpers)
    - [Notes, prompts, clipboard, and file helpers (32)](#notes-prompts-clipboard-and-file-helpers)
    - [Developer tool panes and everyday utilities (56)](#developer-tool-panes-and-everyday-utilities)
@@ -1015,7 +1015,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**pdrgrl/herdr-perplexity**](https://github.com/pdrgrl/herdr-perplexity) | Styles the Herdr app as a research workstation modeled on the Perplexity interface, with dark and light appearances and canvas and files mods. |
 | [**dmazlum/herdr-rgb**](https://github.com/dmazlum/herdr-rgb) | Applies a dark Herdr app layout where the focused pane frame slowly cycles through RGB hues while its agent works. |
 | [**iosif2/herdr-winbox**](https://github.com/iosif2/herdr-winbox) | Restyles the Herdr app after MikroTik WinBox 4 with a slate window and a left menu where each space unfolds into its items. |
-| [**bladescepter/herdr-xiyuan**](https://github.com/bladescepter/herdr-xiyuan) | Extends the main Herdr app layout with colors that follow the system theme, including the Omarchy palette on Linux, plus changes and launch mods. |
+| [**bladescepter/herdr-xiyuan**](https://github.com/bladescepter/herdr-xiyuan) | Extends the main Herdr app layout with colors that follow the system theme, including the Omarchy palette on Linux, plus a Changes panel that shows Git state and a menu of saved folders to launch. |
 | [**yych42/herdr-layout-cli**](https://github.com/yych42/herdr-layout-cli) | Gives the Herdr app a square, text-first layout in Departure Mono with a single dark colour and no rounding, so the window resembles the terminal UI. |
 | [**HuangYujun-JunkyTalent/herdr-tui**](https://github.com/HuangYujun-JunkyTalent/herdr-tui) | Recreates the look of the Herdr TUI with the Dracula theme inside the Herdr app, with a narrow list of machines, spaces and agents. |
 | [**rbkuhn/herdr-aurora**](https://github.com/rbkuhn/herdr-aurora) | Gives the Herdr app a painted northern-lights look with an Observatory column showing the live output of every agent, spaces as constellations, and glass-pill tabs. |
@@ -2556,11 +2556,11 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 6. Worktrees and terminal experience
 
-*1336 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*1333 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Git worktree automation
 
-*140 projects. Tools that create isolated branches and worktrees for agents, then connect them to Herdr workspaces or tabs.*
+*139 projects. Tools that create isolated branches and worktrees for agents, then connect them to Herdr workspaces or tabs.*
 
 | Project | What it does |
 |---|---|
@@ -2637,7 +2637,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**jiangkoumo/herdr-plugin-layerfs**](https://github.com/jiangkoumo/herdr-plugin-layerfs) | Opens each Herdr TUI workspace as a copy-on-write LayerFS branch of your project. Groups branches under the repo like worktrees and restores them after a restart. |
 | [**luizbafilho/herdr-lane**](https://github.com/luizbafilho/herdr-lane) | Opens lane copy-on-write git worktrees as linked workspaces under their repo in Herdr TUI and runs lane lifecycle commands from a popup menu. Removal goes through lane first so its guard on pending notes is kept. |
 | [**nickspaargaren/herdr-dog**](https://github.com/nickspaargaren/herdr-dog) | Runs project-defined setup commands from a .herdr/worktrees.yml file after Herdr TUI creates a worktree. Ships as a Go binary with example configs for Node and Postgres. |
-| [**DaveBird99/herdr-worktree-upstream**](https://github.com/DaveBird99/herdr-worktree-upstream) | Switches a new Herdr TUI worktree onto the matching origin branch and sets its upstream when that branch already exists. Does nothing for dirty or diverged worktrees. |
 | [**LucasPcq/herdr-wtm**](https://github.com/LucasPcq/herdr-wtm) | Runs wtm worktree commands from a Herdr TUI popup and keeps workspaces in sync with worktrees created or removed anywhere. Shows a notification when an on_create hook fails. |
 | [**ludoroo/forestr**](https://github.com/ludoroo/forestr) | Lists, opens, creates, and safely removes git worktrees across every repo Herdr TUI knows, from one fzf popup. |
 | [**Tarektouati/herdr-pr-modal**](https://github.com/Tarektouati/herdr-pr-modal) | Lists open GitHub pull requests or GitLab merge requests in a popup and opens the chosen one in its own git worktree as a Herdr workspace. |
@@ -2759,7 +2758,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Diff review and code inspection
 
-*90 projects. Side-by-side git diff inspection and comment handoff tools for agent reviews.*
+*89 projects. Side-by-side git diff inspection and comment handoff tools for agent reviews.*
 
 | Project | What it does |
 |---|---|
@@ -2850,7 +2849,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**odiumuniverse/herdr-diff-viewer**](https://github.com/odiumuniverse/herdr-diff-viewer) | Opens a git diff sidebar in the Herdr TUI that lists changed files with red and green hunks scoped to the agent session. Click jumps to a file and dragging sends lines into the agent prompt. |
 | [**ekropotin/herdr-tuicr**](https://github.com/ekropotin/herdr-tuicr) | Runs tuicr code review in a Herdr TUI split pane and sends the finished review back to the agent pane that opened it. |
 | [**YmlyZA/herdr-review-pack**](https://github.com/YmlyZA/herdr-review-pack) | Collects a task brief, the current Git diff, and command check receipts in a Herdr TUI review panel, marking receipts stale when code changes afterwards. |
-| [**phin-tech/herdr-roborev**](https://github.com/phin-tech/herdr-roborev) | Opens the roborev review TUI in a Herdr TUI popup scoped to the active project. Needs roborev on PATH and macOS. |
 | [**Allianaab2m/herdr-hunk-gh-diff**](https://github.com/Allianaab2m/herdr-hunk-gh-diff) | Opens a Hunk diff in a Herdr TUI split or tab between the current branch and the base branch of its GitHub pull request, found through gh. |
 | [**simosako/herdr-annotate-opencode**](https://github.com/simosako/herdr-annotate-opencode) | Opens Herdr Annotate's document review at the current OpenCode session directory instead of the pane's original working directory. |
 
@@ -3011,7 +3009,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Pane layout management
 
-*45 projects. Tools that arrange, resize, and manage Herdr TUI panes.*
+*44 projects. Tools that arrange, resize, and manage Herdr TUI panes.*
 
 | Project | What it does |
 |---|---|
@@ -3057,7 +3055,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**dimapanov/herdr-equalize**](https://github.com/dimapanov/herdr-equalize) | Equalizes Herdr TUI split ratios so every pane in a tab gets the same share, on demand or automatically when a pane opens or closes. |
 | [**atm028/herdr-panes**](https://github.com/atm028/herdr-panes) | Swaps the active Herdr TUI pane with its neighbor, rotates panes, and applies tmux-style layouts such as even-horizontal, main-vertical, tiled, and golden-ratio from a popup picker. |
 | [**macintacos/herdr-reshape**](https://github.com/macintacos/herdr-reshape) | Moves the focused pane around its tab and arranges panes into an even grid. |
-| [**abelfubu/herdr-popup**](https://github.com/abelfubu/herdr-popup) | Opens ad-hoc shell commands in Herdr TUI popup panes from a keybinding, CLI or agent tool. |
 | [**shanefully-done/herdr-pane-equalizer**](https://github.com/shanefully-done/herdr-pane-equalizer) | Equalizes Herdr TUI pane dimensions automatically or through manual width and height actions. |
 | [**choplin/herdr-split-pane**](https://github.com/choplin/herdr-split-pane) | Opens a caller-provided command directly in a Herdr split pane. |
 
@@ -4031,7 +4028,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 7. Apps, companion integrations, and installation
 
-*492 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
+*491 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
 
 ### Native desktop and mobile apps
 
@@ -4360,7 +4357,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Processes, ports, sandboxes, and remote machines
 
-*29 projects. Tools for watching and stopping dev servers and listening ports, cleaning up leftover processes, and running agents or shells in sandboxes, VMs, containers, and remote hosts.*
+*28 projects. Tools for watching and stopping dev servers and listening ports, cleaning up leftover processes, and running agents or shells in sandboxes, VMs, containers, and remote hosts.*
 
 | Project | What it does |
 |---|---|
@@ -4384,7 +4381,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**fantoine/herdr-run-targets**](https://github.com/fantoine/herdr-run-targets) | Opens a Herdr TUI dashboard to start, stop, and restart repository-defined development services in named tabs. |
 | [**n-jc/herdr-opencode**](https://github.com/n-jc/herdr-opencode) | Provides a set up to use Opencode within Apple Containers as a sandbox and manage via Herdr on a Mac OS host machine. |
 | [**andrewmcodes/overhrd**](https://github.com/andrewmcodes/overhrd) | Provides a Procfile process manager for herdr users, a herdr-backed reimplementation of Overmind. |
-| [**paddock-sh/paddock-herdr**](https://github.com/paddock-sh/paddock-herdr) | Provides a Herdr integration plugin for the Paddock platform. |
 | [**AndresDiagoM/herdr-wsl-tab**](https://github.com/AndresDiagoM/herdr-wsl-tab) | Opens a Herdr tab or split that runs a WSL distro on Windows, starting in the focused pane's directory, and passes the `HERDR_*` variables through so Claude Code, Codex, or opencode inside WSL can drive Herdr. Restores those panes after a Herdr restart, and an optional setup action installs Claude Code hooks so the session shows its state. |
 | [**prized-dev/integrations · herdr**](https://github.com/prized-dev/integrations/tree/main/herdr) | Runs Claude Code or Codex from a Herdr worktree on a Prized sandbox or box, and pauses the sandbox when the pane closes. Needs the prized CLI and a Prized login. |
 | [**linkcd/herdr-agentcore**](https://github.com/linkcd/herdr-agentcore) | Connects Herdr TUI terminals to interactive coding assistants running in Amazon Bedrock AgentCore Runtime. Manages saved connections, reconnect, detach and stop. |
@@ -4549,7 +4545,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**berryk/herdr-cloud**](https://github.com/berryk/herdr-cloud) | Deploys Herdr and Claude Code in Cloudflare Containers as a per-project browser workspace on your own account. Sleeps when idle and wakes where you left off. |
 | [**ariel-ps/herdr-setup**](https://github.com/ariel-ps/herdr-setup) | Installs a ready-to-use Herdr workspace on macOS, Ubuntu, Debian or Fedora with colored panes, alerts, saved layouts and lazygit. Each plugin can be enabled separately. |
 | [**quijotevitruvio/HerdrSpanis**](https://github.com/quijotevitruvio/HerdrSpanis) | Installs a Spanish-language build of Herdr beside the official release and keeps your config. Includes commands to switch back to English and to update after new Herdr releases. |
-| [**dio16/herdr-auto-update**](https://github.com/dio16/herdr-auto-update) | Checks installed Herdr plugins for newer upstream commits and reinstalls updated versions automatically. |
+| [**dio16/herdr-auto-update**](https://github.com/dio16/herdr-auto-update) | Checks installed Herdr plugins for newer upstream commits and reports them, and reinstalls updated versions when you set the auto policy. |
 | [**GoldenBerry-SO/devbox**](https://github.com/GoldenBerry-SO/devbox) | Provisions a Hetzner development server with Ansible and Herdr TUI for persistent remote agent sessions. |
 | [**nklmilojevic/herdr-flake**](https://github.com/nklmilojevic/herdr-flake) | Installs official Herdr TUI release binaries with a Nix flake and optional Home Manager module. |
 | [**AodhanHayter/herdr-nix**](https://github.com/AodhanHayter/herdr-nix) | A Nix flake for installing Herdr on Intel and ARM macOS or Linux, with automated upstream release tracking and a Cachix binary cache. |

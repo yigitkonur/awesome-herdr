@@ -243,3 +243,7 @@ yahyabedirhan/shipyard  # General macOS menu bar app; Herdr plugin is separate y
 zekertop/ai-cli-complete-notify  # General AI CLI notifier; Herdr is one optional hook target
 zura1555/zurbit-herdr  # Surface for the author's own Zurbit backend; needs a private base URL and token
 zztalker/herdr-core  # Fork of herdrdev/herdr-core; README differs by one doc line only.
+paddock-sh/paddock-herdr  # stub: README only, plugin not released
+phin-tech/herdr-roborev  # thin wrapper: 572-byte launcher for the roborev TUI
+abelfubu/herdr-popup  # thin wrapper: 664-byte popup launcher script
+davebird99/herdr-worktree-upstream  # thin wrapper: 511-byte script

@@ -57,10 +57,10 @@ To maintain a high-signal catalog, the following must **never** be added:
 
 ## 4. Canonical Section Structure
 
-Organize projects across the 7 numbered domains and their plain-English micro-categories:
+Organize projects across the 8 numbered domains and their plain-English micro-categories:
 
 1. **Run and orchestrate agents**
-   - Official skill and foundation
+   - Official Herdr projects and skill
    - Multi-agent fleets and supervisors
    - Swarm, mob, and consensus orchestrators
    - Claude Code multi-agent teams
@@ -73,17 +73,20 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
    - Linear, GitHub Issues, and issue-to-PR automation
    - General workflows and skill packs
 
-2. **Connect through MCP and the socket API**
+2. **Herdr app layouts, mods, and themes**
+   - Herdr app layouts
+   - Herdr app mods and themes
+
+3. **Connect through MCP and the socket API**
    - MCP servers
-   - Socket API clients and SDKs
+   - Socket API and herdr-core clients and SDKs
    - Chat alerts: Telegram, Discord, and Slack
    - Desktop, mobile, and webhook notifications
-   - Push notifications, APNs, and mobile alerts
    - Telemetry, events, and quota streaming
    - Voice, hardware, and remote bridges
    - Protocol and third-party bridges
 
-3. **Editor integrations**
+4. **Editor integrations**
    - Neovim navigation and splits
    - Full Neovim-hosted workspaces
    - VS Code, Cursor, and dev containers
@@ -91,36 +94,41 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
    - REPL and code dispatchers
    - Editor plugins and bridges
 
-4. **Switch and restore sessions**
+5. **Switch and restore sessions**
    - Fuzzy session switchers and terminal pickers
    - Persistence, snapshots, and state restoration
    - Workspace and multi-session management
 
-5. **Worktrees and terminal experience**
+6. **Worktrees and terminal experience**
    - Git worktree automation
    - Workspace lifecycle and multi-repository tools
    - Diff review and code inspection
-   - File viewers and markdown previews
+   - File viewers, terminal browsers, and markdown previews
    - Pane navigation and overlay hints
+   - Pane layout management
    - Terminal keybindings and shortcut helpers
    - Command palettes and workspace switchers
-   - Status lines, sidebars, and tab synchronization
+   - Status lines and workspace metadata
+   - Sidebar displays and tab labels
    - Status overlays, HUDs, and agent timers
    - Context meters and rate-limit gauges
    - Output inspection, logs, and transcripts
+   - Agent visualizations and terminal games
+   - Herdr TUI themes and appearance
    - Security guards and collision detectors
-   - Dotfiles and ready-made configuration
-   - Plugin collections and developer frameworks
+   - Plugin collections, frameworks, and ready-made configs
 
-6. **Apps, companion integrations, and installation**
+7. **Apps, companion integrations, and installation**
    - Native desktop and mobile apps
    - Web dashboards and remote viewers
    - Hardware and ambient displays
    - Plugins and supporting utilities
    - Setup, packages, and version management
 
-7. **Experimental projects**
+8. **Experimental projects**
    - Experiments, concepts, and scaffolds
+
+Herdr app layouts, mods, and themes go in domain 2. Subcategories that collect desktop UIs, mobile clients, web viewers, phone notifications, or app extensions open with a `> Herdr has an official desktop app ... and an official iPhone, iPad, and Android app ...` note under their count line; keep that note at the subcategory level, never inside a row. Tables are ordered by GitHub stars, highest first, except the official subcategory.
 
 ---
 

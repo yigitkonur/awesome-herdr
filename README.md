@@ -21,11 +21,11 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Task queues, backlogs, and event triggers (15)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (25)](#linear-github-issues-and-issue-to-pr-automation)
    - [General workflows and skill packs (138)](#general-workflows-and-skill-packs)
-2. [Connect through MCP and the socket API (237)](#2-connect-through-mcp-and-the-socket-api)
+2. [Connect through MCP and the socket API (238)](#2-connect-through-mcp-and-the-socket-api)
    - [MCP servers (14)](#mcp-servers)
    - [Socket API clients and SDKs (74)](#socket-api-clients-and-sdks)
    - [Chat alerts: Telegram, Discord, and Slack (22)](#chat-alerts-telegram-discord-and-slack)
-   - [Desktop, mobile, and webhook notifications (48)](#desktop-mobile-and-webhook-notifications)
+   - [Desktop, mobile, and webhook notifications (49)](#desktop-mobile-and-webhook-notifications)
    - [Push notifications, APNs, and mobile alerts (2)](#push-notifications-apns-and-mobile-alerts)
    - [Telemetry, events, and quota streaming (18)](#telemetry-events-and-quota-streaming)
    - [Voice, hardware, and remote bridges (9)](#voice-hardware-and-remote-bridges)
@@ -1016,7 +1016,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 2. Connect through MCP and the socket API
 
-*237 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
+*238 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
 
 ### MCP servers
 
@@ -1151,12 +1151,13 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Desktop, mobile, and webhook notifications
 
-*48 projects. System toasts, ntfy pings, and webhook triggers for agent events.*
+*49 projects. System toasts, ntfy pings, and webhook triggers for agent events.*
 
 | Project | What it does |
 |---|---|
 | [**cedrus-8864/herdr-prompt-reply**](https://github.com/cedrus-8864/herdr-prompt-reply) | Posts blocked agent permission prompts as interactive macOS notifications with action buttons, allowing responses without switching back to the terminal. |
 | [**yankewei/herdr-focus-notify**](https://github.com/yankewei/herdr-focus-notify) | Shows a clickable macOS notification when an unseen pane becomes blocked or finishes. Clicking the alert brings the terminal forward and focuses the exact pane through `alerter`. |
+| [**justinchiasson/herdr-nudge**](https://github.com/justinchiasson/herdr-nudge) | Sends clickable macOS notifications when an agent is blocked or done, or when a long zsh command finishes, and clicking one jumps to that exact pane. Works on Intel and Apple Silicon with nothing else to install, and takes each notification down once its pane moves on or closes. |
 | [**zom-2018/herdr-ntfy-notify**](https://github.com/zom-2018/herdr-ntfy-notify) | Sends structured ntfy alerts when an agent blocks or finishes. Notifications include the workspace, tab, and pane, and the plugin prefers a detected local ntfy server before using the network. |
 | [**dot/herdr-terminal-notifier**](https://github.com/dot/herdr-terminal-notifier) | Bundles a branded macOS notification app so Herdr alerts use the correct icon and can jump to the relevant pane. The app periodically refreshes its Launch Services registration to recover cleanly after reboots or updates. |
 | [**horn553/herdr-ntfy**](https://github.com/horn553/herdr-ntfy) | Sends ntfy alerts for done and blocked agent states using standard command-line tools and curl. |

@@ -2878,6 +2878,8 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 - **[Herdr TUI plugin marketplace](https://herdr.dev/tui/plugins/)**: The official directory of Herdr TUI plugins, built from GitHub repositories tagged `herdr-plugin`.
 - **[Herdr TUI agent skill](https://github.com/herdrdev/herdr/blob/master/skills/herdr/SKILL.md)**: Instructions that teach an agent how to drive Herdr TUI.
 
+- **[Field guides](docs/)**: Fact-checked guides in this repo for building on Herdr: [Herdr app](docs/herdr-app.md), [herdr-core](docs/herdr-core.md), and Herdr TUI [socket API](docs/socket-api.md), [configuration](docs/configuration.md), [integrations](docs/integrations.md), and [agent workflows](docs/agent-workflows.md).
+
 ## Reference
 
 - **Agent guides:** Point an agent at `~/.config/herdr-app/AGENTS.md` (Herdr app), `hc --skill` (herdr-core), or `SKILL.md` (Herdr TUI) before asking it to change anything.

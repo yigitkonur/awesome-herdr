@@ -8,9 +8,9 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## Contents
 
-1. [Run and orchestrate agents (855)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (856)](#1-run-and-orchestrate-agents)
    - [Official skill and foundation (1)](#official-skill-and-foundation)
-   - [Multi-agent fleets and supervisors (107)](#multi-agent-fleets-and-supervisors)
+   - [Multi-agent fleets and supervisors (108)](#multi-agent-fleets-and-supervisors)
    - [Swarm, mob, and consensus orchestrators (44)](#swarm-mob-and-consensus-orchestrators)
    - [Claude Code multi-agent teams (260)](#claude-code-multi-agent-teams)
    - [Claude Code: Account switchers and auth monitors (3)](#claude-code-account-switchers-and-auth-monitors)
@@ -71,7 +71,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 1. Run and orchestrate agents
 
-*855 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*856 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official skill and foundation
 
@@ -83,7 +83,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Multi-agent fleets and supervisors
 
-*107 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
+*108 projects. Higher-level systems that coordinate several agents, roles, tasks, or repositories.*
 
 | Project | What it does |
 |---|---|
@@ -194,6 +194,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**lufs-audio/snuze**](https://github.com/lufs-audio/snuze) | Provides Agent alarm clock in Rust: set timers, watch Jules sessions and herdr pane states, listen for webhook signals, get woken up. No polling, so fewer wasted tokens. |
 | [**TonyPorj/boss-mad**](https://github.com/TonyPorj/boss-mad) | Provides Boss/MAD: give it a goal, Hermes spawns a crew in Herdr tabs, they work in parallel, Hermes verifies and hands off. Local Windows-native multi-agent orchestration. |
 | [**Rocco-Gossmann/Herdr-Workspace**](https://github.com/Rocco-Gossmann/Herdr-Workspace) | Creates a Herdr-Workspace with multiple Tabs + Splits in one command in your default session. |
+| [**quaresc/cockpit**](https://github.com/quaresc/cockpit) | Shows every coding agent Herdr runs in one layout, each with its ticket, pull request, CI run and deploy, and marks the ones waiting for an answer. Adds an inbox of reviews, mail, meetings and releases, routines the hub runs on a schedule, and a `show` tool agents use to draw charts, tables and diagrams beside their session. |
 
 ### Swarm, mob, and consensus orchestrators
 

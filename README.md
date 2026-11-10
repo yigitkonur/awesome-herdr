@@ -45,7 +45,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Git worktree automation (129)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (30)](#diff-review-and-code-inspection)
-   - [File viewers and markdown previews (20)](#file-viewers-and-markdown-previews)
+   - [File viewers and markdown previews (21)](#file-viewers-and-markdown-previews)
    - [Pane navigation and overlay hints (12)](#pane-navigation-and-overlay-hints)
    - [Terminal keybindings and shortcut helpers (105)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (26)](#command-palettes-and-workspace-switchers)
@@ -1883,7 +1883,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### File viewers and markdown previews
 
-*20 projects. In-terminal file browsers, image previews, and markdown rendering panes.*
+*21 projects. In-terminal file browsers, image previews, and markdown rendering panes.*
 
 | Project | What it does |
 |---|---|
@@ -1907,6 +1907,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**carellano/herdr-dev-servers**](https://github.com/carellano/herdr-dev-servers) | Detects development servers running in Herdr panes, records their ports and process state, and can focus or safely stop orphaned services. |
 | [**cpcloud/herdr-agentsview**](https://github.com/cpcloud/herdr-agentsview) | Combines active AgentsView sessions across projects, models, and agents, with real-time timelines and metrics inside Herdr. |
 | [**u7chan/herdr-file-viewer**](https://github.com/u7chan/herdr-file-viewer) | Provides Read-only file viewer plugin for Herdr, a TUI built with Go and Bubble Tea. |
+| [**gcaudan/herdr-explorer**](https://github.com/gcaudan/herdr-explorer) | Adds a VS Code-style file explorer, preview, diff, and source-control panes beside your agents. Review notes on diff lines go into the agent's prompt, and the agent can open `file:line` in the preview through a bundled skill. |
 
 ### Pane navigation and overlay hints
 

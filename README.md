@@ -2351,6 +2351,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**riba2534/herdrx**](https://github.com/riba2534/herdrx) | Provides a self-hosted, multi-user Herdr remote terminal workbench with multi-host split panes, mobile access, and Tailscale support. |
 | [**Eden-Sun/agents-manager**](https://github.com/Eden-Sun/agents-manager) | Manages multiple coding-agent CLIs running in Herdr panes via a Rust Axum daemon and React frontend. |
 | [**hao-github-0216/remote-workspace-setup**](https://github.com/hao-github-0216/remote-workspace-setup) | Provides Cross-platform persistent remote terminal workspace (herdr + mosh/ssh). Survives lid-close, roaming, and reboot. |
+| [**arcnessai/arcdr**](https://github.com/arcnessai/arcdr) | Shows Herdr's spaces and agents on a phone or another browser the way Herdr's sidebar does, with the values Claude Code mods report placed where the user chooses, over the user's own Tailscale network. Answers permission prompts and questions with a tap, rings the phone on a mod's `notify` value, splits a desktop into up to four conversations, and installs as a Herdr plugin with a QR code for the phone. |
 
 ### Hardware and ambient displays
 

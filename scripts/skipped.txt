@@ -1,0 +1,245 @@
+# Repos reviewed and left out of the catalog; scripts/discover.py skips them.
+# Format: owner/repo  # reason. Delete a line to have the repo triaged again.
+851-labs/sheep  # repository returns 404
+86label/minimalist-pi-orchestrator  # repository returns 404
+abhishek944/pi-herdr-skills  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+agrestisdavid/terminal-cards  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+ai-meow/felix  # repository returns 404
+akmarwah03/pi-herdr-config  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+aldrickdev/herdr_subagents  # repository returns 404
+alexisweeren-tribe/herdr-spaces  # repository returns 404
+ali-abassi/boss  # repository returns 404
+allexborysov/herdr-claude-auto-title  # repository returns 404
+ankurces/minim-coder  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+artmsilva/agent-tools  # repository returns 404
+arvemy/herdr-convo  # repository returns 404
+baileyrosen3/omarchy-terminals  # repository returns 404
+bakescakes/claude-orchestration  # repository returns 404
+black-atom-industries/herdr  # repository returns 404
+blockshiftnetwork/herdr-telegram-attention  # repository returns 404
+bradleylwood/herdr-sessions  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+bryandph/herdr-client  # repository returns 404
+cedrus-8864/herdr-prompt-reply  # repository returns 404
+cedrus-8864/herdr-sidebar-numbers  # repository returns 404
+chris-yyau/hermes-herdr-auto-reconcile  # repository returns 404
+chrisg32/ninjasana  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+codingfragments/herdr-zextract  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+cxnmai/plexr  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+cypack/herdr-plugins  # repository returns 404
+dinhlongviolin1/arco  # repository returns 404
+eabadim/herdr-context-namer  # repository returns 404
+ehcastroh-teach/herdr_ai_dev_environment  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+francoescob/mc-agent-deck  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+fyc0451/agent-cockpit  # repository returns 404
+gadgj/agent-state-changed-bell  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+georgedakoul/herdr-phone  # repository returns 404
+georgolden/herdr-remote-setup  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+glasner/shipyard  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+gocodealone/mission-control-provider-herdr  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+granamyrbr/lunacrab  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+hallosouf/subherd  # repository returns 404
+hbacheller-tribe/herdrstatuswidget  # repository returns 404
+hcaiano/skills  # repository returns 404
+herdr-go/herdr-go.github.io  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+hiroshi57/corral  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+houz42/omarchy-keyboard-remapper  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+islyy0717/omapad  # repository returns 404
+jacobstephens2/herdr-config  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+jfdg01/herdr-claude-setup  # repository returns 404
+jievince/herdr-codex-app  # repository returns 404
+joyehuang/memory-dashboard  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+karanmrn/karan-herdr-shortcut-setup  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+kay-ws/herdr-island  # repository returns 404
+kbroomstd/herdr.nvim  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+kellen-miller/herdr-intellij  # repository returns 404
+kennethjefferson/herdrplus  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+lbryany/dsh-herdr  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+liu-qingyuan/herdr-tmux-local-config  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+llzx373/reasonix_herdr  # repository returns 404
+luminexord/herdres  # repository returns 404
+m4ttyk/captain-bridge  # repository returns 404
+makyinmars/herdr-config  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+maxbrt/herdr-omarchy-theme-sync  # repository returns 404
+maxto/dotfiles  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+mingrath/fanout  # repository returns 404
+mitchnick/ai-dev-environment  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+mkmah/herdr-frontier  # repository returns 404
+morpheus-sh/panopticon  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+mshubitidze/pstack-herdr  # repository returns 404
+nathanestone-alt/herdr-workstation-bootstrap  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+neefrehman/herdr-caffeinate  # repository returns 404
+noctaio/herdr-plugin-aos  # repository returns 404
+nottzaid/fx-herdr-jobsearch  # repository returns 404
+ntheanh201/herdr-notify  # repository returns 404
+nunley-media-group/nmg-visuals  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+ocyedwin/editor  # repository returns 404
+olakara/handoff  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+osamahbeig/herdr-grove  # repository returns 404
+pbogut/opencode-pocket  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+penggin/gsd-herdr  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+persinac/agents-nexus  # repository returns 404
+pimpmuckl/herdr-streamdeck  # repository returns 404
+plotarmordev/tendwire  # repository returns 404
+polyphonyrequiem/omp-herdr-bridge  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+possibilities/agentkeys  # repository returns 404
+quangdang46/herdctl  # repository returns 404
+rbb/herdr-cursor  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+risingtides-dev/ocean-herdr  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+robert-flo/herdr-terminal-file-manager  # repository returns 404
+rohanthewiz/cats  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+ronnie3786/herdr-companion  # repository returns 404
+ruddyscent/codex-config  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+rudironsoni/herdr-orca  # repository returns 404
+s-hiraoku/herdr-toolkit  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+sfroment/pi-herdr  # repository returns 404
+shaunbntan-create/vgpt  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+sheetmetalconnect/dsh-herdr  # repository returns 404
+smeltery/mav  # repository returns 404
+somacosf/colloquy  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+sunnoy/livis  # repository returns 404
+sushi-killer/sushiai  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+tdragon/swiftbar-claude  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+tenequm/build-workflow  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+thesimonharms/herdr-cmd-agent-plugin  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+tianzuo555/pi-herdr-agents  # repository returns 404
+tliuyx/tliuyx.github.io  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+toasterman234/pi-herdr-firstmate  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+tonoid/agent-loop  # repository returns 404
+tonyporj/boss-mad  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+txchen/tmux-rail  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+tyler-jewell/herdr-bootstrap  # repository returns 404
+tyler-jewell/herdr-plugins  # repository returns 404
+varelaseb/tabherd  # repository returns 404
+vinal-vin/rig  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+vinicius91carvalho/harness-engineering  # removed in the 2026-11 review: stub, personal config, thin wrapper, or no Herdr integration
+wadehuangdeveloper/pane-teams  # repository returns 404
+younesdahdouh/hyprland-keybind-manager  # repository returns 404
+yyhcoppolo/herdr-collab  # repository returns 404
+zackbart/herdr-ios  # repository returns 404
+yigitkonur/awesome-herdr  # this catalog
+956mb/dotfiles  # Personal dotfiles
+abereghici/dotfiles  # Personal dotfiles
+ag-studio-apps/meshterm-feedback  # Feedback-only repo for an iOS SSH app; no source, Herdr integration is one feature
+agavra/tuicr  # General code-review TUI; Herdr plugin is ekropotin/herdr-tuicr, already known
+andreafspeziale/fellowship-pane  # Personal dotfiles behind a blog post; reference config, not a packaged plugin
+andrew-mart/claude-code-webview  # Claude Code browser viewer; Herdr view is optional and off when Herdr is absent
+anthonythomasson/workstation  # Personal Herdr setup and machine config ("My Herdr setup"); personal dotfiles
+apemost/dotfiles  # Personal dotfiles
+arhen/herdr-devnull-plugin  # Marketplace shim; code lives in arhen/devnull-tui, no standalone implementation
+asumaran/asgotopr  # Renamed copy of listed asumaran/gotopr (same repo, new name)
+automagik-dev/automagik  # Renamed automagik-si/automagik; README has no Herdr content
+automagik-dev/herdr-crawl-probe  # Old name of automagik-si/herdr-crawl-probe; crawler test fixture
+automagik-si/automagik-herdr  # Archived; moved to automagik-dev/automagik; holds only brainstorm docs and a pointer
+automagik-si/herdr-crawl-probe  # Test fixture for the herdr.dev crawler; README says not to install it
+avivsinai/agent-message-queue  # Generic agent messaging queue; README never mentions Herdr
+aymanzahran/ai9s  # General session finder; the Herdr sidebar is the separate herdr-ai9s plugin, already known.
+babarot/dotfiles  # Personal dotfiles
+bagonyi/herdrsson  # Personal fork of herdrdev/herdr built from source; install steps install stock Herdr
+bishalr0y/dotfiles  # Personal dotfiles
+bozoinc/archify-herdr-plugin  # entry.js only opens the author's bundled portfolio page; no Herdr functionality
+cantona/herdr-resurrect  # Fork of listed ntindle/herdr-resurrect (11 commits); near-duplicate
+caoool/opencode-cpa-quota-plugin  # OpenCode TUI plugin; README has no Herdr mention.
+carstenlucke/herdr-t3-panel  # 1.2 KB shim re-adding Files and Changes panels to a third-party layout; to be archived
+ccch1mneyyy/dsh-tui  # General TUI plugin for DSH; Herdr only appears as one terminal it can run in.
+chanyang721/herdr-workspace-mods  # Repository does not exist (GraphQL could not resolve)
+charlesberret/cowbell-core  # Generic agent picker CLI; Herdr entry point is charlesberret/herdr-cowbell, already known
+cloud8877-source/orca-status  # Near-duplicate of the same author's herdr-orca-status; no README
+codergeek121/herdr-plugin-template  # Plugin template with a demo.sh stub wired to every hook; no standalone functionality.
+combinaut/herdr-radar  # Fork of hhdebb/herdr-radar (listed); near-duplicate
+crafts69guy/herdr-git-hub  # Archived and deprecated; merged into crafts69guy/herdr-ghq (lead if not listed).
+craftzdog/dotfiles  # Personal dotfiles; herdr only a topic tag
+cyperx84/omarchy-spaces  # Omarchy workspace switcher; Herdr is an optional agent-status source
+davirezendemota/devstatus  # Personal macOS menu bar app; Herdr queue is one widget, README says built for one developer
+dhananjaylatkar/ws.numbered.herdr  # Five-line plugin that numbers workspaces only; subset of listed kokatsu/herdr-numbering
+drilonrecica/igris  # Claude Code task runner that works in herdr or tmux; not Herdr-specific
+eascendco/herdr-eascend-agents  # Repo returns 404 and the owner has no public herdr repo; nothing to install.
+edmundmiller/herdr-plugin-dotfiles-dev-layout  # Personal dotfiles workspace layout, a subfolder of the author's dotfiles; not reusable
+eliasstravik/herdr-projects  # Repo now redirects to eliasstravik/shepherdr, already in README.md.
+en3sis/figxit  # macOS terminal autocomplete; herdr listed only as a supported multiplexer, not Herdr-specific.
+ericgrill/erics-herdr-linear  # Repo returns 404; EricGrill/herdr-linear is a fork of listed mrolafsson/herdr-linear
+ericgrill/herdr-linear  # Fork of mrolafsson/herdr-linear with no meaningful changes (README points at upstream).
+fnayou/dotfiles  # Personal dotfiles
+funsaized/pinata  # Pi subagent runtime; Herdr is only an optional monitor backend mentioned once in the README.
+galaxnet-ltd/novascale-android  # Android Tailscale and SSH terminal client; README never mentions Herdr
+gjermundgaraba/herdr  # Personal fork of herdrdev/herdr with the upstream README unchanged; no standalone install path.
+gjermundgaraba/herdr-plugins  # Every plugin needs the author's Herdr fork build; stock Herdr cannot run them
+gravionlabs/skills  # General agent skill pack; Herdr appears once in the README as an agent-state mention.
+haoyuant/tomrade  # Backlog app that embeds herdr for terminal panes; no Herdr plugin, mentioned in passing
+hefker/nixos-config  # Personal NixOS machine config; Herdr is one of several tools it installs.
+higoralves/luna-notch  # Repository does not exist (GraphQL could not resolve)
+hvpaiva/keryx  # Harness-generic agent messaging gem; Herdr only an optional notification path
+iangregsondev/herdr-mods  # Monorepo whose mods/ folder holds only a hello mod; no useful mod yet
+imsike/os-setup  # Windows setup installer; README has no mention of Herdr.
+ivan/herdr-slurm  # Does not exist; resolves to ivanvykopal/herdr-slurm, already known
+jaichandra/xdock  # Claude Code dock plugin; Herdr is one of several terminal backends.
+jakobbeyer/kharka  # README never mentions Herdr; generic JSON replica store
+jiangkoumo/herdr-plugin-dsh  # 30-line launcher that splits a pane and runs external dsh-tui; no standalone utility
+jinyeow/dotfiles  # Personal dotfiles; Herdr barely mentioned
+jiqize/herdr-workflow  # Repository does not exist on GitHub (404).
+jlapenna/herdr-overview  # Development moved to jlapenna/dev (herdr/overview); this repo is a retained archive
+kamil-pociot/vista  # Standalone terminal IDE; Herdr only as one theme option
+khoi-truong/dotfiles  # Personal dotfiles
+kinhluan/pasture  # Personal dotfiles repo wiring several tools together
+klahrich/replyslip  # Generic MCP task relay for agents; Herdr is only one supported pane driver.
+kogakure/dotfiles  # Personal dotfiles
+kremeshnoi/win-ricing  # Personal Windows desktop config; Herdr only appears inside the WSL setup table.
+kvoon3/herdr-lazygit  # 18-line lazygit launcher; near-duplicate of listed lazygit popup plugins
+lakris2407/herdr-path-menu  # Archived; README says it moved to Lakris2407/herdr-mods, which is already listed in README.md.
+lakris2407/herdr-quota  # Archived; README says the mod moved to Lakris2407/herdr-mods, which is already listed
+lakris2407/herdr-runners  # Archived; moved to Lakris2407/herdr-mods, already listed
+lakris2407/herdr-stats  # Archived; README says the mod moved to Lakris2407/herdr-mods, which is already listed
+lararosekelley/dotfiles  # Personal dotfiles; local plugin is a personal layout, not packaged for others
+leecg39/token_gage  # Repository returns 404 on GitHub (deleted or private)
+lluchkaa/herdr-app  # Near-duplicate of listed Catppuccin port suree33/herdr-app; starter with no previews
+lucaspcq/wtm  # Generic worktree manager; Herdr only linked via separate herdr-wtm plugins
+luisgonzalez1105/herdr-keybinds-button  # Personal cheat sheet, mostly non-Herdr keys, no README; not a general Herdr tool
+lukeed/lane  # Generic worktree tool; no Herdr mention found in readme
+m1racleshih/herdr-radar  # Fork of hhdebb/herdr-radar (listed); near-duplicate
+m1racleshih/herdr-remote  # Fork of listed dcolinmorgan/herdr-remote
+m1racleshih/otterpack  # Personal toolkit; Herdr parts are pinned copies of third-party Radar and Remote
+matmanna/dots  # Personal machine dotfiles; no Herdr content (0 mentions in README)
+matthieuelie/rust-todo  # Generic todo.txt editor; Herdr in one sentence, no plugin, manifest or API code
+mcferrill/dotfiles  # Personal dotfiles
+mchlkim/herdr-insights  # Not found on GitHub (404; the repo is gone from the owner's public repo list); no code to evaluate.
+melvinto/herdr-last-workspace  # Three small shell scripts duplicating listed third774/herdr-last-workspace
+michaelkinsy/pig  # Go port of the Pi agent; no Herdr content in the README.
+moha-abdi/keydeck  # Mac shortcut menu app; Herdr is one of several supported tools
+music-brain88/dotfiles  # Personal dotfiles
+nicksenap/grove  # Generic worktree CLI; Herdr only via separate grove-herdr plugin
+noomz/herdr-tabshell  # Needs a patched herdr build; stock Herdr 0.9.5 lacks floating plugin panes
+nourhelmi/crew  # Cross-harness agent team; Herdr only optional for visible panes
+nxhung2304/dotfiles  # Personal macOS dotfiles.
+olimorris/dotfiles  # Personal dotfiles
+opengsd/gsd-core  # Repository not found by gh; not Herdr-specific per the lead.
+phoobobo/dots-tunnel-bridge  # Fork of uezo/dots-bridge; Herdr tools are an off-by-default add-on, not its purpose
+piioni/dotfiles  # Personal Fedora desktop dotfiles; Herdr config is one part.
+qingshan/dotfiles  # Personal dotfiles
+rhodri-morgan/herdr-config  # Personal machine config (Windows driving WSL); personal dotfiles
+saifharding/herdr-pokemon-agents-plus  # Derivative of listed mathieucroset/herdr-pokemon-agents; adds only sidebar faces and cries
+sceny/herdr-plugins  # Single placeholder plugin that only opens and closes an empty modal
+sefatanam/dotfiles  # Personal dotfiles.
+sevenzing/herdr-not-a-plugin  # README is "Just a test, nothing more"; manifest only, no implementation (test plugin).
+solcreek/linear-cli  # General Linear CLI; README does not mention Herdr.
+souvlakeee/siga  # Progress-bar tool for Ghostty and Kitty; Herdr only a compatible environment, no integration
+squarewavesystems/squarebox  # Container of CLI tools; herdr is one line in a tool table
+suderman/june  # Personal assistant daemon; Herdr appears only as a read-only status source.
+suge8/friedbun  # Personal AI coding setup installer; Herdr is one bundled terminal tool
+suppa-duppa-labs/herdr-zen-panes  # Repo contains only LICENSE and a one-line README; no implementation.
+tareqmlx/herdr-file-viewer  # Fork of listed smarzban/herdr-file-viewer; no clear own changes
+the-pixel-boys/shield-kya  # General agent audit tool; Herdr mod lives in known The-Pixel-Boys/kya-herdr-mod
+therealhieu/herdr-stack  # Archived; moved to therealhieu/herdr-plugins/stack (same repo is a lead, already in known-repos).
+theultimate-dev/dotfiles  # Personal dotfiles and installer; Herdr is one configured tool
+tifandotme/dotfiles  # Personal chezmoi dotfiles; tab-spinner is a self-described unpackaged prototype
+tiger-0512/dotfiles  # Personal dotfiles
+timmo001/dotfiles  # Personal Omarchy machine setup
+timopruesse/.dotfiles  # Personal dotfiles
+tinhtute/monoherdr  # Personal Herdr config; the agent-icons plugin is a small piece of a personal setup
+tinhtute/quaqua  # Personal multi-agent workspace with gitignored state; not a reusable package
+todayporton/deskman  # macOS Spaces switcher; Herdr only mentioned in passing.
+trungkien1208/orcha-plugin-office  # Pixel-art office for the Orcha app; README never mentions Herdr
+unique-divine/dotfiles  # Personal dotfiles; Herdr config is one section.
+windywin/vpet-agent-pet  # General desktop pet; Herdr support lives in the listed herdr-agent-pet plugin
+yahyabedirhan/shipyard  # General macOS menu bar app; Herdr plugin is separate yahyabedirhan/herdr-shipyard
+zekertop/ai-cli-complete-notify  # General AI CLI notifier; Herdr is one optional hook target
+zura1555/zurbit-herdr  # Surface for the author's own Zurbit backend; needs a private base URL and token
+zztalker/herdr-core  # Fork of herdrdev/herdr-core; README differs by one doc line only.

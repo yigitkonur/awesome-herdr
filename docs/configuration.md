@@ -2,7 +2,7 @@
 
 This guide summarizes the Herdr configuration surface for people building configs, keymap packs, terminal presets, and integrations.
 
-Canonical source: [CONFIGURATION.md](https://github.com/ogulcancelik/herdr/blob/master/CONFIGURATION.md). Last reviewed: 2026-05-17.
+Canonical source: [Configuration](https://herdr.dev/tui/docs/configuration/). Last reviewed: 2026-05-17. This guide covers Herdr TUI, not the Herdr app or herdr-core.
 
 ## Config Location
 

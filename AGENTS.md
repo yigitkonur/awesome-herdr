@@ -1,12 +1,12 @@
 # AGENTS.md
 
-Working rules and language guidelines for anyone — human or agent — editing this repository. It is a curated, plain-English index of the [Herdr](https://github.com/ogulcancelik/herdr) ecosystem. Keep it lean, minimalist, and immediately useful.
+Working rules and language guidelines for anyone — human or agent — editing this repository. It is a curated, plain-English index of the [Herdr](https://herdr.dev/) ecosystem: the Herdr app, herdr-core, Herdr TUI, and the mobile apps, all under [herdrdev](https://github.com/herdrdev). Keep it lean, minimalist, and immediately useful.
 
 ---
 
 ## 1. Project Philosophy & Minimalist Structure
 
-- **No Onboarding Tutorials:** Do not add introductory installation essays, "how to choose your layer" tables, or getting-started walkthroughs to the catalog root. Keep the README strictly minimalist: title, official links, Table of Contents with counts, and direct jump links into the tables.
+- **No Onboarding Tutorials:** Do not add introductory installation essays, "how to choose your layer" tables, or getting-started walkthroughs to the catalog root. Keep the README strictly minimalist: title, official links, the Download Herdr block (platform badges, official store badges in `assets/badges/`, and the install one-liners from herdr.dev/download), Table of Contents with counts, and direct jump links into the tables.
 - **Fast Jump Navigation:** Readers should jump straight to the relevant problem domain from the Table of Contents in 1 click.
 
 ---
@@ -126,6 +126,7 @@ Organize projects across the 7 numbered domains and their plain-English micro-ca
 
 ## 5. Before Committing
 
-1. Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean with **0 issues** (same check CI runs).
-2. Ensure every internal anchor link resolves correctly.
-3. Commit with the conventional commit format: `docs(awesome-list): <summary>`.
+1. Run `python3 scripts/sync-counts.py` after adding, moving, or removing rows; it rewrites every count from the tables and lists duplicate repos.
+2. Run `npx markdownlint-cli2 "**/*.md"` — it must exit clean with **0 issues** (same check CI runs).
+3. Ensure every internal anchor link resolves correctly.
+4. Commit with the conventional commit format: `docs(awesome-list): <summary>`.

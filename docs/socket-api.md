@@ -2,7 +2,7 @@
 
 This guide is for people building clients, scripts, agent tools, and workflow orchestrators on top of Herdr.
 
-Canonical source: [SOCKET_API.md](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md). Last reviewed: 2026-05-17.
+Canonical source: [Socket API](https://herdr.dev/tui/docs/socket-api/). Last reviewed: 2026-05-17. This guide covers Herdr TUI, not the Herdr app or herdr-core.
 
 ## Protocol Shape
 

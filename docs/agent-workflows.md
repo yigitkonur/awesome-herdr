@@ -2,7 +2,7 @@
 
 Herdr is useful to humans, but its socket API and CLI wrappers also make it useful to agents that need to inspect, create, and coordinate terminal work.
 
-Canonical sources: [Herdr README](https://github.com/ogulcancelik/herdr), [SKILL.md](https://github.com/ogulcancelik/herdr/blob/master/SKILL.md), and [SOCKET_API.md](https://github.com/ogulcancelik/herdr/blob/master/SOCKET_API.md). Last reviewed: 2026-05-17.
+Canonical sources: [Herdr TUI README](https://github.com/herdrdev/herdr), [SKILL.md](https://github.com/herdrdev/herdr/blob/master/skills/herdr/SKILL.md), and [Socket API](https://herdr.dev/tui/docs/socket-api/). Last reviewed: 2026-05-17. This guide covers Herdr TUI, not the Herdr app or herdr-core.
 
 ## Core Mental Model
 

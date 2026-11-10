@@ -2,7 +2,7 @@
 
 Herdr works without hooks or plugins. It can detect many agents by foreground process and screen heuristics. Integrations improve quality by forwarding semantic state over the local socket API when the agent runtime exposes useful lifecycle hooks.
 
-Canonical source: [INTEGRATIONS.md](https://github.com/ogulcancelik/herdr/blob/master/INTEGRATIONS.md). Last reviewed: 2026-05-17.
+Canonical source: [Integrations](https://herdr.dev/tui/docs/integrations/). Last reviewed: 2026-05-17. This guide covers Herdr TUI, not the Herdr app or herdr-core.
 
 ## Built-In Integration Installers
 

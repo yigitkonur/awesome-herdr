@@ -195,6 +195,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**TonyPorj/boss-mad**](https://github.com/TonyPorj/boss-mad) | Provides Boss/MAD: give it a goal, Hermes spawns a crew in Herdr tabs, they work in parallel, Hermes verifies and hands off. Local Windows-native multi-agent orchestration. |
 | [**Rocco-Gossmann/Herdr-Workspace**](https://github.com/Rocco-Gossmann/Herdr-Workspace) | Creates a Herdr-Workspace with multiple Tabs + Splits in one command in your default session. |
 | [**rigelstpierre/herdr-devin-board**](https://github.com/rigelstpierre/herdr-devin-board) | Lists your Devin Cloud sessions in a herdr tab with live GitHub PR, CI, and review status. Attaches to a session in a new tab with `devin --cloud --resume`, opens `devin ssh` in a pane, or archives it. |
+| [**larcane97/clausona**](https://github.com/larcane97/clausona/blob/main/docs/usecases/herdr-fleet.md) | Splits a job across Herdr worktrees and panes from one Claude Code or Codex session, routing each worker to one of your accounts by remaining usage or to an API model such as DeepSeek. Part of clausona, a multi-account manager that shares skills, hooks, plugins and settings across accounts through symlinks, with no daemon; it drives Herdr only through its CLI, checks each branch before cleanup, and never forces a worktree removal. |
 
 ### Swarm, mob, and consensus orchestrators
 

@@ -2524,6 +2524,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**kingbywork-ui/issh-plugin-herdr**](https://github.com/kingbywork-ui/issh-plugin-herdr) | Provides issh terminal herdr workspace plugin. |
 | [**RobLoach/asdf-herdr**](https://github.com/RobLoach/asdf-herdr) | Provides Herdr for the asdf version manager. |
 | [**mifunedev/agro**](https://github.com/mifunedev/agro) | Runs Herdr inside a Docker workspace for coding agents on a laptop or remote VM, installed with `agro tool install herdr`. Parallel agents use separate git worktrees, work continues after the terminal disconnects, and you choose the harness: Claude Code, Codex, Pi, OpenCode, or T3 Code. |
+| [**shaiu/ha-herdr**](https://github.com/shaiu/ha-herdr) | Runs a Herdr server with Claude Code as a Home Assistant app (formerly add-on), so the HA box appears as a saved SSH machine in your Herdr client. Includes key-only SSH, an ingress panel attached to the same session, and Home Assistant tools through ha-mcp. |
 
 ---
 

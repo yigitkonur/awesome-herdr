@@ -41,7 +41,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Fuzzy session switchers and terminal pickers (132)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (30)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (15)](#workspace-and-multi-session-management)
-5. [Worktrees and terminal experience (500)](#5-worktrees-and-terminal-experience)
+5. [Worktrees and terminal experience (501)](#5-worktrees-and-terminal-experience)
    - [Git worktree automation (129)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (4)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (30)](#diff-review-and-code-inspection)
@@ -51,7 +51,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Command palettes and workspace switchers (26)](#command-palettes-and-workspace-switchers)
    - [Status lines, sidebars, and tab synchronization (109)](#status-lines-sidebars-and-tab-synchronization)
    - [Status overlays, HUDs, and agent timers (24)](#status-overlays-huds-and-agent-timers)
-   - [Context meters and rate-limit gauges (7)](#context-meters-and-rate-limit-gauges)
+   - [Context meters and rate-limit gauges (8)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (18)](#output-inspection-logs-and-transcripts)
    - [Security guards and collision detectors (4)](#security-guards-and-collision-detectors)
    - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
@@ -1692,7 +1692,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ## 5. Worktrees and terminal experience
 
-*500 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*501 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Git worktree automation
 
@@ -2218,7 +2218,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Context meters and rate-limit gauges
 
-*7 projects. Live token headroom meters, quota tracking, and agent cost gauges.*
+*8 projects. Live token headroom meters, quota tracking, and agent cost gauges.*
 
 | Project | What it does |
 |---|---|
@@ -2229,6 +2229,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**szrenwei/herdr-agent-metrics**](https://github.com/szrenwei/herdr-agent-metrics) | Tracks context-window and token metrics for Claude Code, Codex, and TraeX sessions and summarizes them in a small Herdr overlay. |
 | [**tomys22/herdr-agent-usage-plugin**](https://github.com/tomys22/herdr-agent-usage-plugin) | Displays Claude, Codex, and Gemini API usage, including session and weekly percentages and reset times, in a Herdr split. |
 | [**ram4-dev/herdr-codex-usage**](https://github.com/ram4-dev/herdr-codex-usage) | Detects installed agents and shows their usage quotas inside Herdr. |
+| [**EMRahman/herdr-context-monitor**](https://github.com/EMRahman/herdr-context-monitor) | Adds one row per agent to the Herdr sidebar with its context-window use, using a single dependency-free Python file, and displays it in red above 50%. |
 
 ### Output inspection, logs, and transcripts
 

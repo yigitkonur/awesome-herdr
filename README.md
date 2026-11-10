@@ -54,7 +54,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Context meters and rate-limit gauges (8)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (18)](#output-inspection-logs-and-transcripts)
    - [Security guards and collision detectors (4)](#security-guards-and-collision-detectors)
-   - [Dotfiles and ready-made configuration (6)](#dotfiles-and-ready-made-configuration)
+   - [Dotfiles and ready-made configuration (7)](#dotfiles-and-ready-made-configuration)
    - [Plugin collections and developer frameworks (6)](#plugin-collections-and-developer-frameworks)
 6. [Apps, companion integrations, and installation (186)](#6-apps-companion-integrations-and-installation)
    - [Native desktop and mobile apps (14)](#native-desktop-and-mobile-apps)
@@ -2278,7 +2278,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Dotfiles and ready-made configuration
 
-*6 projects. Complete or partial Herdr configurations that can be installed and adapted instead of written from zero.*
+*7 projects. Complete or partial Herdr configurations that can be installed and adapted instead of written from zero.*
 
 | Project | What it does |
 |---|---|
@@ -2288,6 +2288,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**crierr/herdr-tmux-layout**](https://github.com/crierr/herdr-tmux-layout) | Adds tmux-style layout presets for Herdr, including even horizontal, even vertical, main horizontal, main vertical, tiled, cycle, and balance. |
 | [**VinhLe1410/herdr-agent-priority**](https://github.com/VinhLe1410/herdr-agent-priority) | Configures how Herdr agent states are prioritized. |
 | [**masatokawano/to-herdr**](https://github.com/masatokawano/to-herdr) | Configuration and notes for migrating a terminal setup from Zellij to Herdr. |
+| [**pedroparra/herdr-monokai**](https://github.com/pedroparra/herdr-monokai) | Recolors the Herdr desktop app's main window in the classic Monokai palette, with agent states in Monokai yellow, pink and cyan and an orange ring on the focused pane. Adds Monokai and Monokai Dimmed themes that work in any layout, with no mods or code. |
 
 ### Plugin collections and developer frameworks
 

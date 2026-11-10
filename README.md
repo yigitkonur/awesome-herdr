@@ -43,9 +43,9 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Task queues, backlogs, and event triggers (55)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (33)](#linear-github-issues-and-issue-to-pr-automation)
    - [General workflows and skill packs (60)](#general-workflows-and-skill-packs)
-2. [Herdr app layouts, mods, and themes (106)](#2-herdr-app-layouts-mods-and-themes)
+2. [Herdr app layouts, mods, and themes (111)](#2-herdr-app-layouts-mods-and-themes)
    - [Herdr app layouts (47)](#herdr-app-layouts)
-   - [Herdr app mods and themes (59)](#herdr-app-mods-and-themes)
+   - [Herdr app mods and themes (64)](#herdr-app-mods-and-themes)
 3. [Connect through MCP and the socket API (238)](#3-connect-through-mcp-and-the-socket-api)
    - [MCP servers (17)](#mcp-servers)
    - [Socket API and herdr-core clients and SDKs (38)](#socket-api-and-herdr-core-clients-and-sdks)
@@ -65,21 +65,21 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Fuzzy session switchers and terminal pickers (90)](#fuzzy-session-switchers-and-terminal-pickers)
    - [Persistence, snapshots, and state restoration (37)](#persistence-snapshots-and-state-restoration)
    - [Workspace and multi-session management (61)](#workspace-and-multi-session-management)
-6. [Worktrees and terminal experience (792)](#6-worktrees-and-terminal-experience)
+6. [Worktrees and terminal experience (788)](#6-worktrees-and-terminal-experience)
    - [Git worktree automation (101)](#git-worktree-automation)
    - [Workspace lifecycle and multi-repository tools (10)](#workspace-lifecycle-and-multi-repository-tools)
    - [Diff review and code inspection (59)](#diff-review-and-code-inspection)
    - [File viewers, terminal browsers, and markdown previews (49)](#file-viewers-terminal-browsers-and-markdown-previews)
-   - [Pane navigation and overlay hints (32)](#pane-navigation-and-overlay-hints)
+   - [Pane navigation and overlay hints (33)](#pane-navigation-and-overlay-hints)
    - [Pane layout management (10)](#pane-layout-management)
    - [Terminal keybindings and shortcut helpers (61)](#terminal-keybindings-and-shortcut-helpers)
    - [Command palettes and workspace switchers (38)](#command-palettes-and-workspace-switchers)
-   - [Status lines and workspace metadata (95)](#status-lines-and-workspace-metadata)
-   - [Sidebar displays and tab labels (129)](#sidebar-displays-and-tab-labels)
-   - [Status overlays, HUDs, and agent timers (58)](#status-overlays-huds-and-agent-timers)
+   - [Status lines and workspace metadata (94)](#status-lines-and-workspace-metadata)
+   - [Sidebar displays and tab labels (128)](#sidebar-displays-and-tab-labels)
+   - [Status overlays, HUDs, and agent timers (52)](#status-overlays-huds-and-agent-timers)
    - [Context meters and rate-limit gauges (53)](#context-meters-and-rate-limit-gauges)
    - [Output inspection, logs, and transcripts (42)](#output-inspection-logs-and-transcripts)
-   - [Agent visualizations and terminal games (4)](#agent-visualizations-and-terminal-games)
+   - [Agent visualizations and terminal games (7)](#agent-visualizations-and-terminal-games)
    - [Herdr TUI themes and appearance (8)](#herdr-tui-themes-and-appearance)
    - [Security guards and collision detectors (10)](#security-guards-and-collision-detectors)
    - [Plugin collections, frameworks, and ready-made configs (33)](#plugin-collections-frameworks-and-ready-made-configs)
@@ -89,8 +89,8 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Hardware and ambient displays (31)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (137)](#plugins-and-supporting-utilities)
    - [Setup, packages, and version management (37)](#setup-packages-and-version-management)
-8. [Experimental projects (12)](#8-experimental-projects)
-   - [Experiments, concepts, and scaffolds (12)](#experiments-concepts-and-scaffolds)
+8. [Experimental projects (9)](#8-experimental-projects)
+   - [Experiments, concepts, and scaffolds (9)](#experiments-concepts-and-scaffolds)
 9. [Resources](#resources)
 10. [Reference](#reference)
 
@@ -693,7 +693,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 2. Herdr app layouts, mods, and themes
 
-*106 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*111 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 ### Herdr app layouts
 
@@ -753,7 +753,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Herdr app mods and themes
 
-*59 projects. Feature mods and color themes that customize the Herdr app.*
+*64 projects. Feature mods and color themes that customize the Herdr app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -769,6 +769,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**vytasgavelis/herdr-reviewer**](https://github.com/vytasgavelis/herdr-reviewer) | Adds syntax-colored diffs and inline review comments to the Herdr app Changes panel and sends comments to an agent. |
 | [**SaifHarding/herdr-cloudflare**](https://github.com/SaifHarding/herdr-cloudflare) | Shows Cloudflare Pages and Workers deployment status in the Herdr app header and reports failed deployments. |
 | [**chappse6/herdr-blueprint-app**](https://github.com/chappse6/herdr-blueprint-app) | Displays agent-written Mermaid flowcharts beside Herdr app sessions and sends clicked diagram changes back to the agent. |
+| [**mrolafsson/herdr-recap**](https://github.com/mrolafsson/herdr-recap) | Lists agent recaps and blocked questions across machines in the Herdr app and Herdr TUI, with replies from the list. |
 | [**greenflagged/herdr-forge**](https://github.com/greenflagged/herdr-forge) | Opens GitHub or GitLab project panels in the Herdr app and hands issues or merge requests to agents. |
 | [**ergunozyurt/herdr-super-agent**](https://github.com/ergunozyurt/herdr-super-agent) | Organizes a lead agent’s human decision requests into threaded inbox items in the Herdr app. |
 | [**greenflagged/herdr-greenflagged**](https://github.com/greenflagged/herdr-greenflagged) | Displays project dependency trees in the Herdr app and optionally marks npm dependencies with Greenflagged review verdicts. |
@@ -788,6 +789,8 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**LaiqianDS/herdr-mods**](https://github.com/LaiqianDS/herdr-mods) | Adds a Herdr app Git panel for diffs, staging, commits and branch switching, alongside a file-icons mod. |
 | [**linziyanleo/herdr-mods**](https://github.com/linziyanleo/herdr-mods) | Adds Herdr app mods for multi-root file browsing, file previews and editing, and mod and layout management. |
 | [**nozikov/herdr-usage-limits**](https://github.com/nozikov/herdr-usage-limits) | Shows Claude Code and Codex subscription limits and session context in the Herdr app status bar. |
+| [**sachin-philip/herdr-marks-as-unread**](https://github.com/sachin-philip/herdr-marks-as-unread) | Marks agents as unread in the Herdr TUI or Herdr app sidebar and clears the mark when users return. |
+| [**mrolafsson/herdr-vitals**](https://github.com/mrolafsson/herdr-vitals) | Shows machine CPU, memory, disk and network activity in a Herdr app window or Herdr TUI popup, with resource alerts. |
 | [**benjaminsicard/herdr-mods**](https://github.com/benjaminsicard/herdr-mods) | Adds Herdr app mods for desktop notifications and automatic tab and space names. |
 | [**aBER0724/herdr-git-changes**](https://github.com/aBER0724/herdr-git-changes) | Adds a Herdr app Git panel for staging, commits, stashes, history, and diff inspection. |
 | [**CiprianSpiridon/herdr-migration**](https://github.com/CiprianSpiridon/herdr-migration) | Imports Herdr TUI workspaces, tabs, folders, and terminal splits into the Herdr app with backup and verification. |
@@ -815,7 +818,9 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**jordan13p/wickline**](https://github.com/jordan13p/wickline) | Displays a stock and crypto watchlist with prices, charts, and freshness indicators in a Herdr app pane. |
 | [**AshMcConnell/herdr-openspec**](https://github.com/AshMcConnell/herdr-openspec) | Shows OpenSpec changes and task lists in a Herdr app panel and lets users update tasks or archive changes. |
 | [**lntvan166/herdr-pokemon**](https://github.com/lntvan166/herdr-pokemon) | Displays Herdr app agents as animated Pokémon with selectable forms, status reactions, and seasonal scenery. |
+| [**LeaveMyYard/herdr-panorama**](https://github.com/LeaveMyYard/herdr-panorama) | Shows Claude Code agent sessions and their subagents in a Herdr TUI swarm view, with native Herdr app sidebar and graph mods. |
 | [**pedroparra/herdr-monokai**](https://github.com/pedroparra/herdr-monokai) | Recolors the Herdr desktop app's main window in the classic Monokai palette, with agent states in Monokai yellow, pink and cyan and an orange ring on the focused pane. Adds Monokai and Monokai Dimmed themes that work in any layout, with no mods or code. |
+| [**e-kotov/herdr-cache-hit**](https://github.com/e-kotov/herdr-cache-hit) | Shows prompt-cache metrics and expiration alerts in Herdr TUI, with an experimental display-only Herdr app mod. |
 | [**douglasjarquin/sf2-themes**](https://github.com/douglasjarquin/sf2-themes) | Installs Street Fighter II color themes for the Herdr app and Herdr TUI as well as several other developer tools. |
 | [**flupke/herdr-ruminate**](https://github.com/flupke/herdr-ruminate) | Adds a Herdr app review pane for Git or jj changes with review threads for Claude Code and Codex. |
 
@@ -1469,7 +1474,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 6. Worktrees and terminal experience
 
-*792 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*788 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Git worktree automation
 
@@ -1720,7 +1725,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Pane navigation and overlay hints
 
-*32 projects. Direct 1-character overlay hints and smart directional pane jumping.*
+*33 projects. Direct 1-character overlay hints and smart directional pane jumping.*
 
 | Project | What it does |
 |---|---|
@@ -1731,6 +1736,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**81zi/reficus**](https://github.com/81zi/reficus) | Resizes Herdr TUI panes as focus changes, keeping other panes visible and optionally expanding agents waiting for input. |
 | [**xzedx/herdr-easyjump**](https://github.com/xzedx/herdr-easyjump) | Jumps to any space, agent, pane, or tab using EasyMotion-style hint labels in the Herdr sidebar. |
 | [**KonstantinKai/herdr-harpoon**](https://github.com/KonstantinKai/herdr-harpoon) | Marks Herdr TUI panes and jumps back to them with numeric shortcuts or a picker. |
+| [**meerzulee/herdr-float**](https://github.com/meerzulee/herdr-float) | Opens a floating shell for the current Herdr TUI space with Option-F or Alt-F, using Herdr's native popup placement so the tiled layout stays visible. Keeps one persistent shell session per space. |
 | [**TinyWhite1997/herdr-flash-picker**](https://github.com/TinyWhite1997/herdr-flash-picker) | Jumps to Herdr TUI panes using one- or two-letter labels in a workspace and tab picker. |
 | [**vjeantet/herdr-mission-control**](https://github.com/vjeantet/herdr-mission-control) | Opens a full-screen overlay showing every pane of the current workspace as a live tile grouped by tab, with styled ANSI previews and agent status. Arrows or `hjkl` move the selection, `Enter` focuses the pane, and `Backspace` closes it without leaving the overview. |
 | [**navishachiku/herdr-pinpoint**](https://github.com/navishachiku/herdr-pinpoint) | Selects a Herdr TUI space, tab or pane and inserts its identifier into the current agent conversation. |
@@ -1889,7 +1895,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Status lines and workspace metadata
 
-*95 projects. Status lines, external terminal and desktop bars, pane labels, and workspace metadata without sidebar or tab-label displays.*
+*94 projects. Status lines, external terminal and desktop bars, pane labels, and workspace metadata without sidebar or tab-label displays.*
 
 | Project | What it does |
 |---|---|
@@ -1897,7 +1903,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**jankeesvw/omarchy-herdr**](https://github.com/jankeesvw/omarchy-herdr) | Runs herdr servers in the Omarchy bar, with every agent inside them, and a click that lands you on the one you picked. |
 | [**rjyo/herdr-window-title-sync**](https://github.com/rjyo/herdr-window-title-sync) | Writes workspace, tab, and agent context to the outer terminal title. It uses pane metadata and status first, then falls back to recent prompts in local Claude Code or Codex session files. |
 | [**wenhanweime/herdr-plugin-renamer**](https://github.com/wenhanweime/herdr-plugin-renamer) | Uses an LLM to name sessions for Claude Code, Codex, Grok, Pi, and OpenCode, with Chinese or English labels and OpenCode Zen as the default engine. |
-| [**mrolafsson/herdr-recap**](https://github.com/mrolafsson/herdr-recap) | Lists agent recaps and blocked questions across machines in the Herdr app and Herdr TUI, with replies from the list. |
 | [**njpatel/omaherdr**](https://github.com/njpatel/omaherdr) | Shows Herdr TUI sessions, spaces, tabs, and agents in the Omarchy bar and jumps to a selected item. |
 | [**bcihanc/herdr-claude-session-title**](https://github.com/bcihanc/herdr-claude-session-title) | Copies the Claude Code session title, including `/rename` or automatic summaries, into Herdr pane metadata. |
 | [**flowy11/agent-panel**](https://github.com/flowy11/agent-panel) | Shows the focused Claude Code or Codex session, subagents, messages, references and tasks in a Herdr TUI side panel. |
@@ -1991,7 +1996,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Sidebar displays and tab labels
 
-*129 projects. Sidebar displays and tab labels, including tab titles, icons, badges, and their synchronization.*
+*128 projects. Sidebar displays and tab labels, including tab titles, icons, badges, and their synchronization.*
 
 | Project | What it does |
 |---|---|
@@ -2014,7 +2019,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**aarsh21/herdr-tab-title**](https://github.com/aarsh21/herdr-tab-title) | Provides automatic tmux-style tab titles for Herdr. |
 | [**Numbered-com/herdr-ports**](https://github.com/Numbered-com/herdr-ports) | Detects TCP listeners started by processes in each workspace and adds a dynamic `$ports` badge to the Herdr sidebar. |
 | [**wjarka/herdr-ghostty-tab-title**](https://github.com/wjarka/herdr-ghostty-tab-title) | Writes color-coded counts of working, blocked, done, and idle Herdr agents into Ghostty tab titles. |
-| [**sachin-philip/herdr-marks-as-unread**](https://github.com/sachin-philip/herdr-marks-as-unread) | Marks agents as unread in the Herdr TUI or Herdr app sidebar and clears the mark when users return. |
 | [**killerz3/herdr-agent-titler**](https://github.com/killerz3/herdr-agent-titler) | Auto-titles Herdr tabs using local agy, claude, codex, or opencode harnesses without external API keys. |
 | [**kakigakki/herdr-auto-namer**](https://github.com/kakigakki/herdr-auto-namer) | Uses Claude Code session titles for agent tabs and directory names for workspaces, providing automatic ChatGPT-style labels across parallel sessions. |
 | [**danbuhler/herdr-pane-topic-sync**](https://github.com/danbuhler/herdr-pane-topic-sync) | Renames panes and tabs from the active topic or terminal title emitted by Claude Code and Codex, while avoiding rename loops and respecting manual labels. |
@@ -2127,7 +2131,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Status overlays, HUDs, and agent timers
 
-*58 projects. Floating status HUDs, turn timers, and keep-awake utilities.*
+*52 projects. Floating status HUDs, turn timers, and keep-awake utilities.*
 
 | Project | What it does |
 |---|---|
@@ -2138,13 +2142,9 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**jeffarese/herdr-agent-grid**](https://github.com/jeffarese/herdr-agent-grid) | Shows agents, subagents, messages, status, and API cost in a Herdr TUI panel and jumps to selected panes. |
 | [**nikok6/herdr-pet**](https://github.com/nikok6/herdr-pet) | Displays an animated Codex-format pet on Herdr panes that reacts to agent activity and waiting states. |
 | [**oronbz/visor · herdr**](https://github.com/oronbz/visor/tree/main/herdr) | Opens a configurable terminal dashboard over Herdr TUI tabs for GitHub pull requests, Jira issues, calendars, and other widgets. |
-| [**michaellandi/herdr-office**](https://github.com/michaellandi/herdr-office) | Draws Herdr TUI agents as office characters and signals when an agent needs approval. |
 | [**maro114510/herdr-toggle-popup**](https://github.com/maro114510/herdr-toggle-popup) | Toggles a shell overlay above the current Herdr session for quick commands, notes, or plan inspection without rearranging panes. |
 | [**natori-hrj/herdr-triage**](https://github.com/natori-hrj/herdr-triage) | Sorts active Herdr agents by how urgently they need attention. Blocked and stalled workers rise to the top based on their wait and idle time. |
-| [**devangchhajed/herdr-pixel-office**](https://github.com/devangchhajed/herdr-pixel-office) | Shows Herdr TUI agents as pixel-art office characters that change activity with agent status and tool calls. |
-| [**mrolafsson/herdr-vitals**](https://github.com/mrolafsson/herdr-vitals) | Shows machine CPU, memory, disk and network activity in a Herdr app window or Herdr TUI popup, with resource alerts. |
 | [**enes/herdr-monitoring**](https://github.com/enes/herdr-monitoring) | Shows CPU, memory and process trees for Herdr TUI agents in a summary popup or focused-pane monitor. |
-| [**Efeguclu1/herdr-town**](https://github.com/Efeguclu1/herdr-town) | Renders Herdr coding agents as an interactive 8-bit town inside a pane and lets users read or answer them. |
 | [**Hanyang-Li/herdr-espresso**](https://github.com/Hanyang-Li/herdr-espresso) | Uses the macOS espresso utility to keep a Mac awake while monitored Herdr agents are working or blocked, then releases the assertion when tasks finish. |
 | [**calebcauthon/herdr-birdseye**](https://github.com/calebcauthon/herdr-birdseye) | Shows an overview of active agents across Herdr panes. |
 | [**AltanS/herdr-cache-alert**](https://github.com/AltanS/herdr-cache-alert) | Shows prompt-cache countdowns and flags cache misses on Herdr agent panes. |
@@ -2152,7 +2152,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**blavka/agents-tree**](https://github.com/blavka/agents-tree) | Shows coding-agent sessions and nested subagents as a live Herdr TUI overlay with model, context, and status. |
 | [**iikjl/herdr-spotify**](https://github.com/iikjl/herdr-spotify) | A macOS Spotify overlay with album art, progress, and playback controls in Herdr. AppleScript provides basic control, while optional Web API access adds search, queueing, and track-change alerts. |
 | [**jeromychu23/herdr-popupx**](https://github.com/jeromychu23/herdr-popupx) | Adds persistent floating terminal popups that can be toggled from any workspace without changing the tiled layout or losing scratchpad state. |
-| [**LeaveMyYard/herdr-panorama**](https://github.com/LeaveMyYard/herdr-panorama) | Shows Claude Code agent sessions and their subagents in a Herdr TUI swarm view, with native Herdr app sidebar and graph mods. |
 | [**andymartinezot/avocado-trope · herdr-plugin**](https://github.com/andymartinezot/avocado-trope/tree/main/herdr-plugin) | Shows Claude Code and Codex session graphs and a fleet view for Herdr TUI agents. |
 | [**NexorPL/herdr-jarvis**](https://github.com/NexorPL/herdr-jarvis) | Shows Herdr TUI projects, agent states, threads, timelines and token costs in a mission-control tab. |
 | [**H3xept/herdr-aspire-hud**](https://github.com/H3xept/herdr-aspire-hud) | Shows .NET Aspire AppHost health in the Herdr TUI sidebar and opens a popup to inspect or stop AppHosts. |
@@ -2165,7 +2164,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**natori-hrj/herdr-standup**](https://github.com/natori-hrj/herdr-standup) | Summarizes each Herdr agent’s commits and uncommitted work in a digest with a persistent count. |
 | [**assawalhy/herdr-stay-awake**](https://github.com/assawalhy/herdr-stay-awake) | Keeps the machine from sleeping while any herdr agent pane is working (Linux, macOS, Windows, and WSL). |
 | [**jeffbking/herdr-agent-prompt**](https://github.com/jeffbking/herdr-agent-prompt) | Shows the focused coding agent's original prompt in an overlay for Claude Code, Codex, Antigravity, or Pi. |
-| [**e-kotov/herdr-cache-hit**](https://github.com/e-kotov/herdr-cache-hit) | Shows prompt-cache metrics and expiration alerts in Herdr TUI, with an experimental display-only Herdr app mod. |
 | [**sazardev/herdr-pomodoro**](https://github.com/sazardev/herdr-pomodoro) | Runs a theme-adaptive Pomodoro timer in a Herdr TUI drawer, popup, or widget pane. |
 | [**happyeric77/agent-keep-awake**](https://github.com/happyeric77/agent-keep-awake) | Uses macOS `caffeinate` while any Herdr agent is working and releases the sleep lock when all agents become idle, blocked, or done. |
 | [**shadowfax92/herdr-scratch**](https://github.com/shadowfax92/herdr-scratch) | Gives each Herdr pane a persistent scratch overlay backed by a private tmux session, keeping notes, REPLs, and side commands tied to that pane. |
@@ -2301,11 +2299,14 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ### Agent visualizations and terminal games
 
-*4 projects. Interactive terminal visualizations and games for following agents.*
+*7 projects. Interactive terminal visualizations and games for following agents.*
 
 | Project | What it does |
 |---|---|
+| [**michaellandi/herdr-office**](https://github.com/michaellandi/herdr-office) | Draws Herdr TUI agents as office characters and signals when an agent needs approval. |
+| [**devangchhajed/herdr-pixel-office**](https://github.com/devangchhajed/herdr-pixel-office) | Shows Herdr TUI agents as pixel-art office characters that change activity with agent status and tool calls. |
 | [**takemo101/wave-tui**](https://github.com/takemo101/wave-tui) | Plays internet radio in a terminal and visualizes Herdr TUI agents in an interactive Agent Planets view. |
+| [**Efeguclu1/herdr-town**](https://github.com/Efeguclu1/herdr-town) | Renders Herdr coding agents as an interactive 8-bit town inside a pane and lets users read or answer them. |
 | [**opsydyn/herdr-questmancer**](https://github.com/opsydyn/herdr-questmancer) | Shows live Herdr TUI agents and their states as a 16-bit fantasy guild. |
 | [**chantlong/herdr-habitat**](https://github.com/chantlong/herdr-habitat) | Displays a terminal habitat where plants and wildlife evolve alongside Herdr TUI agent activity. |
 | [**marius-se/herdr-brainrot**](https://github.com/marius-se/herdr-brainrot) | Runs terminal games and distraction apps such as DOOM in a dedicated Herdr pane while agents continue working in neighboring panes. Additional apps can be configured through the plugin manifest. |
@@ -2603,7 +2604,6 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**kody-w/nerf-herdr-control-tower**](https://github.com/kody-w/nerf-herdr-control-tower) | Opens a local browser dashboard for a Herdr fleet and exports context or sends manual Horn broadcasts. |
 | [**evsinev/herdr-watch**](https://github.com/evsinev/herdr-watch) | Monitors local and SSH-connected Herdr servers in a read-only web dashboard with workspace and agent status. |
 | [**y011d4/herdr-plugin-agentweb**](https://github.com/y011d4/herdr-plugin-agentweb) | Monitors and controls Herdr TUI agents from a mobile-first web app backed by a local bridge. |
-| [**BlazzzPlay/herdr-office**](https://github.com/BlazzzPlay/herdr-office) | Visualizes Herdr agents and their activity in a read-only pixel-art office. |
 | [**narumiruna/herdr-web**](https://github.com/narumiruna/herdr-web) | Opens a browser workbench for viewing and operating the Herdr agent runtime. |
 | [**NolanHo/DSH-herdr**](https://github.com/NolanHo/DSH-herdr) | Adds a DSH web view for inspecting Herdr TUI workspaces and agents, reading pane output and sending prompts. |
 | [**maedana/herdr-agents-bridge**](https://github.com/maedana/herdr-agents-bridge) | Serves a phone-friendly Herdr TUI agent dashboard with status tabs, output, text input and key sending via QR connection. |
@@ -2615,6 +2615,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**sh1ftmaker/herdr-term**](https://github.com/sh1ftmaker/herdr-term) | Bridges Herdr sessions to browser interfaces with read-only file exploration and Hyprland desktop streaming. |
 | [**carter2099/herdr-web-client**](https://github.com/carter2099/herdr-web-client) | Attaches to Herdr terminals through a self-hosted browser client. |
 | [**4noha/herdr-drover**](https://github.com/4noha/herdr-drover) | Syncs Herdr TUI sessions across machines and connects browser or phone terminals through a cloud relay. |
+| [**BlazzzPlay/herdr-office**](https://github.com/BlazzzPlay/herdr-office) | Visualizes Herdr agents and their activity in a read-only pixel-art office. |
 
 ### Hardware and ambient displays
 
@@ -2846,24 +2847,21 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 8. Experimental projects
 
-*12 projects. Experimental Herdr projects and prototypes.*
+*9 projects. Experimental Herdr projects and prototypes.*
 
 ### Experiments, concepts, and scaffolds
 
-*12 projects. Ideas and prototypes that are useful to study but may be incomplete, read-only, or not yet installable.*
+*9 projects. Ideas and prototypes that are useful to study but may be incomplete, read-only, or not yet installable.*
 
 | Project | What it does |
 |---|---|
 | [**eliasstravik/herdr-call**](https://github.com/eliasstravik/herdr-call) | An early TypeScript prototype for translating spoken commands into Herdr navigation and input through the local socket. |
 | [**wraithyy/herdr-openr**](https://github.com/wraithyy/herdr-openr) | Extracts file paths and URLs from recent pane output and Claude Code transcripts, then presents them in a fuzzy finder for quick opening. |
-| [**meerzulee/herdr-float**](https://github.com/meerzulee/herdr-float) | An early plugin scaffold exploring Zellij-style floating terminal panes that can be toggled without changing the main Herdr grid. |
 | [**hmu332233/herdr-plugins-labs**](https://github.com/hmu332233/herdr-plugins-labs) | An experimental plugin laboratory containing early prototypes for agent launching, workspace metrics, and worktree symlinking before they move into separate projects. |
 | [**rohanthewiz/herdr-web**](https://github.com/rohanthewiz/herdr-web) | Renders Herdr pane frames with color, mouse, clipboard, and hyperlink support; keyboard and paste input are currently disabled, so it mainly works as a viewer. |
 | [**shoaibkhanz/herdr-nav-plus**](https://github.com/shoaibkhanz/herdr-nav-plus) | An early navigation plugin designed to move with Ctrl+h/j/k/l across Herdr panes and wrap at workspace boundaries. |
 | [**ugurtarlig/herdr-pane-picker**](https://github.com/ugurtarlig/herdr-pane-picker) | An early pane-picker prototype that overlays one-character hints on visible panes for direct keyboard focus. |
-| [**rbb/herdr-cursor**](https://github.com/rbb/herdr-cursor) | A design-stage Cursor integration intended to report Cursor agent states to Herdr so they appear alongside other agents in the status interface. |
 | [**malone-c/herdr-pane-balancer**](https://github.com/malone-c/herdr-pane-balancer) | An in-development layout manager that automatically rebalances pane sizes when splits are opened or closed, reducing cramped nested layouts. |
-| [**GoCodeAlone/mission-control-provider-herdr**](https://github.com/GoCodeAlone/mission-control-provider-herdr) | An early Mission Control provider intended to use Herdr sessions as an external runtime. |
 | [**robinbraemer/herdr-axi**](https://github.com/robinbraemer/herdr-axi) | An early command-line interface designed to make Herdr workspace operations easier for coding agents to use. |
 | [**yoshimi-I/gengar.nvim**](https://github.com/yoshimi-I/gengar.nvim) | An early Neovim environment that keeps agents and Hunk-based diff review in Herdr while leaving Neovim focused on editing. |
 

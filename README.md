@@ -61,7 +61,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Web dashboards and remote viewers (23)](#web-dashboards-and-remote-viewers)
    - [Hardware and ambient displays (22)](#hardware-and-ambient-displays)
    - [Plugins and supporting utilities (103)](#plugins-and-supporting-utilities)
-   - [Setup, packages, and version management (24)](#setup-packages-and-version-management)
+   - [Setup, packages, and version management (25)](#setup-packages-and-version-management)
 7. [Experimental projects (15)](#7-experimental-projects)
    - [Experiments, concepts, and scaffolds (15)](#experiments-concepts-and-scaffolds)
 8. [Resources](#resources)
@@ -2487,7 +2487,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Setup, packages, and version management
 
-*24 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.*
+*25 projects. Guides, configuration bundles, installers, package definitions, and tools for reproducible Herdr environments.*
 
 | Project | What it does |
 |---|---|
@@ -2515,6 +2515,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**unok/stack-review**](https://github.com/unok/stack-review) | Provides Preflight review for stacked PRs: builds a herdr workspace and opens each layer's diff in hunk before gh stack submit. |
 | [**kingbywork-ui/issh-plugin-herdr**](https://github.com/kingbywork-ui/issh-plugin-herdr) | Provides issh terminal herdr workspace plugin. |
 | [**RobLoach/asdf-herdr**](https://github.com/RobLoach/asdf-herdr) | Provides Herdr for the asdf version manager. |
+| [**mifunedev/agro**](https://github.com/mifunedev/agro) | Runs Herdr inside a Docker workspace for coding agents on a laptop or remote VM, installed with `agro tool install herdr`. Parallel agents use separate git worktrees, work continues after the terminal disconnects, and you choose the harness: Claude Code, Codex, Pi, OpenCode, or T3 Code. |
 
 ---
 

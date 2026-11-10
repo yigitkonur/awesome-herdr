@@ -2382,7 +2382,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Plugins and supporting utilities
 
-*103 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.*
+*104 projects. Small integrations for notifications, status, tasks, scheduling, agent management, and everyday desktop behavior.*
 
 | Project | What it does |
 |---|---|
@@ -2489,6 +2489,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**paddock-sh/paddock-herdr**](https://github.com/paddock-sh/paddock-herdr) | Provides a Herdr integration plugin for the Paddock platform. |
 | [**abcxff/herdr-docker**](https://github.com/abcxff/herdr-docker) | Keeps track of docker builds like you do with agents for herdr. |
 | [**zanellig/keyblink**](https://github.com/zanellig/keyblink) | Provides HyperX Game Mode LED control for Linux and Herdr. |
+| [**AndresDiagoM/herdr-wsl-tab**](https://github.com/AndresDiagoM/herdr-wsl-tab) | Opens a Herdr tab or split that runs a WSL distro on Windows, starting in the focused pane's directory, and passes the `HERDR_*` variables through so Claude Code, Codex, or opencode inside WSL can drive Herdr. Restores those panes after a Herdr restart and installs Claude Code hooks so the session shows its state in Herdr. |
 
 ### Setup, packages, and version management
 

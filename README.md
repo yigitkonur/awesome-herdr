@@ -1672,7 +1672,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Workspace and multi-session management
 
-*15 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.*
+*16 projects. Managers for creating, grouping, naming, attaching to, and cleaning up several sessions.*
 
 | Project | What it does |
 |---|---|
@@ -1691,6 +1691,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**ultrakorne/herdr-link-hints**](https://github.com/ultrakorne/herdr-link-hints) | Provides EasyMotion-style keyboard link hints for the herdr terminal workspace manager. |
 | [**latest-debs/herdr-debian**](https://github.com/latest-debs/herdr-debian) | Provides herdr (agent multiplexer) .deb packages for Debian. |
 | [**hodkovickybuh/herdr-colors**](https://github.com/hodkovickybuh/herdr-colors) | Provides herdr fork with a scannable sidebar: per-workspace colors, auto color by project, red = agent needs you. |
+| [**wenhanweime/herduck**](https://github.com/wenhanweime/herduck) | Groups related Claude Code, Codex, OpenCode, and Pi sessions into one Work and keeps its goal, blocker, and next step. A separate app derived from Herdr, with a thin plugin (`wenhanweime/herduck/herdr-plugin`) that opens it from Herdr. |
 
 ---
 

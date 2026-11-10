@@ -2395,6 +2395,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 | Project | What it does |
 |---|---|
+| [**naruse/herdr-chat**](https://github.com/naruse/herdr-chat) | Adds a chat window over Claude Code and Codex agents in the Herdr app, with a slash-command menu, a side chat that does not interrupt the agent, and cards for context, usage and MCP servers. Streams replies and running commands live, shows images inline, and keeps the terminal one click away. |
 | [**natori-hrj/herdr-lazy**](https://github.com/natori-hrj/herdr-lazy) | A declarative Herdr plugin manager with a dedicated terminal interface, a lockfile, version pinning, synchronization from one list, and support for prebuilt binaries. |
 | [**speardragon/herdr-plugin-manager**](https://github.com/speardragon/herdr-plugin-manager) | A small in-terminal menu for browsing, installing, updating, enabling, and disabling Herdr plugins through the standard plugin command-line interface. |
 | [**miiraheart/herdr-beads**](https://github.com/miiraheart/herdr-beads) | Displays Beads issues as a list, table, or Kanban board in a Herdr sidebar or floating pane. |

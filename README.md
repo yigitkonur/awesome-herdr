@@ -16,7 +16,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
    - [Claude Code: Account switchers and auth monitors (3)](#claude-code-account-switchers-and-auth-monitors)
    - [Pi supervisor workflows and extensions (133)](#pi-supervisor-workflows-and-extensions)
    - [Pi: Presence, memory, and status extensions (5)](#pi-presence-memory-and-status-extensions)
-   - [Subagent launchers and delegation (114)](#subagent-launchers-and-delegation)
+   - [Subagent launchers and delegation (115)](#subagent-launchers-and-delegation)
    - [Autonomous coding and pull-request loops (10)](#autonomous-coding-and-pull-request-loops)
    - [Task queues, backlogs, and event triggers (15)](#task-queues-backlogs-and-event-triggers)
    - [Linear, GitHub Issues, and issue-to-PR automation (25)](#linear-github-issues-and-issue-to-pr-automation)
@@ -678,7 +678,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 
 ### Subagent launchers and delegation
 
-*114 projects. Tools for launching workers in separate panes and passing work between a lead agent and its helpers.*
+*115 projects. Tools for launching workers in separate panes and passing work between a lead agent and its helpers.*
 
 | Project | What it does |
 |---|---|
@@ -796,6 +796,7 @@ Official links: [Website](https://herdr.dev/) · [GitHub](https://github.com/ogu
 | [**makyinmars/muster**](https://github.com/makyinmars/muster) | Provides a native macOS command center for coding agents powered by Herdr and Ghostty. |
 | [**olakara/handoff**](https://github.com/olakara/handoff) | Provides trying agent handoff in herdr. |
 | [**txchen/tmux-rail**](https://github.com/txchen/tmux-rail) | Provides herdr, but in tmux. |
+| [**justn-hyeok/brgr**](https://github.com/justn-hyeok/brgr) | Lets a Codex or Claude Code session hand tasks to Claude Code, Codex, Gemini CLI, Copilot CLI, OpenCode, Pi, and other workers in split Herdr panes, answering their trust and update prompts. Each result comes back sealed for the lead agent to accept or reject, and deciding closes the pane and reclaims its worktree. |
 
 ### Autonomous coding and pull-request loops
 

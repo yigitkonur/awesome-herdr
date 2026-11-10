@@ -4,8 +4,8 @@
 catalog/NN-*.md hold the full tables, one file per domain; they are the files to
 edit. This script recounts every table there, rewrites the count lines and each
 file's own index, then regenerates the README between "## Contents" and
-"## Resources": the Contents list and, per subcategory, the top projects by
-GitHub stars (refresh-stars.py keeps tables in star order) with a link to the full list.
+"## Resources": the Contents list (subcategories link into catalog/) and, per
+domain, the most-starred projects with a link to the full catalog file.
 Prints duplicate repo links.
 
 Usage: python3 scripts/sync-counts.py [--check]
@@ -73,13 +73,18 @@ for f, d in zip(files, domains):
 readme = (ROOT / "README.md").read_text()
 head, foot = readme[: readme.index("## Contents")], readme[readme.index("## Resources"):]
 toc, body = ["## Contents", ""], []
+stars_of = lambda r: int(m.group(1).replace(",", "")) if (m := re.search(r"\) \| ([\d,]+) \| ", r)) else 0
 for d in domains:
     total = sum(len(s["rows"]) for s in d["subs"])
+    cat = f"catalog/{d['file']}"
     toc.append(f"{d['n']}. [{d['title']} ({total})](#{slug(str(d['n']) + '. ' + d['title'])})")
-    toc += [f"   - [{s['title']} ({len(s['rows'])})](#{slug(s['title'])})" for s in d["subs"]]
-    part, _ = block(d, lambda s: s["rows"][:TOP],
-                    more=f"*{plural(total)}. {d['blurb']}.* The top {TOP} of each subcategory by stars are below; the full list is in [catalog/{d['file']}](catalog/{d['file']}).")
-    body += ["---", ""] + part
+    toc += [f"   - [{s['title']} ({len(s['rows'])})]({cat}#{slug(s['title'])})" for s in d["subs"]]
+    top = sorted((r for s in d["subs"] for r in s["rows"]), key=lambda r: -stars_of(r))[:TOP]
+    body += ["---", "", f"## {d['n']}. {d['title']}", "",
+             f"*{plural(total)} in {len(d['subs'])} subcategories. {d['blurb']}.* The {TOP} most-starred are below; browse every subcategory in [{cat}]({cat}).", ""]
+    if d["note"]:
+        body += [f"> {d['note']}", ""]
+    body += ["| Project | Stars | What it does |", "|---|--:|---|"] + top + ["", f"**[All {total} projects in {len(d['subs'])} subcategories →]({cat})**", ""]
 toc += [f"{len(domains) + 1}. [Resources](#resources)", f"{len(domains) + 2}. [Reference](#reference)", ""]
 new_readme = head + "\n".join(toc + body + ["---", "", ""]) + foot
 

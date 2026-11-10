@@ -290,3 +290,4 @@ gw31415/herdr-amphetamine-macos  # repository is archived
 nklmilojevic/herdr-flake  # repository is archived
 aodhanhayter/herdr-nix  # repository is archived
 yigitkonur/herdr-wezterm-setup  # repository is archived
+ogulcancelik/herdr-browser  # README title is 'Herdr Browser (Deprecated)' and states 'This project is no longer maintained. Use t

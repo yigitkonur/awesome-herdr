@@ -6,6 +6,7 @@ Sources, in order of signal:
   gallery  herdr.dev/gallery layouts and mods for the Herdr app
   topics   GitHub search on topic:herdr, herdr-layout, herdr-mod, herdr-app (needs `gh`)
 
+Skips repos already in README.md or listed in scripts/skipped.txt.
 Writes .tmp/candidates.json (gitignored) sorted by stars, prints counts per source.
 Usage: python3 scripts/discover.py [--no-github] [--since YYYY-MM-DD]
 """
@@ -31,7 +32,9 @@ def get(url):
 
 def listed():
     text = (ROOT / "README.md").read_text().lower()
-    return set(re.findall(r"github\.com/([^/)\s]+/[^/)#\s]+)", text))
+    skipped = (ROOT / "scripts" / "skipped.txt").read_text().lower().split("\n")
+    return set(re.findall(r"github\.com/([^/)\s]+/[^/)#\s]+)", text)) | {
+        line.split()[0] for line in skipped if line.strip() and not line.startswith("#")}
 
 
 def from_plugins():

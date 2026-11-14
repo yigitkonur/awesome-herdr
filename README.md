@@ -256,7 +256,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Pi side conversations and session forks (8)](catalog/05-sessions.md#pi-side-conversations-and-session-forks)
    - [Moving sessions and workspaces to another machine or app (5)](catalog/05-sessions.md#moving-sessions-and-workspaces-to-another-machine-or-app)
    - [Crash-proof and always-on sessions (6)](catalog/05-sessions.md#crash-proof-and-always-on-sessions)
-6. [Worktrees and terminal experience (1120)](#6-worktrees-and-terminal-experience)
+6. [Worktrees and terminal experience (1121)](#6-worktrees-and-terminal-experience)
    - [Plugin collections you install one by one (37)](catalog/06-worktrees-and-terminal.md#plugin-collections-you-install-one-by-one)
    - [Fuzzy command palettes for Herdr actions and plugins (25)](catalog/06-worktrees-and-terminal.md#fuzzy-command-palettes-for-herdr-actions-and-plugins)
    - [Custom command and script launchers (12)](catalog/06-worktrees-and-terminal.md#custom-command-and-script-launchers)
@@ -292,7 +292,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Path hints that preview files agents mention (9)](catalog/06-worktrees-and-terminal.md#path-hints-that-preview-files-agents-mention)
    - [Fuzzy file pickers that insert or open paths (5)](catalog/06-worktrees-and-terminal.md#fuzzy-file-pickers-that-insert-or-open-paths)
    - [URL pickers and link openers (14)](catalog/06-worktrees-and-terminal.md#url-pickers-and-link-openers)
-   - [Markdown and document previews beside agents (11)](catalog/06-worktrees-and-terminal.md#markdown-and-document-previews-beside-agents)
+   - [Markdown and document previews beside agents (12)](catalog/06-worktrees-and-terminal.md#markdown-and-document-previews-beside-agents)
    - [Image, PDF and gallery previews (6)](catalog/06-worktrees-and-terminal.md#image-pdf-and-gallery-previews)
    - [Mermaid, LaTeX and diagram renderers (8)](catalog/06-worktrees-and-terminal.md#mermaid-latex-and-diagram-renderers)
    - [Terminal browsers and drivable Chromium panes for Herdr TUI (9)](catalog/06-worktrees-and-terminal.md#terminal-browsers-and-drivable-chromium-panes-for-herdr-tui)
@@ -549,7 +549,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 6. Worktrees and terminal experience
 
-*1120 projects in 112 subcategories. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.* The 10 most-starred are below; browse every subcategory in [catalog/06-worktrees-and-terminal.md](catalog/06-worktrees-and-terminal.md).
+*1121 projects in 112 subcategories. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.* The 10 most-starred are below; browse every subcategory in [catalog/06-worktrees-and-terminal.md](catalog/06-worktrees-and-terminal.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -564,7 +564,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**hhdebb/herdr-radar**](https://github.com/hhdebb/herdr-radar) | 204 | Shows agent activity in the Herdr TUI sidebar, grouping workspaces and worktrees and highlighting waiting or stale sessions. |
 | [**devashish2203/herdr-worktrunk**](https://github.com/devashish2203/herdr-worktrunk) | 197 | Creates, switches, merges, and removes Git worktrees with Worktrunk from Herdr TUI, using Worktrunk lifecycle hooks and an interactive branch picker. |
 
-**[All 1120 projects in 112 subcategories →](catalog/06-worktrees-and-terminal.md)**
+**[All 1121 projects in 112 subcategories →](catalog/06-worktrees-and-terminal.md)**
 
 ---
 

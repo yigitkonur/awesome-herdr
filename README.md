@@ -83,7 +83,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Pi extensions that control Herdr (8)](catalog/01-run-and-orchestrate.md#pi-extensions-that-control-herdr)
    - [Pi sidebars, trees and subagent viewers (5)](catalog/01-run-and-orchestrate.md#pi-sidebars-trees-and-subagent-viewers)
    - [Oh My Pi orchestration and viewers (9)](catalog/01-run-and-orchestrate.md#oh-my-pi-orchestration-and-viewers)
-2. [Herdr app layouts, mods, and themes (781)](#2-herdr-app-layouts-mods-and-themes)
+2. [Herdr app layouts, mods, and themes (782)](#2-herdr-app-layouts-mods-and-themes)
    - [Herdr app multi-layout packs (11)](catalog/02-herdr-app.md#herdr-app-multi-layout-packs)
    - [Herdr app multi-mod bundles and personal collections (29)](catalog/02-herdr-app.md#herdr-app-multi-mod-bundles-and-personal-collections)
    - [Herdr app status-column boards such as Needs you, Working and Done (7)](catalog/02-herdr-app.md#herdr-app-status-column-boards-such-as-needs-you-working-and-done)
@@ -108,7 +108,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Herdr app space folders, groups and tab groups (17)](catalog/02-herdr-app.md#herdr-app-space-folders-groups-and-tab-groups)
    - [Herdr app space icons, avatars and sidebar branding (8)](catalog/02-herdr-app.md#herdr-app-space-icons-avatars-and-sidebar-branding)
    - [Herdr app pane headers, terminal IDs and agent labels (10)](catalog/02-herdr-app.md#herdr-app-pane-headers-terminal-ids-and-agent-labels)
-   - [Herdr app closing, pinning and archiving spaces and tabs (11)](catalog/02-herdr-app.md#herdr-app-closing-pinning-and-archiving-spaces-and-tabs)
+   - [Herdr app closing, pinning and archiving spaces and tabs (12)](catalog/02-herdr-app.md#herdr-app-closing-pinning-and-archiving-spaces-and-tabs)
    - [Herdr app interface tweaks and translations (7)](catalog/02-herdr-app.md#herdr-app-interface-tweaks-and-translations)
    - [Herdr app inboxes of agents waiting on you (21)](catalog/02-herdr-app.md#herdr-app-inboxes-of-agents-waiting-on-you)
    - [Herdr app desktop and phone alerts for finished agents (5)](catalog/02-herdr-app.md#herdr-app-desktop-and-phone-alerts-for-finished-agents)
@@ -463,7 +463,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 2. Herdr app layouts, mods, and themes
 
-*781 projects in 71 subcategories. Layouts, mods, and themes for customizing the Herdr desktop app.* The 10 most-starred are below; browse every subcategory in [catalog/02-herdr-app.md](catalog/02-herdr-app.md).
+*782 projects in 71 subcategories. Layouts, mods, and themes for customizing the Herdr desktop app.* The 10 most-starred are below; browse every subcategory in [catalog/02-herdr-app.md](catalog/02-herdr-app.md).
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -480,7 +480,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**rabeeh-ta/herdr-git-graph**](https://github.com/rabeeh-ta/herdr-git-graph) | 34 | Shows a Git commit graph in the Herdr app and offers branch, merge, rebase, and other repository actions. |
 | [**wobsoriano/herdr-sim**](https://github.com/wobsoriano/herdr-sim) | 34 | Opens an interactive iOS simulator or Android emulator beside code and terminals in the Herdr app. |
 
-**[All 781 projects in 71 subcategories →](catalog/02-herdr-app.md)**
+**[All 782 projects in 71 subcategories →](catalog/02-herdr-app.md)**
 
 ---
 

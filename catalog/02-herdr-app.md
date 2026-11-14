@@ -26,7 +26,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app space folders, groups and tab groups (17)](#herdr-app-space-folders-groups-and-tab-groups)
 - [Herdr app space icons, avatars and sidebar branding (8)](#herdr-app-space-icons-avatars-and-sidebar-branding)
 - [Herdr app pane headers, terminal IDs and agent labels (10)](#herdr-app-pane-headers-terminal-ids-and-agent-labels)
-- [Herdr app closing, pinning and archiving spaces and tabs (11)](#herdr-app-closing-pinning-and-archiving-spaces-and-tabs)
+- [Herdr app closing, pinning and archiving spaces and tabs (12)](#herdr-app-closing-pinning-and-archiving-spaces-and-tabs)
 - [Herdr app interface tweaks and translations (7)](#herdr-app-interface-tweaks-and-translations)
 - [Herdr app inboxes of agents waiting on you (21)](#herdr-app-inboxes-of-agents-waiting-on-you)
 - [Herdr app desktop and phone alerts for finished agents (5)](#herdr-app-desktop-and-phone-alerts-for-finished-agents)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*781 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -585,7 +585,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app closing, pinning and archiving spaces and tabs
 
-*11 projects. Mods that confirm before closing, reopen closed tabs, pin or archive spaces and add click shortcuts to close tabs.*
+*12 projects. Mods that confirm before closing, reopen closed tabs, pin or archive spaces and add click shortcuts to close tabs.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -599,6 +599,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 | [**ceilf6/herdr-tabs-quick-close**](https://github.com/ceilf6/herdr-tabs-quick-close) | 0 | Changes the Herdr app tab bar so the x on a space's last tab closes the space at once, without the Close space confirmation. |
 | [**EthanCaol/herdr-mods**](https://github.com/EthanCaol/herdr-mods) | 0 | Closes Herdr app tabs with a middle click and turns the tab bar's + button into a new Claude Code session. Documentation is in Chinese. |
 | [**cesartevisual/herdr-archive**](https://github.com/cesartevisual/herdr-archive) | 0 | Lets you archive spaces in the Herdr app so they leave everyday navigation while their terminals and agents keep running. |
+| [**yigitkonur/herdr-archive**](https://github.com/yigitkonur/herdr-archive) | 0 | Archives Herdr app spaces or single tabs into one "archived" space per machine, ending their terminals to free memory. Restoring brings back the space and tab names and resumes each Claude Code conversation. |
 | [**re757575/herdr-pinned-spaces**](https://github.com/re757575/herdr-pinned-spaces) | 0 | Adds pinned spaces to the Herdr app: a pin icon by the space name and a blocked Close action so cmd-w cannot close a pinned space. Toggles pinning from the context menu or cmd-shift-k. |
 
 ### Herdr app interface tweaks and translations

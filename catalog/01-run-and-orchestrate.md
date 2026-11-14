@@ -33,7 +33,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 - [Spec-driven and SDLC process frameworks (6)](#spec-driven-and-sdlc-process-frameworks)
 - [Autonomous coding loops that end in pull requests (11)](#autonomous-coding-loops-that-end-in-pull-requests)
 - [Tracker-driven agent factories (14)](#tracker-driven-agent-factories)
-- [Herdr TUI plugins that turn Linear issues into agent runs (7)](#herdr-tui-plugins-that-turn-linear-issues-into-agent-runs)
+- [Herdr TUI plugins that turn Linear issues into agent runs (8)](#herdr-tui-plugins-that-turn-linear-issues-into-agent-runs)
 - [Herdr TUI Jira boards and ticket launchers (9)](#herdr-tui-jira-boards-and-ticket-launchers)
 - [Herdr TUI GitHub issue and pull-request browsers that start agents (7)](#herdr-tui-github-issue-and-pull-request-browsers-that-start-agents)
 - [GitLab, ClickUp, Shortcut, Notion and other tracker clients (11)](#gitlab-clickup-shortcut-notion-and-other-tracker-clients)
@@ -59,7 +59,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ## 1. Run and orchestrate agents
 
-*592 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*593 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official Herdr projects and skill
 
@@ -661,7 +661,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ### Herdr TUI plugins that turn Linear issues into agent runs
 
-*7 projects. Plugins that browse and search Linear issues inside Herdr and start an agent on the chosen issue.*
+*8 projects. Plugins that browse and search Linear issues inside Herdr and start an agent on the chosen issue.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -672,6 +672,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 | [**PanchTime/linear-widget**](https://github.com/PanchTime/linear-widget) | 0 | Displays Linear issues in an Omarchy bar widget and opens ticket worktrees or agent sessions in Herdr TUI. |
 | [**solcreek/linear-tui · herdr-plugin**](https://github.com/solcreek/linear-tui/tree/main/herdr-plugin) | 0 | Opens linear-tui, a terminal UI for Linear issues with inline images, over, beside or as a popup on the focused Herdr TUI pane. Ctrl-click on a Linear issue link opens it there, and a demo action needs no account. |
 | [**jenthous/herdr-linear**](https://github.com/jenthous/herdr-linear) | 0 | Searches Linear issues as you type in a Herdr TUI popup or side pane, renders issue bodies and comments as Markdown, and copies issue and PR links. Pins the issue matching the current branch. |
+| [**rshelekhov/herdr-linear-kickoff**](https://github.com/rshelekhov/herdr-linear-kickoff) | 0 | Starts a coding agent on a Linear issue from a Herdr TUI popup, in a git worktree on the issue's branch, with the whole issue as its first prompt. Picks the repo per issue, moves the issue to In Progress, and works across several Linear workspaces. |
 
 ### Herdr TUI Jira boards and ticket launchers
 

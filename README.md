@@ -30,7 +30,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## Contents
 
-1. [Run and orchestrate agents (592)](#1-run-and-orchestrate-agents)
+1. [Run and orchestrate agents (593)](#1-run-and-orchestrate-agents)
    - [Official Herdr projects and skill (5)](catalog/01-run-and-orchestrate.md#official-herdr-projects-and-skill)
    - [Skills that teach agents to operate Herdr (10)](catalog/01-run-and-orchestrate.md#skills-that-teach-agents-to-operate-herdr)
    - [Orchestration skills for lead agents (26)](catalog/01-run-and-orchestrate.md#orchestration-skills-for-lead-agents)
@@ -62,7 +62,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Spec-driven and SDLC process frameworks (6)](catalog/01-run-and-orchestrate.md#spec-driven-and-sdlc-process-frameworks)
    - [Autonomous coding loops that end in pull requests (11)](catalog/01-run-and-orchestrate.md#autonomous-coding-loops-that-end-in-pull-requests)
    - [Tracker-driven agent factories (14)](catalog/01-run-and-orchestrate.md#tracker-driven-agent-factories)
-   - [Herdr TUI plugins that turn Linear issues into agent runs (7)](catalog/01-run-and-orchestrate.md#herdr-tui-plugins-that-turn-linear-issues-into-agent-runs)
+   - [Herdr TUI plugins that turn Linear issues into agent runs (8)](catalog/01-run-and-orchestrate.md#herdr-tui-plugins-that-turn-linear-issues-into-agent-runs)
    - [Herdr TUI Jira boards and ticket launchers (9)](catalog/01-run-and-orchestrate.md#herdr-tui-jira-boards-and-ticket-launchers)
    - [Herdr TUI GitHub issue and pull-request browsers that start agents (7)](catalog/01-run-and-orchestrate.md#herdr-tui-github-issue-and-pull-request-browsers-that-start-agents)
    - [GitLab, ClickUp, Shortcut, Notion and other tracker clients (11)](catalog/01-run-and-orchestrate.md#gitlab-clickup-shortcut-notion-and-other-tracker-clients)
@@ -442,7 +442,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 1. Run and orchestrate agents
 
-*592 projects in 52 subcategories. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.* The 10 most-starred are below; browse every subcategory in [catalog/01-run-and-orchestrate.md](catalog/01-run-and-orchestrate.md).
+*593 projects in 52 subcategories. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.* The 10 most-starred are below; browse every subcategory in [catalog/01-run-and-orchestrate.md](catalog/01-run-and-orchestrate.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -457,7 +457,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**uwuclxdy/clauth · herdr-plugin**](https://github.com/uwuclxdy/clauth/tree/mommy/herdr-plugin) | 321 | Manages Claude Code accounts and usage from a Herdr TUI popup and tags panes with their active account. |
 | [**smarzban/herdr-tsk**](https://github.com/smarzban/herdr-tsk) | 266 | Shares a terminal task board between you and your agents with a TUI for humans and a CLI for agents. |
 
-**[All 592 projects in 52 subcategories →](catalog/01-run-and-orchestrate.md)**
+**[All 593 projects in 52 subcategories →](catalog/01-run-and-orchestrate.md)**
 
 ---
 

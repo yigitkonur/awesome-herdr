@@ -5,7 +5,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 - [Official Herdr projects and skill (5)](#official-herdr-projects-and-skill)
 - [Skills that teach agents to operate Herdr (10)](#skills-that-teach-agents-to-operate-herdr)
 - [Orchestration skills for lead agents (26)](#orchestration-skills-for-lead-agents)
-- [Lead-agent coordinators with worker tabs (30)](#lead-agent-coordinators-with-worker-tabs)
+- [Lead-agent coordinators with worker tabs (31)](#lead-agent-coordinators-with-worker-tabs)
 - [Fleet control planes and CLI harnesses (40)](#fleet-control-planes-and-cli-harnesses)
 - [Role-based agent teams with planners and reviewers (28)](#role-based-agent-teams-with-planners-and-reviewers)
 - [Agent team definitions and role profiles (10)](#agent-team-definitions-and-role-profiles)
@@ -59,7 +59,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ## 1. Run and orchestrate agents
 
-*592 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*593 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official Herdr projects and skill
 
@@ -125,7 +125,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ### Lead-agent coordinators with worker tabs
 
-*30 projects. Runnable coordinators where one lead agent session or chief plans the work and starts worker agents in their own Herdr tabs and worktrees; the lead agent is the brain.*
+*31 projects. Runnable coordinators where one lead agent session or chief plans the work and starts worker agents in their own Herdr tabs and worktrees; the lead agent is the brain.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -138,6 +138,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 | [**vladzima/herd**](https://github.com/vladzima/herd) | 7 | Runs a Claude Code coordinator that delegates tasks to Herdr tabs and collects reports from Claude, Codex, Gemini, or other workers. |
 | [**wangfan1998-github/herdr-hybrid**](https://github.com/wangfan1998-github/herdr-hybrid) | 6 | Orchestrates Claude Code hybrid teams with high-tier models supervising parallel worker panes in Herdr. |
 | [**igor/crew-skill**](https://github.com/igor/crew-skill) | 5 | Coordinates a fleet of AI agents in Herdr where premium models lead and local models handle volume execution. |
+| [**nwiizo/herdr-goal-manager**](https://github.com/nwiizo/herdr-goal-manager) | 5 | Opens a manager agent in its own Herdr TUI tab that turns your request into a goal with observable acceptance criteria, sends the work to the Claude Code, Codex or Copilot CLI agent in your original tab, and watches it with assignment budgets and command checks. Keeps an append-only timeline of assignments, checks and evidence per goal and leaves acceptance to you. |
 | [**minhtran3124/Brichan**](https://github.com/minhtran3124/Brichan) | 4 | A repository-local AI chief of staff for Codex. It keeps project work bounded, coordinates Herdr agents, checks outputs, and stores durable project memory. |
 | [**zhenyufu/herdr-cadence**](https://github.com/zhenyufu/herdr-cadence) | 3 | Uses a lead agent to sort tasks and start specialized workers in separate Herdr tabs and Git worktrees. It checks for a clean repository state and gives each worker only the context it needs. |
 | [**GenaroSalomone/foreman-sh**](https://github.com/GenaroSalomone/foreman-sh) | 3 | Runs a planning agent and isolated worktree executors with reviews and guards for Claude Code and Pi in Herdr. |

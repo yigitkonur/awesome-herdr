@@ -37,7 +37,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 - [Path hints that preview files agents mention (9)](#path-hints-that-preview-files-agents-mention)
 - [Fuzzy file pickers that insert or open paths (5)](#fuzzy-file-pickers-that-insert-or-open-paths)
 - [URL pickers and link openers (14)](#url-pickers-and-link-openers)
-- [Markdown and document previews beside agents (11)](#markdown-and-document-previews-beside-agents)
+- [Markdown and document previews beside agents (12)](#markdown-and-document-previews-beside-agents)
 - [Image, PDF and gallery previews (6)](#image-pdf-and-gallery-previews)
 - [Mermaid, LaTeX and diagram renderers (8)](#mermaid-latex-and-diagram-renderers)
 - [Terminal browsers and drivable Chromium panes for Herdr TUI (9)](#terminal-browsers-and-drivable-chromium-panes-for-herdr-tui)
@@ -119,7 +119,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 
 ## 6. Worktrees and terminal experience
 
-*1120 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*1121 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Plugin collections you install one by one
 
@@ -772,10 +772,11 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 
 ### Markdown and document previews beside agents
 
-*11 projects. Plugins that render Markdown, plans and documents in a pane next to the agent that wrote them.*
+*12 projects. Plugins that render Markdown, plans and documents in a pane next to the agent that wrote them.*
 
 | Project | Stars | What it does |
 |---|--:|---|
+| [**qu8n/mddog**](https://github.com/qu8n/mddog) | 35 | Renders Markdown with real fonts, images, Mermaid diagrams, and math in a Herdr TUI pane, with live reload. macOS only. |
 | [**slara/terminal-markdown-renderer**](https://github.com/slara/terminal-markdown-renderer) | 16 | Opens rendered Markdown in a terminal browser from a Herdr TUI plugin. |
 | [**arvindparmar-me/herdr-markdown-viewer**](https://github.com/arvindparmar-me/herdr-markdown-viewer) | 5 | Previews a selected Markdown file path in a right-hand Herdr split through a single shortcut. |
 | [**Trolzie/herdr-wherewasi**](https://github.com/Trolzie/herdr-wherewasi) | 3 | Shows a live rendered Markdown plan beside Herdr TUI agents and follows the focused repository or worktree. |

@@ -65,7 +65,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app container, database and cloud browsers (8)](#herdr-app-container-database-and-cloud-browsers)
 - [Herdr app task runners, simulators and device launchers (5)](#herdr-app-task-runners-simulators-and-device-launchers)
 - [Herdr app dialogs for connecting spaces to other machines (7)](#herdr-app-dialogs-for-connecting-spaces-to-other-machines)
-- [Herdr app panels for design, API and developer tools (8)](#herdr-app-panels-for-design-api-and-developer-tools)
+- [Herdr app panels for design, API and developer tools (9)](#herdr-app-panels-for-design-api-and-developer-tools)
 - [Herdr app listening-port viewers (4)](#herdr-app-listening-port-viewers)
 - [Herdr app now-playing bars and media players (6)](#herdr-app-now-playing-bars-and-media-players)
 - [Herdr app games, timers and break-time extras (6)](#herdr-app-games-timers-and-break-time-extras)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -1246,13 +1246,14 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app panels for design, API and developer tools
 
-*8 projects. Panels for single developer tools such as an API client, Figma viewer, LaTeX builder, dependency tree and skill sync.*
+*9 projects. Panels for single developer tools such as an API client, Figma viewer, LaTeX builder, dependency tree and skill sync.*
 
 | Project | Stars | What it does |
 |---|--:|---|
 | [**runkids/skillshare · herdr/skillshare**](https://github.com/runkids/skillshare/tree/main/herdr/skillshare) | 3,007 | Adds a Herdr app layout with a skillshare panel for viewing, auditing and syncing skills, agents, MCP servers, plugins and hooks. |
 | [**runkids/figlens · herdr**](https://github.com/runkids/figlens/tree/main/herdr) | 15 | Adds a figlens layout and panel for viewing local Figma designs and handing screens to agents in the Herdr app. |
 | [**greenflagged/herdr-greenflagged**](https://github.com/greenflagged/herdr-greenflagged) | 10 | Displays project dependency trees in the Herdr app and optionally marks npm dependencies with Greenflagged review verdicts. |
+| [**yourconscience/tackroom · herdr/tackroom**](https://github.com/yourconscience/tackroom/tree/main/herdr/tackroom) | 9 | Adds a Herdr app panel showing which coding agents are out of sync and which third-party skills are pinned, in cooldown or blocked by the audit, with Sync that shows its plan first. Works from one ~/.agents repo that tackroom writes into 15 coding agents in each one's own format. |
 | [**biisal/apipen**](https://github.com/biisal/apipen) | 0 | Adds a Postman-style API client to the Herdr app for building requests, sending them and reading responses. Stores collections and environments as plain JSON. |
 | [**lucasprag/herdr-automate-everything · app**](https://github.com/lucasprag/herdr-automate-everything/tree/main/app) | 0 | Adds a side panel listing scheduled automations that run a shell script or a coding agent on a cron schedule. Lets you run, pause, edit or delete each one and browse run history. |
 | [**paperbenni/herdr-latex**](https://github.com/paperbenni/herdr-latex) | 0 | Compiles LaTeX on the selected local or remote machine from a Herdr app toolbar button. Downloads the PDF and opens it in your local viewer, refreshing it when the project rebuilds. |

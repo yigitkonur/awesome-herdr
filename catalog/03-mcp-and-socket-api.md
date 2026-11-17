@@ -15,7 +15,7 @@ The full list for domain 3 of [Awesome Herdr](../README.md#3-connect-through-mcp
 - [Pi and Oh My Pi status reporters (8)](#pi-and-oh-my-pi-status-reporters)
 - [Hermes Agent status reporters and Claude Code bridges (4)](#hermes-agent-status-reporters-and-claude-code-bridges)
 - [Hermes Agent workflows, kanban and bot networks (9)](#hermes-agent-workflows-kanban-and-bot-networks)
-- [Command Code, Cline and Freebuff status reporters (5)](#command-code-cline-and-freebuff-status-reporters)
+- [Command Code, Cline and Freebuff status reporters (6)](#command-code-cline-and-freebuff-status-reporters)
 - [TraeX, MiMo Code, CodeBuddy, ZCode and MiniMax status reporters (9)](#traex-mimo-code-codebuddy-zcode-and-minimax-status-reporters)
 - [Mistral Vibe and Goose status reporters (5)](#mistral-vibe-and-goose-status-reporters)
 - [Status reporters for Amp, Auggie, Junie, Kiro, Rovo Dev and Cortex Code (7)](#status-reporters-for-amp-auggie-junie-kiro-rovo-dev-and-cortex-code)
@@ -53,7 +53,7 @@ The full list for domain 3 of [Awesome Herdr](../README.md#3-connect-through-mcp
 
 ## 3. Connect through MCP and the socket API
 
-*322 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
+*323 projects. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.*
 
 ### MCP servers for controlling Herdr panes and agents
 
@@ -250,13 +250,14 @@ The full list for domain 3 of [Awesome Herdr](../README.md#3-connect-through-mcp
 
 ### Command Code, Cline and Freebuff status reporters
 
-*5 projects. Plugins that make Command Code, Cline and Freebuff processes appear as native Herdr agents with lifecycle status.*
+*6 projects. Plugins that make Command Code, Cline and Freebuff processes appear as native Herdr agents with lifecycle status.*
 
 | Project | Stars | What it does |
 |---|--:|---|
 | [**TheMetalStorm/herdr-commandcode-plugin**](https://github.com/TheMetalStorm/herdr-commandcode-plugin) | 14 | Integrates Command Code as a Herdr agent runtime with process detection, idle, working, and blocked status, session recovery after server restarts, and toast alerts when input is needed. |
 | [**TheMetalStorm/herdr-freebuff-plugin**](https://github.com/TheMetalStorm/herdr-freebuff-plugin) | 10 | Integrates Freebuff agents with Herdr by reading PTY output and local session files, then reporting idle, working, and blocked states through the socket API. |
 | [**Comamoca/command-code-herdr**](https://github.com/Comamoca/command-code-herdr) | 2 | Reports Command Code working, idle, and blocked lifecycle states to Herdr TUI through its local socket. |
+| [**jond34/herdr-freebuff**](https://github.com/jond34/herdr-freebuff) | 1 | Launches Freebuff panes as Herdr agents and binds each pane's chat through the process tree, so two panes in one project stay separate. Reports idle, working, and blocked through the socket API, restores the conversation after a Herdr restart, and adds a `doctor` action that prints the watcher, its PIDs, the bound chat, and the resume command. |
 | [**thesimonharms/herdr-cmd-agent-plugin**](https://git.simonharms.com/thesimonharms/herdr-cmd-agent-plugin) | — | Adds CommandCode agent detection to Herdr TUI, including idle, working, and blocked state in the sidebar. |
 | [**TheMetalStorm/herdr-cline-plugin**](https://github.com/TheMetalStorm/herdr-cline-plugin) | 0 | Makes a plain Cline CLI process appear as a native Herdr agent with lifecycle reporting. |
 

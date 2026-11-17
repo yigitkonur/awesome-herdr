@@ -155,7 +155,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Herdr app mod managers, updaters and launchers (14)](catalog/02-herdr-app.md#herdr-app-mod-managers-updaters-and-launchers)
    - [Herdr app color themes and theme generators (8)](catalog/02-herdr-app.md#herdr-app-color-themes-and-theme-generators)
    - [Herdr app file-icon themes for the Files panel (4)](catalog/02-herdr-app.md#herdr-app-file-icon-themes-for-the-files-panel)
-3. [Connect through MCP and the socket API (322)](#3-connect-through-mcp-and-the-socket-api)
+3. [Connect through MCP and the socket API (323)](#3-connect-through-mcp-and-the-socket-api)
    - [MCP servers for controlling Herdr panes and agents (10)](catalog/03-mcp-and-socket-api.md#mcp-servers-for-controlling-herdr-panes-and-agents)
    - [MCP bridges for ChatGPT, Claude Desktop and web assistants (6)](catalog/03-mcp-and-socket-api.md#mcp-bridges-for-chatgpt-claude-desktop-and-web-assistants)
    - [MCP and ACP adapters for specific agent hosts (4)](catalog/03-mcp-and-socket-api.md#mcp-and-acp-adapters-for-specific-agent-hosts)
@@ -169,7 +169,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Pi and Oh My Pi status reporters (8)](catalog/03-mcp-and-socket-api.md#pi-and-oh-my-pi-status-reporters)
    - [Hermes Agent status reporters and Claude Code bridges (4)](catalog/03-mcp-and-socket-api.md#hermes-agent-status-reporters-and-claude-code-bridges)
    - [Hermes Agent workflows, kanban and bot networks (9)](catalog/03-mcp-and-socket-api.md#hermes-agent-workflows-kanban-and-bot-networks)
-   - [Command Code, Cline and Freebuff status reporters (5)](catalog/03-mcp-and-socket-api.md#command-code-cline-and-freebuff-status-reporters)
+   - [Command Code, Cline and Freebuff status reporters (6)](catalog/03-mcp-and-socket-api.md#command-code-cline-and-freebuff-status-reporters)
    - [TraeX, MiMo Code, CodeBuddy, ZCode and MiniMax status reporters (9)](catalog/03-mcp-and-socket-api.md#traex-mimo-code-codebuddy-zcode-and-minimax-status-reporters)
    - [Mistral Vibe and Goose status reporters (5)](catalog/03-mcp-and-socket-api.md#mistral-vibe-and-goose-status-reporters)
    - [Status reporters for Amp, Auggie, Junie, Kiro, Rovo Dev and Cortex Code (7)](catalog/03-mcp-and-socket-api.md#status-reporters-for-amp-auggie-junie-kiro-rovo-dev-and-cortex-code)
@@ -486,7 +486,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 3. Connect through MCP and the socket API
 
-*322 projects in 46 subcategories. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.* The 10 most-starred are below; browse every subcategory in [catalog/03-mcp-and-socket-api.md](catalog/03-mcp-and-socket-api.md).
+*323 projects in 46 subcategories. Protocols, clients, bots, and event bridges that link Herdr to external tools, editors, and messaging apps.* The 10 most-starred are below; browse every subcategory in [catalog/03-mcp-and-socket-api.md](catalog/03-mcp-and-socket-api.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -501,7 +501,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**27medkamal/tmux-agent-wizard**](https://github.com/27medkamal/tmux-agent-wizard) | 21 | Brings Herdr agent detection and compatible CLI-driven plugins to tmux. |
 | [**mitkox/dsh-herdr**](https://github.com/mitkox/dsh-herdr) | 17 | Reports DeepSeek Harness agent state to herdr-core via OSC 7501 and displays sessions in a Herdr app panel. |
 
-**[All 322 projects in 46 subcategories →](catalog/03-mcp-and-socket-api.md)**
+**[All 323 projects in 46 subcategories →](catalog/03-mcp-and-socket-api.md)**
 
 ---
 

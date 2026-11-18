@@ -17,7 +17,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 - [Directory pickers for new workspaces and tabs (6)](#directory-pickers-for-new-workspaces-and-tabs)
 - [Sessionizer-style project launchers with tab templates (5)](#sessionizer-style-project-launchers-with-tab-templates)
 - [Shell and tab shortcuts that start or reuse panes (4)](#shell-and-tab-shortcuts-that-start-or-reuse-panes)
-- [SSH host, cloud instance and remote machine pickers (14)](#ssh-host-cloud-instance-and-remote-machine-pickers)
+- [SSH host, cloud instance and remote machine pickers (15)](#ssh-host-cloud-instance-and-remote-machine-pickers)
 - [Named Herdr session managers (6)](#named-herdr-session-managers)
 - [Session managers shared across Herdr, tmux, sesh and Zellij (6)](#session-managers-shared-across-herdr-tmux-sesh-and-zellij)
 - [Multi-server sidebars that mirror remote Herdr machines (9)](#multi-server-sidebars-that-mirror-remote-herdr-machines)
@@ -44,7 +44,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ## 5. Switch and restore sessions
 
-*338 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*339 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy jump pickers for workspaces, tabs and agents
 
@@ -297,7 +297,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ### SSH host, cloud instance and remote machine pickers
 
-*14 projects. Pickers and registries that save, group and connect to SSH hosts, GitHub Codespaces, exe.dev and other cloud VMs and remote machines from inside Herdr.*
+*15 projects. Pickers and registries that save, group and connect to SSH hosts, GitHub Codespaces, exe.dev and other cloud VMs and remote machines from inside Herdr.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -306,6 +306,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 | [**vika2603/herdr-machine-manager**](https://github.com/vika2603/herdr-machine-manager) | 3 | Manages saved SSH machines from a Herdr TUI popup, including connecting, disconnecting, and editing targets. |
 | [**webframp/shelley-herdr**](https://github.com/webframp/shelley-herdr) | 2 | Runs Shelley conversations on exe.dev VMs as native Herdr agents, each in a pane with live state, a title from the conversation slug and a resume command. Drives shelley client over SSH and reports state through herdr pane report-agent. |
 | [**alexjyong/herdr-codespaces**](https://github.com/alexjyong/herdr-codespaces) | 2 | Lists your GitHub Codespaces in a picker and adds the chosen one as a Herdr machine in the sidebar next to local workspaces. |
+| [**cantona/xcomm**](https://github.com/cantona/xcomm) | 2 | Runs as a standalone serial terminal in any terminal, or as a Herdr TUI plugin whose picker popup opens each serial port in a pane titled with its port and baud, with break, DTR/RTS, baud, capture, zmodem and hotplug notifications as plugin features. Each session has a control socket, and its bundled agent skill teaches a coding agent to drive the board's console while you watch. |
 | [**ecylmz/herdr-hosts**](https://github.com/ecylmz/herdr-hosts) | 1 | Opens a hierarchical SSH host picker in Herdr TUI that reads folders, notes and connection details from ~/.ssh/config and opens the chosen host in its own tab. |
 | [**hrudek/herdr-ssh-config-dash**](https://github.com/hrudek/herdr-ssh-config-dash) | 1 | Lists host aliases from your ~/.ssh/config in Herdr TUI and lets you add, enable, disable, or remove them as Herdr machines. |
 | [**yavuzhansarmaz/herdr-vps-local**](https://github.com/yavuzhansarmaz/herdr-vps-local) | 1 | Mirrors repos from a VPS or Raspberry Pi saved machine to your laptop with Mutagen. Lets you edit in a local IDE while agents keep running on the remote machine. |

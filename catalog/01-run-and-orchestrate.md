@@ -830,7 +830,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 | Project | Stars | What it does |
 |---|--:|---|
 | [**joshka0/herdr-watcher**](https://github.com/joshka0/herdr-watcher) | 3 | Tracks detached or long-running work and resumes the relevant agent when a background task completes. It uses the Herdr socket API to support workflows that must survive disconnects and interrupted sessions. |
-| [**cantona/herdr-triggers**](https://github.com/cantona/herdr-triggers) | 1 | Watches Herdr TUI pane output for configured regular expressions and triggers actions such as notifications, subprocesses, or pane input. |
+| [**cantona/herdr-triggers**](https://github.com/cantona/herdr-triggers) | 1 | Watches Herdr TUI panes and Herdr app terminals for regular expressions you configure and acts on a match: types into the pane, posts a notification, runs a script, or marks the tab. One triggers.toml serves both, with secrets kept in a mode-0600 file. |
 | [**lufs-audio/snuze**](https://github.com/lufs-audio/snuze) | 0 | Schedules wake-up prompts for Herdr panes after timers, Jules conditions, pane state changes, or external signals. |
 | [**lebryk/herdr-events**](https://github.com/lebryk/herdr-events) | 0 | Queues local JSON events for Herdr agents using native Codex, Claude Code, Pi, and OpenCode adapters. |
 | [**thientrile/herdr-hjob**](https://github.com/thientrile/herdr-hjob) | 0 | Runs a long command in the background so an agent need not poll it. When it ends, hjob wakes the agent pane with the result through herdr-wake. |

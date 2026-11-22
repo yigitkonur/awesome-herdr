@@ -37,7 +37,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 - [Herdr TUI Jira boards and ticket launchers (9)](#herdr-tui-jira-boards-and-ticket-launchers)
 - [Herdr TUI GitHub issue and pull-request browsers that start agents (7)](#herdr-tui-github-issue-and-pull-request-browsers-that-start-agents)
 - [GitLab, ClickUp, Shortcut, Notion and other tracker clients (11)](#gitlab-clickup-shortcut-notion-and-other-tracker-clients)
-- [Kanban boards that dispatch agents (11)](#kanban-boards-that-dispatch-agents)
+- [Kanban boards that dispatch agents (12)](#kanban-boards-that-dispatch-agents)
 - [Shared task boards for people and agents (10)](#shared-task-boards-for-people-and-agents)
 - [Task claims and ledgers that agents share (9)](#task-claims-and-ledgers-that-agents-share)
 - [Beads task tracker integrations (4)](#beads-task-tracker-integrations)
@@ -59,7 +59,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ## 1. Run and orchestrate agents
 
-*592 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*593 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official Herdr projects and skill
 
@@ -723,11 +723,12 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ### Kanban boards that dispatch agents
 
-*11 projects. Kanban boards in a Herdr pane where moving or dispatching a card starts or feeds a coding agent.*
+*12 projects. Kanban boards that dispatch work to coding agents or track their sessions in Herdr TUI panes or herdr-core terminals.*
 
 | Project | Stars | What it does |
 |---|--:|---|
 | [**nelsonPires5/herdr-board**](https://github.com/nelsonPires5/herdr-board) | 194 | A Kanban TUI and background service that turns cards into prompts for agents in visible Herdr panes. Moving a card can create an agent, run it in a dedicated tab, and advance the work through review gates. |
+| [**jjyr/canban**](https://github.com/jjyr/canban) | 39 | Dispatches coding agents from a native macOS and Linux Kanban board and runs them in persistent herdr-core terminals. Supports per-card Git worktrees, YAML workflows, and inline diff review. |
 | [**KokiKono/herdr-kanban**](https://github.com/KokiKono/herdr-kanban) | 6 | Tracks tasks on a SQLite-backed terminal Kanban board and opens Herdr TUI tabs for in-progress tasks. |
 | [**MatheusBBarni/herdr-tasks**](https://github.com/MatheusBBarni/herdr-tasks) | 3 | Runs a kanban task board and `htasks` CLI that launch agents in Herdr panes and track their work. |
 | [**sazardev/herdr-code-board**](https://github.com/sazardev/herdr-code-board) | 2 | Dispatches agent prompts from a kanban queue into Herdr panes, workspaces, and worktrees, with rules that chain cards. |

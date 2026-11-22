@@ -15,7 +15,7 @@ The full list for domain 7 of [Awesome Herdr](../README.md#7-apps-companion-inte
 - [Omarchy bar widgets for agent status (22)](#omarchy-bar-widgets-for-agent-status)
 - [Omarchy overlays, consoles and remote dashboards (8)](#omarchy-overlays-consoles-and-remote-dashboards)
 - [KDE Plasma, Cinnamon and DankMaterialShell widgets (5)](#kde-plasma-cinnamon-and-dankmaterialshell-widgets)
-- [Browser workbenches and control panels for desktop (17)](#browser-workbenches-and-control-panels-for-desktop)
+- [Browser workbenches and control panels for desktop (18)](#browser-workbenches-and-control-panels-for-desktop)
 - [Web boards showing every agent's state across sessions and machines (15)](#web-boards-showing-every-agents-state-across-sessions-and-machines)
 - [Self-hosted web terminals for Herdr sessions (22)](#self-hosted-web-terminals-for-herdr-sessions)
 - [Phone web dashboards that list agents and answer prompts (39)](#phone-web-dashboards-that-list-agents-and-answer-prompts)
@@ -69,7 +69,7 @@ The full list for domain 7 of [Awesome Herdr](../README.md#7-apps-companion-inte
 
 ## 7. Apps, companion integrations, and installation
 
-*644 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
+*645 projects. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.*
 
 ### Native macOS terminal clients for Herdr
 
@@ -348,7 +348,7 @@ The full list for domain 7 of [Awesome Herdr](../README.md#7-apps-companion-inte
 
 ### Browser workbenches and control panels for desktop
 
-*17 projects. Self-hosted full web workbenches and control panels for managing Herdr workspaces, panes, files, worktrees and agents, desktop-first, as opposed to phone dashboards that only list and answer agents.*
+*18 projects. Self-hosted full web workbenches and control panels for managing Herdr workspaces, panes, files, worktrees and agents, desktop-first, as opposed to phone dashboards that only list and answer agents.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community alternatives and extensions.
 
@@ -371,6 +371,7 @@ The full list for domain 7 of [Awesome Herdr](../README.md#7-apps-companion-inte
 | [**bbgo19/herdr-web**](https://github.com/bbgo19/herdr-web) | 0 | Offers a browser interface for managing Herdr workspaces, panes, and multiple coding agents. |
 | [**NolanHo/DSH-herdr**](https://github.com/NolanHo/DSH-herdr) | 0 | Adds a DSH web view for inspecting Herdr TUI workspaces and agents, reading pane output and sending prompts. |
 | [**justengel/herdr-panels**](https://github.com/justengel/herdr-panels) | 0 | Adds a desk beside a running Herdr session where panes sit with notes, browsers, HTML, and installable views that you drag into place. Includes a skill so an agent can arrange the panels. |
+| [**sacalito/web-herdr**](https://github.com/sacalito/web-herdr) | 0 | Runs the Herdr app in a browser or phone with spaces, agents and live terminals on every machine over herdr-core. Self-hosted in Docker, with file drop to agents, a file browser and alerts. |
 
 ### Web boards showing every agent's state across sessions and machines
 

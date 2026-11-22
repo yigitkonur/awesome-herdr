@@ -71,14 +71,14 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app games, timers and break-time extras (6)](#herdr-app-games-timers-and-break-time-extras)
 - [Herdr app mail, calendar, chat and watchlist panels (11)](#herdr-app-mail-calendar-chat-and-watchlist-panels)
 - [Herdr app mod managers, updaters and launchers (14)](#herdr-app-mod-managers-updaters-and-launchers)
-- [Herdr app color themes and theme generators (8)](#herdr-app-color-themes-and-theme-generators)
+- [Herdr app color themes and theme generators (9)](#herdr-app-color-themes-and-theme-generators)
 - [Herdr app file-icon themes for the Files panel (4)](#herdr-app-file-icon-themes-for-the-files-panel)
 
 ---
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -1337,7 +1337,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app color themes and theme generators
 
-*8 projects. Plain color themes for the Herdr app, plus tools that generate or edit themes from a system palette.*
+*9 projects. Plain color themes for the Herdr app, plus tools that generate or edit themes from a system palette.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -1349,6 +1349,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 | [**jdlewin/herdr-omarchy-theme**](https://github.com/jdlewin/herdr-omarchy-theme) | 0 | Generates a Herdr app theme from the active Omarchy theme and refreshes it whenever you run omarchy theme set. Installs a sync hook and a layout that applies the theme. |
 | [**agentic-tool-labs/herdr-theme-studio**](https://github.com/agentic-tool-labs/herdr-theme-studio) | 0 | Edits the Herdr app's look in one window: pick or import a theme, adjust its colors, choose terminal and panel fonts, and style the agents list, with a live preview before saving. |
 | [**suree33/herdr-app**](https://github.com/suree33/herdr-app) | 0 | Adds Catppuccin themes for the Herdr app in Latte, Frappe, Macchiato, and Mocha, with previews. |
+| [**viraj-s15/oxocarbon-grey**](https://github.com/viraj-s15/oxocarbon-grey) | 0 | Adds the Oxocarbon Grey dark theme to the Herdr app and Herdr TUI, coloring the terminals, panels, sidebar and agent status markers. The same palette ships for VS Code, Zed, Neovim and Ghostty. |
 
 ### Herdr app file-icon themes for the Files panel
 

@@ -369,7 +369,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Project run commands and dev-service runners (7)](catalog/06-worktrees-and-terminal.md#project-run-commands-and-dev-service-runners)
    - [Plugin SDKs, libraries and project starters (7)](catalog/06-worktrees-and-terminal.md#plugin-sdks-libraries-and-project-starters)
    - [Portable Herdr TUI setups and migration notes (8)](catalog/06-worktrees-and-terminal.md#portable-herdr-tui-setups-and-migration-notes)
-7. [Apps, companion integrations, and installation (644)](#7-apps-companion-integrations-and-installation)
+7. [Apps, companion integrations, and installation (645)](#7-apps-companion-integrations-and-installation)
    - [Native macOS terminal clients for Herdr (19)](catalog/07-apps-and-installation.md#native-macos-terminal-clients-for-herdr)
    - [Windows desktop clients and workbenches (6)](catalog/07-apps-and-installation.md#windows-desktop-clients-and-workbenches)
    - [Linux and cross-platform desktop clients (11)](catalog/07-apps-and-installation.md#linux-and-cross-platform-desktop-clients)
@@ -383,7 +383,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Omarchy bar widgets for agent status (22)](catalog/07-apps-and-installation.md#omarchy-bar-widgets-for-agent-status)
    - [Omarchy overlays, consoles and remote dashboards (8)](catalog/07-apps-and-installation.md#omarchy-overlays-consoles-and-remote-dashboards)
    - [KDE Plasma, Cinnamon and DankMaterialShell widgets (5)](catalog/07-apps-and-installation.md#kde-plasma-cinnamon-and-dankmaterialshell-widgets)
-   - [Browser workbenches and control panels for desktop (17)](catalog/07-apps-and-installation.md#browser-workbenches-and-control-panels-for-desktop)
+   - [Browser workbenches and control panels for desktop (18)](catalog/07-apps-and-installation.md#browser-workbenches-and-control-panels-for-desktop)
    - [Web boards showing every agent's state across sessions and machines (15)](catalog/07-apps-and-installation.md#web-boards-showing-every-agents-state-across-sessions-and-machines)
    - [Self-hosted web terminals for Herdr sessions (22)](catalog/07-apps-and-installation.md#self-hosted-web-terminals-for-herdr-sessions)
    - [Phone web dashboards that list agents and answer prompts (39)](catalog/07-apps-and-installation.md#phone-web-dashboards-that-list-agents-and-answer-prompts)
@@ -570,7 +570,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 7. Apps, companion integrations, and installation
 
-*644 projects in 62 subcategories. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.* The 10 most-starred are below; browse every subcategory in [catalog/07-apps-and-installation.md](catalog/07-apps-and-installation.md).
+*645 projects in 62 subcategories. Native applications, web dashboards, hardware companions, supporting utilities, and setup packages.* The 10 most-starred are below; browse every subcategory in [catalog/07-apps-and-installation.md](catalog/07-apps-and-installation.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -585,7 +585,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**powerfooI/roamgate**](https://github.com/powerfooI/roamgate) | 325 | Adds a web client for Herdr with mobile optimization, browser terminals, workspace management, and session inspection. |
 | [**themartianapp/herdrup**](https://github.com/themartianapp/herdrup) | 242 | Monitors Herdr TUI agents and opens their terminals from an iOS app. |
 
-**[All 644 projects in 62 subcategories →](catalog/07-apps-and-installation.md)**
+**[All 645 projects in 62 subcategories →](catalog/07-apps-and-installation.md)**
 
 ---
 

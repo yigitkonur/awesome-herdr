@@ -218,7 +218,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Emacs and Kakoune integrations (6)](catalog/04-editors.md#emacs-and-kakoune-integrations)
    - [REPLs and task runners from the editor (4)](catalog/04-editors.md#repls-and-task-runners-from-the-editor)
    - [Dotfiles, starter kits and editor-plus-Herdr environments (9)](catalog/04-editors.md#dotfiles-starter-kits-and-editor-plus-herdr-environments)
-5. [Switch and restore sessions (338)](#5-switch-and-restore-sessions)
+5. [Switch and restore sessions (339)](#5-switch-and-restore-sessions)
    - [Fuzzy jump pickers for workspaces, tabs and agents (16)](catalog/05-sessions.md#fuzzy-jump-pickers-for-workspaces-tabs-and-agents)
    - [Tree and preview navigators for workspaces and panes (10)](catalog/05-sessions.md#tree-and-preview-navigators-for-workspaces-and-panes)
    - [Agent pickers ranked by status and recency (16)](catalog/05-sessions.md#agent-pickers-ranked-by-status-and-recency)
@@ -247,7 +247,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Saved layout snapshots and screen grids (4)](catalog/05-sessions.md#saved-layout-snapshots-and-screen-grids)
    - [Full workspace save and restore after restart (10)](catalog/05-sessions.md#full-workspace-save-and-restore-after-restart)
    - [Pane command relaunchers after restart (7)](catalog/05-sessions.md#pane-command-relaunchers-after-restart)
-   - [Agent auto-resume after a server restart (14)](catalog/05-sessions.md#agent-auto-resume-after-a-server-restart)
+   - [Agent auto-resume after a server restart (15)](catalog/05-sessions.md#agent-auto-resume-after-a-server-restart)
    - [Idle agent parking and hibernation (15)](catalog/05-sessions.md#idle-agent-parking-and-hibernation)
    - [Stale and idle agent cleanup (5)](catalog/05-sessions.md#stale-and-idle-agent-cleanup)
    - [Workspace stash, suspend and archive (9)](catalog/05-sessions.md#workspace-stash-suspend-and-archive)
@@ -528,7 +528,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 5. Switch and restore sessions
 
-*338 projects in 37 subcategories. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.* The 10 most-starred are below; browse every subcategory in [catalog/05-sessions.md](catalog/05-sessions.md).
+*339 projects in 37 subcategories. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.* The 10 most-starred are below; browse every subcategory in [catalog/05-sessions.md](catalog/05-sessions.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -543,7 +543,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**ntindle/herdr-resurrect**](https://github.com/ntindle/herdr-resurrect) | 44 | Captures workspaces, tabs, panes, directories, and running agent processes so a complete Herdr environment can be restored after a crash or restart. |
 | [**taxueseek/session-digger**](https://github.com/taxueseek/session-digger) | 34 | Indexes conversations from Claude Code, Codex, and other agents in SQLite FTS5. It also tracks token and cache data and creates local HTML reports for review. |
 
-**[All 338 projects in 37 subcategories →](catalog/05-sessions.md)**
+**[All 339 projects in 37 subcategories →](catalog/05-sessions.md)**
 
 ---
 

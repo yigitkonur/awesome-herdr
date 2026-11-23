@@ -30,7 +30,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 - [Saved layout snapshots and screen grids (4)](#saved-layout-snapshots-and-screen-grids)
 - [Full workspace save and restore after restart (10)](#full-workspace-save-and-restore-after-restart)
 - [Pane command relaunchers after restart (7)](#pane-command-relaunchers-after-restart)
-- [Agent auto-resume after a server restart (14)](#agent-auto-resume-after-a-server-restart)
+- [Agent auto-resume after a server restart (15)](#agent-auto-resume-after-a-server-restart)
 - [Idle agent parking and hibernation (15)](#idle-agent-parking-and-hibernation)
 - [Stale and idle agent cleanup (5)](#stale-and-idle-agent-cleanup)
 - [Workspace stash, suspend and archive (9)](#workspace-stash-suspend-and-archive)
@@ -44,7 +44,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ## 5. Switch and restore sessions
 
-*338 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*339 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy jump pickers for workspaces, tabs and agents
 
@@ -505,7 +505,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ### Agent auto-resume after a server restart
 
-*14 projects. Plugins that bring dead or interrupted agent panes back into their previous conversations after Herdr restarts.*
+*15 projects. Plugins that bring dead or interrupted agent panes back into their previous conversations after Herdr restarts.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -523,6 +523,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 | [**quinnjr/herdr-auto-resume**](https://github.com/quinnjr/herdr-auto-resume) | 0 | Relaunches dead agent panes such as Claude Code, opencode and kiro-cli into their previous sessions after a Herdr TUI restart. |
 | [**seankao31/herdr-autoresume**](https://github.com/seankao31/herdr-autoresume) | 0 | Continues only interrupted agents after Herdr restarts, lets idle agents restore background work, and restarts kept commands. |
 | [**yavuzhansarmaz/herdr-muse-resume**](https://github.com/yavuzhansarmaz/herdr-muse-resume) | 0 | Resumes Muse agent sessions automatically in restored Herdr TUI panes after a server restart. |
+| [**crstian19/herdr-focus-resume**](https://github.com/crstian19/herdr-focus-resume) | 0 | Resumes each agent pane on its first focus after a Herdr TUI server restart, instead of starting every agent at once. Covers Claude Code, Codex, omp, Pi, OpenCode and agents that report their own resume command. |
 
 ### Idle agent parking and hibernation
 

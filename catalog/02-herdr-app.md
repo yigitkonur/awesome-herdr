@@ -34,7 +34,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app pane focus, movement and resize keys (12)](#herdr-app-pane-focus-movement-and-resize-keys)
 - [Herdr app dialogs that open a repository or branch as a new space (12)](#herdr-app-dialogs-that-open-a-repository-or-branch-as-a-new-space)
 - [Herdr app docks, floating terminals and command launchers (12)](#herdr-app-docks-floating-terminals-and-command-launchers)
-- [Herdr app agent restart, resume and session restore (12)](#herdr-app-agent-restart-resume-and-session-restore)
+- [Herdr app agent restart, resume and session restore (13)](#herdr-app-agent-restart-resume-and-session-restore)
 - [Herdr app past-session search and history browsers (6)](#herdr-app-past-session-search-and-history-browsers)
 - [Herdr app plan-usage gauges in the status bar (16)](#herdr-app-plan-usage-gauges-in-the-status-bar)
 - [Herdr app per-provider quota panels and Claude account switchers (16)](#herdr-app-per-provider-quota-panels-and-claude-account-switchers)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -729,7 +729,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app agent restart, resume and session restore
 
-*12 projects. Mods that bring agents back after a restart, resume the same session in a pane, suspend idle agents or import Herdr TUI sessions.*
+*13 projects. Mods that bring agents back after a restart, resume the same session in a pane, suspend idle agents or import Herdr TUI sessions.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -745,6 +745,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 | [**iosif2/herdr-claude-resume**](https://github.com/iosif2/herdr-claude-resume) | 0 | Restarts the focused Herdr app agent in place with one key, or every agent with another, resuming the same Claude Code conversation. |
 | [**jordanlyall/herdr-claude-resume**](https://github.com/jordanlyall/herdr-claude-resume) | 0 | Remembers which Claude Code chat ran in each Herdr app pane and types claude --resume into those panes the first time Herdr opens after a Mac restart. |
 | [**arhen/herdr-import**](https://github.com/arhen/herdr-import) | 0 | Imports Herdr TUI workspaces, tabs, and agent sessions into the Herdr app from a dialog, resuming each agent's conversation in place. |
+| [**rawhsejar/herdr-session-restore**](https://github.com/rawhsejar/herdr-session-restore) | 0 | Records which Claude Code, Codex or Cursor Agent session runs in each Herdr app terminal and types its resume command into terminals that came back as shells after a reboot. A macOS launchd watcher finds sessions reopened with resume and reports Cursor's status to the Agents list. |
 
 ### Herdr app past-session search and history browsers
 

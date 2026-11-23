@@ -83,7 +83,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Pi extensions that control Herdr (8)](catalog/01-run-and-orchestrate.md#pi-extensions-that-control-herdr)
    - [Pi sidebars, trees and subagent viewers (5)](catalog/01-run-and-orchestrate.md#pi-sidebars-trees-and-subagent-viewers)
    - [Oh My Pi orchestration and viewers (9)](catalog/01-run-and-orchestrate.md#oh-my-pi-orchestration-and-viewers)
-2. [Herdr app layouts, mods, and themes (782)](#2-herdr-app-layouts-mods-and-themes)
+2. [Herdr app layouts, mods, and themes (783)](#2-herdr-app-layouts-mods-and-themes)
    - [Herdr app multi-layout packs (11)](catalog/02-herdr-app.md#herdr-app-multi-layout-packs)
    - [Herdr app multi-mod bundles and personal collections (29)](catalog/02-herdr-app.md#herdr-app-multi-mod-bundles-and-personal-collections)
    - [Herdr app status-column boards such as Needs you, Working and Done (7)](catalog/02-herdr-app.md#herdr-app-status-column-boards-such-as-needs-you-working-and-done)
@@ -116,7 +116,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Herdr app pane focus, movement and resize keys (12)](catalog/02-herdr-app.md#herdr-app-pane-focus-movement-and-resize-keys)
    - [Herdr app dialogs that open a repository or branch as a new space (12)](catalog/02-herdr-app.md#herdr-app-dialogs-that-open-a-repository-or-branch-as-a-new-space)
    - [Herdr app docks, floating terminals and command launchers (12)](catalog/02-herdr-app.md#herdr-app-docks-floating-terminals-and-command-launchers)
-   - [Herdr app agent restart, resume and session restore (12)](catalog/02-herdr-app.md#herdr-app-agent-restart-resume-and-session-restore)
+   - [Herdr app agent restart, resume and session restore (13)](catalog/02-herdr-app.md#herdr-app-agent-restart-resume-and-session-restore)
    - [Herdr app past-session search and history browsers (6)](catalog/02-herdr-app.md#herdr-app-past-session-search-and-history-browsers)
    - [Herdr app plan-usage gauges in the status bar (16)](catalog/02-herdr-app.md#herdr-app-plan-usage-gauges-in-the-status-bar)
    - [Herdr app per-provider quota panels and Claude account switchers (16)](catalog/02-herdr-app.md#herdr-app-per-provider-quota-panels-and-claude-account-switchers)
@@ -463,7 +463,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects in 71 subcategories. Layouts, mods, and themes for customizing the Herdr desktop app.* The 10 most-starred are below; browse every subcategory in [catalog/02-herdr-app.md](catalog/02-herdr-app.md).
+*783 projects in 71 subcategories. Layouts, mods, and themes for customizing the Herdr desktop app.* The 10 most-starred are below; browse every subcategory in [catalog/02-herdr-app.md](catalog/02-herdr-app.md).
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -480,7 +480,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**rabeeh-ta/herdr-git-graph**](https://github.com/rabeeh-ta/herdr-git-graph) | 34 | Shows a Git commit graph in the Herdr app and offers branch, merge, rebase, and other repository actions. |
 | [**wobsoriano/herdr-sim**](https://github.com/wobsoriano/herdr-sim) | 34 | Opens an interactive iOS simulator or Android emulator beside code and terminals in the Herdr app. |
 
-**[All 782 projects in 71 subcategories →](catalog/02-herdr-app.md)**
+**[All 783 projects in 71 subcategories →](catalog/02-herdr-app.md)**
 
 ---
 

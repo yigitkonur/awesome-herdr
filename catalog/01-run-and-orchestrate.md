@@ -4,7 +4,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 - [Official Herdr projects and skill (5)](#official-herdr-projects-and-skill)
 - [Skills that teach agents to operate Herdr (10)](#skills-that-teach-agents-to-operate-herdr)
-- [Orchestration skills for lead agents (26)](#orchestration-skills-for-lead-agents)
+- [Orchestration skills for lead agents (27)](#orchestration-skills-for-lead-agents)
 - [Lead-agent coordinators with worker tabs (30)](#lead-agent-coordinators-with-worker-tabs)
 - [Fleet control planes and CLI harnesses (40)](#fleet-control-planes-and-cli-harnesses)
 - [Role-based agent teams with planners and reviewers (28)](#role-based-agent-teams-with-planners-and-reviewers)
@@ -59,7 +59,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ## 1. Run and orchestrate agents
 
-*592 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*593 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official Herdr projects and skill
 
@@ -92,11 +92,12 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ### Orchestration skills for lead agents
 
-*26 projects. Skills and prompt packs you install into a lead agent such as Claude Code, Codex or Pi so it plans work and runs Herdr workers itself; the deliverable is instructions, not a separate program.*
+*27 projects. Skills and prompt packs you install into a lead agent such as Claude Code, Codex or Pi so it plans work and runs Herdr workers itself; the deliverable is instructions, not a separate program.*
 
 | Project | Stars | What it does |
 |---|--:|---|
 | [**arronKler/herdr-skills**](https://github.com/arronKler/herdr-skills) | 21 | Coordinates Herdr coding agents with dispatch, handoff, result collection, and swarm skills. |
+| [**ythx-101/herd-skill**](https://github.com/ythx-101/herd-skill) | 3 | Teaches a lead agent to coordinate workers in Herdr panes on one or several machines through a JSONL message board, with a watcher that wakes @mentioned agents and alerts on deadline, stall, or quota exhaustion. Accepts work only on a `[done]` post plus the brief's check commands. |
 | [**LittleDrinks/herdr-orchestrator-skill**](https://github.com/LittleDrinks/herdr-orchestrator-skill) | 2 | Turns the main Claude Code session into a coordinator that plans work, starts workers in Herdr panes, and monitors them without editing code itself. It includes Python monitors, a YAML state-machine template, and role prompts. |
 | [**imdigitalashish/pane-sheepdog**](https://github.com/imdigitalashish/pane-sheepdog) | 2 | Provides a Codex skill for herding sibling AI coding agents across Herdr panes: fan-out delegation, shared-pane safety, and a supervisor that wakes a sleeping orchestrator. |
 | [**zekierman/orkestra**](https://github.com/zekierman/orkestra) | 2 | Teaches Claude Code to lead Codex and Antigravity workers running in the same Herdr workspace. A session-start hook tells Claude who is in the room; README is Turkish with an English version. |

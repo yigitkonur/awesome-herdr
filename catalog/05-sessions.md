@@ -9,7 +9,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 - [Last-tab and last-workspace toggles (11)](#last-tab-and-last-workspace-toggles)
 - [Focus history, back and forward jumps and recent-pane cyclers (14)](#focus-history-back-and-forward-jumps-and-recent-pane-cyclers)
 - [Claude Code session finders and resume pickers (4)](#claude-code-session-finders-and-resume-pickers)
-- [Multi-agent conversation search and resume pickers (12)](#multi-agent-conversation-search-and-resume-pickers)
+- [Multi-agent conversation search and resume pickers (13)](#multi-agent-conversation-search-and-resume-pickers)
 - [Project folder finders that open or focus a workspace (13)](#project-folder-finders-that-open-or-focus-a-workspace)
 - [Zoxide directory workspace pickers (7)](#zoxide-directory-workspace-pickers)
 - [Git repository and worktree pickers (9)](#git-repository-and-worktree-pickers)
@@ -44,7 +44,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ## 5. Switch and restore sessions
 
-*338 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
+*339 projects. Fuzzy switchers, state managers, and layout restoration tools for organizing agent workspaces.*
 
 ### Fuzzy jump pickers for workspaces, tabs and agents
 
@@ -181,7 +181,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 
 ### Multi-agent conversation search and resume pickers
 
-*12 projects. Searchable archives of earlier conversations and live pane output from Claude Code, Codex, OpenCode, Pi, and other agents that resume the match in Herdr.*
+*13 projects. Searchable archives of earlier conversations and live pane output from Claude Code, Codex, OpenCode, Pi, and other agents that resume the match in Herdr.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -197,6 +197,7 @@ The full list for domain 5 of [Awesome Herdr](../README.md#5-switch-and-restore-
 | [**tlpinney/herdr-atuin-resume**](https://github.com/tlpinney/herdr-atuin-resume) | 0 | Picks a coding-agent thread captured by Atuin and resumes it in a new Herdr TUI tab. |
 | [**AymanZahran/herdr-ai9s**](https://github.com/AymanZahran/herdr-ai9s) | 0 | Opens the ai9s session finder in a Herdr TUI sidebar and starts the selected agent in a new tab of the current workspace. Needs the ai9s program installed. |
 | [**GeorgGroenendaal/herdr-content-picker**](https://github.com/GeorgGroenendaal/herdr-content-picker) | 0 | Searches the terminal output of open Herdr TUI agent panes and past Pi and Claude Code sessions, then jumps to the match with a line preview. |
+| [**IvanLutsenko/herdr-prompt-nav**](https://github.com/IvanLutsenko/herdr-prompt-nav) | 0 | Lists the prompts you sent in a Claude Code or Codex pane in a popup and scrolls that pane back to the one you pick. Reads the agent's own session log and works with fullscreen TUIs as well as Herdr scrollback. |
 
 ### Project folder finders that open or focus a workspace
 

@@ -12,7 +12,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app compact sidebar and borderless window layouts (15)](#herdr-app-compact-sidebar-and-borderless-window-layouts)
 - [Herdr app layouts with built-in usage and system panels (6)](#herdr-app-layouts-with-built-in-usage-and-system-panels)
 - [Herdr app layouts that look like a code editor (14)](#herdr-app-layouts-that-look-like-a-code-editor)
-- [Herdr app layouts with Files, Changes and Git panels (15)](#herdr-app-layouts-with-files-changes-and-git-panels)
+- [Herdr app layouts with Files, Changes and Git panels (16)](#herdr-app-layouts-with-files-changes-and-git-panels)
 - [Herdr app dark and monochrome minimal layouts (9)](#herdr-app-dark-and-monochrome-minimal-layouts)
 - [Herdr app layouts in named color palettes such as Catppuccin, Nord and Dracula (20)](#herdr-app-layouts-in-named-color-palettes-such-as-catppuccin-nord-and-dracula)
 - [Herdr app glass, islands and floating-card layouts (12)](#herdr-app-glass-islands-and-floating-card-layouts)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -291,7 +291,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app layouts with Files, Changes and Git panels
 
-*15 projects. Layouts built around file trees, a Changes panel, commit history and pull-request panels beside the terminal.*
+*16 projects. Layouts built around file trees, a Changes panel, commit history and pull-request panels beside the terminal.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -299,6 +299,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 | [**carstenlucke/herdr-roundup**](https://github.com/carstenlucke/herdr-roundup) | 6 | Adds the Roundup layout for the Herdr app with custom file browsing, preview, themes, and keyboard shortcuts. |
 | [**bborrero14/herdr-file-preview**](https://github.com/bborrero14/herdr-file-preview) | 2 | Adds a Herdr app layout with a file tree of the focused terminal folder beside a rendered preview of Markdown with Mermaid diagrams and highlighted source files. Works in local and remote spaces. |
 | [**alarboulletmarin/herdr-github**](https://github.com/alarboulletmarin/herdr-github) | 2 | Extends the Herdr app main layout with a GitHub panel for issues, pull requests, CI runs, milestones and projects, and a Zed-style Changes panel. Each item can be copied or started as an agent brief. |
+| [**Dan4eck/herdr-prodsovet**](https://github.com/Dan4eck/herdr-prodsovet) | 2 | Adds the PA-Advanced and PA-Light layouts with a project and worktree sidebar, animated agent mascots, file editor tabs with Markdown preview and drag-and-drop to terminals, project search, Git Changes, GitHub PR and Issue panels, and one-key Claude Code/Codex conversation forking. Ships an English/Russian UI, optional status-bar usage limits, and a dry-run installer for macOS with a Windows port. |
 | [**kidoln/herdr_desktop_mods**](https://github.com/kidoln/herdr_desktop_mods) | 1 | Collects Herdr app mods and a herdr-git layout with a source-control panel, side-by-side diffs, a file manager and a reworked agents list, tab bar and status bar. |
 | [**gzx543097079/Herdr-core-plugins · layouts/herdr-plugins**](https://github.com/gzx543097079/Herdr-core-plugins/tree/main/layouts/herdr-plugins) | 0 | Adds a macOS Herdr app layout with a blue-grey sidebar, conversation history, a file tree, a Git workbench and plugin settings. |
 | [**keyuramins/herdr-layout**](https://github.com/keyuramins/herdr-layout) | 0 | Dresses the Herdr app as a desktop agent app with a projects-and-threads sidebar, per-thread git diffs and a rounded composer under the live terminal. Ships the Studio layout. |

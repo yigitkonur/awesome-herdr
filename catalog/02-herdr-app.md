@@ -20,7 +20,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 - [Herdr app cyberpunk, sci-fi and anime layouts (21)](#herdr-app-cyberpunk-sci-fi-and-anime-layouts)
 - [Herdr app pixel-art RPG, retro game and franchise layouts (13)](#herdr-app-pixel-art-rpg-retro-game-and-franchise-layouts)
 - [Herdr app pixel-art offices, buildings and coworker scenes (12)](#herdr-app-pixel-art-offices-buildings-and-coworker-scenes)
-- [Herdr app animated pets, creatures and farm scenes (16)](#herdr-app-animated-pets-creatures-and-farm-scenes)
+- [Herdr app animated pets, creatures and farm scenes (17)](#herdr-app-animated-pets-creatures-and-farm-scenes)
 - [Herdr app airport, sports and ship scene layouts (9)](#herdr-app-airport-sports-and-ship-scene-layouts)
 - [Herdr app automatic tab and space namers (15)](#herdr-app-automatic-tab-and-space-namers)
 - [Herdr app space folders, groups and tab groups (17)](#herdr-app-space-folders-groups-and-tab-groups)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -468,12 +468,13 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app animated pets, creatures and farm scenes
 
-*16 projects. Layouts and mods that turn each agent into an animated pet, Pokemon, blob or farm animal that reacts to its status.*
+*17 projects. Layouts and mods that turn each agent into an animated pet, Pokemon, blob or farm animal that reacts to its status.*
 
 | Project | Stars | What it does |
 |---|--:|---|
 | [**mathieucroset/herdr-pokemon-agents**](https://github.com/mathieucroset/herdr-pokemon-agents) | 25 | Shows agents as animated Pokémon in the Herdr app and lets users jump to an agent by clicking its sprite. |
 | [**mukiwu/herdr-crew-rpg**](https://github.com/mukiwu/herdr-crew-rpg) | 9 | Displays dispatched agents as pixel-art characters in a Herdr app sidebar and battle scene with status and quota information. |
+| [**anthonymq/pokemon-herdr**](https://github.com/anthonymq/pokemon-herdr) | 5 | Turns the Herdr app into a red Kanto Pokédex where every agent is a Pokémon and every space has a mascot, for Claude Code, Codex, OMP, OMO and other agents that report status. Finished agent work earns XP, levels, badges and a daily streak, and wild encounters fill a Gen 1 collection. |
 | [**lntvan166/herdr-pokemon**](https://github.com/lntvan166/herdr-pokemon) | 3 | Displays Herdr app agents as animated Pokémon with selectable forms, status reactions, and seasonal scenery. |
 | [**adamentwistle/herdr-woolhill**](https://github.com/adamentwistle/herdr-woolhill) | 2 | Draws your agents as a flock of sheep on a pixel-art hillside along the bottom of the Herdr app window. Sheep graze, rest or hop with live agent state, and the wool you collect pays for upgrades. |
 | [**scott-the-programmer/herdr-blobs**](https://github.com/scott-the-programmer/herdr-blobs) | 1 | Shows each agent in the Herdr app as a draggable, zoomable blob above its terminal, sized by context usage and colored by state. |

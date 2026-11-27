@@ -3,7 +3,7 @@
 The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-mods-and-themes), ordered by GitHub stars.
 
 - [Herdr app multi-layout packs (11)](#herdr-app-multi-layout-packs)
-- [Herdr app multi-mod bundles and personal collections (29)](#herdr-app-multi-mod-bundles-and-personal-collections)
+- [Herdr app multi-mod bundles and personal collections (30)](#herdr-app-multi-mod-bundles-and-personal-collections)
 - [Herdr app status-column boards such as Needs you, Working and Done (7)](#herdr-app-status-column-boards-such-as-needs-you-working-and-done)
 - [Herdr app multi-agent orchestration and supervisor panels (19)](#herdr-app-multi-agent-orchestration-and-supervisor-panels)
 - [Herdr app Spaces sidebars with worktrees, branches and agent status (17)](#herdr-app-spaces-sidebars-with-worktrees-branches-and-agent-status)
@@ -78,7 +78,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ## 2. Herdr app layouts, mods, and themes
 
-*782 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
+*783 projects. Layouts, mods, and themes for customizing the Herdr desktop app.*
 
 > Herdr has an official [desktop app](https://herdr.dev/download/) for macOS, Windows, and Linux and an official [iPhone, iPad, and Android app](https://herdr.dev/mobile/); the projects below are community extensions.
 
@@ -102,7 +102,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 
 ### Herdr app multi-mod bundles and personal collections
 
-*29 projects. Repositories that bundle several unrelated Herdr app mods, often with a layout, in one install.*
+*30 projects. Repositories that bundle several unrelated Herdr app mods, often with a layout, in one install.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -135,6 +135,7 @@ The full list for domain 2 of [Awesome Herdr](../README.md#2-herdr-app-layouts-m
 | [**l4ci/herdr-mods**](https://github.com/l4ci/herdr-mods) | 0 | Adds two Herdr app mods: machine vitals with live graphs of CPU, memory and network for each connected machine, and Claude and Codex usage limits. |
 | [**PsyChaos/herdr-mods**](https://github.com/PsyChaos/herdr-mods) | 0 | Adds Herdr app mods for multi-agent work: a task board, provider usage limits, machine stats, PR and CI status, ports, Docker, a browser pane, file attach, agent-to-agent team messaging, and a palette group. |
 | [**m0d02x/herdr-mods**](https://github.com/m0d02x/herdr-mods) | 0 | Adds Herdr app mods for self-naming tabs that handle omp agent task titles, a machine vitals window, space folders, and a status strip with machine CPU and 9router quota. Several mods are patched copies of other authors' work. |
+| [**dtarczynski/herdr-mods**](https://github.com/dtarczynski/herdr-mods) | 0 | Adds three independently installable Herdr app mods for browsing GitHub issues and launching agents, viewing provider quota usage, and showing Codex context usage with agent status indicators. |
 
 ### Herdr app status-column boards such as Needs you, Working and Done
 

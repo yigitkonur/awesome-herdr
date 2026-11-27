@@ -105,7 +105,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 - [Copy hints and text pickers in the style of tmux-fingers (16)](#copy-hints-and-text-pickers-in-the-style-of-tmux-fingers)
 - [Quote and reference agent output in prompts (4)](#quote-and-reference-agent-output-in-prompts)
 - [Annotating terminal text and documents for agents (10)](#annotating-terminal-text-and-documents-for-agents)
-- [Herdr TUI palettes such as Modus, Flexoki and Synthwave (10)](#herdr-tui-palettes-such-as-modus-flexoki-and-synthwave)
+- [Herdr TUI palettes such as Modus, Flexoki and Synthwave (11)](#herdr-tui-palettes-such-as-modus-flexoki-and-synthwave)
 - [Theme pickers, font choosers and color tools (5)](#theme-pickers-font-choosers-and-color-tools)
 - [Theme sync with Ghostty, kitty, Omarchy and other apps (8)](#theme-sync-with-ghostty-kitty-omarchy-and-other-apps)
 - [Command policies and approval gates (9)](#command-policies-and-approval-gates)
@@ -119,7 +119,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 
 ## 6. Worktrees and terminal experience
 
-*1120 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
+*1121 projects. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.*
 
 ### Plugin collections you install one by one
 
@@ -1899,7 +1899,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 
 ### Herdr TUI palettes such as Modus, Flexoki and Synthwave
 
-*10 projects. Ready-made color palettes such as Modus, Flexoki, Synthwave and zenbones for the Herdr TUI.*
+*11 projects. Ready-made color palettes such as Modus, Flexoki, Synthwave and zenbones for the Herdr TUI.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -1913,6 +1913,7 @@ The full list for domain 6 of [Awesome Herdr](../README.md#6-worktrees-and-termi
 | [**codingquark/herdr-modus-themes**](https://github.com/codingquark/herdr-modus-themes) | 0 | Installs the light Modus Operandi and dark Modus Vivendi palettes for the Herdr TUI. |
 | [**pangpond/herdr-theme-cobalt2**](https://github.com/pangpond/herdr-theme-cobalt2) | 0 | Applies the Cobalt2 palette to the Herdr TUI chrome and adds harness logo marks to agent rows through a bundled font. |
 | [**xeno/herdr-neon-ink**](https://github.com/xeno/herdr-neon-ink) | 0 | Applies a neon-on-charcoal color theme to the Herdr TUI through a plugin action or a pasteable config snippet. |
+| [**itigancov/phosglow · herdr**](https://github.com/itigancov/phosglow/tree/HEAD/ports/herdr) | 0 | Applies a green phosphor CRT palette to the Herdr TUI through a plugin action or a pasteable config snippet. Keeps red and amber for errors and warnings. |
 
 ### Theme pickers, font choosers and color tools
 

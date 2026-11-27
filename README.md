@@ -256,7 +256,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Pi side conversations and session forks (8)](catalog/05-sessions.md#pi-side-conversations-and-session-forks)
    - [Moving sessions and workspaces to another machine or app (5)](catalog/05-sessions.md#moving-sessions-and-workspaces-to-another-machine-or-app)
    - [Crash-proof and always-on sessions (6)](catalog/05-sessions.md#crash-proof-and-always-on-sessions)
-6. [Worktrees and terminal experience (1120)](#6-worktrees-and-terminal-experience)
+6. [Worktrees and terminal experience (1121)](#6-worktrees-and-terminal-experience)
    - [Plugin collections you install one by one (37)](catalog/06-worktrees-and-terminal.md#plugin-collections-you-install-one-by-one)
    - [Fuzzy command palettes for Herdr actions and plugins (25)](catalog/06-worktrees-and-terminal.md#fuzzy-command-palettes-for-herdr-actions-and-plugins)
    - [Custom command and script launchers (12)](catalog/06-worktrees-and-terminal.md#custom-command-and-script-launchers)
@@ -360,7 +360,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
    - [Copy hints and text pickers in the style of tmux-fingers (16)](catalog/06-worktrees-and-terminal.md#copy-hints-and-text-pickers-in-the-style-of-tmux-fingers)
    - [Quote and reference agent output in prompts (4)](catalog/06-worktrees-and-terminal.md#quote-and-reference-agent-output-in-prompts)
    - [Annotating terminal text and documents for agents (10)](catalog/06-worktrees-and-terminal.md#annotating-terminal-text-and-documents-for-agents)
-   - [Herdr TUI palettes such as Modus, Flexoki and Synthwave (10)](catalog/06-worktrees-and-terminal.md#herdr-tui-palettes-such-as-modus-flexoki-and-synthwave)
+   - [Herdr TUI palettes such as Modus, Flexoki and Synthwave (11)](catalog/06-worktrees-and-terminal.md#herdr-tui-palettes-such-as-modus-flexoki-and-synthwave)
    - [Theme pickers, font choosers and color tools (5)](catalog/06-worktrees-and-terminal.md#theme-pickers-font-choosers-and-color-tools)
    - [Theme sync with Ghostty, kitty, Omarchy and other apps (8)](catalog/06-worktrees-and-terminal.md#theme-sync-with-ghostty-kitty-omarchy-and-other-apps)
    - [Command policies and approval gates (9)](catalog/06-worktrees-and-terminal.md#command-policies-and-approval-gates)
@@ -549,7 +549,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 
 ## 6. Worktrees and terminal experience
 
-*1120 projects in 112 subcategories. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.* The 10 most-starred are below; browse every subcategory in [catalog/06-worktrees-and-terminal.md](catalog/06-worktrees-and-terminal.md).
+*1121 projects in 112 subcategories. Git worktree automation, terminal navigation, status displays, HUDs, and developer environment tools.* The 10 most-starred are below; browse every subcategory in [catalog/06-worktrees-and-terminal.md](catalog/06-worktrees-and-terminal.md).
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -564,7 +564,7 @@ The desktop app installs [herdr-core](https://herdr.dev/core/) and updates itsel
 | [**hhdebb/herdr-radar**](https://github.com/hhdebb/herdr-radar) | 204 | Shows agent activity in the Herdr TUI sidebar, grouping workspaces and worktrees and highlighting waiting or stale sessions. |
 | [**devashish2203/herdr-worktrunk**](https://github.com/devashish2203/herdr-worktrunk) | 197 | Creates, switches, merges, and removes Git worktrees with Worktrunk from Herdr TUI, using Worktrunk lifecycle hooks and an interactive branch picker. |
 
-**[All 1120 projects in 112 subcategories →](catalog/06-worktrees-and-terminal.md)**
+**[All 1121 projects in 112 subcategories →](catalog/06-worktrees-and-terminal.md)**
 
 ---
 

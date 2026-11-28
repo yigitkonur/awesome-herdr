@@ -31,7 +31,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 - [Agent races and side-by-side comparisons (5)](#agent-races-and-side-by-side-comparisons)
 - [Workflow engines and scripted agent pipelines (12)](#workflow-engines-and-scripted-agent-pipelines)
 - [Spec-driven and SDLC process frameworks (6)](#spec-driven-and-sdlc-process-frameworks)
-- [Autonomous coding loops that end in pull requests (11)](#autonomous-coding-loops-that-end-in-pull-requests)
+- [Autonomous coding loops that end in pull requests (12)](#autonomous-coding-loops-that-end-in-pull-requests)
 - [Tracker-driven agent factories (14)](#tracker-driven-agent-factories)
 - [Herdr TUI plugins that turn Linear issues into agent runs (7)](#herdr-tui-plugins-that-turn-linear-issues-into-agent-runs)
 - [Herdr TUI Jira boards and ticket launchers (9)](#herdr-tui-jira-boards-and-ticket-launchers)
@@ -59,7 +59,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ## 1. Run and orchestrate agents
 
-*592 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
+*593 projects. Supervisors, delegation tools, coding loops, queues, and reusable workflow packs for running one or many agents.*
 
 ### Official Herdr projects and skill
 
@@ -622,7 +622,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 
 ### Autonomous coding loops that end in pull requests
 
-*11 projects. Bounded implement, review and fix loops that run unattended and finish with a reviewed commit or pull request.*
+*12 projects. Bounded implement, review and fix loops that run unattended and finish with a reviewed commit or pull request.*
 
 | Project | Stars | What it does |
 |---|--:|---|
@@ -637,6 +637,7 @@ The full list for domain 1 of [Awesome Herdr](../README.md#1-run-and-orchestrate
 | [**edbienes/drovr**](https://github.com/edbienes/drovr) | 0 | Runs a Herdr-based development loop with isolated implementation, a repository quality gate, two independent reviews, and a human-gated merge. |
 | [**sarmientoF/herdr-pr-loop**](https://github.com/sarmientoF/herdr-pr-loop) | 0 | Runs tester, coder, and reviewer agents through local task cycles and GitHub pull-request reviews in separate tabs. State is stored in files, while approval gates, logs, a budget limit, and a pause file keep runs controllable. |
 | [**henrywang/herdr-workflow**](https://github.com/henrywang/herdr-workflow) | 0 | Runs multi-agent Herdr TUI workflows with cross-model planning, adversarial review and bounded iterations toward pull requests. |
+| [**Ayberkone/nightlane**](https://github.com/Ayberkone/nightlane/tree/main/integrations/herdr) | 0 | Runs Claude Code, Codex or Gemini on a goal file overnight in Herdr TUI panes, waits out usage limits, and counts a ticked unit only when git has its commit. A popup shows the morning report of verified and claimed units. |
 
 ### Tracker-driven agent factories
 
